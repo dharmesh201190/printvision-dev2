@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X7 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="1.10576in" height="0.558461in" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 313 158"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil1 {fill:#3F3F41;fill-rule:nonzero}
+    .fil0 {fill:white;fill-rule:nonzero}
+    .fil2 {fill:#454545;fill-rule:nonzero}
+   ]]>
+  </style>
+ </defs>
+ <g id="__x0023_Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <path class="fil0" d="M76 142l-16 0 0 0c-2,0 -4,1 -5,3l-1 2 0 1c0,2 1,3 3,3l22 0c2,0 3,-1 3,-3l0 -1 -1 -2c-1,-2 -3,-3 -5,-3z"/>
+  <path class="fil1" d="M135 150l-9 -30c-1,-4 -6,-8 -10,-8l-96 0c-5,0 -10,4 -11,8l-8 30c-1,5 2,8 6,8l122 0c4,0 7,-3 6,-8zm-17 3l0 0 -99 0c-4,0 -6,-3 -6,-6 0,-1 0,-2 0,-3l6 -19c1,-4 6,-8 11,-8l77 0c5,0 10,3 11,8l6 19c1,1 1,2 1,3 0,3 -3,6 -7,6z"/>
+  <path class="fil2" d="M107 118l-77 0c-5,0 -9,3 -11,7l-5 20 -1 2c0,3 3,5 6,5l99 0c4,0 6,-2 6,-5l0 -2 -6 -20c-2,-4 -6,-7 -11,-7zm-30 29l0 0 -18 0c-2,0 -3,-1 -3,-3l0 0 1 -2c0,-2 2,-4 4,-4l14 0c2,0 4,2 5,4l0 2 0 0 0 0 0 1c0,1 -1,2 -3,2z"/>
+  <path class="fil1" d="M12 36l0 74 112 0 0 -74 -112 0zm102 65l0 0 -92 0 0 -55 92 0 0 55z"/>
+  <path class="fil0" d="M253 142l-17 0 0 0c-2,0 -4,1 -5,3l0 2 0 1c0,2 1,3 2,3l23 0c1,0 2,-1 2,-3l0 -1 -1 -2c0,-2 -2,-3 -4,-3z"/>
+  <path class="fil1" d="M311 150l-8 -30c-1,-4 -6,-8 -11,-8l-96 0c-4,0 -9,4 -10,8l-9 30c-1,5 2,8 7,8l121 0c5,0 8,-3 6,-8zm-16 3l0 0 -99 0c-4,0 -7,-3 -7,-6 0,-1 0,-2 0,-3l6 -19c1,-4 6,-8 11,-8l78 0c4,0 9,3 11,8l6 19c0,1 0,2 0,3 0,3 -2,6 -6,6z"/>
+  <path class="fil2" d="M284 118l-78 0c-4,0 -9,3 -10,7l-6 20 0 2c0,3 2,5 6,5l99 0c3,0 5,-2 5,-5l0 -2 -6 -20c-1,-4 -6,-7 -10,-7zm-30 29l0 0 -19 0c-1,0 -3,-1 -3,-3l0 0 1 -2c0,-2 3,-4 5,-4l13 0c2,0 4,2 5,4l1 2 -1 0 1 0 0 1c0,1 -2,2 -3,2z"/>
+  <path class="fil1" d="M188 36l0 74 113 0 0 -74 -113 0zm103 65l0 0 -93 0 0 -55 93 0 0 55z"/>
+  <polygon class="fil2" points="0,3 176,3 176,11 0,11 "/>
+  <polygon class="fil2" points="46,0 90,0 90,14 46,14 "/>
+  <polygon class="fil2" points="65,39 65,7 73,7 73,39 "/>
+  <polygon class="fil2" points="176,3 313,3 313,11 176,11 "/>
+  <polygon class="fil2" points="222,0 266,0 266,14 222,14 "/>
+  <polygon class="fil2" points="240,39 240,7 248,7 248,39 "/>
+ </g>
+</svg>

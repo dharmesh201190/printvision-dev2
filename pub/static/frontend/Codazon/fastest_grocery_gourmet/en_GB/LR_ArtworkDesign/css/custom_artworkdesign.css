@@ -1,0 +1,197 @@
+.all-comment {
+    padding: 10px;
+    border-radius: 6px 0 6px 0;
+    position: relative;
+    background: rgba(100, 170, 0, .1);
+    border: 2px solid rgba(100, 170, 0, .1);
+    color: #2c2c2c;
+    font-size: 13px;
+}
+.all-conversation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px 20px 0;
+    border: 1px solid #999;
+    border-radius: 10px;
+}
+.all-conversation .comment {
+    position: relative;
+    margin-bottom: 20px;
+}
+.comment.admin-rply {
+    align-self: flex-start;
+}
+.comment.customer-rply {
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column-reverse;
+}
+.comment .all-comment:after {
+    content: "";
+    position: absolute;
+    border: 10px solid transparent;
+    border-top: 10px solid rgba(100, 170, 0, .2);
+    border-right: none;
+    bottom: -22px;
+    right: 10px;
+}
+.comment.admin-rply .all-comment:after {
+    content: '';
+    top: 0;
+    right: auto;
+    bottom: auto;
+    top: -22px;
+    left: 9px;
+    border: 10px solid transparent;
+    border-bottom: 10px solid rgba(0, 114, 135, .2);
+    border-left: none;
+}
+.comment.admin-rply .all-comment {
+    background: rgba(0, 114, 135, .1);
+    border: 2px solid rgba(0, 114, 135, .1);
+}
+.comment-by {
+    margin-top: 10px;
+    text-align: right;
+}
+.comment.admin-rply .comment-by {
+    text-align: left;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+.comment-input {
+    margin-left: 0;
+    margin-right: 0;
+    position: relative;
+    padding: 0 0 20px;
+}
+.comment .all-comment a {
+    text-decoration: underline;
+    color: #1979c3;
+}
+.comment-input {
+    position: relative;
+}
+.comment-input .fieldset.info {
+    margin: 0;
+}
+.comment-input .legend, .comment-input br, .comment-input .label, .comment-input .secondary {
+    display: none!important;
+}
+.comment-input .input-text {
+    width: 100%;
+    height: 40px;
+    padding: 10px 80px 10px 20px;
+    border: 1px solid #a5d1e3;
+    border-radius: 5px;
+}
+.comment-input .action.save.primary {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 0;
+}
+.comment-input .input-text + .mage-error {
+    display: none;
+}
+.radio-toolbar input[type="radio"] {
+    opacity: 0;
+    position: fixed;
+    width: 0;
+}
+.radio-toolbar
+{
+    display:flex;
+}
+.radio-toolbar label{
+    display: inline-block;
+    background-color: #fff;
+    padding: 10px 20px;
+    color: 003768;
+    font-family: 'Gotham';
+    border: 1px solid #addf27;
+    border-radius: 1px;
+    width: 48%;
+    text-align: center;
+    margin-left: 2px;
+}
+
+.radio-toolbar input[type="radio"]:checked + label,.radio-toolbar label:hover{
+    background-color:#addf27 ;
+    color: #fff;
+    border: 1px solid #003768;
+}
+
+
+
+.printed_sides .custom-opt-class .swatch-attribute-options .swatch-option{
+
+     width: 160px;
+ }
+.radio-toolbar .now span::after{
+    content: url("../images/Palette2.svg");
+    vertical-align: middle;
+    width: 15px;
+    display: inline-block;
+}
+.radio-toolbar .after span::after{
+    content: url("../images/Palette2.svg");
+    vertical-align: middle;
+    width: 15px;
+    display: inline-block;
+    margin-left: 6px;
+}
+
+.product-info-main .box-tocart .action.tocart:before{
+   content: url("../images/Cart.svg");
+   vertical-align: middle;
+   width: 15px;
+   display: inline-block;
+}
+
+a.printvision_product_inquiry_link.primary.action:before
+{
+    content: url("../images/Pound.svg");
+   vertical-align: middle;
+   width: 15px;
+   display: inline-block;
+   padding-top: 3px;
+   margin-right: 7px;
+}
+
+
+
+a.printvision_product_request_call.primary.action:before{
+  content: url("../images/Phone.svg");
+   vertical-align: middle;
+   width: 15px;
+   display: inline-block;
+   margin-right: 5px;
+}
+
+@media(max-width: 667px)
+{
+    .radio-toolbar {
+   
+    padding-top: 10px;
+}
+
+.custom-buttons {
+    width: 100% !important;
+}
+
+.radio-toolbar label {
+    
+    width: 100% !important;
+}
+
+.radio-toolbar {
+    display: grid;
+}
+
+}
+

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="492" height="1527" viewBox="0 0 492 1527" xml:space="preserve">
+<desc>Created with Fabric.js 3.6.2</desc>
+<defs>
+	<style type="text/css"><![CDATA[
+		@font-face {
+			font-family: 'ABeeZee Regular';
+			src: url('ABeeZee Regular.ttf');
+		}
+]]></style>
+</defs>
+<g id="id_1583324438341" clip-path="url(#CLIPPATH_2)">
+<g transform="matrix(5.635660835522467 0 0 5.626325340439233 244.4781339789936 764.4068236478806)">
+<clipPath id="CLIPPATH_2">
+	<rect transform="matrix(1 0 0 1 245.50863557858378 765.4138888888888)" x="-245.00863557858378" y="-762.086111111111" rx="0" ry="0" width="490.01727115716756" height="1524.172222222222"/>
+</clipPath>
+<g style="">
+		<g transform="matrix(0.10318482108183079 0 0 0.10318482108183079 0 -9.235041486823857)" id="Layer_x0020_1">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(119,120,118); fill-rule: evenodd; opacity: 1;" transform=" translate(-401, -271)" d="M 592 0 l 0 0 c -54 0 -103 20 -141 52 c -38 32 -67 32 -105 0 c -37 -31 -86 -51 -140 -51 c -84 0 -157 46 -191 113 c -21 43 -18 121 -3 166 c 5 21 16 46 28 72 c 2 -1 6 -1 9 -1 l 115 0 l 61 -117 c 4 -7 10 -10 18 -10 c 7 1 12 5 16 11 l 133 307 l 37 -92 c 3 -6 10 -10 18 -10 l 233 0 c 5 0 10 2 12 5 c 7 -8 13 -16 19 -25 c 17 -21 53 -72 68 -116 c 23 -63 23 -109 23 -109 c 0 -109 -94 -195 -210 -195 l 0 0 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.10318482108183079 0 0 0.10318482108183079 -3.9726156116504825 14.549059772538143)" id="Layer_x0020_1">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(116,203,242); fill-rule: evenodd; opacity: 1;" transform=" translate(-362.5, -501.5)" d="M 459 473 l -50 121 c -2 7 -9 11 -17 11 l 0 0 c -7 0 -13 -4 -16 -11 l -136 -312 l -49 92 c -3 7 -9 10 -15 10 l -117 0 c 1 3 2 4 3 6 l 31 42 c 9 10 17 19 26 29 c 105 105 178 184 222 233 c 33 36 85 36 117 0 c 43 -48 111 -122 208 -221 l -207 0 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.10318482108183079 0 0 0.10318482108183079 15.477723162274621 -16.045239678224682)" id="Layer_x0020_1">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(116,203,242); fill-rule: evenodd; opacity: 1;" transform=" translate(-551, -205)" d="M 517 190 l 0 0 c 30 0 53 20 53 44 c 0 7 6 12 14 12 c 7 0 15 -5 15 -12 c 0 -39 -38 -70 -82 -70 c -7 0 -14 5 -14 13 c 0 7 7 13 14 13 l 0 0 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.10318482108183079 0 0 0.10318482108183079 19.605116005547846 -20.069447700416085)" id="Layer_x0020_1">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(116,203,242); fill-rule: evenodd; opacity: 1;" transform=" translate(-591, -166)" d="M 549 147 l 0 0 c 36 0 66 25 66 54 c 0 9 7 16 17 16 c 10 0 18 -7 18 -16 c 0 -47 -45 -86 -101 -86 c -9 0 -17 7 -17 16 c 0 10 8 16 17 16 l 0 0 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.10318482108183079 0 0 0.10318482108183079 24.55798741747573 -24.1452481331484)" id="Layer_x0020_1">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(116,203,242); fill-rule: evenodd; opacity: 1;" transform=" translate(-639, -126.5)" d="M 581 100 l 0 0 c 50 0 92 33 92 75 c 0 13 11 24 24 24 c 13 0 25 -11 25 -24 c 0 -66 -63 -121 -141 -121 c -13 0 -25 10 -25 23 c 0 13 12 23 25 23 l 0 0 z" stroke-linecap="round"/>
+</g>
+</g>
+</g>
+</g>
+<g id="id_1583324447911" clip-path="url(#CLIPPATH_3)">
+<g transform="matrix(5.693666809318404 -0.05524017989439637 0.05514867431184772 5.68423522710378 214.0649828945256 1198.7528614128103)">
+<clipPath id="CLIPPATH_3">
+	<rect transform="matrix(1 0 0 1 245.50863557858378 765.4138888888888)" x="-245.00863557858378" y="-762.086111111111" rx="0" ry="0" width="490.01727115716756" height="1524.172222222222"/>
+</clipPath>
+<g style="">
+		<g transform="matrix(0.78052736 0 0 0.7805273600000001 -6.244218879999998 12.797371670375757)" id="Layer_x0020_1">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(119,120,118); fill-rule: evenodd; opacity: 1;" transform=" translate(-19.5, -54.00000000000001)" d="M 28 67 l 11 -19 l 0 0 l -4 -5 l -2 -2 c -7 -7 -15 -8 -20 -8 l 0 0 l -11 20 c -1 2 -2 5 -2 8 c 0 5 3 10 8 12 c 7 4 16 2 20 -6 l 0 0 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.78052736 0 0 0.7805273600000001 5.463691520000001 -11.707910400000006)" id="Layer_x0020_1">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(119,120,118); fill-rule: evenodd; opacity: 1;" transform=" translate(-34.5, -22.604198486551763)" d="M 14 28 l 4 1 c 7 1 16 4 21 12 l 3 4 l 11 -22 c 2 -2 2 -5 2 -8 c 0 -5 -3 -10 -8 -13 c -8 -4 -17 -1 -21 6 l -12 20 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.78052736 0 0 0.7805273600000001 6.634482559999997 -13.51012346294006)" id="Layer_x0020_1">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(116,203,242); fill-rule: evenodd; opacity: 1;" transform=" translate(-36, -20.2952300181818)" d="M 45 6 c 3 2 5 5 5 9 c 0 2 0 4 -1 6 l -8 15 c -6 -7 -13 -10 -19 -11 l 8 -15 c 3 -5 9 -7 15 -4 l 0 0 z" stroke-linecap="round"/>
+</g>
+</g>
+</g>
+</g>
+<g style="" id="id_1583324465245" clip-path="url(#CLIPPATH_4)">
+<g transform="matrix(3.37083527973828 -0.4363759372395929 0.43565307872566955 3.3652514773948106 302.3474678645849 311.06055803613697)">
+<clipPath id="CLIPPATH_4">
+	<rect transform="matrix(1 0 0 1 245.50863557858378 765.4138888888888)" x="-245.00863557858378" y="-762.086111111111" rx="0" ry="0" width="490.01727115716756" height="1524.172222222222"/>
+</clipPath>
+		<text xml:space="preserve" font-family="ABeeZee Regular" font-size="22" font-style="normal" font-weight="normal" style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: cmyk(93,0,100,0); fill-rule: nonzero; opacity: 1; white-space: pre;"><tspan x="-40.32599899291992" y="6.911080000000002">Medical</tspan></text>
+</g>
+</g>
+</svg>

@@ -1,0 +1,188 @@
+#sidebar {
+  margin: 0; }
+
+.main-layout {
+  margin: .5em; }
+
+.top-banner {
+  max-width: 775px;
+  padding: 5px 1em;
+  box-sizing: border-box; }
+  .top-banner img {
+    width: 100%; }
+  .top-banner > .top-banner-blurb {
+    font-family: Georgia, Arial, sans-serif;
+    font-style: italic;
+    color: #1b45a5;
+    font-size: 19px;
+    margin-top: 1em; }
+    .top-banner > .top-banner-blurb > div.call {
+      color: black;
+      font-style: normal;
+      font-family: Arial, sans-serif;
+      line-height: 2;
+      font-size: 14px; }
+      .top-banner > .top-banner-blurb > div.call > b {
+        text-decoration: underline; }
+
+.pc-row {
+  clear: both;
+  display: block;
+  width: 100%;
+  max-width: 775px;
+  font-family: Arial, sans-serif; }
+  .pc-row p {
+    margin-bottom: 1em; }
+  .pc-row a {
+    color: black;
+    text-decoration: underline; }
+  .pc-row h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 5px;
+    padding: 0; }
+  .pc-row > .col1, .pc-row .col2, .pc-row .col3, .pc-row .col4, .pc-row .col5, .pc-row .col6, .pc-row .col7, .pc-row .col8, .pc-row .col9, .pc-row .col10 {
+    vertical-align: top;
+    display: inline-block;
+    padding: 1em;
+    box-sizing: border-box;
+    width: 100%; }
+    .pc-row > .col1 input[type=text], .pc-row .col2 input[type=text], .pc-row .col3 input[type=text], .pc-row .col4 input[type=text], .pc-row .col5 input[type=text], .pc-row .col6 input[type=text], .pc-row .col7 input[type=text], .pc-row .col8 input[type=text], .pc-row .col9 input[type=text], .pc-row .col10 input[type=text] {
+      width: 90%;
+      height: 20px; }
+    .pc-row > .col1 select, .pc-row .col2 select, .pc-row .col3 select, .pc-row .col4 select, .pc-row .col5 select, .pc-row .col6 select, .pc-row .col7 select, .pc-row .col8 select, .pc-row .col9 select, .pc-row .col10 select {
+      width: 93%; }
+    .pc-row > .col1 .col1, .pc-row .col2 .col1, .pc-row .col3 .col1, .pc-row .col4 .col1, .pc-row .col5 .col1, .pc-row .col6 .col1, .pc-row .col7 .col1, .pc-row .col8 .col1, .pc-row .col9 .col1, .pc-row .col10 .col1 {
+      width: 9%; }
+    .pc-row > .col1 .col2, .pc-row .col2 .col2, .pc-row .col3 .col2, .pc-row .col4 .col2, .pc-row .col5 .col2, .pc-row .col6 .col2, .pc-row .col7 .col2, .pc-row .col8 .col2, .pc-row .col9 .col2, .pc-row .col10 .col2 {
+      width: 19%; }
+    .pc-row > .col1 .col3, .pc-row .col2 .col3, .pc-row .col3 .col3, .pc-row .col4 .col3, .pc-row .col5 .col3, .pc-row .col6 .col3, .pc-row .col7 .col3, .pc-row .col8 .col3, .pc-row .col9 .col3, .pc-row .col10 .col3 {
+      width: 29%; }
+    .pc-row > .col1 .col4, .pc-row .col2 .col4, .pc-row .col3 .col4, .pc-row .col4 .col4, .pc-row .col5 .col4, .pc-row .col6 .col4, .pc-row .col7 .col4, .pc-row .col8 .col4, .pc-row .col9 .col4, .pc-row .col10 .col4 {
+      width: 39%; }
+    .pc-row > .col1 .col5, .pc-row .col2 .col5, .pc-row .col3 .col5, .pc-row .col4 .col5, .pc-row .col5 .col5, .pc-row .col6 .col5, .pc-row .col7 .col5, .pc-row .col8 .col5, .pc-row .col9 .col5, .pc-row .col10 .col5 {
+      width: 49%; }
+    .pc-row > .col1 .col6, .pc-row .col2 .col6, .pc-row .col3 .col6, .pc-row .col4 .col6, .pc-row .col5 .col6, .pc-row .col6 .col6, .pc-row .col7 .col6, .pc-row .col8 .col6, .pc-row .col9 .col6, .pc-row .col10 .col6 {
+      width: 59%; }
+    .pc-row > .col1 .col7, .pc-row .col2 .col7, .pc-row .col3 .col7, .pc-row .col4 .col7, .pc-row .col5 .col7, .pc-row .col6 .col7, .pc-row .col7 .col7, .pc-row .col8 .col7, .pc-row .col9 .col7, .pc-row .col10 .col7 {
+      width: 69%; }
+    .pc-row > .col1 .col8, .pc-row .col2 .col8, .pc-row .col3 .col8, .pc-row .col4 .col8, .pc-row .col5 .col8, .pc-row .col6 .col8, .pc-row .col7 .col8, .pc-row .col8 .col8, .pc-row .col9 .col8, .pc-row .col10 .col8 {
+      width: 79%; }
+    .pc-row > .col1 .col9, .pc-row .col2 .col9, .pc-row .col3 .col9, .pc-row .col4 .col9, .pc-row .col5 .col9, .pc-row .col6 .col9, .pc-row .col7 .col9, .pc-row .col8 .col9, .pc-row .col9 .col9, .pc-row .col10 .col9 {
+      width: 89%; }
+    .pc-row > .col1 .col10, .pc-row .col2 .col10, .pc-row .col3 .col10, .pc-row .col4 .col10, .pc-row .col5 .col10, .pc-row .col6 .col10, .pc-row .col7 .col10, .pc-row .col8 .col10, .pc-row .col9 .col10, .pc-row .col10 .col10 {
+      width: 100%; }
+    .pc-row > .col1.no-padding, .pc-row .col2.no-padding, .pc-row .col3.no-padding, .pc-row .col4.no-padding, .pc-row .col5.no-padding, .pc-row .col6.no-padding, .pc-row .col7.no-padding, .pc-row .col8.no-padding, .pc-row .col9.no-padding, .pc-row .col10.no-padding {
+      padding: 0; }
+
+@media only screen and (min-width: 700px) {
+  .pc-row .col1 {
+    width: 9%; }
+  .pc-row .col2 {
+    width: 19%; }
+  .pc-row .col3 {
+    width: 29%; }
+  .pc-row .col4 {
+    width: 39%; }
+  .pc-row .col5 {
+    width: 49%; }
+  .pc-row .col6 {
+    width: 59%; }
+  .pc-row .col7 {
+    width: 69%; }
+  .pc-row .col8 {
+    width: 79%; }
+  .pc-row .col9 {
+    width: 89%; }
+  .pc-row .col10 {
+    width: 100%; } }
+
+.ameri-calculator {
+  border: 1px solid #1b46a5;
+  padding: 1em;
+  background-color: #edf3ff;
+  border-radius: 10px; }
+  .ameri-calculator h2 {
+    margin: 0 0 .4em 0;
+    font-family: Georgia, Arial, sans-serif;
+    color: #1b45a5;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 18px;
+    padding: .3em 0;
+    border-bottom: 1px solid #1b45a5; }
+
+h1.ameri {
+  font-family: Georgia, Arial, sans-serif;
+  color: #1b45a5;
+  font-style: italic;
+  font-size: 18pt;
+  font-weight: normal;
+  margin: 0;
+  padding: 0; }
+
+.liner-layout {
+  clear: both;
+  display: table;
+  width: 100%;
+  max-width: 775px;
+  font-family: Arial, sans-serif; }
+  .liner-layout.footer {
+    font-size: 12px;
+    text-align: center; }
+  .liner-layout a {
+    color: black;
+    text-decoration: underline; }
+  .liner-layout > .liner-layout-box, .liner-layout > .liner-layout-box2, .liner-layout > .liner-layout-box3 {
+    vertical-align: top;
+    display: inline-block;
+    width: 100%;
+    padding: 1em;
+    box-sizing: border-box; }
+    .liner-layout > .liner-layout-box:nth-of-type(1), .liner-layout > .liner-layout-box2:nth-of-type(1), .liner-layout > .liner-layout-box3:nth-of-type(1) {
+      padding: 1em 1em 0; }
+  .liner-layout > .liner-layout-box > .liner-title {
+    margin-top: 1em;
+    font-family: Georgia, Arial, sans-serif;
+    font-style: italic;
+    font-size: 18px;
+    color: #1b45a5; }
+  .liner-layout > .liner-layout-box > .liner-description {
+    margin-top: .5em;
+    margin-bottom: .5em;
+    font-size: 13px;
+    font-weight: bold; }
+  .liner-layout > .liner-layout-box > .liner-list > ul {
+    margin-left: 0;
+    font-size: 13px;
+    padding-left: 17px; }
+    .liner-layout > .liner-layout-box > .liner-list > ul > li {
+      list-style: disc; }
+  .liner-layout > .liner-layout-box > .liner-pic {
+    overflow: hidden;
+    max-height: 200px; }
+    .liner-layout > .liner-layout-box > .liner-pic img {
+      width: 100%; }
+
+@media only screen and (min-width: 700px) {
+  .liner-layout > .liner-layout-box {
+    width: 32.99%; }
+  .liner-layout > .liner-layout-box2 {
+    width: 65.99%; }
+  .liner-layout.footer {
+    font-size: inherit;
+    text-align: left; }
+  .calc-select {
+    border: 0;
+    outline: 1px solid #CCC;
+    width: 100%;
+    height: 25px;
+    background: white url("http://www.americover.com/images_templ/calculators/select-nav.png") no-repeat right;
+    border-radius: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding: 0.1em .5em 0.1em .5em; } }

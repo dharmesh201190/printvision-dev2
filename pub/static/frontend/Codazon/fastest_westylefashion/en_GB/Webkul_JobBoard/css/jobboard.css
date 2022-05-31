@@ -1,0 +1,109 @@
+/**
+ * Webkul Software.
+ *
+ * @category  Webkul
+ * @package   Webkul_JobBoard
+ * @author    Webkul
+ * @copyright Copyright (c) Webkul Software Private Limited (https://webkul.com)
+ * @license   https://store.webkul.com/license.html
+ */
+.job-modal-popup.job-display-none{
+    display: none;
+}
+.h3-pop{
+    margin-bottom: 0rem;
+}
+
+ul.tabs{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+ul.tabs li{
+	font-size: 14px;
+	font-weight: 600;
+	background: none;
+	color: #222;
+	display: inline-block;
+	padding: 8px 15px;
+	cursor: pointer;
+	border:1px solid #CCC;
+	box-shadow: 0 0 5px -1px rgba(0,0,0,0.2);
+	text-shadow: 1px 1px #CCC;
+}
+
+ul.tabs li.current{
+	background: #ededed;
+	color: #222;	
+}
+
+ul.tabs li:hover{
+	border-color: #666 #aaa #bbb #888;
+	border-width:1px 1px 1px 1px;
+	color:#000;
+}
+
+ul.tabs li{
+	background: #A0A0A0;
+	color: #222;
+}
+
+.tab-content{
+	display: none;
+	background: whitesmoke;
+	padding: 15px;
+}
+
+.tab-content.current{
+	display: inherit;
+}
+
+.view-job{
+	background: white;
+}
+.apply-job{
+	background: white;
+}
+ul > li, ol > li {
+    margin-top: 0rem;
+    margin-bottom: 3px;
+}
+
+
+/* Start By Dharmesh  */
+
+body.jobboard-index-index.page-layout-1column .product.data.items > .item.title.active > .switch {
+    font-weight: 700;
+    color: #003768;
+    background-color: #addf27;
+    border-bottom: none;
+   
+ }
+
+
+ body.jobboard-index-index.page-layout-1column .product.data.items > .item.title > .switch {
+    font-weight: 700;
+    color: #fff;
+    background-color: #003768;
+    border-left: 1px solid #fff; 
+    border-bottom: none; 
+    font-family: 'Gotham'; 
+}
+
+body.jobboard-index-index.page-layout-1column .product.data.items > .item.title {
+        width: 16%;
+ }
+
+body.jobboard-index-index.page-layout-1column .product.data.items {
+    margin-top: 2%;
+}
+
+button.apply-job {
+    font-family: 'Gotham';
+}
+button.view-job {
+    font-family: 'Gotham';
+}
+
+/* End By Dharmesh  */

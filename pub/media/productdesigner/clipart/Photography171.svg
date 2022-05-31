@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X7 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="1.96529in" height="3.5694in" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 402 731"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil3 {fill:#246993;fill-rule:nonzero}
+    .fil4 {fill:#3482BC;fill-rule:nonzero}
+    .fil1 {fill:#7E776B;fill-rule:nonzero}
+    .fil6 {fill:#AAA8A7;fill-rule:nonzero}
+    .fil2 {fill:#CD5490;fill-rule:nonzero}
+    .fil5 {fill:#CDCDCD;fill-rule:nonzero}
+    .fil0 {fill:#ED69A5;fill-rule:nonzero}
+    .fil7 {fill:#F297C3;fill-rule:nonzero}
+    .fil8 {fill:#F4CA9A;fill-rule:nonzero}
+   ]]>
+  </style>
+ </defs>
+ <g id="object">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <polygon class="fil0" points="115,690 96,731 178,731 "/>
+  <polygon class="fil0" points="274,681 274,731 346,731 "/>
+  <path class="fil1" d="M274 133c-48,48 -117,28 -117,28l6 26c70,24 124,-35 124,-35l-13 -19z"/>
+  <polygon class="fil2" points="168,222 244,213 309,139 218,178 141,170 "/>
+  <polygon class="fil3" points="189,544 178,413 74,361 139,544 96,731 "/>
+  <polygon class="fil4" points="163,422 246,572 274,731 292,566 213,361 74,361 "/>
+  <polygon class="fil1" points="401,158 294,153 294,108 401,103 "/>
+  <polygon class="fil5" points="392,168 402,168 402,93 392,93 "/>
+  <polygon class="fil6" points="306,170 257,170 257,91 306,91 "/>
+  <polygon class="fil6" points="312,90 284,97 272,56 300,48 "/>
+  <path class="fil0" d="M168 161l-55 -7c-59,77 -39,207 -39,207l139 0 -45 -200z"/>
+  <polygon class="fil7" points="141,170 115,183 128,226 250,239 287,111 228,196 "/>
+  <polygon class="fil8" points="181,165 113,154 96,78 170,37 198,109 183,113 "/>
+  <polygon class="fil1" points="137,57 152,104 126,91 113,154 80,85 "/>
+  <polygon class="fil3" points="152,41 0,107 13,124 170,39 "/>
+  <polygon class="fil4" points="80,87 172,39 128,0 98,11 61,41 "/>
+ </g>
+</svg>

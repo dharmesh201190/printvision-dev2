@@ -1,0 +1,8 @@
+User-agent: googlebot
+Allow: /
+Disallow: /catalogsearch/
+
+
+Sitemap: https://www.printvision.co.uk/sitemap1.xml
+
+

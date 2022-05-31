@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X8 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="0.731512in" height="0.731472in" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 61 61"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil0 {fill:#74CBF2}
+    .fil1 {fill:#777876}
+   ]]>
+  </style>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <polygon class="fil0" points="12,26 12,35 26,35 26,49 35,49 35,35 49,35 49,26 35,26 35,12 26,12 26,26 "/>
+  <path class="fil1" d="M52 9c-6,-6 -13,-9 -22,-9 -8,0 -16,3 -21,9 -6,5 -9,13 -9,21 0,9 3,16 9,22 5,6 13,9 21,9 9,0 16,-3 22,-9 6,-6 9,-13 9,-22 0,-8 -3,-16 -9,-21l0 0zm-22 -5c8,0 14,3 19,8 5,5 8,11 8,18 0,8 -3,14 -8,19 -5,5 -11,8 -19,8 -7,0 -13,-3 -18,-8 -5,-5 -8,-11 -8,-19 0,-7 3,-13 8,-18 5,-5 11,-8 18,-8l0 0z"/>
+ </g>
+</svg>

@@ -1,0 +1,19 @@
+/* product listing page */
+.page-products .product-item-actions.is-pd-enable .action { margin: 3px; }
+.page-products .product-item-actions.is-pd-enable .actions-primary { display: block; margin-bottom: 10px; }
+.page-products .product-item-actions.is-pd-enable .actions-primary + .actions-secondary { display: block; }
+.page-products .product-item-actions.is-pd-enable .list-design-button { float: left; margin-right: 10px; }
+
+/* my design page */
+.productdesigner-designs-mydesigns #designs_box .products-grid { padding: 0; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; list-style: none; -webkit-box-sizing: border-box;box-sizing: border-box; }
+.productdesigner-designs-mydesigns #designs_box .products-grid .item { width: 33.33%; -webkit-box-flex: 0; padding: 0 10px; text-align: center; -ms-flex: 0 0 33.33%; flex: 0 0 33.33%; max-width: 33.33%; -webkit-box-sizing: border-box;box-sizing: border-box; }
+.productdesigner-designs-mydesigns #designs_box .products-grid .item .item-inner { position: relative; padding: 10px; border: 1px solid #d8d8d8; border-radius: 4px; padding-bottom: 50px; }
+.productdesigner-designs-mydesigns #designs_box .products-grid .item img { margin: 0 auto; }
+.productdesigner-designs-mydesigns #designs_box .products-grid .item .product-name { display: block; font-size: 14px; font-weight: 400; word-break: break-word; word-wrap: break-word; margin-bottom: 10px;}
+.productdesigner-designs-mydesigns #designs_box .products-grid .item .product-name a { color: #333; text-decoration: none !important; }
+.productdesigner-designs-mydesigns #designs_box .products-grid .item .actions { position: absolute; bottom: 10px; left: 0; right: 0; }
+.productdesigner-designs-mydesigns #designs_box .products-grid .item .actions .action { margin: 5px; }
+
+
+.productdesigner-designs-mydesigns .byi-pagination a { cursor: pointer; display: inline-block; vertical-align: middle; padding: 3px 9px; border-radius: 4px; margin: 3px; font-size: 14px; color: #FFF; background-color: #323232; text-decoration: none !important; -webkit-transition: 0.35s ease background-color;  transition: 0.35s ease background-color; }
+.productdesigner-designs-mydesigns .byi-pagination a:hover { background-color: #000; }

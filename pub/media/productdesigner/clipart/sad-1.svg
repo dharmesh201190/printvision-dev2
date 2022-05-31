@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X8 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="7.879in" height="7.879in" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 7879 7879"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil0 {fill:#FCCE29;fill-rule:nonzero}
+    .fil1 {fill:#915735;fill-rule:nonzero}
+    .fil2 {fill:#5E3C30;fill-rule:nonzero}
+    .fil3 {fill:#68C2ED;fill-rule:nonzero}
+   ]]>
+  </style>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_309883216768">
+   <path class="fil0" d="M7879 3939c0,2176 -1764,3940 -3940,3940 -2175,0 -3939,-1764 -3939,-3940 0,-2175 1764,-3939 3939,-3939 2176,0 3940,1764 3940,3939z"/>
+   <path class="fil1" d="M5318 6207c120,19 202,-121 123,-213 -350,-404 -892,-664 -1502,-664 -609,0 -1151,260 -1500,664 -80,92 2,232 122,213 414,-66 883,-104 1378,-104 497,0 965,38 1379,104z"/>
+   <path class="fil2" d="M5390 4156c-27,-15 -60,10 -54,40 47,237 281,416 562,416 282,0 516,-179 563,-416 6,-30 -27,-55 -54,-40 -145,81 -320,129 -509,129 -188,0 -363,-48 -508,-129z"/>
+   <path class="fil2" d="M1472 4156c-27,-15 -59,10 -53,40 47,237 280,416 562,416 282,0 515,-179 562,-416 6,-30 -26,-55 -53,-40 -145,81 -320,129 -509,129 -189,0 -364,-48 -509,-129z"/>
+   <path class="fil2" d="M1234 3522c-23,0 -45,-6 -66,-18 -61,-36 -81,-115 -45,-176 216,-364 609,-608 986,-599 71,2 128,60 126,131 0,70 -58,126 -128,126l-12 0c-282,0 -583,189 -751,473 -24,40 -66,63 -110,63z"/>
+   <path class="fil2" d="M6646 3522c-44,0 -87,-23 -111,-63 -168,-284 -469,-473 -751,-473l-12 0c-70,0 -127,-56 -128,-126 -1,-71 55,-129 126,-131 370,-8 770,235 986,599 36,61 16,140 -45,176 -20,12 -43,18 -65,18z"/>
+   <path class="fil3" d="M6958 5419c297,171 531,406 645,737 109,317 45,712 -222,915 -237,182 -583,172 -849,35 -433,-224 -721,-754 -895,-1190 -142,-357 -341,-606 -629,-819 -65,-48 -29,-152 53,-144 601,59 1354,153 1897,466z"/>
+  </g>
+ </g>
+</svg>

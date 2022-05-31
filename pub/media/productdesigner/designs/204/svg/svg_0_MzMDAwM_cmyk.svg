@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="584" height="1800" viewBox="0 0 584 1800" xml:space="preserve">
+<desc>Created with Fabric.js 3.6.2</desc>
+<defs>
+	<style type="text/css"><![CDATA[
+		@font-face {
+			font-family: 'ABeeZee Regular';
+			src: url('ABeeZee Regular.ttf');
+		}
+]]></style>
+<clipPath id="CLIPPATH_10">
+	<path transform="matrix(3.238645616125476 0 0 3.3333333333333335 259.09164929003805 830) translate(-80, -247)" id="Layer_4" d="M 158.5 0.5 l -1 418 s 2 70 -81 75 H 1.5 l 1 -302 s 11 -123 138 -185 C 140.5 6.5 151.5 1.5 158.5 0.5 Z" stroke-linecap="round"/>
+</clipPath>
+</defs>
+<g clip-path="url(#CLIPPATH_10)">
+<g style="" id="id_1582175014213" clip-path="url(#CLIPPATH_11)">
+<g transform="matrix(3.886374739350571 0 0 4 283.2326696575833 922.8466666666666)">
+<clipPath id="CLIPPATH_11">
+	<rect transform="matrix(1 0 0 1 291.97810545129283 897.1666666666666)" x="-291.47810545129283" y="-890" rx="0" ry="0" width="582.9562109025857" height="1780"/>
+</clipPath>
+		<text xml:space="preserve" font-family="ABeeZee Regular" font-size="43" font-style="normal" font-weight="normal" style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: cmyk(0,70,25,16); fill-rule: nonzero; opacity: 1; white-space: pre;"><tspan x="-38.398939800262454" y="13.508019999999998">test</tspan></text>
+</g>
+</g>
+<g style="" id="id_1582175112046" clip-path="url(#CLIPPATH_12)">
+<g transform="matrix(3.886374739350571 0 0 4 281.9398408693454 664.4666666666666)">
+<clipPath id="CLIPPATH_12">
+	<rect transform="matrix(1 0 0 1 291.97810545129283 897.1666666666666)" x="-291.47810545129283" y="-890" rx="0" ry="0" width="582.9562109025857" height="1780"/>
+</clipPath>
+		<text xml:space="preserve" font-family="ABeeZee Regular" font-size="30" font-style="normal" font-weight="normal" style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: cmyk(40,67,0,15); fill-rule: nonzero; opacity: 1; white-space: pre;"><tspan x="-63.53989448547364" y="9.424199999999999">New Test</tspan></text>
+</g>
+</g>
+<g id="id_1582175124917" clip-path="url(#CLIPPATH_13)">
+<g transform="matrix(0.7751372505187096 0 0 0.7977998031638485 291.1450351324614 1379.9320720484411)">
+<clipPath id="CLIPPATH_13">
+	<rect transform="matrix(1 0 0 1 291.97810545129283 897.1666666666666)" x="-291.47810545129283" y="-890" rx="0" ry="0" width="582.9562109025857" height="1780"/>
+</clipPath>
+<g style="">
+		<g transform="matrix(0.096 0 0 0.096 219.85978708864164 -43.05924963950906)" id="_393871925504">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(37,70,21); fill-rule: nonzero; opacity: 1;" transform=" translate(-6540.480196858072, -5051.698361533352)" d="M 6524 4851 c 64 -4 201 245 178 287 c -19 35 -123 82 -193 102 c -62 18 -123 35 -132 -91 c -9 -125 83 -293 147 -298 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.096 0 0 0.096 219.84295396883348 -43.03839234671078)" id="_393871925504">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" translate(-6540.304851860072, -5051.915625000001)" d="M 6446 5280 c -17 0 -34 -4 -50 -15 c -27 -19 -42 -55 -47 -114 c -10 -134 89 -321 173 -327 c 37 -3 81 34 130 111 c 5 7 104 161 75 216 c -27 50 -154 100 -211 116 c -22 6 -46 13 -70 13 z m 80 -401 l 0 0 c -41 4 -130 148 -121 268 c 3 38 11 64 23 73 c 15 10 44 1 73 -7 c 80 -22 162 -66 176 -87 c 2 -22 -39 -123 -97 -198 c -31 -39 -49 -49 -54 -49 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.096 0 0 0.096 -251.69031180973332 -88.26157712678787)" id="_393871925504">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" transform=" translate(-1628.5, -4580.840783540864)" d="M 1504 4433 c 0 0 20 268 109 320 c 0 0 118 -116 140 -257 c 0 0 -123 -143 -249 -63 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.096 0 0 0.096 -251.69031180973332 -87.9622598711301)" id="_393871925504">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" translate(-1628.5, -4583.958671620632)" d="M 1617 4787 l -18 -10 c -99 -58 -120 -313 -123 -342 l -1 -17 l 14 -9 c 116 -73 237 13 285 69 l 8 10 l -2 13 c -23 147 -143 266 -148 271 l -15 15 z m -84 -339 l 0 0 c 9 89 35 217 77 266 c 31 -35 94 -116 113 -209 c -26 -26 -107 -96 -190 -57 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.096 0 0 0.096 -273.5303118097333 -147.24015693569896)" id="_393871925504">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(37,70,21); fill-rule: nonzero; opacity: 1;" transform=" translate(-1401, -3966.4805771980405)" d="M 1526 4002 c -28 99 -107 165 -176 145 c -69 -19 -102 -116 -74 -216 c 28 -100 107 -165 176 -145 c 69 19 102 116 74 216 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.096 0 0 0.096 -273.48231180973335 -147.26732887888627)" id="_393871925504">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" translate(-1401.5, -3966.1975361231725)" d="M 1375 4178 c -11 0 -22 -1 -32 -4 c -85 -24 -126 -134 -93 -250 c 32 -117 125 -189 210 -165 c 85 24 126 134 93 250 c -15 54 -44 100 -82 131 c -30 25 -63 38 -96 38 z m 52 -368 l 0 0 c -49 0 -103 54 -124 129 c -24 83 2 166 55 181 c 24 7 52 -1 78 -22 c 29 -24 51 -61 63 -104 c 24 -83 -1 -167 -54 -182 c -6 -1 -12 -2 -18 -2 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.096 0 0 0.096 18.789688190266702 207.7697076532892)" id="_393871925504">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(167,169,172); fill-rule: nonzero; opacity: 1;" transform=" translate(-4446, -7664.5)" d="M 6181 7664 c 0 306 -777 555 -1735 555 c -958 0 -1735 -249 -1735 -555 c 0 -306 777 -554 1735 -554 c 958 0 1735 248 1735 554 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.096 0 0 0.096 -78.22524574046705 -22.66188935292668)" id="_393871925504">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(114,166,55); fill-rule: nonzero; opacity: 1;" transform=" translate(-3435.4277715548574, -5264.170864518585)" d="M 3949 5036 c 0 0 -640 173 -689 146 c -48 -27 -101 -231 -173 -204 c -46 16 -105 190 0 228 c -292 -14 -276 298 -134 333 c 81 20 195 25 290 -32 c 0 0 404 60 535 26 c 132 -35 350 -367 171 -497 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.096 0 0 0.096 -78.2192131461754 -22.698755128207395)" id="_393871925504">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" translate(-3435.4906110787283, -5263.786846026078)" d="M 3065 5580 c -51 0 -94 -8 -119 -14 c -80 -20 -132 -112 -117 -209 c 11 -78 67 -158 188 -175 c -11 -20 -17 -44 -17 -71 c 0 -62 33 -143 77 -159 c 68 -25 113 61 149 130 c 15 28 35 66 47 75 c 46 8 375 -68 669 -148 c 8 -2 16 0 23 4 c 66 48 92 123 74 217 c -26 140 -152 303 -254 330 c -125 32 -473 -15 -536 -24 c -62 34 -128 44 -184 44 z m 4 -346 l 0 0 c -105 0 -173 48 -185 131 c -10 68 24 134 75 147 c 47 12 167 32 270 -29 c 6 -3 12 -4 18 -3 c 4 0 400 58 524 26 c 74 -20 190 -158 214 -286 c 12 -67 -2 -119 -42 -154 c -43 12 -177 47 -314 80 c -342 83 -367 69 -382 60 c -26 -14 -45 -51 -70 -98 c -21 -39 -59 -112 -81 -104 c -13 6 -42 59 -40 112 c 2 50 31 61 40 64 c 13 5 21 18 18 32 c -3 13 -15 23 -29 22 c -5 0 -11 0 -16 0 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.096 0 0 0.096 178.74397103370598 51.144914588253414)" id="_393871925504">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(114,166,55); fill-rule: nonzero; opacity: 1;" transform=" translate(-6112.190446285826, -6032.991738905877)" d="M 5098 6859 c 0 0 787 453 1131 -444 c 368 -958 233 -1271 1005 -1140 c 0 0 -855 -554 -1189 269 c -334 822 -492 764 -721 542 c -228 -223 -483 666 -226 773 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.096 0 0 0.096 178.72293870706628 51.21044194455774)" id="_393871925504">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" translate(-6111.971359549996, -6033.674315534047)" d="M 5537 7002 c -236 0 -430 -106 -452 -118 c -78 -34 -122 -132 -123 -276 c 0 -220 104 -518 238 -575 c 35 -15 88 -21 144 33 c 96 93 170 148 245 133 c 120 -25 256 -237 430 -666 c 94 -231 238 -379 427 -438 c 155 -49 343 -37 544 34 c 151 53 255 120 259 123 c 11 7 16 21 11 33 c -5 13 -18 20 -31 18 c -576 -98 -620 44 -787 574 c -46 149 -104 334 -187 548 c -108 281 -270 462 -482 537 c -80 29 -160 40 -236 40 z m -289 -924 l 0 0 c -10 0 -19 3 -26 6 c -102 43 -205 307 -204 523 c 0 71 12 193 91 226 c 1 1 2 1 3 2 c 3 2 330 186 643 75 c 196 -70 347 -240 448 -505 c 82 -212 140 -397 186 -545 c 85 -268 140 -445 255 -546 c 95 -82 223 -110 438 -88 c -33 -15 -71 -31 -112 -45 c -132 -47 -327 -90 -507 -33 c -173 54 -305 191 -392 406 c -187 460 -327 669 -470 699 c -110 23 -207 -60 -296 -147 c -22 -22 -41 -28 -57 -28 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.096 0 0 0.096 99.04568819026669 17.846094161914582)" id="_393871925504">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(37,70,21); fill-rule: nonzero; opacity: 1;" transform=" translate(-5282, -5686.129026131515)" d="M 5537 5630 c 13 73 -81 221 -222 246 c -141 25 -275 -83 -288 -155 c -13 -72 81 -199 222 -224 c 141 -25 275 61 288 133 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.096 0 0 0.096 99.0941587757821 17.8963163489412)" id="_393871925504">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" translate(-5282.504901932452, -5686.652173913043)" d="M 5273 5908 c -137 0 -259 -101 -273 -182 c -16 -93 93 -229 244 -256 c 70 -12 145 -1 210 33 c 61 31 103 77 111 123 c 8 45 -15 107 -60 162 c -28 36 -91 99 -185 116 c -16 3 -32 4 -47 4 z m 26 -387 l 0 0 c -15 0 -30 1 -45 4 c -131 23 -209 139 -199 191 c 10 59 132 155 255 133 c 77 -14 128 -66 152 -95 c 39 -49 52 -96 48 -119 l 0 0 c -4 -22 -31 -57 -82 -83 c -39 -20 -85 -31 -129 -31 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.096 0 0 0.096 88.66958612487122 -34.76511311939278)" id="_393871925504">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(37,70,21); fill-rule: nonzero; opacity: 1;" transform=" translate(-5173.915603485464, -5138.09561695123)" d="M 5429 5082 c 12 72 -82 221 -223 246 c -140 25 -274 -84 -287 -156 c -13 -72 81 -198 221 -223 c 141 -25 276 60 289 133 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.096 0 0 0.096 88.62979781195506 -34.807683651058696)" id="_393871925504">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" translate(-5173.501141892588, -5137.652173913043)" d="M 5164 5359 c -55 0 -112 -17 -164 -49 c -59 -37 -101 -88 -109 -133 c -8 -45 15 -102 60 -153 c 49 -54 114 -90 185 -103 c 70 -12 144 -1 209 33 c 62 32 103 78 111 123 l 0 0 c 8 45 -15 107 -59 163 c -29 35 -91 98 -186 115 c -15 3 -31 4 -47 4 z m 27 -387 l 0 0 c -16 0 -31 1 -46 4 c -78 14 -129 59 -152 85 c -38 42 -51 84 -47 106 c 4 24 32 64 83 96 c 32 20 97 51 173 37 c 76 -13 128 -65 152 -95 c 38 -48 51 -95 47 -119 l 0 0 c -4 -22 -30 -56 -81 -83 c -40 -20 -85 -31 -129 -31 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.096 0 0 0.096 81.09368819026679 -88.23711311939276)" id="_393871925504">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(37,70,21); fill-rule: nonzero; opacity: 1;" transform=" translate(-5095.000000000001, -4581.09561695123)" d="M 5350 4525 c 13 72 -81 221 -222 246 c -141 25 -275 -84 -288 -156 c -13 -72 81 -198 222 -223 c 141 -25 275 60 288 133 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.096 0 0 0.096 81.09276512954325 -88.27968365105868)" id="_393871925504">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" translate(-5094.990384784131, -4580.652173913043)" d="M 5086 4802 c -137 0 -259 -101 -273 -182 c -8 -45 14 -102 60 -153 c 48 -54 114 -90 184 -103 c 70 -12 145 -1 210 33 c 61 32 102 78 110 123 c 16 87 -90 250 -244 278 c -16 3 -32 4 -47 4 z m 26 -387 l 0 0 c -15 0 -31 1 -45 4 c -79 14 -130 59 -153 85 c -38 42 -51 84 -47 106 c 11 59 133 155 256 133 c 126 -22 210 -155 200 -214 c -4 -22 -31 -56 -82 -83 c -40 -20 -85 -31 -129 -31 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.096 0 0 0.096 74.46968819026672 -181.40385607375373)" id="_393871925504">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(37,70,21); fill-rule: nonzero; opacity: 1;" transform=" translate(-5026, -3610.6087111766365)" d="M 5281 3554 c 13 73 -81 221 -222 246 c -141 25 -275 -83 -288 -155 c -13 -72 81 -198 222 -223 c 141 -25 275 60 288 132 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.096 0 0 0.096 74.4687651295432 -181.3996836510587)" id="_393871925504">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" translate(-5025.990384784131, -3610.652173913043)" d="M 5017 3832 c -56 0 -113 -17 -165 -49 c -59 -37 -100 -88 -108 -133 c -8 -45 14 -102 60 -153 c 48 -54 114 -90 184 -103 c 70 -12 145 -1 210 33 c 61 32 102 77 110 123 c 16 87 -90 250 -244 278 c -16 3 -31 4 -47 4 z m 26 -387 l 0 0 c -15 0 -30 1 -45 4 c -79 14 -130 59 -153 85 c -38 42 -50 84 -46 106 c 4 24 32 64 83 96 c 31 19 96 51 172 37 c 126 -22 210 -155 200 -214 l 0 0 c -4 -22 -31 -57 -82 -83 c -39 -20 -85 -31 -129 -31 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.096 0 0 0.096 116.404059173326 67.7245009248936)" id="_393871925504">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(37,70,21); fill-rule: nonzero; opacity: 1;" transform=" translate(-5462.816364406868, -6205.69576324588)" d="M 5442 5945 c 91 -11 182 105 201 260 c 20 156 -55 200 -140 236 c -188 77 -201 -26 -221 -182 c -19 -155 68 -302 160 -314 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.096 0 0 0.096 116.43446900210651 67.74966713717984)" id="_393871925504">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" translate(-5463.133133456665, -6205.957911290528)" d="M 5397 6495 c -23 0 -43 -5 -60 -15 c -59 -35 -69 -115 -82 -216 c -10 -79 5 -162 41 -229 c 36 -67 88 -110 142 -117 l 0 0 c 55 -7 109 20 153 78 c 42 53 70 126 80 206 c 22 175 -70 228 -158 264 c -46 19 -84 29 -116 29 z m 57 -523 l 0 0 c -3 0 -6 0 -9 1 l 0 0 c -35 4 -73 38 -100 89 c -31 57 -43 128 -35 194 c 11 84 20 155 55 176 c 24 13 66 8 127 -17 c 81 -33 141 -70 124 -206 c -9 -70 -33 -134 -68 -179 c -29 -38 -62 -58 -94 -58 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.096 0 0 0.096 155.87921490204235 36.44200430266235)" id="_393871925504">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(37,70,21); fill-rule: nonzero; opacity: 1;" transform=" translate(-5874.015903247663, -5879.83642343097)" d="M 5769 5640 c 42 -26 205 20 261 152 c 29 71 -37 243 -116 310 c -60 51 -114 26 -169 -105 c -56 -132 -39 -318 24 -357 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.096 0 0 0.096 155.86204380707835 36.48044696874706)" id="_393871925504">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" translate(-5873.837037675121, -5880.236867869353)" d="M 5859 6155 c -7 0 -13 -1 -20 -3 c -45 -10 -83 -56 -120 -145 c -60 -142 -42 -342 35 -390 l 0 0 c 35 -22 92 -7 115 0 c 85 27 154 88 186 164 c 37 87 -41 272 -123 342 c -24 21 -49 32 -73 32 z m -76 -491 l 0 0 c -44 27 -67 194 -13 322 c 38 90 68 109 82 112 c 5 1 19 5 44 -17 c 77 -65 131 -224 108 -278 c -38 -91 -126 -125 -152 -133 c -39 -12 -63 -9 -69 -6 l 0 0 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.096 0 0 0.096 182.70037912443007 -8.30018766718237)" id="_393871925504">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(37,70,21); fill-rule: nonzero; opacity: 1;" transform=" translate(-6153.403030564201, -5413.771923745087)" d="M 6081 5193 c 56 -35 187 35 220 156 c 18 65 -87 207 -153 268 c -47 44 -100 43 -133 -78 c -33 -121 12 -311 66 -346 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.096 0 0 0.096 182.72908668268283 -8.256542346710805)" id="_393871925504">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" translate(-6153.702067629334, -5414.2265625)" d="M 6095 5672 c -8 0 -14 -1 -20 -3 c -39 -11 -67 -51 -87 -123 c -33 -124 9 -331 78 -376 c 27 -17 65 -18 107 -3 c 55 22 129 80 155 175 c 24 88 -109 248 -161 296 c -28 26 -53 34 -72 34 z m 22 -460 l 0 0 c -8 0 -15 1 -21 5 c -37 24 -86 196 -54 315 c 19 70 42 82 48 84 c 13 3 30 -10 39 -19 c 74 -69 157 -196 145 -241 c -19 -70 -75 -119 -121 -137 c -13 -5 -26 -7 -36 -7 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.096 0 0 0.096 -70.55029875728565 1.954805015727743)" id="_393871925504">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(114,166,55); fill-rule: nonzero; opacity: 1;" transform=" translate(-3515.3751359629964, -5520.594764192068)" d="M 5513 7330 c -218 -91 -307 -539 -209 -815 c 39 -120 49 -263 20 -429 c -180 -1057 -381 -1804 -381 -1804 c 650 -77 343 -692 4 -598 c 36 -115 18 -226 6 -313 c -59 -414 -629 -440 -761 -29 c -51 -93 -264 -130 -422 -63 c -142 61 -291 297 -101 587 c -69 -17 -190 -163 -419 0 c 0 0 -292 -194 -438 0 c 0 0 -209 -215 -438 0 c 0 0 -657 -352 -921 -30 c -68 82 -129 261 -87 435 c 22 91 142 237 466 226 c 323 -10 1513 -59 2010 -217 c 779 825 -466 2257 -90 2604 c 212 197 743 254 1133 76 c 29 135 117 331 155 502 c 0 0 -522 -86 -478 445 c 264 135 625 141 1021 -180 c 111 -91 167 -298 -70 -397 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.096 0 0 0.096 -70.55070366704425 1.9656958245487886)" id="_393871925504">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" translate(-3515.370918153011, -5520.708210117287)" d="M 4918 8022 c -117 0 -242 -25 -369 -90 c -9 -4 -14 -13 -15 -22 c -14 -167 25 -293 114 -376 c 115 -105 280 -108 356 -103 c -19 -77 -47 -157 -75 -234 c -24 -71 -48 -139 -63 -198 c -377 156 -908 114 -1133 -94 c -166 -154 -52 -472 92 -875 c 198 -553 444 -1240 9 -1718 c -507 154 -1658 202 -2001 213 c -150 5 -271 -22 -362 -79 c -98 -62 -125 -138 -132 -168 c -42 -176 14 -364 92 -459 c 254 -311 829 -42 939 13 c 195 -169 377 -56 439 -6 c 125 -131 332 -60 440 6 c 163 -108 276 -70 351 -31 c -64 -136 -54 -248 -31 -322 c 30 -102 104 -188 191 -225 c 143 -61 334 -42 423 34 c 86 -203 277 -281 437 -267 c 192 16 333 152 360 346 l 2 12 c 11 77 24 170 3 269 c 99 -11 199 28 274 110 c 86 94 115 217 77 321 c -44 118 -171 197 -358 226 c 39 151 215 849 374 1776 c 28 163 20 312 -22 443 c -46 130 -51 302 -13 462 c 39 164 114 280 207 319 c 133 55 171 139 180 200 c 12 86 -28 182 -104 243 c -144 118 -392 274 -682 274 z m -330 -132 l 0 0 c 183 87 541 170 977 -185 c 50 -40 95 -115 84 -192 c -10 -67 -60 -121 -147 -157 c -236 -99 -327 -563 -224 -850 c 39 -122 45 -262 19 -415 c -179 -1044 -379 -1795 -381 -1802 c -2 -8 0 -16 4 -23 c 5 -7 12 -11 20 -12 c 183 -22 305 -91 343 -195 c 31 -83 6 -186 -65 -263 c -73 -79 -171 -111 -264 -86 c -10 3 -20 0 -27 -7 c -8 -7 -10 -18 -7 -28 c 33 -103 18 -206 7 -288 l -2 -12 c -23 -167 -145 -285 -310 -299 c -149 -13 -330 67 -396 274 c -4 11 -13 18 -24 20 c -11 1 -22 -5 -27 -15 c -42 -76 -237 -114 -387 -50 c -56 24 -128 87 -159 190 c -24 77 -31 201 70 355 c 6 10 6 22 -1 32 c -6 9 -18 13 -29 10 c -18 -4 -37 -14 -59 -26 c -72 -40 -171 -95 -337 22 c -9 7 -22 7 -31 1 c -1 -1 -72 -47 -158 -70 c -108 -28 -190 -7 -243 63 c -5 7 -12 11 -20 11 c -8 1 -16 -2 -22 -8 c -8 -8 -193 -192 -399 1 c -9 8 -22 10 -32 4 c -2 -1 -164 -87 -356 -133 c -250 -61 -429 -28 -531 97 c -67 82 -119 254 -81 411 c 19 80 133 214 438 204 c 345 -11 1512 -59 2003 -215 c 10 -4 21 -1 28 7 c 475 503 220 1216 16 1788 c -132 368 -246 686 -107 815 c 195 181 709 250 1103 71 c 7 -4 16 -4 24 0 c 7 4 12 11 14 19 c 14 63 41 142 70 224 c 32 92 65 188 86 278 c 2 9 -1 19 -7 26 c -7 6 -16 9 -25 8 c -2 0 -220 -35 -350 85 c -74 68 -107 174 -98 315 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.096 0 0 0.096 -40.3970627952343 153.54853119393277)" id="_393871925504">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(114,166,55); fill-rule: nonzero; opacity: 1;" transform=" translate(-3829.471343901031, -7099.696078548371)" d="M 3340 7679 c 232 118 550 123 897 -159 c 98 -79 147 -261 -61 -348 c -192 -81 -270 -474 -184 -717 c 0 0 -361 -102 -376 320 c -4 112 103 329 144 513 c 0 0 -459 -76 -420 391 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.096 0 0 0.096 -40.41305759339968 153.55965727195712)" id="_393871925504">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" translate(-3829.304731420142, -7099.811975194458)" d="M 3653 7783 c -104 0 -213 -22 -326 -79 c -9 -5 -14 -13 -15 -23 c -12 -147 22 -259 102 -332 c 99 -92 241 -97 310 -93 c -17 -65 -41 -134 -64 -201 c -40 -113 -74 -212 -72 -281 c 5 -142 49 -244 130 -303 c 119 -87 275 -44 281 -42 c 8 2 14 7 18 14 c 3 6 4 14 1 22 c -96 269 16 617 169 681 c 118 50 152 125 160 179 c 11 77 -25 162 -92 217 c -128 103 -346 241 -602 241 z m -287 -122 l 0 0 c 357 171 687 -27 854 -162 c 42 -35 81 -100 72 -166 c -8 -58 -52 -104 -127 -136 c -201 -84 -283 -466 -209 -721 c -45 -6 -135 -11 -206 40 c -66 48 -102 136 -106 260 c -2 59 32 157 68 261 c 28 81 58 165 76 245 c 2 9 -1 18 -7 25 c -7 7 -16 10 -25 8 c -2 0 -192 -30 -305 75 c -64 58 -92 150 -85 271 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.096 0 0 0.096 -81.72192626813793 199.62837521785195)" id="_393871925504">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,210,78); fill-rule: nonzero; opacity: 1;" transform=" translate(-3399.0040160582857, -7579.694453797529)" d="M 3223 7719 c 0 0 99 59 215 76 c 73 10 111 -122 159 -327 c 0 0 -80 -134 -187 -98 c -107 37 -268 161 -187 349 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.096 0 0 0.096 -81.62215648526683 199.6160668769745)" id="_393871925504">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" translate(-3400.043284629859, -7579.56624191339)" d="M 3447 7823 c -4 0 -9 0 -13 -1 c -120 -17 -221 -76 -225 -79 l -8 -4 l -3 -9 c -32 -73 -33 -143 -4 -209 c 42 -93 138 -154 207 -177 c 127 -43 216 104 220 110 l 6 10 l -3 10 c -49 210 -88 349 -177 349 z m -202 -123 l 0 0 c 25 13 106 54 197 67 c 53 8 96 -169 125 -293 c -18 -27 -78 -101 -148 -77 c -59 20 -139 70 -174 147 c -21 48 -21 101 0 156 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.096 0 0 0.096 -58.62622513388497 202.9410611781591)" id="_393871925504">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,210,78); fill-rule: nonzero; opacity: 1;" transform=" translate(-3639.5842362067533, -7614.201599217395)" d="M 3399 7787 c 0 0 172 57 501 -68 c 0 0 -71 -267 -283 -290 c -113 -12 -299 169 -218 358 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.096 0 0 0.096 -58.369496557462085 202.97534329797998)" id="_393871925504">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" translate(-3642.2584922111587, -7614.558704632196)" d="M 3516 7828 c -80 0 -122 -14 -126 -15 l -11 -4 l -5 -11 c -40 -92 -26 -194 37 -280 c 57 -77 141 -124 209 -116 c 95 10 179 67 241 166 c 46 72 65 141 66 144 l 6 24 l -23 9 c -175 67 -307 83 -394 83 z m -96 -65 l 0 0 c 42 9 194 30 445 -60 c -22 -63 -96 -229 -251 -246 c -47 -5 -114 34 -158 94 c -48 66 -61 142 -36 212 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.096 0 0 0.096 -30.698311809733283 -182.03829234671088)" id="_393871925504">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" transform=" translate(-3930.5, -3604)" d="M 4192 3604 c 0 144 -117 262 -262 262 c -144 0 -261 -118 -261 -262 c 0 -145 117 -262 261 -262 c 145 0 262 117 262 262 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.096 0 0 0.096 -30.698311809733273 -182.0862923467108)" id="_393871925504">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" translate(-3930.5, -3603.5)" d="M 3930 3893 c -159 0 -289 -130 -289 -289 c 0 -160 130 -290 289 -290 c 160 0 290 130 290 290 c 0 159 -130 289 -290 289 z m 0 -523 l 0 0 c -129 0 -234 105 -234 234 c 0 129 105 234 234 234 c 129 0 234 -105 234 -234 c 0 -129 -105 -234 -234 -234 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.096 0 0 0.096 -30.698311809733323 -182.08629234671085)" id="_393871925504">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,252,73); fill-rule: nonzero; opacity: 1;" transform=" translate(-3930.5, -3603.5)" d="M 4109 3604 c 0 98 -80 178 -179 178 c -98 0 -178 -80 -178 -178 c 0 -99 80 -179 178 -179 c 99 0 179 80 179 179 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.096 0 0 0.096 -30.69831180973332 -182.08629234671085)" id="_393871925504">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" translate(-3930.5, -3603.5)" d="M 4045 3604 c 0 63 -51 114 -115 114 c -63 0 -114 -51 -114 -114 c 0 -64 51 -115 114 -115 c 64 0 115 51 115 115 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.096 0 0 0.096 -24.17031180973334 -190.72629234671086)" id="_393871925504">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" transform=" translate(-3998.5, -3513.5)" d="M 4094 3514 c 0 52 -43 95 -96 95 c -52 0 -95 -43 -95 -95 c 0 -53 43 -96 95 -96 c 53 0 96 43 96 96 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.096 0 0 0.096 27.141688190266684 -182.08629234671082)" id="_393871925504">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" transform=" translate(-4533, -3603.5)" d="M 4874 3604 c 0 188 -153 340 -341 340 c -188 0 -341 -152 -341 -340 c 0 -188 153 -341 341 -341 c 188 0 341 153 341 341 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.096 0 0 0.096 27.093688190266697 -182.0862923467108)" id="_393871925504">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" translate(-4532.5, -3603.5)" d="M 4533 3972 c -203 0 -369 -165 -369 -368 c 0 -203 166 -369 369 -369 c 203 0 368 166 368 369 c 0 203 -165 368 -368 368 z m 0 -681 l 0 0 c -173 0 -313 140 -313 313 c 0 172 140 313 313 313 c 172 0 313 -141 313 -313 c 0 -173 -141 -313 -313 -313 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.096 0 0 0.096 27.093688190266683 -182.08629234671082)" id="_393871925504">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,252,73); fill-rule: nonzero; opacity: 1;" transform=" translate(-4532.5, -3603.5)" d="M 4765 3604 c 0 128 -104 232 -232 232 c -129 0 -233 -104 -233 -232 c 0 -129 104 -233 233 -233 c 128 0 232 104 232 233 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.096 0 0 0.096 27.141688190266702 -182.03829234671085)" id="_393871925504">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" translate(-4533, -3604)" d="M 4682 3604 c 0 82 -67 149 -149 149 c -82 0 -149 -67 -149 -149 c 0 -83 67 -149 149 -149 c 82 0 149 66 149 149 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.096 0 0 0.096 35.63768819026666 -193.31829234671085)" id="_393871925504">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" transform=" translate(-4621.5, -3486.5)" d="M 4746 3486 c 0 69 -56 125 -125 125 c -68 0 -124 -56 -124 -125 c 0 -68 56 -124 124 -124 c 69 0 125 56 125 124 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.096 0 0 0.096 31.65368819026668 -249.21599999999998)" id="_393871925504">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" translate(-4580, -2904.232211944905)" d="M 4300 3013 c 0 0 361 -306 560 14 c 0 0 -198 -543 -560 -14 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.096 0 0 0.096 -36.170311809733334 -231.20131811073233)" id="_393871925504">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" translate(-3873.5, -3091.8851482914433)" d="M 3623 3218 c 0 0 277 -325 501 -69 c 0 0 -255 -455 -501 69 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.096 0 0 0.096 -211.94422427320964 -136.83858170446678)" id="_393871925504">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(37,70,21); fill-rule: nonzero; opacity: 1;" transform=" translate(-2042.5217451721217, -4074.8303191900422)" d="M 2156 4121 c -39 96 -121 153 -184 128 c -63 -26 -82 -124 -43 -220 c 39 -96 122 -154 185 -128 c 62 25 81 124 42 220 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.096 0 0 0.096 -211.91031562289564 -136.83758628262063)" id="_393871925504">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" translate(-2042.8749602795592, -4074.8406881676065)" d="M 2004 4283 c -15 0 -29 -3 -42 -9 c -78 -31 -104 -144 -58 -256 c 45 -112 142 -175 220 -143 c 39 16 67 53 76 104 c 10 47 3 101 -18 152 l 0 0 c -21 52 -54 95 -93 122 c -28 20 -57 30 -85 30 z m 78 -360 l 0 0 c -45 0 -99 47 -127 116 c -33 80 -20 165 28 184 c 28 12 59 -5 74 -15 c 31 -22 57 -56 74 -98 l 0 0 c 17 -41 22 -84 15 -120 c -4 -19 -14 -52 -43 -63 c -7 -3 -14 -4 -21 -4 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.096 0 0 0.096 -69.52012495361652 3.7492400480789456)" id="_393871925504">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,210,78); fill-rule: nonzero; opacity: 1;" transform=" translate(-3526.10611308455, -5539.28679577906)" d="M 2176 4483 c 0 0 -14 288 264 236 c 278 -52 1186 -213 1325 -240 c 535 529 -682 1718 -202 2253 c 433 483 1366 272 1311 -243 c -56 -514 -208 -2117 -128 -2414 c 0 0 -1512 360 -2570 408 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.096 0 0 0.096 -69.52016481778332 3.2417076532891542)" id="_393871925504">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" translate(-3526.1056978328124, -5534)" d="M 4211 7031 c -238 0 -491 -83 -669 -281 c -247 -275 -67 -711 107 -1133 c 173 -418 351 -850 106 -1108 c -93 18 -370 67 -662 120 c -256 46 -520 94 -648 117 c -90 17 -162 2 -214 -43 c -89 -78 -83 -216 -82 -222 l 1 -25 l 25 -1 c 1043 -48 2549 -404 2564 -407 l 46 -11 l -12 45 c -77 285 66 1832 128 2404 c 22 199 -93 370 -314 469 c -109 48 -240 76 -376 76 z m -437 -2582 l 0 0 l 10 10 c 286 283 98 738 -83 1179 c -176 425 -341 826 -117 1075 c 261 292 700 316 980 191 c 198 -88 301 -238 282 -412 c -2 -20 -207 -1927 -136 -2380 c -250 57 -1557 350 -2505 397 c 2 38 14 110 63 152 c 39 34 95 44 167 31 c 128 -24 392 -72 648 -118 c 296 -53 602 -108 676 -122 l 15 -3 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.096 0 0 0.096 -173.97831180973333 -82.93107902725194)" id="_393871925504">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" transform=" translate(-2438, -4636.36680541103)" d="M 2291 4477 c 0 0 81 300 177 338 c 0 0 117 -215 117 -357 c 0 0 -175 -4 -294 19 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.096 0 0 0.096 -174.3143118097333 -82.59507902725193)" id="_393871925504">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" translate(-2434.5, -4639.86680541103)" d="M 2480 4850 l -22 -9 c -106 -42 -186 -325 -194 -357 l -8 -29 l 29 -6 c 121 -23 294 -19 301 -19 l 27 1 l 0 27 c 0 147 -116 361 -121 371 l -12 21 z m -154 -351 l 0 0 c 29 98 82 230 131 276 c 28 -55 89 -187 99 -289 c -48 0 -148 1 -230 13 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.096 0 0 0.096 -90.65031180973331 -120.40629234671088)" id="_393871925504">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" transform=" translate(-3306, -4246)" d="M 3420 4338 c 0 0 -85 -200 -163 -220 c 0 0 -58 132 -65 256 c 0 0 117 -19 228 -36 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.096 0 0 0.096 -90.1703118097333 -120.40629234671088)" id="_393871925504">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" translate(-3311, -4246)" d="M 3162 4407 l 2 -34 c 7 -128 65 -260 68 -266 l 9 -22 l 23 6 c 15 4 95 34 182 236 l 14 33 l -36 6 c -109 16 -226 36 -228 36 l -34 5 z m 109 -250 l 0 0 c -14 38 -39 110 -48 184 c 36 -6 95 -16 156 -25 c -29 -61 -72 -131 -108 -159 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.096 0 0 0.096 -5.485922387318915 -94.06260815952406)" id="_393871925504">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" translate(-4193.1290564834835, -4520.413376949862)" d="M 4088 4660 c -142 0 -241 -71 -342 -160 c -11 -11 -12 -28 -2 -40 c 10 -11 28 -12 39 -2 c 153 136 310 276 823 -72 c 13 -9 30 -6 38 7 c 9 13 6 30 -7 39 c -245 166 -416 228 -549 228 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.096 0 0 0.096 6.621777652889904 -57.93968468486832)" id="_393871925504">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" translate(-4319.250931902325, -4896.69382981086)" d="M 4200 5006 c -220 0 -313 -108 -319 -116 c -9 -11 -7 -29 4 -39 c 12 -9 30 -8 39 4 c 3 3 219 247 798 -64 c 14 -8 31 -2 38 11 c 7 14 2 30 -11 38 c -236 126 -416 166 -549 166 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.096 0 0 0.096 3.8725456962769655 -16.179684684868263)" id="_393871925504">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" translate(-4290.61309902094, -5331.69382981086)" d="M 4219 5439 c -278 0 -415 -146 -424 -155 c -10 -11 -9 -29 2 -39 c 12 -10 29 -10 39 2 c 12 13 298 313 916 -19 c 14 -8 30 -2 38 11 c 7 14 2 30 -12 38 c -227 122 -413 162 -559 162 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.096 0 0 0.096 -2.2968458619745746 26.849558241757947)" id="_393871925504">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" translate(-4226.348603622487, -5779.91511029655)" d="M 4142 5901 c -70 0 -140 -7 -210 -25 c -191 -49 -285 -151 -289 -155 c -10 -11 -9 -29 2 -39 c 12 -11 29 -10 40 2 c 1 1 88 95 265 139 c 297 74 613 -46 826 -161 c 13 -7 30 -2 37 11 c 8 14 2 31 -11 38 c -174 93 -413 190 -660 190 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.096 0 0 0.096 -9.317262849889858 80.21549328652111)" id="_393871925504">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" translate(-4153.219259998369, -6335.810267012833)" d="M 4078 6472 c -90 0 -181 -11 -272 -35 c -234 -62 -354 -185 -359 -190 c -10 -11 -10 -29 1 -40 c 12 -10 29 -10 40 1 c 2 3 116 119 336 177 c 204 53 543 65 1002 -182 c 13 -7 30 -2 37 11 c 8 14 3 31 -11 38 c -201 108 -480 220 -774 220 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.096 0 0 0.096 36.35948285899725 220.2348449540612)" id="_393871925504">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,210,78); fill-rule: nonzero; opacity: 1;" transform=" translate(-4629.018694465944, -7794.345180216376)" d="M 4429 7953 c 0 0 113 67 244 86 c 84 12 127 -138 181 -371 c 0 0 -90 -153 -212 -112 c -122 41 -305 183 -213 397 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.096 0 0 0.096 36.458057469991324 220.27388466008225)" id="_393871925504">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" translate(-4630.045513330465, -7794.751843820761)" d="M 4683 8068 c -4 0 -9 -1 -14 -1 c -135 -20 -249 -87 -254 -90 l -8 -4 l -3 -9 c -36 -82 -37 -161 -4 -235 c 47 -105 155 -173 233 -199 c 141 -47 241 116 245 123 l 6 10 l -3 11 c -55 236 -99 394 -198 394 z m -232 -134 l 0 0 c 27 15 121 62 226 78 c 60 8 104 -154 148 -339 c -21 -29 -91 -118 -174 -90 c -68 22 -161 80 -200 169 c -26 56 -25 118 0 182 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.096 0 0 0.096 62.63915161966008 224.00199560994588)" id="_393871925504">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,210,78); fill-rule: nonzero; opacity: 1;" transform=" translate(-4902.7652440561815, -7833.586332881841)" d="M 4629 8030 c 0 0 196 65 570 -77 c 0 0 -80 -304 -322 -330 c -128 -14 -340 192 -248 407 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.096 0 0 0.096 62.89174530448213 224.04356133275382)" id="_393871925504">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" translate(-4905.396428273078, -7834.01930916109)" d="M 4762 8073 c -90 0 -138 -15 -142 -17 l -11 -4 l -5 -11 c -45 -103 -29 -217 42 -314 c 63 -85 159 -140 234 -131 c 107 11 202 76 272 187 c 52 82 73 160 74 163 l 6 24 l -23 9 c -198 76 -348 94 -447 94 z m -112 -66 l 0 0 c 45 10 221 36 515 -70 c -25 -70 -110 -267 -291 -286 c -55 -6 -132 40 -183 109 c -56 76 -71 166 -41 247 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.096 0 0 0.096 -114.67256261535469 -3.2335969385721377)" id="_393871925504">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,210,78); fill-rule: nonzero; opacity: 1;" transform=" translate(-3055.7682207747775, -5466.548910501444)" d="M 3168 5539 c 0 0 108 -19 87 -129 l -401 -27 c 0 0 -18 218 314 156 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.096 0 0 0.096 -114.64034197835393 -3.334292346710823)" id="_393871925504">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" translate(-3056.103852410202, -5465.5)" d="M 3060 5578 c -76 0 -135 -19 -176 -56 c -64 -58 -58 -138 -57 -141 l 2 -28 l 450 31 l 4 21 c 7 41 1 76 -19 104 c -31 45 -86 56 -91 57 c -41 8 -79 12 -113 12 z m -176 -165 l 0 0 c 4 20 14 47 38 68 c 46 41 129 52 241 31 l 0 0 c 2 -1 37 -8 56 -35 c 7 -11 11 -25 11 -41 l -346 -23 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.096 0 0 0.096 -112.39300656464279 -14.118237050673319)" id="_393871925504">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,210,78); fill-rule: nonzero; opacity: 1;" transform=" translate(-3079.513596303026, -5353.1672426670575)" d="M 3189 5420 c 0 0 108 -19 87 -129 c 0 0 -343 -43 -379 -1 c -37 41 -40 192 292 130 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.096 0 0 0.096 -112.39653900265711 -14.135965056868608)" id="_393871925504">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" translate(-3079.4768000737104, -5352.982575935857)" d="M 3050 5462 c -114 0 -163 -37 -184 -73 c -24 -43 -13 -92 10 -118 c 40 -45 270 -24 403 -7 l 20 2 l 4 20 c 8 41 2 76 -18 104 c -31 46 -86 57 -91 57 c -57 11 -104 15 -144 15 z m -133 -153 l 0 0 c -8 10 -14 32 -3 52 c 39 69 216 42 270 32 l 0 0 c 1 0 37 -8 55 -35 c 8 -11 12 -25 12 -42 c -145 -17 -307 -23 -334 -7 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.096 0 0 0.096 19.59875425953306 -23.813889352926665)" id="_393871925504">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(114,166,55); fill-rule: nonzero; opacity: 1;" transform=" translate(-4454.427771554858, -5252.170864518585)" d="M 4968 5024 c 0 0 -640 173 -688 146 c -49 -27 -102 -231 -174 -204 c -46 16 -105 190 0 228 c -292 -14 -276 298 -134 333 c 81 20 195 25 290 -32 c 0 0 404 60 535 26 c 132 -35 350 -367 171 -497 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.096 0 0 0.096 19.60478685382457 -23.850755128207382)" id="_393871925504">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" translate(-4454.490611078728, -5251.786846026078)" d="M 4084 5568 c -51 0 -94 -8 -119 -14 c -80 -20 -132 -112 -117 -209 c 11 -78 67 -158 188 -175 c -11 -20 -17 -44 -17 -71 c 0 -62 33 -143 77 -159 c 68 -25 113 61 149 130 c 15 28 35 66 47 75 c 47 8 375 -68 669 -148 c 8 -2 16 0 23 5 c 66 47 92 122 74 216 c -26 140 -152 303 -254 330 c -125 32 -473 -15 -536 -24 c -62 34 -128 44 -184 44 z m 4 -346 l 0 0 c -105 0 -173 48 -185 131 c -10 68 24 134 76 147 c 46 12 166 32 269 -29 c 6 -3 12 -4 18 -3 c 4 0 400 58 524 26 c 74 -20 190 -158 214 -286 c 12 -67 -2 -119 -42 -154 c -42 12 -177 47 -314 80 c -342 83 -367 69 -382 60 c -26 -14 -45 -51 -70 -98 c -21 -39 -59 -112 -81 -104 c -13 6 -42 59 -40 112 c 2 50 31 61 40 64 c 13 5 21 18 18 32 c -3 13 -15 23 -29 22 c -5 0 -11 0 -16 0 z" stroke-linecap="round"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</svg>

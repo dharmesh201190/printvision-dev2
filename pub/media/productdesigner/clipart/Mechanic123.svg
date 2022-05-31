@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X7 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="1.84539in" height="2.34839in" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 378 481"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil1 {fill:black;fill-rule:nonzero}
+    .fil0 {fill:#1A1A1A;fill-rule:nonzero}
+   ]]>
+  </style>
+ </defs>
+ <g id="Objects">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <path class="fil0" d="M3 97c55,14 117,23 185,23 68,0 132,-9 187,-23l0 -34c-55,14 -119,23 -187,23 -68,0 -130,-9 -185,-23l0 34z"/>
+  <path class="fil0" d="M375 106c-55,15 -118,23 -186,23 -68,0 -131,-8 -186,-23 -2,16 -3,32 -3,49 0,140 76,262 189,326 113,-64 189,-186 189,-326 0,-17 -1,-33 -3,-49zm-186 332l0 0c-90,-50 -150,-143 -150,-251 0,-13 1,-20 2,-32 44,11 94,12 148,12 54,0 104,-1 148,-12 2,12 2,19 2,32 0,108 -60,201 -150,251z"/>
+  <path class="fil1" d="M189 186c51,0 92,41 92,91 0,23 -13,53 -35,79 -19,23 -42,39 -57,39 -14,0 -37,-16 -57,-39 -22,-26 -35,-56 -35,-79 0,-50 42,-91 92,-91zm0 -7l0 0c-54,0 -98,44 -98,98 0,55 63,125 98,125 35,0 99,-70 99,-125 0,-54 -44,-98 -99,-98z"/>
+  <path class="fil0" d="M187 351c-32,0 -60,-8 -81,-21 22,39 59,72 83,72 25,0 65,-36 85,-76 -20,15 -52,25 -87,25zm4 35l0 0c0,0 -27,-8 -39,-19 16,9 39,10 39,10l0 9zm0 -13l0 0 0 -14c0,0 35,-2 61,-15 -19,18 -61,29 -61,29z"/>
+  <path class="fil0" d="M119 333c0,0 137,32 160,-60 0,0 -4,34 -20,56 0,0 -70,36 -140,4z"/>
+  <path class="fil0" d="M189 179c-52,0 -94,40 -98,91 27,8 60,12 96,12 38,0 72,-5 100,-13 -4,-50 -46,-90 -98,-90zm-3 94l0 0 4 -85 0 -1 0 0 0 0 0 1 4 85c-4,2 -8,0 -8,0z"/>
+  <path class="fil0" d="M273 0c0,0 -13,13 -23,13 7,10 -12,19 -20,22 -17,5 -35,-5 -42,-17l0 0c0,0 0,0 0,0 0,0 0,0 0,0l0 0c-6,12 -24,22 -41,17 -9,-3 -27,-12 -20,-22 -10,0 -23,-13 -23,-13l41 51 43 0 43 0 42 -51z"/>
+  <polygon class="fil0" points="194,13 188,18 183,13 188,0 "/>
+ </g>
+</svg>

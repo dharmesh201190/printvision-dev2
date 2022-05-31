@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="656" height="2036" viewBox="0 0 656 2036" xml:space="preserve">
+<desc>Created with Fabric.js 3.6.2</desc>
+<defs>
+	<style type="text/css"><![CDATA[
+		@font-face {
+			font-family: 'ABeeZee Regular';
+			src: url('ABeeZee Regular.ttf');
+		}
+]]></style>
+</defs>
+<g id="id_1584534509065" clip-path="url(#CLIPPATH_2)">
+<g transform="matrix(6.483202324657164 0 0 6.489230912184665 336.018355176222 947.3146310777881)">
+<clipPath id="CLIPPATH_2">
+	<rect transform="matrix(1 0 0 1 328.2174849267873 1016.6148148148148)" x="-327.7174849267873" y="-1016.1148148148148" rx="0" ry="0" width="655.4349698535746" height="2032.2296296296297"/>
+</clipPath>
+<g style="">
+		<g transform="matrix(0.7840765360824741 0 0 0.784076536082474 39.59586507216493 -29.69292761770357)" id="Layer_x0020_1">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(116,203,242); fill-rule: evenodd; opacity: 1;" transform=" translate(-104.10204081632654, -10.630064794363033)" d="M 101 12 c 0 3 1 4 3 4 c 2 1 3 -1 3 -4 c 1 -3 -2 -7 -2 -7 c 0 0 -3 4 -4 7 l 0 0 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.7840765360824741 0 0 0.784076536082474 -1.6481608819692894 0)" id="Layer_x0020_1">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(119,120,118); fill-rule: evenodd; opacity: 1;" transform=" translate(-51.5, -48.5)" d="M 102 0 l -24 22 c -1 -1 -3 -1 -4 0 l -6 6 c -2 -1 -5 0 -7 1 l -46 43 l -3 -3 c -1 -1 -2 -1 -3 0 c -1 0 -1 1 0 2 l 3 4 l -7 6 l -3 -3 l -2 2 l 15 17 l 2 -2 l -3 -3 l 8 -7 l 3 3 c 1 1 2 1 3 1 c 0 -1 0 -2 0 -3 l -4 -4 l 47 -43 c 1 -1 2 -4 1 -6 l 6 -6 c 1 -1 2 -2 1 -4 l 24 -22 c 0 0 0 -1 0 -1 c 0 0 -1 0 -1 0 l 0 0 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.7840765360824741 0 0 0.784076536082474 1.1567555254506132 -3.0017798786151815)" id="Layer_x0020_1">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(254,254,254); fill-rule: evenodd; opacity: 1;" transform=" translate(-55.077350269189616, -44.67157287525381)" d="M 69 37 l -24 22 l -1 -1 l -1 -2 l -3 -3 l 23 -22 c 2 -1 4 -1 6 1 c 2 1 1 4 0 5 l 0 0 z" stroke-linecap="round"/>
+</g>
+</g>
+</g>
+</g>
+<g id="id_1584534518655" clip-path="url(#CLIPPATH_3)">
+<g transform="matrix(6.337047102183315 0 0 6.342939783177723 305.00444421485184 1485.357885168877)">
+<clipPath id="CLIPPATH_3">
+	<rect transform="matrix(1 0 0 1 328.2174849267873 1016.6148148148148)" x="-327.7174849267873" y="-1016.1148148148148" rx="0" ry="0" width="655.4349698535746" height="2032.2296296296297"/>
+</clipPath>
+<g style="">
+		<g transform="matrix(0.7965387692307693 0 0 0.7965387692307693 -7.11e-15 -7.11e-15)" id="Layer_x0020_1">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(119,120,118); fill-rule: nonzero; opacity: 1;" transform=" translate(-52, -44.5)" d="M 101 51 l -13 0 l -9 -16 c -1 -1 -2 -1 -2 -1 l -19 0 l -8 -15 l 9 -15 c 1 -2 0 -3 -1 -4 c -1 0 -2 0 -3 1 l -9 16 l -17 0 l -9 -16 c -1 -1 -2 -1 -3 -1 c -1 1 -2 2 -1 4 l 9 15 l -9 16 c 0 1 0 2 0 2 l 9 16 l -8 14 l -15 0 c -1 0 -2 2 -2 3 c 0 1 1 2 2 2 l 15 0 l 9 16 c 0 1 1 1 2 1 l 19 0 c 1 0 2 0 2 -1 l 9 -16 l 19 0 c 0 0 1 0 2 -1 l 9 -16 l 13 0 c 2 0 3 -1 3 -2 c 0 -1 -1 -2 -3 -2 l 0 0 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.7965387692307693 0 0 0.7965387692307693 -11.549812153846164 -6.372310153846163)" id="Layer_x0020_1">
+<polygon style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(116,203,242); fill-rule: nonzero; opacity: 1;" points="-8.5,-14.5 8.5,-14.5 16.5,-0.5 8.5,14.5 -8.5,14.5 -16.5,-0.5 "/>
+</g>
+		<g transform="matrix(0.7965387692307693 0 0 0.7965387692307693 -11.549812153846164 19.913469230769223)" id="Layer_x0020_1">
+<polygon style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(116,203,242); fill-rule: nonzero; opacity: 1;" points="8.5,14.5 -8.5,14.5 -16.5,0.5 -8.5,-14.5 8.5,-14.5 16.5,0.5 "/>
+</g>
+</g>
+</g>
+</g>
+<g style="" id="id_1584534527902" clip-path="url(#CLIPPATH_4)">
+<g transform="matrix(4.519756579995187 0.06618689632906538 -0.06624844207107869 4.523959402424756 367.68357431593245 388.2647304039079)">
+<clipPath id="CLIPPATH_4">
+	<rect transform="matrix(1 0 0 1 328.2174849267873 1016.6148148148148)" x="-327.7174849267873" y="-1016.1148148148148" rx="0" ry="0" width="655.4349698535746" height="2032.2296296296297"/>
+</clipPath>
+		<text xml:space="preserve" font-family="ABeeZee Regular" font-size="17" font-style="normal" font-weight="bold" style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: cmyk(0,78,73,6); fill-rule: nonzero; opacity: 1; white-space: pre;"><tspan x="-57.59599792480469" y="5.34038">CORONAVIRUS</tspan></text>
+</g>
+</g>
+</svg>

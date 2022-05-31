@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X7 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="1.90529in" height="1.8677in" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 715 701"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil1 {fill:#21313F;fill-rule:nonzero}
+    .fil0 {fill:white;fill-rule:nonzero}
+   ]]>
+  </style>
+ </defs>
+ <g id="OBJECTS">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <polygon class="fil0" points="381,243 485,139 576,230 471,334 "/>
+  <path class="fil1" d="M485 146l84 84 -98 97 -83 -84 97 -97zm0 -15l0 0 -112 112 98 98 112 -111 -98 -99z"/>
+  <polygon class="fil0" points="167,456 242,382 333,473 258,547 "/>
+  <path class="fil1" d="M242 389l83 84 -67 67 -83 -84 67 -67zm0 -14l0 0 -82 81 98 99 82 -82 -98 -98z"/>
+  <polygon class="fil1" points="258,391 177,473 242,538 324,456 "/>
+  <polygon class="fil1" points="455,325 554,226 489,161 390,260 "/>
+  <path class="fil1" d="M713 102l-12 11 0 0 -77 78 -79 -21 -21 -79 89 -89c-40,-7 -82,4 -112,35 -49,49 -49,128 0,177 49,48 128,48 177,0 30,-31 42,-73 35,-112z"/>
+  <path class="fil1" d="M228 487c-49,-49 -128,-49 -177,0 -49,49 -49,128 0,177 49,49 128,49 177,0 49,-49 49,-128 0,-177zm-45 174l0 0 -31 -5 -28 14 -22 -22 -30 -5 -5 -31 -22 -22 14 -27 -5 -31 28 -14 14 -28 31 5 27 -14 22 22 31 5 5 30 22 22 -14 28 4 31 -27 14 -14 28z"/>
+  <polygon class="fil0" points="139,230 230,139 547,456 456,547 "/>
+  <path class="fil1" d="M230 146l310 310 -84 84 -310 -310 84 -84zm0 -15l0 0 -99 99 325 325 99 -99 -325 -325z"/>
+  <polygon class="fil1" points="538,473 473,538 161,226 226,161 "/>
+  <path class="fil1" d="M214 37c-31,-31 -73,-42 -112,-35l11 11 78 78 -21 79 -79 21 -89 -89c-7,39 4,81 35,112 49,49 128,49 177,0 49,-49 49,-128 0,-177z"/>
+  <path class="fil1" d="M664 487c-49,-49 -128,-49 -177,0 -49,49 -49,128 0,177 49,49 128,49 177,0 49,-49 49,-128 0,-177zm-21 156l0 0 -31 5 -22 22 -27 -14 -31 5 -14 -28 -28 -14 5 -31 -14 -28 22 -21 5 -31 30 -5 22 -22 28 14 31 -5 14 28 28 14 -5 31 14 27 -22 22 -5 31z"/>
+ </g>
+</svg>

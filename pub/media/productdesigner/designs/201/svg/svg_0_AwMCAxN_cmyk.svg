@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="584" height="1800" viewBox="0 0 584 1800" xml:space="preserve">
+<desc>Created with Fabric.js 3.6.2</desc>
+<defs>
+	<style type="text/css"><![CDATA[
+		@font-face {
+			font-family: 'ABeeZee Regular';
+			src: url('ABeeZee Regular.ttf');
+		}
+]]></style>
+</defs>
+<g id="id_1582110182806" clip-path="url(#CLIPPATH_18)">
+<g transform="matrix(0.4690801400909538 0 0 0.48236271665564195 264.5292813518063 593.591281898486)">
+<clipPath id="CLIPPATH_18">
+	<rect transform="matrix(1 0 0 1 288.997507695361 893.8333333333334)" x="-288.497507695361" y="-890" rx="0" ry="0" width="576.995015390722" height="1780"/>
+</clipPath>
+<g style="">
+		<g transform="matrix(0.096 0 0 0.096 0 2.842e-14)" id="Layer_x0020_1">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: evenodd; opacity: 1;" transform=" translate(-4249.992242066552, -5500.156234146425)" d="M 397 4113 c 180 341 486 591 755 821 c 750 489 1660 877 2932 867 c -24 90 -52 225 -20 331 c -91 54 -195 131 -271 179 c -62 128 -153 283 -351 298 c 53 58 163 18 218 -14 c -34 82 -154 137 -238 192 c 136 24 225 -52 298 -112 c -9 125 -117 152 -192 212 c 170 6 232 -75 291 -192 c 34 44 -2 127 -13 172 c 73 -42 116 -114 106 -239 c 15 -59 59 -91 60 -165 c 300 -57 419 -295 503 -569 c 296 -16 504 172 807 112 c 33 -4 46 11 80 7 c 177 -63 372 -108 489 -232 c 34 1 55 -11 93 -6 c 62 92 57 252 113 350 c 79 73 161 144 278 179 c 58 36 84 106 139 146 c -15 -12 1 -54 -14 -66 c 37 11 59 38 86 59 c 18 -35 -27 -65 -39 -93 c 47 25 80 26 126 47 c 7 -45 -66 -67 -93 -100 c 52 -15 111 7 165 -13 c -31 -39 -92 -48 -159 -53 c 25 -20 55 -34 80 -53 c -75 -27 -145 11 -212 -33 c -41 -67 -105 -111 -165 -159 c 32 -74 22 -202 -7 -271 c 43 -27 44 -97 99 -113 c 34 -4 25 33 53 34 c 66 -12 105 -50 192 -40 c 62 -51 115 -110 166 -172 c 23 13 71 3 106 6 c 449 -153 560 -644 1131 -675 c 19 -12 42 -20 67 -26 c 8 -14 19 -25 33 -33 c 50 -147 -45 -286 -113 -378 c -30 -5 -46 -24 -79 -26 c -56 -7 -86 46 -119 40 c -116 153 -366 264 -642 284 c -222 16 -437 33 -583 139 c -14 26 -40 40 -46 73 c -57 -9 -124 -8 -172 -26 c -46 24 -80 61 -146 66 c -7 22 -7 50 -20 66 c -165 -40 -215 -196 -404 -212 c 25 -44 46 -91 40 -165 c 24 -71 142 -83 159 -139 c -39 4 -63 -16 -86 6 c 16 -37 91 -72 106 -132 c -49 -2 -100 49 -146 73 c -9 -49 41 -67 27 -133 c -40 23 -52 72 -86 100 c 0 -40 7 -60 -7 -93 c -26 16 -29 54 -40 86 c -27 -8 -17 -53 -46 -60 c 29 231 -165 294 -152 530 c 22 64 69 102 119 139 c -33 8 -60 -23 -53 -33 c -181 -54 -414 -27 -602 -7 c -34 24 -67 48 -133 40 c -43 25 -75 61 -145 59 c -31 59 -122 55 -179 87 c 35 -80 142 -145 132 -292 c -63 -122 -207 -163 -357 -198 c -22 -52 -52 -95 -80 -139 c 5 -122 -37 -197 -119 -232 c 27 40 35 98 33 165 c -66 -93 -154 -198 -311 -178 c 78 54 172 93 205 192 c -63 -22 -200 -149 -304 -66 c 113 23 184 89 251 158 c -56 -23 -172 -59 -218 0 c 197 18 287 142 364 245 c 74 19 118 68 192 86 c -138 78 -214 150 -265 325 c -19 18 -49 25 -73 39 c -361 -2 -681 32 -1039 14 c -443 -22 -843 -145 -1204 -292 c -366 -148 -708 -314 -974 -523 c -4 -5 -8 -11 0 -13 c -1 -7 -6 -3 -6 0 c -105 -76 -185 -176 -291 -251 c -32 2 -56 -2 -80 -7 z" stroke-linecap="round"/>
+</g>
+</g>
+</g>
+</g>
+<g style="" id="id_1582110189477" clip-path="url(#CLIPPATH_19)">
+<g transform="matrix(3.8898540363419456 0 0 4 294.8902309053654 1453.8133333333333)">
+<clipPath id="CLIPPATH_19">
+	<rect transform="matrix(1 0 0 1 288.997507695361 893.8333333333334)" x="-288.497507695361" y="-890" rx="0" ry="0" width="576.995015390722" height="1780"/>
+</clipPath>
+		<text xml:space="preserve" font-family="ABeeZee Regular" font-size="48" font-style="normal" font-weight="normal" style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: cmyk(93,0,100,0); fill-rule: nonzero; opacity: 1; white-space: pre;"><tspan x="-52.41590789794921" y="15.07872">back</tspan></text>
+</g>
+</g>
+</svg>

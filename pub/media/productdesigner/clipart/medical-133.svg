@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X8 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="0.837803in" height="0.576181in" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 779 535"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil3 {fill:#FEFEFE}
+    .fil1 {fill:#74CBF2}
+    .fil2 {fill:#777876}
+    .fil0 {fill:#282828}
+   ]]>
+  </style>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <path class="fil0" d="M627 507c-26,0 -47,-25 -47,-57 0,-31 21,-55 47,-55 24,0 45,24 45,55 0,32 -21,57 -45,57l0 0z"/>
+  <path class="fil1" d="M627 535c-38,0 -69,-38 -69,-85 0,-45 31,-84 69,-84 37,0 68,39 68,84 0,47 -31,85 -68,85l0 0z"/>
+  <path class="fil2" d="M779 49l-569 0c-31,0 -63,51 -95,100 -27,43 -61,64 -88,69 -33,9 -29,131 -22,206l38 14c4,-56 42,-100 89,-100 46,0 84,44 88,100l316 0c3,-56 41,-100 88,-100 46,0 84,44 88,100l65 0 0 -250 2 -139z"/>
+  <path class="fil0" d="M130 502c-25,0 -46,-26 -46,-57 0,-32 21,-56 46,-56 26,0 46,24 46,56 0,31 -20,57 -46,57l0 0z"/>
+  <path class="fil1" d="M130 529c-37,0 -68,-37 -68,-84 0,-46 31,-85 68,-85 38,0 69,39 69,85 0,47 -31,84 -69,84l0 0z"/>
+  <path class="fil3" d="M239 48c0,-4 0,-21 0,-25 0,-12 -7,-23 -18,-23 -10,0 -19,11 -19,23 0,4 0,21 0,25l37 0z"/>
+  <polygon class="fil3" points="291,218 122,218 200,70 291,70 "/>
+  <polygon class="fil3" points="350,226 502,226 502,88 350,88 "/>
+  <polygon class="fil3" points="540,226 707,226 707,88 540,88 "/>
+  <path class="fil3" d="M415 255c33,0 59,32 59,73 0,40 -26,73 -59,73 -32,0 -60,-33 -60,-73 0,-41 28,-73 60,-73l0 0z"/>
+  <polygon class="fil3" points="234,255 284,255 284,239 234,239 "/>
+  <polygon class="fil1" points="404,285 427,285 427,313 450,313 450,343 427,343 427,371 404,371 404,343 380,343 380,313 404,313 "/>
+ </g>
+</svg>

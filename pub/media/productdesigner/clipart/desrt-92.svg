@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X8 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="1.87192in" height="1.87191in" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 5649 5649"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil1 {fill:#6E2616}
+    .fil0 {fill:#89311F}
+    .fil4 {fill:#F24660}
+    .fil3 {fill:#FFF7EF}
+    .fil2 {fill:white}
+   ]]>
+  </style>
+ </defs>
+ <g id="Objects">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <path class="fil0" d="M2825 5649c1555,0 2824,-1269 2824,-2824 0,-1556 -1269,-2825 -2824,-2825 -1556,0 -2825,1269 -2825,2825 0,1555 1269,2824 2825,2824z"/>
+  <path class="fil1" d="M1955 2532l1039 -805 18 -195 102 101 425 -328 2062 2040c-195,1048 -969,1893 -1978,2190l-904 -895 117 -1237 -881 -871z"/>
+  <polygon class="fil2" points="2719,4640 2930,4640 2930,1895 2719,1895 "/>
+  <path class="fil3" d="M2825 1009c557,0 1009,452 1009,1010 0,557 -452,1009 -1009,1009 -558,0 -1010,-452 -1010,-1009 0,-558 452,-1010 1010,-1010z"/>
+  <path class="fil4" d="M3827 2135c-321,131 -699,99 -1002,-116 154,338 467,554 810,602 103,-139 172,-305 192,-486z"/>
+  <path class="fil4" d="M3427 1208c-47,344 -264,656 -602,811 370,35 714,-127 927,-401 -71,-163 -184,-305 -325,-410z"/>
+  <path class="fil4" d="M2424 1092c274,212 436,556 401,927 215,-304 247,-682 116,-1003 -38,-5 -77,-7 -116,-7 -143,0 -278,29 -401,83z"/>
+  <path class="fil4" d="M1822 1902c321,-131 699,-99 1003,117 -155,-339 -467,-556 -811,-603 -103,139 -171,305 -192,486z"/>
+  <path class="fil4" d="M2222 2829c48,-343 264,-656 603,-810 -371,-36 -715,127 -927,400 70,164 183,305 324,410z"/>
+  <path class="fil4" d="M3225 2946c-273,-213 -436,-557 -400,-927 -216,303 -247,681 -117,1002 38,5 77,7 117,7 142,0 277,-29 400,-82z"/>
+ </g>
+</svg>

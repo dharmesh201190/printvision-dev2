@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X7 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="1.42813in" height="2.32632in" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 188 306"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil1 {fill:#BEC2C8}
+    .fil2 {fill:#9EA5AB}
+    .fil0 {fill:#6A7173}
+    .fil3 {fill:#5D6264}
+    .fil4 {fill:#575E5F}
+    .fil5 {fill:#4F5556}
+   ]]>
+  </style>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <path class="fil0" d="M168 108c-2,0 -4,-1 -4,-3l0 -31 -119 0c-1,0 -3,-1 -3,-3l0 -31c0,-2 2,-3 3,-3l119 0 0 -19 -96 0c-2,0 -3,-1 -3,-3 0,-2 1,-3 3,-3l100 0c2,0 3,1 3,3l0 25c0,2 -1,3 -3,3l-119 0 0 25 119 0c2,0 3,1 3,3l0 34c0,2 -1,3 -3,3z"/>
+  <path class="fil1" d="M24 4l0 23c0,0 -1,1 -2,1l-21 0c0,0 -1,-1 -1,-1l0 -23c0,0 1,-1 1,-1l21 0c1,0 2,1 2,1z"/>
+  <polygon class="fil2" points="10,19 10,23 6,23 6,19 "/>
+  <polygon class="fil2" points="10,8 10,12 6,12 6,8 "/>
+  <path class="fil3" d="M68 24l0 -17c0,-1 -1,-3 -3,-3l-9 0c-1,0 -3,2 -3,3l0 17c0,1 2,3 3,3l9 0c2,0 3,-2 3,-3z"/>
+  <polygon class="fil4" points="58,27 58,4 57,4 57,27 "/>
+  <polygon class="fil5" points="61,27 61,4 59,4 59,27 "/>
+  <polygon class="fil5" points="63,27 63,4 61,4 61,27 "/>
+  <polygon class="fil5" points="65,27 65,4 64,4 64,27 "/>
+  <path class="fil3" d="M43 31c0,0 0,-1 0,-1l0 -29c0,0 0,-1 0,-1 0,0 1,0 1,0l12 3c0,0 1,0 1,1l0 24c0,0 -1,0 -1,1l-12 2c0,0 -1,0 -1,0z"/>
+  <path class="fil3" d="M44 0l0 0 -24 0c-1,0 -1,1 -1,1l0 29c0,1 0,1 1,1l24 0 0 0 0 -31z"/>
+  <path class="fil5" d="M53 17c1,0 2,0 2,-1 0,-1 -1,-2 -2,-2 -1,0 -2,1 -2,2 0,1 1,1 2,1z"/>
+  <polygon class="fil5" points="48,5 48,26 22,26 22,5 "/>
+  <polygon class="fil4" points="44,18 44,13 34,13 34,18 "/>
+  <polygon class="fil4" points="27,16 31,18 35,20 35,16 35,11 31,13 "/>
+  <path class="fil3" d="M181 306l-164 0c-4,0 -7,-3 -7,-7l0 -206c0,-4 3,-7 7,-7l164 0c4,0 7,3 7,7l0 206c0,4 -3,7 -7,7z"/>
+  <path class="fil0" d="M20 86l-3 0c-4,0 -7,3 -7,7l0 206c0,4 3,7 7,7l3 0 0 -220z"/>
+  <path class="fil0" d="M177 306l4 0c4,0 7,-3 7,-7l0 -206c0,-4 -3,-7 -7,-7l-4 0 0 220z"/>
+ </g>
+</svg>

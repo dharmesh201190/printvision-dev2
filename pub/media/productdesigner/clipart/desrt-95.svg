@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X8 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="1.87191in" height="1.8719in" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 803 803"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil1 {fill:#89311F}
+    .fil2 {fill:#BF7260}
+    .fil0 {fill:#FFD493}
+   ]]>
+  </style>
+ </defs>
+ <g id="Objects">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <path class="fil0" d="M401 803c222,0 402,-180 402,-402 0,-221 -180,-401 -402,-401 -221,0 -401,180 -401,401 0,222 180,402 401,402z"/>
+  <path class="fil1" d="M241 165l320 0c43,0 77,34 77,76l0 320c0,43 -34,77 -77,77l-320 0c-42,0 -76,-34 -76,-77l0 -320c0,-42 34,-76 76,-76z"/>
+  <path class="fil2" d="M461 191l106 0c26,0 48,21 48,48l0 106c0,26 -22,47 -48,47l-106 0c-26,0 -48,-21 -48,-47l0 -106c0,-27 22,-48 48,-48z"/>
+  <path class="fil2" d="M236 191l106 0c26,0 47,21 47,48l0 106c0,26 -21,47 -47,47l-106 0c-26,0 -48,-21 -48,-47l0 -106c0,-27 22,-48 48,-48z"/>
+  <path class="fil1" d="M358 346c5,6 17,0 17,-7l0 -94c0,-17 -16,-36 -32,-36l-81 0c-7,0 -16,8 -9,16l105 121z"/>
+  <path class="fil2" d="M461 413l106 0c26,0 48,21 48,47l0 107c0,26 -22,47 -48,47l-106 0c-26,0 -48,-21 -48,-47l0 -107c0,-26 22,-47 48,-47z"/>
+  <path class="fil2" d="M236 413l106 0c26,0 47,21 47,47l0 107c0,26 -21,47 -47,47l-106 0c-26,0 -48,-21 -48,-47l0 -107c0,-26 22,-47 48,-47z"/>
+  <path class="fil1" d="M578 346c5,6 17,0 17,-7l0 -94c0,-17 -16,-36 -32,-36l-81 0c-7,0 -16,8 -9,16l105 121z"/>
+  <path class="fil1" d="M358 566c5,6 17,0 17,-6l0 -95c0,-17 -16,-36 -32,-36l-81 0c-7,0 -16,8 -9,16l105 121z"/>
+  <path class="fil1" d="M578 566c5,6 17,0 17,-6l0 -95c0,-17 -16,-36 -32,-36l-81 0c-7,0 -16,8 -9,16l105 121z"/>
+ </g>
+</svg>

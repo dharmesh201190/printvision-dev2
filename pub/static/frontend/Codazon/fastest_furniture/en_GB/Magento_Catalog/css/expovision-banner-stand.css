@@ -1,0 +1,280 @@
+.page-title {
+    width: 300px;
+}
+
+.overview {
+    text-transform: initial;
+    width: 300px;
+    color: #08105b;
+}
+
+.product-features, .product-features ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.product-features h3 {
+    color: #08105b;
+    margin: unset;
+    margin-top: 50px;
+}
+
+.product-features li {
+    width: 200px;
+    margin-bottom: 2px;
+    color: #848688;
+}
+
+.product-info-main .product-info-price {
+    margin-top: 10px !important;
+}
+
+.dropdown-wrapper {
+    position: relative;
+}
+
+.dropdown-wrapper::after {
+    content: '\2304';
+    font-size: 25px;
+    color: #fff;
+    top: 26px;
+    right: 0;
+    text-align: center;
+    background-color: #808080;
+    height: 44px;
+    position: absolute;
+    pointer-events: none;
+    width: 44px;
+}
+
+#product-options-wrapper > div > div.field.required > label > span::after {
+    content: "*";
+    color: #f00;
+    vertical-align: middle;
+}
+
+#product-options-wrapper > div > div.field > label {
+    color: #848688;
+    font-family: Arial;
+    font-size: 13px;
+}
+
+div.field > div.control {
+    border: 0 !important;
+}
+
+select, input {
+    border: 1px solid #dfe0e1 !important;
+    border-radius: 0 !important;
+}
+
+.options-list.nested .field.choice label {
+    border-radius: 0;
+    height: 40px;
+    width: 100%;
+}
+
+.options-list.nested .field.choice,
+#product-options-wrapper div.field.width,
+#product-options-wrapper div.field.height,
+#product-options-wrapper div.field.measurement_units,
+#product-options-wrapper div.field.quantity {
+    display: block;
+    float: left;
+    width: 145px;
+    margin-right: 0;
+}
+
+#product-options-wrapper div.field.width,
+#product-options-wrapper div.field.measurement_units,
+.options-list.nested .field.choice:first-child {
+    margin-right: 10px;
+}
+
+#product-options-wrapper {
+    width: 300px;
+}
+
+.options-list.nested .field.choice input:hover + label,
+.options-list.nested .field.choice input:checked + label,
+.options-list.nested .field.choice label:hover {
+    background-color: #a5d727;
+    border: 1px solid #dfe0e1;
+    color: #fff;
+}
+
+.options-list.nested .field.choice label {
+    border: 1px solid #dfe0e1;
+}
+
+.fieldset > .field .field.choice:last-child {
+    margin-bottom: 10px;
+}
+
+.options-list.nested .field.choice label span {
+    vertical-align: sub;
+    font-family: Arial;
+    color: #848688;
+}
+
+.options-list.nested .field.choice input:hover + label span,
+.options-list.nested .field.choice input:checked + label span {
+    font-family: Arial;
+    color: #fff;
+}
+
+.options-list.nested .field.choice.single_sided label span::after {
+    content: url("../images/single-sided.png");
+    vertical-align: middle;
+}
+
+.options-list.nested .field.choice.double_sided label span::after {
+    content: url("../images/double-sided.png");
+    vertical-align: middle;
+}
+
+.options-list.nested .field.choice.square_cut label span::after {
+    content: url("../images/square-cut.png");
+    vertical-align: middle;
+}
+
+.options-list.nested .field.choice.custom_shape label span::after {
+    content: url("../images/custom-shape.png");
+    vertical-align: middle;
+}
+
+div.sides {
+    clear: both;
+}
+
+#product-options-wrapper div.dropdown-wrapper.field select {
+    color: #848688;
+    font-size: 12px;
+    width: 450px;
+}
+
+#product-options-wrapper div.dropdown-wrapper.field select option {
+    color: #000;
+}
+
+div.send_artwork_after label span::after {
+    content: url("../images/send-after.png");
+    vertical-align: middle;
+}
+
+div.send_artwork_after label span::after {
+    content: url("../images/send-after.png");
+    vertical-align: middle;
+}
+
+div.upload_artwork_now label span::after {
+    content: url("../images/upload-now.png");
+    vertical-align: middle;
+}
+
+.options-list.nested .field.choice label {
+    font-size: 12px !important;
+}
+
+div.field.width input::placeholder,
+div.field.height input::placeholder,
+div.field.quantity input::placeholder,
+div.field.special_instructions_about_this_job textarea::placeholder {
+    color: #848688;
+    font-size: 12px;
+}
+
+.product-info-price span.price {
+    font-size: 30px
+}
+
+.price-box.price-final_price {
+    margin-bottom: 10px !important;
+}
+
+#product-addtocart-button,
+#product-addtocart-button:hover {
+    background: #a5d727;
+    border-radius: 5px;
+    border: none;
+}
+
+#product-addtocart-button > span {
+    font-family: Arial;
+    font-weight: 900;
+}
+
+#product-addtocart-button > span::before {
+    content: url("../images/cart.png");
+    margin-right: 5px;
+}
+
+.questions-title {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.questions-title > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#circle {
+    background: #848688;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    margin-right: 5px;
+}
+
+#product_addtocart_form div.questions-title div:nth-child(2) {
+    color: #848688;
+    font-weight: 900;
+}
+
+.questions-wrapper > p {
+    font-family: Arial;
+    color: #848688;
+}
+
+.product.info.detailed .product.data.items > .item.title.active > .switch {
+    color: #08105b;
+    background: #fff;
+}
+
+.product.info.detailed .product.data.items > div.item.content {
+    margin-top: 37px !important;
+    border: 1px solid #e9e9ea;
+    border-bottom: 0;
+}
+
+.product.info.detailed .product.data.items > .item.title.active > .switch {
+    background: #fff !important;
+    color: #003768 !important;
+}
+
+.product.info.detailed .product.data.items > .item.title > .switch {
+    background: #e8e8e9 !important;
+    color: #858585 !important;
+}
+
+div.product.info.detailed .data.item.title {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    overflow: hidden;
+    margin-right: 5px;
+}
+
+div.product.info.detailed .data.item.title.active {
+    border: 1px solid #e9e9ea;
+    background: #fff;
+}
+
+.dropdown-wrapper::after {
+    right: -150px;
+}

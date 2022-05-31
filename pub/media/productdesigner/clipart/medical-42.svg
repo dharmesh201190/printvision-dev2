@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X8 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="1.75589in" height="2.03524in" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 550 637"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil2 {fill:#77A83D;fill-rule:nonzero}
+    .fil3 {fill:#8CC43F;fill-rule:nonzero}
+    .fil1 {fill:#919397;fill-rule:nonzero}
+    .fil4 {fill:#CDCDC4;fill-rule:nonzero}
+    .fil0 {fill:white;fill-rule:nonzero}
+   ]]>
+  </style>
+ </defs>
+ <g id="_3">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_905546480208">
+   <path class="fil0" d="M325 70c0,29 -28,53 -62,53 -34,0 -62,-24 -62,-53 0,-29 28,-53 62,-53 34,0 62,24 62,53z"/>
+   <g>
+    <polygon class="fil1" points="478,602 333,632 320,570 465,539 "/>
+    <polygon class="fil1" points="200,627 56,592 71,530 215,565 "/>
+    <polygon class="fil2" points="259,91 271,91 271,76 286,76 286,64 271,64 271,49 259,49 259,64 244,64 244,76 259,76 "/>
+    <path class="fil3" d="M389 171l0 -128c0,0 -124,-97 -248,0l0 128c0,0 40,-40 123,-41 83,-1 125,41 125,41zm-170 -113l0 0c0,-15 12,-26 27,-26 8,0 15,3 19,9 5,-6 12,-9 20,-9 14,0 26,11 26,26 0,8 -3,15 -9,20l0 0 -36 35 -37 -35 0 0c-6,-5 -10,-12 -10,-20z"/>
+    <path class="fil4" d="M132 219c0,74 60,166 133,166 74,0 134,-92 134,-166 0,-3 -1,-7 -1,-10l-21 -21c-2,-2 -38,-35 -108,-35l-3 0c-74,1 -108,34 -110,35l-24 24c0,2 0,5 0,7z"/>
+    <path class="fil0" d="M404 344l-136 233 -122 -233c0,0 -113,11 -145,167 -5,28 7,71 32,84 38,21 109,43 242,42 133,1 204,-21 241,-42 25,-13 38,-56 32,-84 -31,-156 -144,-167 -144,-167zm-237 263l0 0c-48,0 -92,-18 -95,-19l11 -24c0,0 62,26 113,14l5 25c-11,3 -23,4 -34,4zm203 5l0 0c-12,0 -23,-1 -35,-4l6 -25c51,12 113,-14 113,-14l10 24c-2,1 -46,19 -94,19z"/>
+   </g>
+  </g>
+ </g>
+</svg>

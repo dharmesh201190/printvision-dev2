@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1200" height="1200" viewBox="0 0 1200 1200" xml:space="preserve">
+<desc>Created with Fabric.js 3.2.0</desc>
+<defs>
+</defs>
+<g id="id_1579858174104" clip-path="url(#CLIPPATH_12)">
+<g transform="matrix(0.8164342632349876 0 0 0.8164342632349878 607.9999999999999 904.7384687286801)">
+<clipPath id="CLIPPATH_12">
+	<rect transform="matrix(1 0 0 1 600.4999999999999 601.6111111111112)" x="-175.55555555555551" y="-547.7777777777778" rx="0" ry="0" width="351.11111111111103" height="1095.5555555555557"/>
+</clipPath>
+<g style="">
+		<g transform="matrix(0.096 0 0 0.096 0 0)" id="Layer_x0020_1">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(55,52,53); fill-rule: nonzero; opacity: 1;" transform=" translate(-4249.883563653046, -5500.142641833939)" d="M 6489 4489 c -1 -5 -1 -7 -1 -7 c 0 0 -1 2 -3 7 c -1 4 -4 9 -9 15 c -5 7 -12 13 -20 18 c -9 6 -19 11 -31 14 c -3 0 -6 1 -10 2 c -3 0 -6 1 -9 1 c -7 1 -14 2 -22 2 c -15 1 -32 1 -51 3 l -7 0 l -8 2 c -4 0 -9 1 -14 2 c -4 0 -9 1 -14 3 l -16 4 c -10 3 -19 6 -29 10 c -9 4 -19 8 -28 13 c -2 1 -4 2 -6 3 c 0 0 -1 0 -1 0 c 5 -2 10 -5 14 -8 c 15 -10 29 -21 40 -32 c 23 -22 38 -46 47 -67 c 9 -21 12 -38 12 -50 c 1 -6 0 -10 0 -13 c 0 -3 0 -5 0 -5 c 0 0 0 2 -1 4 c -1 3 -2 8 -5 13 c -3 10 -11 25 -24 40 c -12 16 -30 32 -54 46 c -12 7 -24 14 -38 19 c -8 3 -14 5 -23 8 c -7 3 -15 5 -23 7 c -33 8 -71 13 -112 20 c -21 3 -43 7 -66 13 c -24 6 -48 15 -71 27 c -4 2 -7 4 -11 6 c 14 -11 29 -20 45 -28 c 20 -11 41 -20 62 -27 c 22 -7 44 -13 67 -20 c 22 -6 44 -13 65 -21 c 5 -2 10 -4 15 -6 c 6 -2 10 -4 15 -7 c 10 -5 19 -10 27 -15 c 34 -21 56 -48 67 -68 c 5 -10 8 -18 10 -24 c 1 -6 2 -9 2 -9 c 0 0 -2 3 -6 7 c -3 5 -9 11 -17 18 c -7 7 -18 15 -30 22 c -12 8 -27 14 -43 20 c -8 3 -17 6 -26 9 c -3 0 -9 2 -14 3 c -4 1 -9 2 -14 3 c -20 4 -41 8 -64 12 c -23 4 -48 9 -72 16 c -26 7 -50 16 -74 29 c -24 12 -47 28 -67 46 c -9 9 -20 20 -28 30 c -8 11 -15 22 -22 34 c -12 23 -20 47 -24 71 c -1 6 -1 12 -1 18 l -1 9 l 1 8 c 0 4 0 8 1 13 c -83 -60 -162 -125 -242 -189 c -122 -99 -381 -342 -539 -176 c -120 127 -31 336 31 467 c 106 223 250 428 385 634 c 107 164 288 375 298 579 c 11 224 -242 184 -371 100 c -114 -74 -276 -304 -344 -421 c 0 -1 0 -1 0 -1 c -28 -46 -59 -91 -93 -133 c -196 -245 -371 -406 -345 -765 c 0 -8 1 -17 1 -25 c 142 115 316 149 316 149 c 0 0 -172 -191 -179 -505 l -249 -462 l 260 270 c 18 -180 47 -380 25 -582 l -381 -263 l 357 123 c -5 -18 -9 -36 -15 -53 c -34 -113 -110 -280 -249 -416 l -369 -51 l 264 -36 c -142 -100 -333 -164 -586 -142 c 0 0 29 -114 13 -242 c 0 0 -226 233 -771 379 c -76 20 -115 116 -115 116 l -48 10 l -234 148 c -21 6 -31 31 -19 49 l 41 67 l 26 -7 l 9 64 l 59 134 c 15 -51 58 -93 117 -102 c 66 -11 133 27 157 89 c 33 82 -13 172 -96 195 c -22 6 -43 7 -64 3 l 91 111 l 167 -46 c 111 -31 187 6 281 66 c -95 42 -186 114 -254 233 l -278 79 c -72 21 -150 9 -212 -34 l -304 -206 l 8 -132 c 8 -121 -73 -228 -191 -254 l -10 -2 l 14 22 c 15 22 17 49 7 73 l -21 49 c 55 19 89 75 80 132 l -9 57 l -23 -8 l 3 -24 c 7 -66 -38 -127 -103 -138 c 9 69 2 139 -19 205 l -28 83 c -7 22 -10 44 -5 66 c 8 41 36 76 76 93 l 22 10 c 30 12 57 30 82 51 l 287 254 c 87 77 206 110 321 90 l 206 -37 c 6 85 23 168 50 246 l -46 115 c -27 70 -85 124 -156 147 l -349 115 l -100 -88 c -91 -79 -225 -81 -318 -3 l -8 6 l 27 2 c 26 2 49 17 62 40 l 25 47 c 49 -33 114 -25 154 17 l 39 41 l -20 14 l -17 -16 c -47 -47 -123 -49 -173 -4 c 61 35 112 83 151 141 l 49 73 c 13 18 29 34 50 44 c 37 18 81 18 119 -3 l 22 -12 c 28 -16 58 -27 90 -33 l 376 -73 c 103 -20 193 -80 249 -167 c 34 41 68 77 101 109 c 236 224 708 547 677 810 l 0 1 l -381 114 c -118 35 -203 139 -215 262 l -22 238 c -5 46 -41 83 -86 89 l -327 41 l -78 -110 c -70 -98 -202 -131 -311 -76 l -9 5 l 25 8 c 25 8 45 28 52 53 l 15 52 c 55 -21 117 1 146 52 l 29 50 l -22 9 l -13 -21 c -36 -56 -110 -75 -169 -43 c 51 48 90 107 115 173 l 32 83 c 7 19 19 37 34 51 c 33 29 79 40 122 28 l 24 -7 c 31 -9 64 -13 96 -12 l 532 -4 c 61 -1 110 -48 113 -109 l 4 -74 c 5 -112 102 -198 214 -188 l 203 18 c 76 198 195 379 351 528 l 0 0 c 90 86 125 214 91 333 l -188 443 l -133 13 c -121 12 -215 110 -222 231 l -1 11 l 20 -18 c 19 -18 46 -25 72 -18 l 52 13 c 10 -58 60 -100 119 -101 l 57 0 l -3 24 l -25 1 c -67 3 -120 58 -121 125 c 67 -21 138 -25 207 -14 l 88 14 c 22 4 45 3 66 -5 c 39 -15 69 -48 80 -91 l 6 -24 c 8 -31 21 -61 38 -89 l 315 -557 c 0 0 0 1 -1 1 l 1 -1 c 23 -74 16 -153 -18 -223 l -11 -21 c -63 -127 -69 -274 -16 -405 l 64 -158 c 75 -185 101 -381 81 -572 c 116 84 250 146 385 146 c 132 0 253 -104 280 -236 c 30 -145 -41 -290 -111 -412 c -160 -276 -354 -531 -510 -810 c -29 -53 -274 -516 -47 -468 c 117 24 233 143 322 215 c 110 89 220 187 345 255 c 15 18 32 33 53 45 l 6 3 l 1 1 l 3 2 l 2 1 l 4 1 c 1 1 3 2 5 3 c 4 1 9 3 13 5 l 12 3 c 16 4 32 6 48 6 c 12 0 23 -2 34 -4 c 13 0 26 -1 40 -5 c 21 -7 42 -17 62 -34 c 18 -15 33 -37 44 -58 c 11 -22 18 -45 24 -67 c 5 -21 10 -42 16 -62 c 2 -10 5 -20 8 -28 c 1 -4 3 -9 5 -14 l 1 -4 l 1 -2 l 3 -6 c 14 -33 36 -60 59 -81 c 6 -5 12 -10 18 -15 c 5 -2 10 -4 15 -6 l 11 -4 c 4 -1 7 -3 12 -4 c 5 -1 9 -2 13 -3 l 4 -1 l 1 -1 l 1 0 l -1 0 l 0 0 l 1 0 l 6 -1 c 16 -4 33 -7 50 -12 c 9 -2 17 -5 25 -8 c 4 -1 8 -3 12 -5 l 5 -3 c 3 -1 4 -2 6 -3 c 14 -8 25 -19 33 -30 c 8 -10 13 -21 15 -30 c 2 -9 1 -16 1 -21 z m -3358 -1252 l 0 0 c -33 26 -81 20 -107 -13 l -14 -18 c -10 -12 -3 -31 12 -34 l 223 -60 l -114 125 z" stroke-linecap="round"/>
+</g>
+</g>
+</g>
+</g>
+<g id="id_1579858209333" clip-path="url(#CLIPPATH_13)">
+<g transform="matrix(1.1749530984554508 0 0 1.174953098455451 602 289.4650852949893)">
+<clipPath id="CLIPPATH_13">
+	<rect transform="matrix(1 0 0 1 600.4999999999999 601.6111111111112)" x="-175.55555555555551" y="-547.7777777777778" rx="0" ry="0" width="351.11111111111103" height="1095.5555555555557"/>
+</clipPath>
+<g style="">
+		<g transform="matrix(0.30612906666666667 0 0 0.30612906666666667 0 0)" id="Objects">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(248,248,248); fill-rule: nonzero; opacity: 1;" transform=" translate(-487.3648764733006, -450.0093243412093)" d="M 966 401 c -18 -91 -60 -181 -123 -249 c -71 -78 -170 -130 -273 -146 c -16 -2 -32 -4 -48 -5 c -85 -7 -175 16 -249 55 c -93 50 -167 133 -214 226 c -51 101 -75 218 -48 329 c 24 97 85 186 174 234 c 107 57 235 60 353 52 c 94 -8 188 -26 268 -79 c 138 -90 192 -258 160 -417 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.30612906666666667 0 0 0.30612906666666667 -0.4178283608868014 28.62021328146166)" id="Objects">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(248,248,248); fill-rule: nonzero; opacity: 1;" transform=" translate(-486, -543.5)" d="M 714 498 c 0 2 0 3 0 4 c -4 11 -7 22 -10 33 c -18 25 -54 37 -83 42 c -46 9 -92 12 -139 12 c -46 0 -93 -4 -138 -12 c -20 -4 -50 -5 -65 -20 c -14 -12 -18 -33 -21 -51 c 40 20 85 30 128 36 c 48 8 97 12 145 6 c 43 -5 86 -16 127 -29 c 19 -6 38 -13 56 -21 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.30612906666666667 0 0 0.30612906666666667 -0.26476382755347316 56.51990788173898)" id="Objects">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(158,99,0); fill-rule: nonzero; opacity: 1;" transform=" translate(-486.5, -634.637032180797)" d="M 695 561 c -1 4 -3 8 -4 11 c -21 45 -51 86 -95 110 c -57 31 -131 34 -191 12 c -50 -19 -89 -56 -116 -102 c -3 -7 -7 -14 -11 -21 c 13 8 29 11 44 14 c 54 11 109 17 164 16 c 53 0 109 -3 160 -17 c 18 -4 35 -12 49 -23 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.30612906666666667 0 0 0.30612906666666667 -0.00211877337085298 -0.29258374710977364)" id="Objects">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(252,204,0); fill-rule: nonzero; opacity: 1;" transform=" translate(-487.3579552965763, -449.05357142857144)" d="M 870 346 c 47 131 29 288 -79 383 c -50 45 -114 71 -180 83 c -49 10 -99 13 -148 14 c -51 1 -103 -5 -152 -18 c -88 -22 -159 -75 -199 -158 c -40 -83 -40 -180 -12 -267 c 30 -96 92 -185 175 -242 c 60 -40 135 -67 210 -69 c 1 2 2 3 5 3 c 91 0 181 30 252 87 c 59 48 102 113 128 184 z m -137 142 l 0 0 c 2 -6 -5 -9 -10 -7 c -55 24 -114 42 -174 52 c -83 13 -173 1 -253 -24 c -14 -5 -28 -9 -41 -15 c -2 -6 -12 -6 -12 2 c 0 30 14 62 27 88 c 24 47 61 88 108 112 c 60 30 135 33 197 10 c 51 -19 90 -58 116 -106 c 11 -20 18 -40 25 -61 c 6 -9 9 -20 10 -33 c 2 -6 4 -12 7 -18 z m -69 -42 l 0 0 c 3 -26 3 -54 -3 -79 c -6 -24 -46 -20 -44 6 c 1 25 4 48 4 73 c 0 0 0 0 0 0 c 1 25 39 29 43 0 z m -305 -73 l 0 0 c 2 -25 -38 -30 -44 -6 c -7 25 -7 53 -3 79 c 3 28 42 26 43 0 c 0 0 0 0 0 0 c 0 -25 2 -48 4 -73 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.30612906666666667 0 0 0.30612906666666667 0.07699751648848974 0.00070348789012087)" id="Objects">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(34,24,10); fill-rule: nonzero; opacity: 1;" transform=" translate(-487.61639625653095, -450.0116223519725)" d="M 485 72 c -75 2 -150 29 -210 69 c -83 57 -145 146 -175 242 c -28 87 -28 184 12 267 c 40 83 111 136 199 158 c 49 13 101 19 152 18 c 49 -1 99 -4 148 -14 c 66 -12 130 -38 180 -83 c 108 -95 126 -252 79 -383 c -26 -71 -69 -136 -128 -184 c -71 -57 -161 -87 -252 -87 c -3 0 -4 -1 -5 -3 z m -182 39 l 0 0 c 63 -34 141 -53 215 -48 c 13 1 27 2 40 4 c 89 15 175 59 236 126 c 54 59 91 137 106 215 c 28 136 -19 282 -138 359 c -69 46 -150 62 -231 68 c -102 7 -212 4 -304 -45 c -77 -41 -130 -118 -150 -201 c -23 -96 -3 -197 41 -283 c 41 -81 105 -152 185 -195 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.30612906666666667 0 0 0.30612906666666667 0.24803423480034326 46.154846138740496)" id="Objects">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(34,24,10); fill-rule: nonzero; opacity: 1;" transform=" translate(-488.17510412499377, -600.7785624318768)" d="M 723 481 c 5 -2 12 1 10 7 c -3 6 -5 12 -7 18 c -1 13 -4 24 -10 33 c -7 21 -14 41 -25 61 c -26 48 -65 87 -116 106 c -62 23 -137 20 -197 -10 c -47 -24 -84 -65 -108 -112 c -13 -26 -27 -58 -27 -88 c 0 -8 10 -8 12 -2 c 13 6 27 10 41 15 c 80 25 170 37 253 24 c 60 -10 119 -28 174 -52 z m -9 21 l 0 0 c 0 -1 0 -2 0 -4 c -18 8 -37 15 -56 21 c -41 13 -84 24 -127 29 c -48 6 -97 2 -145 -6 c -43 -6 -88 -16 -128 -36 c 3 18 7 39 21 51 c 15 15 45 16 65 20 c 45 8 92 12 138 12 c 47 0 93 -3 139 -12 c 29 -5 65 -17 83 -42 c 3 -11 6 -22 10 -33 z m -23 70 l 0 0 c 1 -3 3 -7 4 -11 c -14 11 -31 19 -49 23 c -51 14 -107 17 -160 17 c -55 1 -110 -5 -164 -16 c -15 -3 -31 -6 -44 -14 c 4 7 8 14 11 21 c 27 46 66 83 116 102 c 60 22 134 19 191 -12 c 44 -24 74 -65 95 -110 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.30612906666666667 0 0 0.30612906666666667 47.16964020713897 -12.655024075145864)" id="Objects">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(34,24,10); fill-rule: nonzero; opacity: 1;" transform=" translate(-641.4490368594829, -408.6704726831749)" d="M 661 367 c 6 25 6 53 3 79 c -4 29 -42 25 -43 0 c 0 0 0 0 0 0 c 0 -25 -3 -48 -4 -73 c -2 -26 38 -30 44 -6 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.30612906666666667 0 0 0.30612906666666667 -46.892842304154996 -12.607412425884839)" id="Objects">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(34,24,10); fill-rule: nonzero; opacity: 1;" transform=" translate(-334.184903023687, -408.82600070859064)" d="M 315 367 c 6 -24 46 -19 44 6 c -2 25 -4 48 -4 73 c 0 0 0 0 0 0 c -1 26 -40 28 -43 0 c -4 -26 -4 -54 3 -79 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.30612906666666667 0 0 0.30612906666666667 -43.60151651049576 -85.61038231921309)" id="Objects">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(244,166,0); fill-rule: nonzero; opacity: 1;" transform=" translate(-344.93633486090954, -170.3547876080762)" d="M 232 240 c 66 -49 143 -77 224 -90 c 14 -2 22 -20 18 -32 c -4 -15 -18 -21 -32 -19 c -86 14 -165 60 -224 123 c -9 9 3 26 14 18 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.30612906666666667 0 0 0.30612906666666667 13.81717323911321 -95.51512325187169)" id="Objects">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(244,166,0); fill-rule: nonzero; opacity: 1;" transform=" translate(-532.5, -138)" d="M 533 163 c 6 0 13 -3 17 -8 c 3 -2 4 -5 5 -8 c 2 -3 3 -6 3 -9 c -1 -7 -3 -14 -8 -18 c -5 -5 -11 -7 -17 -7 c -7 0 -14 2 -18 7 c -3 2 -4 5 -5 8 c -2 3 -3 6 -3 10 c 1 6 3 13 8 17 c 5 5 11 8 18 8 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.30612906666666667 0 0 0.30612906666666667 -38.688131646296306 -117.48465881869487)" id="Objects">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(34,24,10); fill-rule: nonzero; opacity: 1;" transform=" translate(-360.9863784510188, -66.2344018944629)" d="M 343 78 c 12 -7 25 -10 39 -14 c 6 -2 3 -12 -3 -10 c -15 2 -28 9 -40 17 c -5 3 -1 10 4 7 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.30612906666666667 0 0 0.30612906666666667 -13.864501844173358 -124.162009102554)" id="Objects">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(34,24,10); fill-rule: nonzero; opacity: 1;" transform=" translate(-442.07514951225403, -44.42219583194655)" d="M 428 52 c 10 -2 20 -3 30 -4 c 7 -2 4 -13 -3 -11 c -10 2 -20 5 -30 7 c -5 1 -3 9 3 8 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.30612906666666667 0 0 0.30612906666666667 15.171896905115556 -122.4437543020136)" id="Objects">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(34,24,10); fill-rule: nonzero; opacity: 1;" transform=" translate(-536.9253349763662, -50.03504017649012)" d="M 519 52 c 11 1 22 3 33 5 c 7 1 10 -9 3 -11 c -11 -3 -24 -3 -36 -3 c -6 0 -5 8 0 9 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.30612906666666667 0 0 0.30612906666666667 43.41147600521752 -115.99500934252661)" id="Objects">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(34,24,10); fill-rule: nonzero; opacity: 1;" transform=" translate(-629.1726325217871, -71.1004849893762)" d="M 608 68 c 13 5 26 11 39 15 c 6 2 10 -7 4 -10 c -13 -6 -27 -10 -41 -14 c -6 -1 -8 7 -2 9 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.30612906666666667 0 0 0.30612906666666667 73.2696135780715 -102.7638243066631)" id="Objects">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(34,24,10); fill-rule: nonzero; opacity: 1;" transform=" translate(-726.7071067811866, -114.32142176592376)" d="M 708 107 c 11 7 21 15 31 22 c 6 5 12 -5 6 -9 c -10 -8 -21 -15 -32 -21 c -5 -3 -10 4 -5 8 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.30612906666666667 0 0 0.30612906666666667 92.9634099482694 -87.13144253395177)" id="Objects">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(34,24,10); fill-rule: nonzero; opacity: 1;" transform=" translate(-791.0387842159262, -165.38609831861737)" d="M 775 158 c 7 7 15 15 23 21 c 6 5 14 -3 8 -8 c -8 -7 -17 -14 -26 -20 c -4 -3 -8 3 -5 7 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.30612906666666667 0 0 0.30612906666666667 110.76187900363252 -68.60082082504934)" id="Objects">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(34,24,10); fill-rule: nonzero; opacity: 1;" transform=" translate(-849.1791929303436, -225.91815399917056)" d="M 830 210 c 9 13 19 26 30 37 c 4 4 12 -2 8 -7 c -9 -12 -19 -24 -31 -35 c -3 -4 -10 1 -7 5 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.30612906666666667 0 0 0.30612906666666667 122.01379581219396 -49.8327210146646)" id="Objects">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(34,24,10); fill-rule: nonzero; opacity: 1;" transform=" translate(-885.9346599334597, -287.2259547080156)" d="M 874 278 c 5 7 9 15 14 23 c 4 6 13 0 10 -6 c -5 -8 -11 -16 -17 -23 c -3 -3 -10 1 -7 6 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.30612906666666667 0 0 0.30612906666666667 131.72080452547505 -24.671568262030707)" id="Objects">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(34,24,10); fill-rule: nonzero; opacity: 1;" transform=" translate(-917.6435362547361, -369.41727690621445)" d="M 908 350 c 1 14 4 28 9 40 c 3 6 12 2 10 -4 c -4 -12 -8 -23 -10 -36 c -1 -5 -9 -6 -9 0 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.30612906666666667 0 0 0.30612906666666667 135.79639641366538 3.381433301294682)" id="Objects">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(34,24,10); fill-rule: nonzero; opacity: 1;" transform=" translate(-930.9568486185962, -461.05510100695994)" d="M 925 444 c 2 11 2 23 0 34 c -1 6 11 8 11 1 c 2 -12 1 -25 -3 -37 c -1 -6 -9 -3 -8 2 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.30612906666666667 0 0 0.30612906666666667 133.01419174978196 33.418987834189714)" id="Objects">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(34,24,10); fill-rule: nonzero; opacity: 1;" transform=" translate(-921.8685098529318, -559.1756579993539)" d="M 921 539 c -2 13 -5 25 -8 37 c -2 7 8 9 10 3 c 4 -12 7 -25 8 -38 c 0 -6 -9 -7 -10 -2 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.30612906666666667 0 0 0.30612906666666667 125.5671719674833 59.116840712513685)" id="Objects">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(34,24,10); fill-rule: nonzero; opacity: 1;" transform=" translate(-897.5421044469156, -643.1201627082304)" d="M 901 622 c -2 14 -7 26 -14 37 c -4 6 5 11 9 5 c 9 -12 13 -26 13 -40 c 1 -5 -7 -6 -8 -2 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.30612906666666667 0 0 0.30612906666666667 109.94601961139178 87.78955425675741)" id="Objects">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(34,24,10); fill-rule: nonzero; opacity: 1;" transform=" translate(-846.5141098621973, -736.7823355180552)" d="M 858 711 c -4 8 -8 17 -13 24 c -4 8 -11 14 -16 22 c -4 5 4 10 9 6 c 13 -11 24 -32 27 -49 c 1 -4 -5 -7 -7 -3 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.30612906666666667 0 0 0.30612906666666667 90.47305533508728 105.14575054006403)" id="Objects">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(34,24,10); fill-rule: nonzero; opacity: 1;" transform=" translate(-782.9038016731095, -793.4780177421976)" d="M 800 777 c -11 10 -25 18 -38 25 c -5 2 -2 11 4 9 c 16 -7 27 -17 39 -29 c 4 -3 -2 -9 -5 -5 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.30612906666666667 0 0 0.30612906666666667 67.0495316425389 115.36982645153392)" id="Objects">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(34,24,10); fill-rule: nonzero; opacity: 1;" transform=" translate(-706.3886116991582, -826.8759437307236)" d="M 723 818 c -11 4 -23 6 -35 8 c -6 1 -4 11 2 10 c 12 -1 24 -5 36 -10 c 4 -2 3 -10 -3 -8 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.30612906666666667 0 0 0.30612906666666667 36.78773120057142 124.38446630517672)" id="Objects">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(34,24,10); fill-rule: nonzero; opacity: 1;" transform=" translate(-607.5355339059328, -856.3231306698801)" d="M 633 845 c -17 8 -34 11 -52 12 c -8 0 -8 11 0 11 c 20 0 39 -6 57 -15 c 5 -3 0 -10 -5 -8 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.30612906666666667 0 0 0.30612906666666667 1.8781396391131828 127.35146455731817)" id="Objects">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(34,24,10); fill-rule: nonzero; opacity: 1;" transform=" translate(-493.5, -866.0151154410357)" d="M 521 862 c -18 -1 -36 -2 -55 -1 c -6 0 -6 10 0 10 c 19 1 37 0 55 0 c 6 0 6 -9 0 -9 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.30612906666666667 0 0 0.30612906666666667 -34.78081609422014 126.581514614795)" id="Objects">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(34,24,10); fill-rule: nonzero; opacity: 1;" transform=" translate(-373.75, -863.5)" d="M 402 857 c -18 0 -37 0 -55 2 c -7 0 -7 11 0 11 c 19 0 37 -3 55 -5 c 5 -1 5 -8 0 -8 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.30612906666666667 0 0 0.30612906666666667 -64.80208369245433 119.39606020535349)" id="Objects">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(34,24,10); fill-rule: nonzero; opacity: 1;" transform=" translate(-275.6826458440377, -840.0280230078071)" d="M 300 846 c -14 -7 -29 -14 -44 -20 c -6 -2 -10 8 -4 11 c 14 7 30 11 45 17 c 4 2 8 -6 3 -8 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.30612906666666667 0 0 0.30612906666666667 -92.54546341702512 106.68705314571726)" id="Objects">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(34,24,10); fill-rule: nonzero; opacity: 1;" transform=" translate(-185.05623121879862, -798.5128307458629)" d="M 206 811 c -13 -9 -23 -20 -35 -31 c -5 -5 -12 2 -8 8 c 11 13 25 22 39 30 c 5 3 9 -4 4 -7 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.30612906666666667 0 0 0.30612906666666667 -111.91513389208095 88.83961417672599)" id="Objects">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(34,24,10); fill-rule: nonzero; opacity: 1;" transform=" translate(-121.78334215287144, -740.2124571050131)" d="M 141 751 c -12 -7 -21 -18 -31 -28 c -4 -4 -12 2 -8 7 c 9 12 22 20 35 28 c 4 3 8 -4 4 -7 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.30612906666666667 0 0 0.30612906666666667 -128.63225949667077 57.764672036063246)" id="Objects">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(34,24,10); fill-rule: nonzero; opacity: 1;" transform=" translate(-67.17524568357238, -638.7031738506425)" d="M 80 660 c -2 -16 -7 -32 -17 -45 c -4 -5 -11 1 -8 6 c 7 13 13 26 16 40 c 1 5 10 4 9 -1 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.30612906666666667 0 0 0.30612906666666667 -64.32018997580144 -106.91998107216054)" id="Objects">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(34,24,10); fill-rule: nonzero; opacity: 1;" transform=" translate(-277.2567979554333, -100.74493649207378)" d="M 265 113 c 9 -6 18 -10 27 -14 c 7 -2 4 -13 -3 -11 c -11 4 -21 11 -29 18 c -4 3 1 10 5 7 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.30612906666666667 0 0 0.30612906666666667 -86.5317827383745 -92.31408121975926)" id="Objects">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(34,24,10); fill-rule: nonzero; opacity: 1;" transform=" translate(-204.70049677035672, -148.45651125836392)" d="M 188 168 c 13 -10 27 -19 39 -30 c 5 -4 -2 -13 -7 -9 c -13 11 -25 22 -38 33 c -4 4 2 9 6 6 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.30612906666666667 0 0 0.30612906666666667 -106.67775771255918 -72.68310767028065)" id="Objects">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(34,24,10); fill-rule: nonzero; opacity: 1;" transform=" translate(-138.89173449388545, -212.58297191508458)" d="M 132 228 c 6 -8 13 -15 20 -23 c 5 -5 -3 -13 -7 -7 c -7 7 -13 15 -20 23 c -3 5 3 11 7 7 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.30612906666666667 0 0 0.30612906666666667 -119.16081406400988 -48.90879963024196)" id="Objects">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(34,24,10); fill-rule: nonzero; opacity: 1;" transform=" translate(-98.11463192282167, -290.2440326529912)" d="M 92 308 c 5 -10 12 -19 19 -28 c 5 -5 -3 -13 -8 -8 c -8 9 -14 20 -19 31 c -2 5 5 10 8 5 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.30612906666666667 0 0 0.30612906666666667 -133.1346040138226 -14.339563925270696)" id="Objects">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(34,24,10); fill-rule: nonzero; opacity: 1;" transform=" translate(-52.4679048675685, -403.1677614624888)" d="M 51 381 c -2 14 -5 28 -6 42 c -1 6 10 8 11 2 c 2 -14 3 -29 4 -43 c 0 -5 -8 -6 -9 -1 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(0.30612906666666667 0 0 0.30612906666666667 -135.61676600651344 22.161304243061977)" id="Objects">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(34,24,10); fill-rule: nonzero; opacity: 1;" transform=" translate(-44.35968430648869, -522.4013532470847)" d="M 37 504 c -1 13 -1 25 4 37 c 2 6 13 4 11 -3 c -3 -11 -6 -22 -6 -34 c 0 -5 -8 -5 -9 0 z" stroke-linecap="round"/>
+</g>
+</g>
+</g>
+</g>
+</svg>

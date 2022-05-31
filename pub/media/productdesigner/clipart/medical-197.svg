@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X8 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="2.42048in" height="1.82581in" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 436 329"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil0 {fill:#00BABA;fill-rule:nonzero}
+    .fil1 {fill:url(#id0)}
+    .fil2 {fill:url(#id1)}
+    .fil3 {fill:url(#id2)}
+   ]]>
+  </style>
+  <linearGradient id="id0" gradientUnits="userSpaceOnUse" x1="218.191" y1="735.766" x2="218.191" y2="328.657">
+   <stop offset="0" style="stop-opacity:1; stop-color:#00BABA"/>
+   <stop offset="0.541176" style="stop-opacity:1; stop-color:#00BABA"/>
+   <stop offset="1" style="stop-opacity:1; stop-color:#00BABA"/>
+  </linearGradient>
+  <linearGradient id="id1" gradientUnits="userSpaceOnUse" xlink:href="#id0" x1="229.884" y1="131.255" x2="229.884" y2="-275.854">
+  </linearGradient>
+  <linearGradient id="id2" gradientUnits="userSpaceOnUse" xlink:href="#id0" x1="229.884" y1="131.255" x2="229.884" y2="-275.854">
+  </linearGradient>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <path class="fil0" d="M279 77c0,4 -4,8 -9,8l-99 0c-5,0 -9,-4 -9,-8l0 -51c0,-5 4,-9 9,-9l99 0c5,0 9,4 9,9l0 51zm-9 -77l-99 0c-15,0 -27,12 -27,26l0 51c0,14 12,26 27,26l99 0c15,0 26,-12 26,-26l0 -51c0,-14 -11,-26 -26,-26z"/>
+  <path class="fil0" d="M282 202l-45 0 0 45 -34 0 0 -45 -45 0 0 -34 45 0 0 -45 34 0 0 45 45 0 0 34zm128 -149l-384 0c-14,0 -26,12 -26,26l0 224c0,15 12,26 26,26l384 0c15,0 26,-11 26,-26l0 -224c0,-14 -11,-26 -26,-26z"/>
+  <path class="fil1" d="M410 329l-384 0c0,0 0,0 0,0 0,0 0,0 1,0l384 0c0,0 0,0 0,0 0,0 0,0 -1,0z"/>
+  <path class="fil2" d="M144 32l0 -6c0,-14 12,-26 27,-26l99 0c7,0 14,3 19,8l-135 0 -10 24z"/>
+  <path class="fil3" d="M35 82l0 0c-2,0 -5,-1 -6,-3 -2,-2 -3,-4 -3,-7l0 -8c0,-3 1,-5 3,-7 2,-2 4,-3 7,-3l59 0c1,0 3,0 4,-1l38 0 -6 14c-1,4 -4,8 -8,11 -4,2 -8,4 -12,4l-76 0z"/>
+ </g>
+</svg>
