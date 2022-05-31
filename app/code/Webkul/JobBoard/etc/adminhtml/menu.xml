@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Webkul Software.
+ *
+ * @category  Webkul
+ * @package   Webkul_JobBoard
+ * @author    Webkul
+ * @copyright Copyright (c) Webkul Software Private Limited (https://webkul.com)
+ * @license   https://store.webkul.com/license.html
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Webkul_JobBoard::jobboard" title="JobBoard" translate="title" module="Webkul_JobBoard" sortOrder="10" resource="Webkul_JobBoard::jobboard"/>
+        <add id="Webkul_JobBoard::jobs" title="Manage Jobs" translate="title" module="Webkul_JobBoard" sortOrder="20" parent="Webkul_JobBoard::jobboard" action="jobboard/job" resource="Webkul_JobBoard::jobs"/>
+        <add id="Webkul_JobBoard::categories" title="Manage Categories" translate="title" module="Webkul_JobBoard" sortOrder="30" parent="Webkul_JobBoard::jobboard" action="jobboard/category" resource="Webkul_JobBoard::categories"/>
+        <add id="Webkul_JobBoard::applications" title="View Applications" translate="title" module="Webkul_JobBoard" sortOrder="40" parent="Webkul_JobBoard::jobboard" action="jobboard/application" resource="Webkul_JobBoard::applications"/>
+    </menu>
+</config>

@@ -1,0 +1,250 @@
+// /**
+//  * Copyright © Magento, Inc. All rights reserved.
+//  * See COPYING.txt for license details.
+//  */
+
+//
+//  Variables
+//  ---------------------------------------------
+
+@toolbar-mode-icon-font-size: 14px;
+@toolbar-element-background: @panel__background-color;
+
+//
+//  Common
+//  _____________________________________________
+
+& when (@media-common = true) {
+    .page-products {
+        .columns {
+            position: relative;
+            z-index: 1;
+        }
+    }
+
+    .toolbar {
+        &:extend(.abs-add-clearfix all);
+		background: #f4e4c2;
+		padding:15px !important;
+		border-radius:8px;
+    }
+
+    .toolbar-amount {
+        display: block;
+        line-height: @toolbar-mode-icon-font-size + 2;
+        margin: 0;
+        padding: 0px 0 0;
+        vertical-align: middle;
+		line-height:18px;
+		font-size:18px;
+		color: #08105b;
+		font-weight:600;
+		margin-top: 6px;
+
+        .products.wrapper ~ .toolbar & {
+            display: none;
+        }
+    }
+
+    .toolbar-products {
+        margin-bottom: @indent__xl;
+        padding: 0 @indent__s;
+        text-align: center;
+        &:extend(.abs-add-clearfix all);
+
+        .pages {
+            display: none;
+
+            .products.wrapper ~ & {
+                display: block;
+            }
+        }
+
+        .limiter {
+            .control {
+                display: inline-block;
+            }
+        }
+    }
+
+    .sorter {
+        padding: 0px 0 0;
+
+        .products.wrapper ~ .toolbar & {
+            display: none;
+        }
+
+        .sorter-action {
+            position: relative;
+            top: 0px;
+        }
+		label{
+			color: #08105b;
+		}
+    }
+
+    .sorter-options {
+        margin: 0 0 0 7px;
+        width: auto;
+		background:none;
+		border:1px solid #08105b;
+		height:30px;
+		line-height:16px;
+		font-size:16px;
+		color:#08105b;
+		padding-top:4px;
+		padding-left:6px;
+		border-radius:3px;
+		font-weight: 400;
+		font-family: Montserrat;
+		letter-spacing: 1px;
+    }
+
+    .sorter-action {
+        vertical-align: top;
+        .lib-icon-font(
+            @icon-arrow-up,
+            @_icon-font-size: 18px,
+            @_icon-font-line-height: 32px,
+            @_icon-font-color: @header-icons-color,
+            @_icon-font-color-hover: @header-icons-color-hover,
+            @_icon-font-text-hide: true,
+        );
+    }
+
+    .sorter {
+        .sort-desc {
+            &:before {
+                content: @icon-arrow-down;
+            }
+        }
+    }
+
+    .modes {
+        display: none;
+    }
+
+    .limiter-options {
+        margin: 0 5px 0 7px;
+        width: auto;
+		height:30px;
+		background:none;
+		border: 1px solid #08105b;
+		border-radius:3px;
+		font-weight: 600;
+		color:#08105b;
+    }
+
+    .limiter-label {
+        font-weight: @font-weight__regular;
+    }
+
+    .limiter {
+        .page-products .toolbar & {
+            display: none;
+        }
+    }
+}
+
+//
+//  Desktop
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+    .page-products {
+        .columns {
+            padding-top: 0;
+            position: relative;
+            z-index: 1;
+        }
+    }
+
+    .toolbar {
+        .products.wrapper ~ & .pages {
+            float: left;
+        }
+    }
+
+    .toolbar-amount {
+        float: left;
+    }
+
+    .sorter {
+        float: right;
+    }
+
+    .modes {
+        display: inline-block;
+        float: left;
+        margin-right: @indent__base;
+		border:1px solid #08105b;
+		border-radius:3px;
+
+        .products.wrapper ~ .toolbar & {
+            display: none;
+        }
+    }
+
+    .modes-label {
+        &:extend(.abs-visually-hidden-desktop all);
+    }
+
+    .modes-mode {
+        .lib-css(color, @text__color__muted);
+        border: 1px solid @border-color__base;
+        border-right: 0;
+        float: left;
+        font-weight: @font-weight__regular;
+        line-height: 1;
+        padding: 7px 10px;
+        text-align: center;
+		border:none;
+
+        &:not(.active) {
+            &:hover {
+                .lib-css(color, @text__color__muted);
+                background: darken(@toolbar-element-background, 7%);
+				background:none;
+				color:#08105b;
+            }
+        }
+
+        &:last-child {
+            border-right: 1px solid @border-color__base;
+			border:none;
+			border-left: 1px solid #08105b;
+        }
+
+
+        &.active {
+            .lib-css(color, @primary__color__light);
+			background:#08105b;
+        }
+
+        .lib-icon-font(
+            @icon-grid,
+            @_icon-font-size: @toolbar-mode-icon-font-size,
+            @_icon-font-text-hide: true,
+            @_icon-font-color: @text__color__muted,
+            @_icon-font-color-hover: @text__color__muted
+        );
+    }
+
+    .mode-list {
+        .lib-icon-font-symbol(@icon-list);
+    }
+
+    .toolbar {
+        .products.wrapper ~ & .limiter {
+            display: block;
+            float: right;
+        }
+    }
+}
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
+    .toolbar {
+        border-radius: none;
+    }
+	.sorter label{ display:none; }
+}

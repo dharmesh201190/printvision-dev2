@@ -1,0 +1,227 @@
+<?php
+/**
+ * Webkul Software.
+ *
+ * @category  Webkul
+ * @package   Webkul_JobBoard
+ * @author    Webkul
+ * @copyright Copyright (c) Webkul Software Private Limited (https://webkul.com)
+ * @license   https://store.webkul.com/license.html
+ */
+$helper = $block->getJobBoardHelper();
+$jobCategories = $block->getJobCategories();
+$isLoggedIn = $block->getCustomerSession()->isLoggedIn();
+?>
+<style>
+.h3-popmargin {
+    margin-bottom: -2rem;
+    margin-top: 2rem;
+}
+</style>
+<h1><?= /* @noEscape */ $helper->getJobBoardHeading(); ?></h1>
+<div><?= /* @noEscape */ $helper->getJobBoardContent(); ?></div>
+<?php if ($jobCategories->getSize()) { ?>
+    <div class="product data items" data-mage-init='{"tabs":{"openedState":"active"}}'>
+        <?php foreach ($jobCategories as $jobCategory) { ?>
+            <?php
+            $jobCategoryId = $jobCategory->getId();
+            $jobCollection = $block->getJobCollection($jobCategoryId);
+            ?>
+            <div class="data item title" 
+                aria-labeledby="tab-label-<?= /* @noEscape */ $jobCategory->getName() ?>-title"
+                data-role="collapsible" id="tab-label-<?= /* @noEscape */ $jobCategory->getName() ?>">
+                <a class="data switch"
+                    data-toggle="switch"
+                    href="#<?= /* @noEscape */ $jobCategory->getName() ?>"
+                    id="tab-label-<?= /* @noEscape */ $jobCategory->getName() ?>-title">
+                    <?= /* @noEscape */ $jobCategory->getName() ?>
+                </a>
+            </div>
+            <div class="data item content" id="<?= /* @noEscape */ $jobCategory->getName() ?>" data-role="content">
+                <?php foreach ($jobCollection as $job) { ?>
+                    <div class="job-profile" id="job-<?= /* @noEscape */ $job->getId(); ?>">
+                        <p class="name"><?= /* @noEscape */ $job->getDesignation(); ?></p>
+                        <div class="details">
+                            <span class="exp bold"><?= /* @noEscape */ __("Experience"); ?></span>
+                            <span><?= /* @noEscape */ $job->getExperience() ?></span>
+                            <span class="ctc bold"><?= /* @noEscape */ __("Salary"); ?></span>
+                            <span><?= /* @noEscape */ $job->getSalary() ?></span>
+                            <button class="view-job" data-jobId="<?= /* @noEscape */ $job->getId(); ?>">
+                                <?= /* @noEscape */ __("View Job Details"); ?>
+                            </button>
+                            <button class="apply-job" data-jobId="<?= /* @noEscape */ $job->getId(); ?>">
+                                <?= /* @noEscape */ __("Apply For Job"); ?>
+                            </button>
+                        </div>
+                    </div>
+                    <hr>
+                <?php } ?>
+            </div>
+        <?php } ?>
+    </div>
+<?php } else { ?>
+    <strong><?= /* @noEscape */ __("We don't have any open positions currently."); ?></strong>
+<?php } ?>
+
+<div class="job-modal-popup job-display-none">
+    <form class="job-form" name="job-form" 
+        action="<?= /* @noEscape */ $block->escapeXssInUrl($block->getFormAction()); ?>" 
+        method="post" enctype="multipart/form-data">
+        <input type="hidden" name="form_key" value="<?= /* @noEscape */ $block->getFormKey() ?>" />
+        <fieldset class="fieldset personal info">
+            <legend class="legend"><span><?= /* @noEscape */ __("Personal Information") ?></span></legend><br>
+            <div class="field field-name-firstname required">
+                <label class="label" for="firstname"><span><?= /* @noEscape */ __("First Name") ?></span></label>
+                <div class="control">
+                    <input type="text" id="firstname" name="firstname" 
+                        value="<?= /* @noEscape */ $isLoggedIn ? $block->getCustomerData("firstname") : "" ?>" 
+                        title="<?= /* @noEscape */ __("First Name") ?>" 
+                        class="input-text required-entry" data-validate="{required:true}" 
+                        autocomplete="off" aria-required="true">
+                </div>
+            </div>
+            <div class="field field-name-lastname required">
+                <label class="label" for="lastname"><span><?= /* @noEscape */ __("Last Name") ?></span></label>
+                <div class="control">
+                    <input type="text" id="lastname" name="lastname" 
+                        value="<?= /* @noEscape */ $isLoggedIn ? $block->getCustomerData("lastname") : "" ?>" 
+                        title="<?= /* @noEscape */ __("Last Name") ?>" 
+                        class="input-text required-entry" data-validate="{required:true}" 
+                        autocomplete="off" aria-required="true">
+                </div>
+            </div>
+            <div class="field required">
+                <label for="email_address" class="label"><span><?= /* @noEscape */ __("Email") ?></span></label>
+                <div class="control">
+                    <input type="email" name="email" autocomplete="email" id="email_address" 
+                        value="<?= /* @noEscape */ $isLoggedIn ? $block->getCustomerData("email") : "" ?>" 
+                        title="<?= /* @noEscape */ __("Email") ?>" class="input-text" 
+                        data-validate="{required:true, 'validate-email':true}" aria-required="true">
+                </div>
+            </div>
+            <div class="field">
+                <label for="address" class="label"><span><?= /* @noEscape */ __("Address") ?></span></label>
+                <div class="control">
+                    <textarea name="address" id="address" title="<?= /* @noEscape */ __("Address") ?>" 
+                        class="input-text"><?= /* @noEscape */ $isLoggedIn ?
+                        $block->getCustomerAddress() : "" ?></textarea>
+                </div>
+            </div>
+        </fieldset>
+        <fieldset class="fieldset professional info">
+            <legend class="legend">
+                <span><?= /* @noEscape */ __("Educational & Professional Information") ?></span>
+            </legend><br>
+            <div class="field required">
+                <label class="label" for="qualification"><span><?= /* @noEscape */ __("Qualification") ?></span></label>
+                <div class="control">
+                    <input type="text" id="qualification" name="qualification" value="" 
+                        title="<?= /* @noEscape */ __("Qualification") ?>" 
+                        class="input-text" autocomplete="off" aria-required="true">
+                </div>
+            </div>
+            <div class="field required">
+                <label class="label" for="experience"><span><?= /* @noEscape */ __("Total Experience") ?></span></label>
+                <div class="control">
+                    <select id="experience" name="experience" required="required">
+                        <option selected="" value="-1"><?= /* @noEscape */ __("Select") ?></option>
+                            <option value="99"><?= /* @noEscape */ __("Fresher") ?></option>
+                        <?php for ($i = 0; $i <= 29; $i++) { ?>
+                            <option value="<?= /* @noEscape */ $i; ?>"><?= /* @noEscape */ $i; ?></option>
+                        <?php } ?>
+                        <option value="30"><?= /* @noEscape */ __("30+") ?></option>
+                    </select>
+                </div>
+            </div>
+            <div class="field">
+                <label class="label" for="position"><span><?= /* @noEscape */ __("Current Position") ?></span></label>
+                <div class="control">
+                    <input type="text" id="position" name="position" value="" 
+                        title="<?= /* @noEscape */ __("Current Position") ?>" 
+                        class="input-text" autocomplete="off" aria-required="true">
+                </div>
+            </div>
+            <div class="field">
+                <label class="label" for="company"><span><?= /* @noEscape */ __("Current Company") ?></span></label>
+                <div class="control">
+                    <input type="text" name="company" autocomplete="off" id="company" value="" 
+                        title="<?= /* @noEscape */ __("Current Company") ?>" 
+                        class="input-text" aria-required="true">
+                </div>
+            </div>
+        </fieldset>
+        <fieldset class="fieldset personal info">
+            <legend class="legend"><span><?= /* @noEscape */ __("Job Profile") ?></span></legend><br>
+            <div class="field required">
+                <label class="label" for="position">
+                    <span><?= /* @noEscape */ __("Position Applied For") ?></span>
+                </label>
+                <div class="control">
+                    <input type="text" id="job-position" value="" 
+                        title="<?= /* @noEscape */ __("Position Applied For") ?>" 
+                        class="input-text required-entry" readonly />
+                    <input type="hidden" id="job" name="job" value="" />
+                </div>
+            </div>
+            <div class="field required">
+                <label class="label" for="resume"><span><?= /* @noEscape */ __("Upload Your Resume") ?></span></label>
+                <div class="control">
+                    <input type="file" name="resume" id="resume" class="input-file required-entry" />
+                </div>
+            </div>
+        </fieldset>
+        <div class="actions-toolbar">
+            <div class="primary">
+                <button type="submit" class="action submit primary" 
+                        title="<?= /* @noEscape */ __("Submit Application") ?>">
+                    <span><?= /* @noEscape */ __("Submit Application") ?></span>
+                </button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<div class="job-view-modal-popup job-display-none">
+    <div id="job-view-modal-click-popup">
+    </div>
+</div>
+
+<script id="job-view-modal-popup" type="text/x-magento-template">
+        <legend class="legend"><span><h3 class="h3-popmargin"><?= $block->escapeHtml(__("Description")) ?></span></h3>
+            </legend><br>
+        <p class="description-pop"></p>
+        <legend class="legend"><span><h3 class="h3-popmargin"><?= $block->escapeHtml(__("Eligibility")) ?></h3></</span>
+            </legend><br>
+        <p class="eligibility-pop"></p>
+        <legend class="legend"><span><h3 class="h3-popmargin"><?= $block->escapeHtml(__("Skills Required")) ?></h3></</span>
+            </legend><br>
+        <p class="skills-pop"></p>
+        <legend class="legend"><span><h3 class="h3-popmargin"><?= $block->escapeHtml(__("Location")) ?></h3></</span>
+            </legend><br>
+        <p class="location-pop"></p>
+</script>
+
+<?php
+    $data = [];
+    $data['jobs'] = $block->getJobCollectionData();
+    // $data[$job->getId()]=[
+    //     'name'=> $block->escapeHtml($job->getDesignation()),
+    //     'description' => $job->getDescription(),
+    //     'salary' => $block->escapeHtml($job->getSalary()),
+    //     'eligibility'=> $block->escapeHtml($job->getEligibility()),
+    //     'skills' => $block->escapeHtml($job->getSkills()),
+    //     'location' => $block->escapeHtml($job->getLocation())
+    // ];
+    // echo "<pre>";
+    // print_r($data);
+    // die("l 202");
+    $serializedData = $block->getJsonSerializer()->serialize($data);
+?>
+
+<script type="text/x-magento-init">
+{
+    "*": {
+        "Webkul_JobBoard/js/jobboard": <?= /* @noEscape */ $serializedData; ?>
+    }
+}
+</script>

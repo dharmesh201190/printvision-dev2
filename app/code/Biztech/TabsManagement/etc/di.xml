@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Magento/Store/etc/config.xsd">    
+	<preference for="Biztech\Productdesigner\Block\Adminhtml\Subtabs\Edit\Tab\Main" type="Biztech\TabsManagement\Block\Adminhtml\Subtabs\Edit\Tab\Main" />
+</config>

@@ -1,0 +1,60 @@
+<?php 
+$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+$downloadMsg = $objectManager->get('Magento\Framework\App\Config\ScopeConfigInterface')->getValue('artwork_design/email/download_image_text');
+?>
+
+<?php $artWorkId = $this->getRequest()->getParam('id'); ?>
+<?php $comments = $block->getComments($artWorkId); ?>
+<?php $class = ''; ?>
+<div class="all-conversation">
+	<?php foreach($comments as $comment): ?>
+		<?php if($comment['is_customer'] == 1){ $class="customer-rply"; $label="You"; } else { $class="admin-rply"; $label="Admin"; } ?>
+		<div class="comment <?php echo $class ?>">
+			<div class="comment-by"><?php echo $label ?></div>
+			<div class="all-comment">
+				<div class="chat-person"><?php echo $comment['comment'] ?></div>
+				<?php if(isset($comment['image'])): ?>
+					<?php $imageUrl = $block->getMediaUrl().'/'.$comment['image'] ?>
+					<div><?php echo $downloadMsg.' <a href="'.$imageUrl.'" download=""> here. </a>'; ?></div>
+				<?php endif; ?>	
+			</div>				
+		</div>
+	<?php endforeach; ?>
+	<div class="comment-input">
+		<form class="form form-submit-comments" action="<?php echo $block->getBaseUrl(); ?>artworkdesign/customer/savecomments/id/<?php echo $artWorkId ?>" method="post" id="form-submit-comments" enctype="multipart/form-data" data-hasrequired="* Required Fields" novalidate="novalidate">
+			<fieldset class="fieldset info">
+			<?php /* @noEscape */ echo $block->getBlockHtml('formkey'); ?>
+			 <legend class="legend"><span>Artwork Reply</span></legend><br>
+				<div class="field field-name-comments required">
+					<label class="label" for="comments">
+						<span>Comments</span>
+					</label>
+					<div class="control">
+						<input placeholder="Comments" type="text" id="comments" name="comments" value="" title="Comments" class="input-text required-entry" data-validate="{required:true}" aria-required="true">
+					</div>
+				</div>
+			</fieldset>
+		
+
+			<div class="actions-toolbar">
+				<div class="primary">
+					<button type="submit" class="action save primary" title="Save"><span>Save</span></button>
+				</div>
+				<div class="secondary">
+					<a class="action back" href="<?php echo $block->getBaseUrl(); ?>artworkdesign/customer/index"><span>Go back</span></a>
+				</div>
+			</div>
+		</form>
+	</div>	
+</div>	
+<script type="text/javascript">
+require([
+    'jquery',
+    'mage/mage'
+], function($){
+ 
+   var dataForm = $('#form-submit-comments');
+   dataForm.mage('validation', {});
+ 
+});
+</script>

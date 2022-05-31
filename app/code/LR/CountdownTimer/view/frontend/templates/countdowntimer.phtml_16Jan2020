@@ -1,0 +1,283 @@
+<?php
+$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+$blockObj= $block->getLayout()->createBlock('LR\CountdownTimer\Block\CountdownTimer');
+$deliveryTypes = $blockObj->getDeliveryCollection();
+$holidays = $objectManager->create('LR\CountdownTimer\Model\ResourceModel\CountdownTimer\Collection');
+$currentdate = strtotime(date('Y-m-d'));
+$htmlString = '';
+if (count($deliveryTypes)) {
+    if($holidays->count() > 0){
+        $holidays_dates = array();
+        foreach ($holidays as $key => $value) {
+            $holiday_date[] =  strtotime($value['date']);
+            $formatted_holiday_date[] = $value['date'];
+        }
+    }
+    else
+    {
+        $holiday_date[] = '';
+    }
+    $holidayArray = json_encode($holiday_date);
+    $holidayDateInFormatArray = json_encode($formatted_holiday_date);
+} else {
+    // $resultarray['status'] = 'failed';
+}
+?>
+
+<script type="text/javascript">
+    require(['jquery', 'jquery/ui'], function($){
+        $(document).ready(function() {
+            var fixedCloseTime = "14:32:00";
+            var currentDateTime = new Date();
+            var currentUKDateTime = new Date().toLocaleString('en-GB', { timeZone: 'Europe/London' });
+            // console.log('currentDateTime : '+currentDateTime);
+            // console.log('currentUKDateTime : '+currentUKDateTime);
+            currentUKDateTimeArray = currentUKDateTime.split(',');
+            var currentUKDate = currentUKDateTimeArray[0];
+            var currentUKTime = $.trim(currentUKDateTimeArray[1]);
+
+            var splitUKDate = currentUKDate.split('/');
+            splitUKDate = splitUKDate[1]+'/'+splitUKDate[0]+'/'+splitUKDate[2];
+            // console.log('splitUKDate : '+splitUKDate);
+
+            var finalCurrentTime = splitUKDate+' '+ currentUKTime;
+            var finalCloseTime = splitUKDate+' '+fixedCloseTime;
+            // console.log('finalCurrentTime : '+finalCurrentTime);
+            // console.log('finalCloseTime : '+finalCloseTime);
+            var diff = new Date(finalCloseTime) - new Date(finalCurrentTime);
+
+            if(diff <= 0){
+                diff = (86400*1000)+diff;
+                finalCurrentTime = new Date(finalCurrentTime);
+                // console.log(finalCurrentTime);
+                finalCurrentTime.setDate(finalCurrentTime.getDate() + 1);
+                // console.log(finalCurrentTime);
+            }
+            var diff_time = diff/(1000);
+            var diff_time_in_round = Math.round(diff_time);
+            var endTime = diff_time_in_round;
+            display = $('#reverse-timer');
+            var deliveredBy = '';
+            var days = allWeekDays();
+            var skipDays = 0;
+
+            <?php foreach ($deliveryTypes as $deliveryData) { ?>
+                var deliveryDays = <?php echo $deliveryData->getShippingDays()?>;
+                var todayDateTime = new Date(finalCurrentTime);
+                var deliveryDate = returnFinalDeliveryDate(todayDateTime, deliveryDays);
+                var deliveryDate_getDate = deliveryDate.getDate();
+                if(deliveryDate_getDate < 10) { deliveryDate_getDate = "0"+deliveryDate_getDate; }
+                var deliveryDate_getMonth = deliveryDate.getMonth()+1;
+                if(deliveryDate_getMonth < 10) { deliveryDate_getMonth = "0"+deliveryDate_getMonth; }
+                var deliveryDate_getFullYear = deliveryDate.getFullYear();
+                deliveryDate = deliveryDate_getDate+'/'+deliveryDate_getMonth+'/'+deliveryDate_getFullYear;
+                <?php $class = strtolower(str_replace(" ", "", $deliveryData->getShippingLabel())) ?>
+                var shippingLabel = '<?php echo $deliveryData->getShippingLabel()?>';
+                deliveredBy = "<div class='deliverBox'><div class='db-box-label'>"+shippingLabel+"</div><div class='db-box <?php echo $class?>_box'><span class='delivery_date_title'>Dispatched By</span><span class='delivery_date'>"+deliveryDate+"</span></div></div>";
+                $("#deliveredByNew").prepend(deliveredBy);
+            <?php } ?>
+
+            startTimer(endTime, display);
+        });
+
+        var timer;
+        function startTimer(duration, display)
+        {
+            timer = duration;
+            var minutes, seconds;
+            setInterval(function () {
+                var hours = Math.floor((timer) / 3600);
+                var minutes = Math.floor((timer - (hours * 3600 )) / 60);
+                var seconds = Math.floor((timer - (hours * 3600) - (minutes * 60)));
+
+                if(hours < "10"){ hours = "0" + hours; }
+                if(minutes < "10"){ minutes = "0" + minutes; }
+                if(seconds < "10"){ seconds = "0" + seconds; }
+
+                //display.html(hours + ' Hour(s) ' + minutes + ' Minute(s) ' + seconds + ' Second(s)');
+                $("#reverse-timer #timer-hours").html(hours);
+                $("#reverse-timer #timer-mins").html(minutes);
+                $("#reverse-timer #timer-secs").html(seconds);
+
+                if (--timer < 0)
+                {
+                    timer = 86400;
+                    var standarDeliveryDate = $(".standard_box .delivery_date").html();
+                    standarDeliveryDate = changeDeliveryDate(standarDeliveryDate);
+
+                    var expressDeliveryDate = $(".express_box .delivery_date").html();
+                    expressDeliveryDate = changeDeliveryDate(expressDeliveryDate);
+
+                    var superExpressDeliveryDate = $(".superexpress_box .delivery_date").html();
+                    superExpressDeliveryDate = changeDeliveryDate(superExpressDeliveryDate);
+
+                    $(".standard_box .delivery_date").html(standarDeliveryDate);
+                    $(".express_box .delivery_date").html(expressDeliveryDate);
+                    $(".superexpress_box .delivery_date").html(superExpressDeliveryDate);
+                }
+            }, 1000);
+        }
+
+        function allWeekDays()
+        {
+            return ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+        }
+
+        function returnFinalDeliveryDate(dateObj, deliveryDays)
+        {
+            var oneDaySeconds = 86400 * 1000;
+            days = allWeekDays();
+            newSkipDays = 0
+
+            curDate = new Date(dateObj);
+            del_date = curDate.setDate(curDate.getDate() + deliveryDays);
+            date = new Date(del_date);
+
+            var start_date = dateObj.getTime();
+            var end_date = del_date;
+
+            // Check holiday on Start Date - Start
+            <?php foreach(json_decode($holidayArray) as $holiday) { ?>
+                var holidayDate = <?php echo $holiday ?>;
+                holidayDate = new Date(holidayDate * 1000);
+                var holidayDateInFormat = holidayDate.toISOString().slice(0,10);
+                var start_dateInFormat = dateObj.toISOString().slice(0,10);
+                var dateInFormat = date.toISOString().slice(0,10);
+                if(holidayDateInFormat==start_dateInFormat)
+                {
+                    dateObj.setDate(dateObj.getDate() + 1);
+                    date.setDate(date.getDate() + 1);
+                    var start_date = dateObj.getTime();
+                    var end_date = date.getTime();
+                    console.log(dateObj);
+                    console.log(date);
+                }
+            <?php } ?>
+            // console.log(start_date);
+            // console.log(end_date);
+            // Check holiday on Start Date - End
+            var addMoreDays = 0;
+            console.log(<?php echo $holidayDateInFormatArray?>);
+            for(var i=(start_date+oneDaySeconds);i<=end_date;i=i+oneDaySeconds)
+            {
+                //console.log(i);
+                loopdate = new Date(i);
+                loopdateDay = loopdate.getDay();
+                dayName = days[loopdateDay];
+                var formattedLoopDate = loopdate.toISOString().slice(0,10);
+                //console.log(formattedLoopDate+'---'+dayName);
+                //console.log($.inArray(formattedLoopDate, <?php echo $holidayDateInFormatArray?>));
+                if($.inArray(formattedLoopDate, <?php echo $holidayDateInFormatArray?>)!=-1)
+                {
+                    if(dayName!='Sunday' && dayName!='Saturday')
+                    {
+                        addMoreDays +=1;
+                        end_date = end_date+oneDaySeconds;
+                    }
+                }
+                <?php // foreach(json_decode($holidayArray) as $holiday) { ?>
+            //         var holidayDate = <?php //echo $holiday ?>;
+            //         holidayDate = new Date(holidayDate * 1000);
+            //         var holidayDateInFormat = holidayDate.toISOString().slice(0,10);
+            //         var deliverydateINFormat = loopdate.toISOString().slice(0,10);
+            //         if(holidayDateInFormat==deliverydateINFormat && days[holidayDate.getDay()]!='Sunday' && days[holidayDate.getDay()]!='Saturday')
+            //         {
+            //             addMoreDays += 1;
+            //             end_date = end_date+oneDaySeconds;
+            //             end_dateObj = new Date(i);
+            //             end_dateObjDay = end_dateObj.getDay();
+            //             dayName = days[end_dateObjDay];
+            //         }
+                <?php //} ?>
+                if(dayName=='Sunday' || dayName=='Saturday')
+                {
+                    addMoreDays += 1;
+                    end_date = end_date+oneDaySeconds;
+                }
+            }
+            //console.log(end_date);
+            // del_date = end_date + (addMoreDays*oneDaySeconds);
+            date = new Date(end_date);
+            //console.log('');
+            return date;
+        }
+
+        function changeDeliveryDate(deliveryDate)
+        {
+            days = allWeekDays();
+            //console.log(deliveryDate);
+            newSkipDays = 0
+            var splitDate = deliveryDate.split('/');
+            var date = new Date(splitDate[1]+'/'+splitDate[0]+'/'+splitDate[2]);
+            var newdate = new Date(date);
+            newdate.setDate(newdate.getDate() + 1);
+            dayNumber = newdate.getDay();
+            if(days[dayNumber]=='Saturday')
+            {
+                newSkipDays = 2;
+            }
+            if(days[dayNumber]=='Sunday')
+            {
+                newSkipDays = 1;
+            }
+            newdate.setDate(newdate.getDate() + newSkipDays);
+            checkHolidayOnTheGivenDate(newdate);
+            <?php foreach(json_decode($holidayArray) as $holiday) { ?>
+                var holidayDate1 = <?php echo $holiday ?>;
+                holidayDate1 = new Date(holidayDate1 * 1000);
+                deliveryDate1 = new Date(newdate);
+
+                var holidayDate1InFormat = holidayDate1.toISOString().slice(0,10);
+                var deliveryDate1_getFullYear = deliveryDate1.getFullYear();
+                var deliveryDate1_getMonth = ((deliveryDate1.getMonth()+1) < 10) ? "0"+(deliveryDate1.getMonth()+1) : (deliveryDate1.getMonth()+1);
+                var deliveryDate1_getDate = (deliveryDate1.getDate() < 10) ? "0"+deliveryDate1.getDate() : deliveryDate1.getDate();
+                var deliveryDate1INFormat = deliveryDate1_getFullYear+'-'+deliveryDate1_getMonth+'-'+deliveryDate1_getDate;
+                if(holidayDate1InFormat==deliveryDate1INFormat && days[holidayDate1.getDay()]!='Sunday' && days[holidayDate1.getDay()]!='Saturday')
+                {
+                    deliveryDate1.setDate(deliveryDate1.getDate() + 1);
+                    newdate = deliveryDate1;
+                }
+            <?php } ?>
+            //console.log(newdate);
+            deliveryDate = newdate.getDate()+'/'+(newdate.getMonth()+1)+'/'+newdate.getFullYear();
+            //console.log('');
+            return deliveryDate;
+        }
+
+        function checkHolidayOnTheGivenDate(givenDate)
+        {
+            var givenDate_getFullYear = givenDate.getFullYear();
+            var givenDate_getMonth = ((givenDate.getMonth()+1) < 10) ? "0"+(givenDate.getMonth()+1) : (givenDate.getMonth()+1);
+            var givenDate_getDate = (givenDate.getDate() < 10) ? "0"+givenDate.getDate() : givenDate.getDate();
+            var deliveryDate1INFormat = givenDate_getFullYear+'-'+givenDate_getMonth+'-'+givenDate_getDate;
+            //console.log(deliveryDate1INFormat);
+        }
+
+        function getCurrentDate()
+        {
+            return new Date();
+        }
+    });
+</script>
+
+<div class="delivery_boxes">
+    <div id="reverse-timer" class="need_quick_container">
+        <div class="need_quick">Order Within</div>
+        <div class="ticker">
+            <div class="time-containter">
+                <span id="timer-hours" class="counter-cnt">00</span>
+                <span class="time-text">H</span>
+            </div>
+            <div class="time-containter">
+                <span id="timer-mins" class="counter-cnt">00</span>
+                <span class="time-text">M</span>
+            </div>
+            <div class="time-containter">
+                <span id="timer-secs" class="counter-cnt">00</span>
+                <span class="time-text">S</span>
+            </div>     
+        </div>
+    </div>
+    <div class="delivery_boxes_items" id="deliveredBy"></div>
+    <div class="delivery_boxes_items" id="deliveredByNew"></div>
+</div>

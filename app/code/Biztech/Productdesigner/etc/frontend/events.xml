@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../lib/internal/Magento/Framework/Event/etc/events.xsd">
+	<event name="designer_images_response_before">
+		<observer name="designer-images-response-before" instance="Biztech\Productdesigner\Observer\DesignerImagesResponseBefore"/>
+	</event>
+</config>

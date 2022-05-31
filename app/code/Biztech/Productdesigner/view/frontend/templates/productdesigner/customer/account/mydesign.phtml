@@ -1,0 +1,111 @@
+<div id="main-content">
+    <?php
+    $objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+    $session = $objectManager->get('Magento\Customer\Model\Session');
+    ?>
+    <?php
+    $currentStoreId = $objectManager->get('Magento\Store\Model\StoreManagerInterface')->getStore()->getId();
+    if ($this->helper('Biztech\Productdesigner\Helper\Info')->isEnable($currentStoreId)):
+        ?>
+        <?php if ($session->isLoggedIn()): ?>
+            <div class="">
+                <div class="box-account box-info">
+                    <?php
+                    $customerData = $session->getCustomer();
+                    $customer_id = $customerData->getId();
+                    $data = $this->getRequest()->getParams();
+                    $data_arr = array('customer_id' => $customer_id,
+                        'searchText' => '',
+                        'page' => isset($data['p']) ? $data['p'] : 1,
+                        'limit' => 20);
+                    $collections = $this->helper('Biztech\Productdesigner\Helper\Data')->getCustomerDesign($data_arr);
+                    $page = $collections['page'];
+                    $totalpages = $collections['totalpages'];
+                    ?>
+                    <?php if (count($collections['designdata']) == 0): ?>
+                        <div id="messages">
+                            <div class="messages">
+                                <div class="message message-warning warning">
+                                    <div data-ui-id="messages-message-success">
+                                        <?php echo __('You have not saved any product designs yet.') ?>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <?php else: ?>
+                        <div id="designs_box">
+                            <?php
+                            $demo = $objectManager->create('\Magento\Store\Model\StoreManagerInterface');
+                            $url = $demo->getStore()->getBaseUrl() . 'productdesigner/designs/mydesigns';
+                            ?>
+                            <ul class="products-grid">
+                                <?php
+                                foreach ($collections['designdata'] as $mydesign):
+                                    $design_id = $mydesign['id'];
+                                    ?>
+                                    <li class="item">
+                                        <div class="item-inner">
+                                            <img width="135" height="135" alt="" src="<?php echo $mydesign['path']; ?>"> 
+                                            <h2 class="product-name">
+                                                <a title="<?php echo $mydesign['title'] ?>" href="<?php echo $demo->getStore()->getBaseUrl() . 'productdesigner/index/index/id/' . $mydesign['product_id'] . '/design/' . base64_encode($design_id); ?>"><?php echo $mydesign['title'] ?></a>
+                                            </h2>
+                                            <div class="actions">
+                                                <button type="button" title="<?php echo __('Edit Design') ?>" class="action primary btn-design-it" onclick="location.href = ('<?php echo $demo->getStore()->getBaseUrl() . 'productdesigner/index/index/id/' . $mydesign['product_id'] . '/design/' . base64_encode($design_id); ?>')"><span><span><?php echo __('Edit Design') ?></span></span></button>
+                                                <button onclick="deleteDesign('<?php echo $this->getUrl('productdesigner/designs/deleteDesign', array('_secure' => $this->getRequest()->isSecure())) ?>design_id/<?php echo $design_id; ?>');" class="action primary" title="<?php echo __('Delete'); ?>" type="button"><span><span><?php echo __('Delete'); ?></span></span></button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                <?php endforeach; ?>
+                            </ul>
+                            <?php
+                            if ($totalpages > 1) {
+                                ?>
+                                <div class="byi-pagination">
+                                    <?php
+                                    $currentPage = 1;
+                                    if (isset($data['p']) && $data['p'] != "") {
+                                        $currentPage = $data['p'];
+                                    } else {
+                                        $data['p'] = 1;
+                                    }
+                                    if ($currentPage > 1) {
+                                        $prevPage = $currentPage - 1;
+                                        echo '<a href="' . $url . '/p/' . $prevPage . '">' . '<span class="1" > << </span>'
+                                        . '</a>';
+                                    }
+                                    for ($i = 1; $i <= $totalpages; $i++) {
+                                        echo '<a href="' . $url . '/p/' . $i . '">'
+                                        . '<span>' . $i . ' ' . '</span>' . '</a>';
+                                    }
+                                    if ($currentPage != $totalpages) {
+                                        $nextPage = $currentPage + 1;
+                                        echo '<a href="' . $url . '/p/' . $nextPage . '">' . '<span> >> </span>' . '</a>';
+                                    }
+                                    ?>
+                                </div>
+                                <?php
+                            }
+                            ?>
+                        </div>
+                    <?php endif; ?>
+                </div>
+            </div>
+            <?php //echo $block->getPagerHtml();   ?>
+        <?php else: ?>
+            <?php
+            $demo = $objectManager->create('\Magento\Store\Model\StoreManagerInterface');
+            $url = $demo->getStore()->getBaseUrl() . 'customer/account/login/';
+            $redirect = $objectManager->get('\Magento\Framework\App\Response\Http');
+            $redirect->setRedirect($url);
+            ?>
+        <?php endif; ?>
+    <?php endif; ?>
+</div>
+<script type="text/javascript">
+    function deleteDesign(url)
+    {
+        if (confirm('Are you sure want to remove this design?')) {
+            location.href = url;
+        }
+    }
+</script>

@@ -1,0 +1,43 @@
+<?php $_product = $block->getProduct(); ?>
+	<?php if($_product->getDesignOnline()):?>
+	    <button type="button"
+	            title="<?php /* @escapeNotVerified */ echo "Design Online" ?>"
+	            class="action primary design-online"
+	            id="product-design-online-button"
+	            onclick="location.href='#';">
+	        <span><i class="fa fa-pencil-square-o"></i><?php /* @escapeNotVerified */ echo "Design Online" ?></span>
+	    </button>
+	<?php endif;?>
+<?php if($_product->getId() == "472"):?>
+	<button type="button"
+	        title="<?php /* @escapeNotVerified */ echo "Upload Artwork" ?>"
+	        class="action primary design-artwork-upload"
+	        id="product-upload-artwork-button">
+	    <span><?php /* @escapeNotVerified */ echo "Upload Artwork" ?></span>
+	</button>
+	<button type="button"
+	        title="<?php /* @escapeNotVerified */ echo "Design for Us" ?>"
+	        class="action primary design-for-us"
+	        id="product-design-for-us-button">
+	    <span><?php /* @escapeNotVerified */ echo "Design for Us" ?></span>
+	</button>
+
+<?php echo $block->getChildHtml('', true) ?>
+
+<style type="text/css">
+	.page-product-configurable .product-options-wrapper .field.file{display:none;}
+	.page-product-configurable .product-options-wrapper .price-tier_price{display: none;}
+	.page-product-configurable .product-options-bottom{display: none;}
+</style>
+<script type="text/javascript">
+require(['jquery', 'jquery/ui'], function($){
+  	$(".design-artwork-upload").click(function(){
+  		$(".page-product-configurable .product-options-wrapper .field.file").insertAfter($(".design-for-us"));
+	  	$(".page-product-configurable .product-options-wrapper .field.file").show();
+	  	$(".page-product-configurable .product-options-wrapper .price-tier_price").show();
+	  	$(".page-product-configurable .product-options-bottom").show();
+	});
+
+});
+</script>
+<?php endif; ?>

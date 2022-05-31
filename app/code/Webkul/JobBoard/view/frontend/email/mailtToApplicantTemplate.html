@@ -1,0 +1,29 @@
+<!--
+/**
+ * Webkul Software.
+ *
+ * @category  Webkul
+ * @package   Webkul_JobBoard
+ * @author    Webkul
+ * @copyright Copyright (c) Webkul Software Private Limited (https://webkul.com)
+ * @license   https://store.webkul.com/license.html
+ */
+-->
+<!--@subject Notification for Job Application @-->
+<!--@vars {
+"var applicant_name":"Applicant name",
+"var job_position":"Job Position"
+} @-->
+
+{{template config_path="design/email/header_template"}}
+<table>
+    <tr class="email-intro">
+        <td>
+            <p class="greeting">{{trans 'Hello %applicant_name,' applicant_name=$applicant_name}}</p>
+            <p>
+                {{trans 'Your job application for %job_position has been recieved and under review process.' job_position=$job_position}}
+            </p>
+        </td>
+    </tr>
+</table>
+{{template config_path="design/email/footer_template"}}

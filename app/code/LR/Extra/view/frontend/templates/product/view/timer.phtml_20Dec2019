@@ -1,0 +1,141 @@
+<script type="text/javascript">
+    require(['jquery', 'jquery/ui'], function($){
+        $(document).ready(function() {
+            var fixedCloseTime = "13:00:00";
+            var dt = new Date();
+            var currentUKDateTime = new Date().toLocaleString('en-GB', { timeZone: 'Europe/London' });
+            var currentUKDateTime = currentUKDateTime.split(',');
+            var currentUKDate = currentUKDateTime[0];
+            var currentUKTime = $.trim(currentUKDateTime[1]);
+            
+            var splitDate = currentUKDate.split('/');
+            var splitDate = splitDate[1]+'/'+splitDate[0]+'/'+splitDate[2];
+
+            var finalCurrentTime = splitDate+' '+ currentUKTime;
+            var finalCloseTime = splitDate+' '+fixedCloseTime;
+            var diff = new Date(finalCloseTime) - new Date(finalCurrentTime);
+            if(diff <= 0){
+                diff = (86400*1000)+diff;
+            }
+            diff_time = diff/(1000);
+            var diff_time1 = Math.round(diff_time);
+
+            var endTime = diff_time1;
+            display = $('#reverse-timer');
+            startTimer(endTime, display);
+        });
+
+        var timer;
+        function startTimer(duration, display)
+        {
+            timer = duration;
+            var minutes, seconds;
+            setInterval(function () {
+                var hours = Math.floor((timer) / 3600);
+                var minutes = Math.floor((timer - (hours * 3600 )) / 60);
+                var seconds = Math.floor((timer - (hours * 3600) - (minutes * 60)));
+
+                if(hours < "10"){ hours = "0" + hours; }
+                if(minutes < "10"){ minutes = "0" + minutes; }
+                if(seconds < "10"){ seconds = "0" + seconds; }
+
+                //display.html(hours + ' Hour(s) ' + minutes + ' Minute(s) ' + seconds + ' Second(s)');
+                $("#reverse-timer #timer-hours").html(hours);
+                $("#reverse-timer #timer-mins").html(minutes);
+                $("#reverse-timer #timer-secs").html(seconds);
+
+                if (--timer < 0)
+                {
+                    timer = 86400;
+                    var standarDeliveryDate = $(".standard_box .delivery_date").html();
+                    standarDeliveryDate = changeDeliveryDate(standarDeliveryDate);
+
+                    var expressDeliveryDate = $(".express_box .delivery_date").html();
+                    expressDeliveryDate = changeDeliveryDate(expressDeliveryDate);
+
+                    var superExpressDeliveryDate = $(".super_box .delivery_date").html();
+                    superExpressDeliveryDate = changeDeliveryDate(superExpressDeliveryDate);
+
+                    $(".standard_box .delivery_date").html(standarDeliveryDate);
+                    $(".express_box .delivery_date").html(expressDeliveryDate);
+                    $(".super_box .delivery_date").html(superExpressDeliveryDate);
+                }
+            }, 1000);
+        }
+
+        function changeDeliveryDate(deliveryDate)
+        {
+            var splitDate = deliveryDate.split('/');
+            var date = new Date(splitDate[1]+'/'+splitDate[0]+'/'+splitDate[2]);
+            var newdate = new Date(date);
+            newdate.setDate(newdate.getDate() + 1);
+            deliveryDate = newdate.getDate()+'/'+(newdate.getMonth()+1)+'/'+newdate.getFullYear();
+            return deliveryDate;
+        }
+});
+</script>
+
+<div class="delivery_boxes">
+    <div id="reverse-timer" class="need_quick_container">
+        <div class="need_quick">Order Within</div>
+        <div class="ticker">
+            <div class="time-containter">
+                <span id="timer-hours" class="counter-cnt">00</span>
+                <span class="time-text">H</span>
+            </div>
+            <div class="time-containter">
+                <span id="timer-mins" class="counter-cnt">00</span>
+                <span class="time-text">M</span>
+            </div>
+            <div class="time-containter">
+                <span id="timer-secs" class="counter-cnt">00</span>
+                <span class="time-text">S</span>
+            </div>     
+        </div>
+    </div>
+
+    <div class="delivery_boxes_items">
+        <div class="deliverBox">
+            <div class="db-box-label">STANDARD</div>
+            <div class="db-box standard_box">
+                <span class="delivery_date_title">Delivered By</span>
+                <span class="delivery_date">20/12/2019</span>
+            </div>
+        </div>
+        <div class="deliverBox">
+            <div class="db-box-label">EXPRESS</div>
+            <div class="db-box express_box">
+                <span class="delivery_date_title">Delivered By</span>
+                <span class="delivery_date">19/12/2019</span>
+            </div>
+        </div>
+        <div class="deliverBox">
+            <div class="db-box-label">SUPER EXPRESS</div>
+            <div class="db-box super_box">
+                <span class="delivery_date_title">Delivered By</span>
+                <span class="delivery_date">18/12/2019</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- PRODUCT SUMMERY -->
+<?php $objectManager =  \Magento\Framework\App\ObjectManager::getInstance();?>
+<?php $registry = $objectManager->get('\Magento\Framework\Registry');?>
+<?php $currentProduct = $registry->registry('current_product');?>
+<?php if($currentProduct->getTypeId() == "configurable"):?>
+<div class="product-summery">
+	<div id="swatch-option-summery"></div>
+</div>
+<?php endif;?>
+
+<!-- PRODUCT SUMMERY -->
+<?php $mediaUrl = $objectManager->get('Magento\Store\Model\StoreManagerInterface')
+                    ->getStore()
+                    ->getBaseUrl(\Magento\Framework\UrlInterface::URL_TYPE_MEDIA);?>
+<?php $freeDeliveryImage = $mediaUrl.'wysiwyg/banners/free_delivery_50.gif'?>
+<div class="right-sidebar-free-delivery">
+    <img src="<?php echo $freeDeliveryImage;?>" alt="Free Delivery on Order Over 50">
+</div>
+
+

@@ -1,0 +1,164 @@
+<?php
+
+	ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
+	$params = $this->getRequest()->getParams();
+	$design_id = $params['design_id'];
+	$order_id = $params['order_id'];
+	$itemId = '';
+	if(isset($params['item_id'])){
+		$itemId = $params['item_id'];
+	}
+	$designData = $this->getDesignCollection($design_id);
+	if(isset($designData['product_id'])){
+		$productId = $designData['product_id'];
+	}
+	$namenumberArr = json_decode($designData['name_number_details'], true);
+	$redirctURL = $this->getUrl('namenumber/Index/index') . 'id/' . $productId . '/design/' . base64_encode($design_id) . '/item/' . $itemId .'/order/' . $order_id . '/';
+?>
+<?php if(isset($namenumberArr)){ ?>
+	<div class="byi-custome-heading">
+	    <h3 style="margin-bottom: 0;"><?php echo __("Name Number Details") ?></h3>
+	</div>
+	<div class="grid byi-grid">
+	    <div class="hor-scroll">
+	        <table class="data-grid">
+	            <thead>
+	                <tr>
+	                    <?php if(isset($namenumberArr[0]['name'])){ echo '<th class="data-grid-th">'; ?><?php echo __("Name") ?><?php echo '</th>'; } ?>
+	                    <?php if(isset($namenumberArr[0]['number'])){ echo '<th class="data-grid-th">'; ?><?php echo __("Number") ?> <?php echo '</th>'; }?>
+	                    <th class="data-grid-th"><?php echo __("Qty") ?></th>
+	                    <th class="data-grid-th"><?php echo __("Action") ?></th>
+	                </tr>
+	            </thead>
+	            <tbody>
+	                <?php foreach ($namenumberArr as $key => $namenumberData) { ?>
+                    <tr> 
+                        <?php if(isset($namenumberData['name'])){ echo '<td>'; ?><?php echo $namenumberData['name']; ?> <?php echo '</td>'; } ?>  
+                        <?php if(isset($namenumberData['number'])){ echo '<td>'; ?><?php echo $namenumberData['number']; ?> <?php echo '</td>'; }?>  
+                        <td><?php echo $namenumberData['qty']; ?></td>
+                        <?php 
+                        	$additionalURL = '';
+                        	if(isset($namenumberData['number']) && isset($namenumberData['name'])){ 
+                        		$additionalURL = 'name/' . base64_encode($namenumberData['name']) . '/number/' . base64_encode($namenumberData['number']) . '/index/' . $key;
+                        	}else if(isset($namenumberData['name']) && !isset($namenumberData['number'])){
+                        		$additionalURL = 'name/' .base64_encode($namenumberData['name']) . '/index/' . $key;
+                        	}else if(isset($namenumberData['number']) && !isset($namenumberData['name'])){
+                        		$additionalURL = '/number/' . base64_encode($namenumberData['number']) . '/index/' . $key;
+                        	}
+                        ?>  
+                        <td>
+                        	<?php if(!isset($namenumberData['isGenerated'])){ ?>
+                        		<a href="<?php echo $redirctURL . $additionalURL; ?>">Generate Image</a>
+                        	<?php } else { ?>
+                        		<span>Images Generated</span>
+                        	<?php }?>
+                    	</td>
+                    </tr>
+                    <?php } ?>
+	            </tbody>
+	        </table>
+	    </div>
+	</div>
+	<!-- Name Number images grid -->
+	<?php 
+		$designImages = $this->_designImagesCollection->create()->addFieldToFilter('design_id', array('eq' => $design_id))->addFieldToFilter('design_image_type', array('neq' => 'base'))->getData();
+		$isNameNumberImageGenerated = 'false';
+		foreach ($designImages as $designImage){
+			if($designImage['design_image_type'] == 'basenamenumber' || $designImage['design_image_type'] == 'orignamenumber'){
+				$isNameNumberImageGenerated = 'true';
+			}
+		}
+		if($isNameNumberImageGenerated == 'true'){
+	?>
+	<div class="byi-custome-heading">
+	    <h3 style="margin-bottom: 0;"><?php echo __("Name Number Images") ?></h3>
+	</div>
+	<div class="grid byi-grid">
+	    <div class="hor-scroll">        
+	        <ul>
+	            <?php
+	            
+				$imageFormat = $this->_scopeConfigInterface->getValue('productdesigner/general/download_image_format');
+				$prod_design_dir = $this->_storeManagerInterface->getStore()->getBaseUrl(\Magento\Framework\UrlInterface::URL_TYPE_MEDIA) . 'productdesigner' . '/designs/';
+				$allowDownloadSVG = $this->_scopeConfigInterface->getValue('productdesigner/general/enabled_generateSVG');
+	            foreach ($designImages as $designImage):
+	                if ($designImage['design_image_type'] == 'basenamenumber' || $designImage['design_image_type'] == 'orignamenumber'):
+	                    ?>
+	                    <li align="center" valign="middle" type="<?php echo $designImage['design_image_type'] ?>">
+	                        <?php
+	                        $imageName = basename($designImage['image_path']);
+	                        $imageData = explode('.', $imageName);
+	                        if ($imageData[1] == 'jpg') {
+	                            $image_name = $imageData[0] . '.png';
+	                        } else {
+	                            $image_name = $imageData[0] . '.' . $imageData[1];
+	                        }
+	                        if ($imageFormat == 'png') {
+	                            if ($designImage['design_image_type'] == 'basenamenumber') {
+	                                $newpath = 'base/' . $image_name;
+	                            } else {
+	                                $newpath = 'orig/' . $image_name;
+	                            }
+	                        } else {
+	                            if ($designImage['design_image_type'] == 'basenamenumber') {
+	                                $newpath = 'base/' . $image_name;
+	                            } else {
+	                                $newpath = 'orig/' . $image_name;
+	                            }
+	                        }
+
+	                        $conn = $this->_resourceConnection->getConnection();
+	                        $tableName = $this->_resourceConnection->getTableName('catalog_product_entity_media_gallery_value'); //gives table name with prefix
+	                        $sql = "Select * FROM " . $tableName . " WHERE value_id = " . $designImage['product_image_id'] . ";";
+	                        $_galleryImgs = $conn->fetchAll($sql);
+	                        $sidecollectionData = $this->_sideCollection->create()->addFieldToFilter('imageside_id', $_galleryImgs[0]['image_side'])->getData();
+	                        ?>
+	                        <h4><?php echo __('Image Side: '); ?><?php echo $sidecollectionData[0]['imageside_title']; ?></h4>
+
+	                        <?php if ($designImage['design_image_type'] == 'basenamenumber' || $designImage['design_image_type'] == 'orignamenumber'): ?>
+	                            <div class="product-design"><img src="<?php echo $prod_design_dir . $design_id . '/' . $newpath; ?>" alt="" ></div> 
+	                            <?php //else:      ?>
+	                        <?php endif; ?>
+
+	                        <div class="view-designs-buttons">
+	                            <button  type="button" onclick="location.href = ('<?php echo $this->getUrl('productdesigner/Productdesigner/downloadImage') ?>image_id/<?php echo $designImage['image_id'] ?>/order_id/<?php echo $order_id; ?>/productId/<?php echo $productId; ?>/design_id/<?php echo $design_id; ?>/item_id/<?php echo $itemId;?>/orig/false')" title="<?php echo __('Download PDF'); ?>"><span><span><?php echo __('Download PDF'); ?></span></span></button>
+	                            <button  type="button" onclick="location.href = ('<?php echo $this->getUrl('productdesigner/Productdesigner/downloadDesignImage') ?>image_id/<?php echo $designImage['image_id'] ?>/order_id/<?php echo $order_id; ?>/productId/<?php echo $productId; ?>/design_id/<?php echo $design_id; ?>/item_id/<?php echo $itemId;?>/orig/false')" title="<?php echo __('Download Image'); ?>"><span><span><?php echo __('Download Image'); ?></span></span></button>  
+	                        </div>
+	                    </li>
+	                <?php endif; ?>
+	                
+	            <?php endforeach; ?>
+
+	            <?php
+	            	$svgDesignDir = $prod_design_dir . $design_id . '/svg/';
+	            	$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+	            	$designImagesSVGDir = $objectManager->create('\Magento\Framework\Filesystem')->getDirectoryRead(\Magento\Framework\App\Filesystem\DirectoryList::MEDIA)->getAbsolutePath(). 'productdesigner' . '/designs/'. $design_id . '/svg/';
+	            	$svgArr[] = scandir($designImagesSVGDir, 1);
+
+                   foreach ($svgArr as $files) {
+                       foreach ($files as $key => $value) {
+                       	$iscmyk = explode("_", $value);
+                       	$isOldSvg = !empty($iscmyk) ? $iscmyk[0] : "";
+                       	$iscmyk = $iscmyk[count($iscmyk)-1];
+                       	if($value!='.' && $value!='..' && $iscmyk != 'cmyk.svg' && $isOldSvg != 'svg'){
+       			?>
+   				<li align="center" valign="middle">
+   					<div class="product-design"><img src="<?php echo $svgDesignDir.$value; ?>" alt="" ></div> 
+	   				<div class="view-designs-buttons">
+	   				   <a download="<?php echo $value; ?>" class="down-svg-btn" type="button" href = "<?php echo $svgDesignDir.$value; ?>"  title="<?php echo __('Download SVG'); ?>"><span><span><?php echo __('Download SVG'); ?></span></span></a> 
+	   				</div>
+   				</li>
+       			<?php
+                            }
+                       }
+                   }
+	            ?>
+
+	        </ul>        
+	    </div>
+	</div>
+	<?php } ?>
+<?php } ?>

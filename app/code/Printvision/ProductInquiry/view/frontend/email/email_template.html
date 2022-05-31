@@ -1,0 +1,58 @@
+<!--@subject Product Inquiry@-->
+<!--@vars {
+"var data.comment":"Comments",
+"var data.email":"Sender Email",
+"var data.name":"Sender Name"
+} @-->
+
+{{template config_path="design/email/header_template"}}
+
+<h1>Product Inquiry</h1>
+<table class="message-details">
+    <tr>
+        <td><strong>{{trans "Name"}}:</strong></td>
+        <td>{{var Name}}</td>
+    </tr>
+    <tr>
+        <td><strong>{{trans "Email"}}:</strong></td>
+        <td>{{var Email}}</td>
+    </tr>
+    <tr>
+        <td><strong>{{trans "SKU"}}:</strong></td>
+        <td>{{var Sku}}</td>
+    </tr>
+    <tr>
+        <td><strong>{{trans "Phone"}}:</strong></td>
+        <td>{{var Phone}}</td>
+    </tr>
+
+    <tr>
+        <td><strong>{{trans "Company"}}:</strong></td>
+        <td>{{var Company}}</td>
+    </tr>
+
+    <tr>
+        <td><strong>{{trans "Product type"}}:</strong></td>
+        <td>{{var Producttype}}</td>
+    </tr>
+
+    <tr>
+        <td><strong>{{trans "Quantity required"}}:</strong></td>
+        <td>{{var Quantityrequired}}</td>
+    </tr>
+
+    <tr>
+        <td><strong>{{trans "Expected arrive date"}}:</strong></td>
+        <td>{{var Expectedarrivedate}}</td>
+    </tr>
+
+    <tr>
+        <td><strong>{{trans "Callback"}}:</strong></td>
+        <td>{{var Callback}}</td>
+    </tr>
+
+</table>
+<p><strong>{{trans "Description"}}:</strong></p>
+<p><pre>{{var Description}}</pre></p>
+
+{{template config_path="design/email/footer_template"}}

@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Printvision_ProductInquiry::product_inquiry" title="Product Inquiry" module="Printvision_ProductInquiry" action="product_inquiry" sortOrder="51" resource="Printvision_ProductInquiry::product_inquiry"/>
+    </menu>
+</config>

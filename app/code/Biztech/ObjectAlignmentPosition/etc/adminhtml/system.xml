@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../Magento/Config/etc/system_file.xsd">
+    <system>
+        <section id="productdesigner" showInDefault="1" showInWebsite="1" showInStore="1">
+            <tab>biztech</tab>
+            <label>Product Designer Settings</label>
+             <group id="object_alignment_position" showInDefault="1" showInWebsite="1" showInStore="1" sortOrder="160">
+                <label>Object Alignment Position</label>
+
+                <field id="enable_alignment_position" translate="label comment" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1" >
+                    <label>Enable Object Alignment Position</label>
+                    <source_model>Biztech\ObjectAlignmentPosition\Model\Adminhtml\Config\Source\Enable</source_model>
+                    <comment>Select "Enable" to enable object alignment position in your tool</comment>
+                </field>    
+            </group>
+        </section>        
+    </system>
+</config>

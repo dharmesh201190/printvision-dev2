@@ -1,0 +1,90 @@
+.byi-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 12;
+  width: 100%;
+  padding: 0 35px;
+  min-height: 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  background-color: $byi-toolbar-bg;
+  box-shadow: 0 0 8px -3px rgba($byi-dark, 0.4);
+  /* EDGE Specific Changes */
+  @supports (-ms-ime-align: auto) {
+    box-shadow: 0 0 8px -1px rgba($byi-dark, 0.4);
+  }
+  .byif-left {
+    float: left;
+    .byi-product-name {
+      color: $byi-text-color;
+      font-size: 15px;
+      font-weight: 600;
+    }
+  }
+  .byif-right {
+    float: right;
+  }
+}
+
+.byi-cart-wrap {
+  .byi-cart-price {
+    display: inline-block;
+    vertical-align: middle;
+    label {
+      margin-bottom: 0;
+      font-size: 16px;
+      font-weight: bold;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+    .cart-amt,
+    .cart-info {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .cart-amt {
+      color: $byi-theme;
+      font-size: 20px;
+      font-weight: bold;
+      margin-right: 2px;
+    }
+    .cart-info {
+      width: 20px;
+      height: 20px;
+      padding: 0 2px;
+      cursor: pointer;
+      svg {
+        fill: $byi-text-color;
+      }
+    }
+  }
+  .byi-cart-action {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 22px;
+    .byi-atc-btn {
+      border: none;
+      font-size: 14px;
+      font-weight: 600;
+      padding: 6px 18px;
+      border-radius: 4px;
+      color: $byi-light;
+      background-color: $byi-theme;
+      transition: 0.5s ease background-color;
+      &:hover {
+        background-color: darken($byi-theme, 5%);
+      }
+    }
+  }
+}

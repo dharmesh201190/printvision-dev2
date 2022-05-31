@@ -1,0 +1,55 @@
+<?php
+/** @var \Magento\Catalog\Block\Product\View $block */
+?>
+<?php
+if ($block->getProduct()->getIsEnableAddons()) : ?>
+    <div class="field addons-qty">
+        <label class="label" for="qty"><span><?php /* @escapeNotVerified */
+                echo __('Add-Ons') ?></span></label>
+        <div class="addons">
+            <div class="qty-addons-input">
+                <div class="addons-item">
+                    <label class="label" for="1000mm"><span><?php /* @escapeNotVerified */
+                            echo __('1000mm') ?></span></label>
+                    <input type="number"
+                           name="addons[1000]"
+                           id="qty-1000"
+                           maxlength="12"
+                           value="0"
+                           title="<?php /* @escapeNotVerified */
+                           echo __('1000mm') ?>" class="input-text addon"
+                    />
+                </div>
+                <div class="addons-item">
+
+                    <label class="label" for="1500mm"><span><?php /* @escapeNotVerified */
+                            echo __('1500mm') ?></span></label>
+
+                    <input type="number"
+                           name="addons[1500]"
+                           id="qty-1500"
+                           maxlength="12"
+                           value="0"
+                           title="<?php /* @escapeNotVerified */
+                           echo __('Qty') ?>" class="input-text addon"
+                    />
+                </div>
+                <div class="addons-item">
+
+                    <label class="label" for="2000mm"><span><?php /* @escapeNotVerified */
+                            echo __('2000mm') ?></span></label>
+
+                    <input type="number"
+                           name="addons[2000]"
+                           id="qty-2000"
+                           maxlength="12"
+                           value="0"
+                           title="<?php /* @escapeNotVerified */
+                           echo __('Qty') ?>" class="input-text addon"
+                    />
+                </div>
+            </div>
+
+        </div>
+    </div>
+<?php endif; ?>

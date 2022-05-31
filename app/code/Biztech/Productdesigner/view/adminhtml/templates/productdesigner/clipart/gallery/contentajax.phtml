@@ -1,0 +1,97 @@
+
+<?php 
+$id   = $this->getRequest()->getParam('id'); 
+$page = $this->getRequest()->getParam('page'); 
+$lastpageNumber = $block->getLastPageNumber($id);
+?>
+<style type="text/css">
+    .clipart-wrapper td {
+        width: 9%;
+    }
+</style>
+<div class="cipartPage">
+<h2><?php echo __('Clipart Images'); ?></h2>
+<div id="clipart_gallery_content"
+class='gallery'
+data-mage-init='{"productGallery":{"template":"#clipart_gallery_content-template"}}'
+data-images="<?php /* @escapeNotVerified */ echo $block->escapeHtml($block->getImagesJson($id,$page)) ?>"
+data-types=""
+>
+<!-- uploader.phtml -->
+
+<?php $ajaxUrl =  $this->getUrl('productdesigner/clipartmedia/clipartmedia'); ?>
+<?php if($page != '1'){ ?>
+<a  href="javascript:void(0)" class ='changepage' data-page='<?php echo $page - 1;?>'>PREV</a>
+<?php } ?>
+<?php if($page < $lastpageNumber){ ?>
+<a href="javascript:void(0)" class ='changepage' data-page='<?php echo $page + 1;?>'>NEXT</a>
+<?php } ?>
+
+<?php
+$objectManager = \Magento\Framework\App\ObjectManager::getInstance(); 
+$formKey = $objectManager->get('Magento\Framework\Data\Form\FormKey')->getFormKey(); 
+?>
+
+<div class="image image-placeholder clipart-wrapper">
+    <!-- uploader.phtml -->
+    <div id="clipart_uploader" class="uploader">
+        <div class="fileinput-button form-buttons button">
+            <span><?php /* @escapeNotVerified */ echo __('Browse Files...') ?></span>
+            <input id="fileupload" type="file" name="clipart-image"
+            data-url="<?php /* @escapeNotVerified */ echo $this->getUrl('productdesigner/clipart_gallery/upload') ?>" multiple="multiple"/>
+        </div>
+        <div class="clear"></div>
+        <script id="clipart_uploader-template" type="text/x-magento-template">
+
+        </script>
+    </div>
+    <img class="spacer"
+    src="<?php /* @escapeNotVerified */ echo $block->getViewFileUrl('images/spacer.gif') ?>"/>
+    <p class="image-placeholder-text">
+        <?php /* @escapeNotVerified */ echo __('Click here or drag and drop to add images.'); echo ' (';echo __('Accepted Files : JPG, JPEG, PNG, SVG');echo ' )';
+        ?></p>
+    </div>
+<script id="clipart_gallery_content-template" type="text/x-magento-template">
+
+    <tr class="headings image item clipart-wrapper <% if (data.disabled == 1) { %>hidden-for-front<% } %>"
+        data-role="image">
+        <input type="hidden"
+        name="clipart[<%- data.file %>][image_id]"
+        value="<%- data.image_id %>"
+        class="path"/>
+        <input type="hidden"
+        name="clipart[<%- data.file %>][file]"
+        value="<%- data.file %>"
+        class="path"/>
+        <input type="hidden"
+        name="clipart[<%- data.file %>][state]"
+        value="<%- data.state %>"
+        class="path"/>
+        <td>
+            <img class="clipart-image" src="<%- data.url %>" alt="<%- data.label %>"/>
+        </td>
+        <td>
+            <input type="text" value="<%- data.label %>" class="clipart-label" name="clipart[<%- data.file %>][label]" placeholder="Label"/>
+        </td>
+        <td>
+            <input type="text" value="<%- data.tags %>" class="clipart-tags" name="clipart[<%- data.file %>][tags]" placeholder="Tags"/>
+        </td>
+        <td>
+            <input type="text" value="<%- data.position %>" class="clipart-position" name="clipart[<%- data.file %>][sort]" placeholder="Position"/>
+        </td>
+        <td>
+            <input type="text" value="<%- data.price %>" class="clipart-price" name="clipart[<%- data.file %>][price]" placeholder="Cost"/>
+        </td>
+        <td>
+            <span><?php /* @escapeNotVerified */ echo __('Remove');
+                ?></span>
+                <input type="checkbox" class="clipart-remove" name="clipart[<%- data.file %>][remove]"/>
+            </td>
+            <td>
+                <span><?php /* @escapeNotVerified */ echo __('Exclude'); ?></span>
+                <input type="checkbox" class="clipart-exclude" name="clipart[<%- data.file %>][exclude]" <% if (data.disabled == 1) { %>checked<% } %>/>
+            </td>
+        </tr>
+    </script>   
+</div>
+

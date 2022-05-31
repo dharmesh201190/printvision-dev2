@@ -1,0 +1,65 @@
+<?php $_product = $block->getProduct(); ?>
+
+<?php
+$productInquiryHelper = $this->helper(\Printvision\ProductInquiry\Helper\Data::class);
+$allowAddToCart = $productInquiryHelper->getAllowAddtocart($_product->getId());
+
+$productInquirySku = $_product->getSku();
+$productInquiryName = $_product->getName();
+
+$inquiryTitle = $productInquiryHelper->getInquiryTitle($_product->getId());
+?>
+
+<?php $buttonTitle = __('Add to Cart'); ?>
+<?php if ($_product->isSaleable() && $allowAddToCart) : ?>
+<div class="row-actions">
+    <div class="box-tocart">
+        <div class="fieldset">
+            <div class="actions">
+                <button type="submit"
+                        title="<?= /* @noEscape */
+                        $buttonTitle ?>"
+                        class="action primary tocart"
+                        id="product-addtocart-button">
+                    <span
+                            style="font-size: 10px"><?= /* @noEscape */
+                        $buttonTitle ?></span>
+                </button>
+                <?= $block->getChildHtml('', true) ?>
+            </div>
+        </div>
+    </div>
+    <script type="text/x-magento-init">
+{
+    "#product_addtocart_form": {
+        "Magento_Catalog/js/validate-product": {}
+    }
+}
+
+
+    </script>
+<?php endif; ?>
+<?php if ($inquiryTitle) { ?>
+    <div class="printvision_product_inquiry_button box-tocart">
+        <div class="fieldset">
+            <div class="actions">
+                <a class="printvision_product_inquiry_link primary action" href="JavaScript:void(0);"
+                   data-product-inquiry-sku="<?= $block->escapeHtmlAttr($productInquirySku); ?>"
+                   data-product-inquiry-name="<?= $block->escapeHtmlAttr($productInquiryName); ?>">
+                    <span style="font-size: 14px; font-family: 'Gotham';"><?= $block->escapeHtml($inquiryTitle); ?></span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="printvision_product_request_call_button">
+        <div class="fieldset">
+            <div class="actions">
+                <a class="printvision_product_inquiry_link printvision_product_request_call primary action" href="JavaScript:void(0);"
+                   data-product-inquiry-sku="<?= $block->escapeHtmlAttr($productInquirySku); ?>"
+                   data-product-inquiry-name="<?= $block->escapeHtmlAttr($productInquiryName); ?>"><span>Request a call</span></a>
+            </div>
+        </div>
+    </div>
+
+<?php } ?>

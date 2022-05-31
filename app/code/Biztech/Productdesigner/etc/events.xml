@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../lib/internal/Magento/Framework/Event/etc/events.xsd">    
+	<event name="checkout_cart_product_add_after">
+		<observer name="customoption" instance="Biztech\Productdesigner\Observer\catalogProductLoadAfter"/>
+	</event>
+	<event name="sales_order_place_before">
+		<observer name="sales1" instance="Biztech\Productdesigner\Observer\salesConvert" />
+	</event>
+	<event name="sales_order_place_after">
+		<observer name="init_order_design" instance="Biztech\Productdesigner\Observer\InitOrderDesign" />
+	</event>
+	<event name="sales_quote_remove_item">
+		<observer name="remove_cart_item" instance="Biztech\Productdesigner\Observer\removeOrderdesign" />
+	</event>
+	<event name="clipart_categories_fetched_after">
+		<observer name="clipart_categories_fetched_after1" instance="Biztech\Productdesigner\Observer\ClipartCategoriesFetchedAfter" />
+	</event>
+</config>

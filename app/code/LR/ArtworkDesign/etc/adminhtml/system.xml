@@ -1,0 +1,53 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="logicrays" translate="label" sortOrder="10">
+            <label>Logicrays</label>
+        </tab>
+        <section id="artwork_design" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label">
+            <label>Artwork Design</label>
+            <tab>logicrays</tab>
+            <resource>LR_ArtworkDesign::artworkdesign</resource>
+            <group id="email" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label">
+                <label>Email Options</label>                
+                <field id="send_email_to" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label comment" type="text">
+                    <label>Send Email To</label>
+                    <comment>Enter comma separated email if multiple</comment>
+                </field>
+                <field id="send_email_from" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label comment" type="text">
+                    <label>Send Email From</label>
+                </field>
+                <field id="popup_title" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label comment" type="text">
+                    <label>Artwork Popup Title</label>
+                </field>
+                <field id="success_msg1" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label comment" type="text">
+                    <label>Success Message First Line</label>
+                </field>
+                <field id="success_msg2" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label comment" type="text">
+                    <label>Success Message Second Line</label>
+                </field>
+                <field id="success_msg3" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label comment" type="text">
+                    <label>Success Message Third Line</label>
+                </field>
+                <field id="error_msg" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label comment" type="text">
+                    <label>Error Message</label>
+                </field>
+                <field id="download_image_text" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label comment" type="text">
+                    <label>Download Image Text</label>
+                </field>
+                <field id="email_template" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="20" translate="label comment" type="select">
+                    <label>Artwork Design Email Template</label>
+                    <source_model>Magento\Config\Model\Config\Source\Email\Template</source_model>
+                </field>
+                <field id="callmeback_email_template" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="30" translate="label comment" type="select">
+                    <label>Call Me Back Email Template</label>
+                    <source_model>Magento\Config\Model\Config\Source\Email\Template</source_model>
+                </field>
+                <field id="artworkadmin_email_template" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="30" translate="label comment" type="select">
+                    <label>Artwork Admin Email Template</label>
+                    <source_model>Magento\Config\Model\Config\Source\Email\Template</source_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

@@ -1,0 +1,160 @@
+// /**
+//  * Copyright © 2015 Magento. All rights reserved.
+//  * See COPYING.txt for license details.
+//  */
+
+@form-element-input-placeholder__color: #bdbdbd;
+
+//
+//    Common
+//--------------------------------------
+
+& when (@media-common = true) {
+
+//
+//    Newsletter subscription
+//--------------------------------------
+.ftop-newsletter {
+    width: 100%;
+}
+.block.newsletter {
+    .newsletter-label {
+        margin-bottom: 10px;
+        display: block;
+        font-size: 14px;
+        line-height: 20px;
+        color: #ffffff;
+        font-family: "Arial";
+    }
+    .form.subscribe {
+        display: block;
+        width: 100%;
+        position: relative;
+    }
+    .fieldset {
+        display: table-cell;
+        margin: 0;
+        padding: 0;
+        vertical-align: top;
+    }
+    .field {
+        .control {
+            .lib-icon-font(
+                @icon-envelope,
+                @_icon-font-size: 16px,
+                @_icon-font-line-height: 40px,
+                @_icon-font-color: @form-element-input-placeholder__color,
+                @_icon-font-margin: 0 0 0 8px
+            );
+            &:before {
+                position: absolute;
+            }
+            display: block;
+			.rtl-layout &{
+				&:before {
+					margin-left:0;
+					margin-right:8px;
+				}
+			}
+        }
+    }
+    .label {
+        &:extend(.abs-visually-hidden all);
+    }
+     input {
+        padding-left: 10px;
+		height: 28px;
+		line-height: 28px;
+		.rtl-layout &{
+			padding-right: 35px;
+			padding-left: 10px;
+		}
+        &::-webkit-input-placeholder {
+            color: #000 !important;
+        }
+
+        &::-moz-placeholder {
+            color: #000 !important;
+        }
+
+        &:-ms-input-placeholder {
+            color: #000 !important;
+        }
+
+        &:-moz-placeholder {
+            color: #000 !important;
+        }
+
+        &:placeholder {
+            color: #bfc0c1 !important;
+        }
+    }
+	input[type="email"] {
+		.lib-css(background, #ffffff);
+		.lib-css(color, #000);
+        font-size: 12px;
+        font-family: "Gotham";
+        border-radius: 7px;
+        border-color: #fff;
+        padding-right: 75px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        line-height: normal;
+	}
+    .title {
+        display: none;
+    }
+    .actions {
+        display: table-cell;
+        vertical-align: top;
+        width: 1%;
+    }
+	.action.subscribe {
+	    min-height: 28px;
+        margin: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        background: #d1aa67;
+        border-color: #d1aa67;
+        border-radius: 0 7px 7px 0;
+        color: #fff;
+        font-size: 14px;
+        line-height: 26px;
+        font-family: "Gotham";
+        padding: 0 15px;
+	}
+
+}
+
+}
+
+//
+//    Desktop
+//--------------------------------------
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+    .block.newsletter {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+//Custom style newsletter
+
+.newsletter-style02{
+	.block.newsletter{ 
+		margin-bottom:@indent__base;
+		input{
+			border-width:1px;
+			border-color:@main_border;
+			text-align:center;
+		}
+		.field{
+			margin-bottom:20px;
+			.control:before{display:none;}
+		}
+		.actions{
+			display:block; width:100%;
+		}
+	}
+}

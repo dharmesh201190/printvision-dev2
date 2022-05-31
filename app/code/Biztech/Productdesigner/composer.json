@@ -1,0 +1,21 @@
+{
+    "name": "biztech/productdesigner",
+    "description": "Web to print solution",
+    "require": {
+        "php": "~7.0.0|~7.1.0|~7.2.0",
+        "spipu/html2Pdf":"*",
+        "panique/php-sass":"*"
+     },
+    "type": "magento2-module",
+    "version": "2.0.0",
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
+    "autoload": {
+        "files": [ "registration.php" ],
+        "psr-4": {
+            "Biztech\\Productdesigner\\": ""
+        }
+    }
+}

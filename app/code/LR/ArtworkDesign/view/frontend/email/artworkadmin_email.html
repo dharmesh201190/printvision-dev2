@@ -1,0 +1,29 @@
+<!--@subject Artwork Design Admin Reply  @-->
+<!--@vars {
+"var data.admin_artwork_comment":"Test",
+"var data.artworkdesign_name":"Sender Name"
+} @-->
+{{template config_path="design/email/header_template"}} <!-- pathe of template header-->
+
+<table>
+    <tr class="email-intro">
+        <td>
+            <p class="greeting">{{trans "Hi,"}}</p>
+            <p class="greeting">{{trans "%name Please check this updated Artwork below with attachment & confirm it." name=$data.artworkdesign_name}}</p>
+        </td>
+    </tr>
+    <tr><td><br></td></tr>
+    <tr class="email-information">
+        <td>
+            <table class="email-items">
+                <tbody>
+                    <tr>
+                        <td class="item-info">{{trans "%comment" comment=$data.admin_artwork_comment}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+    </tr>
+</table>
+
+{{template config_path="design/email/footer_template"}} <!--footer of template-->

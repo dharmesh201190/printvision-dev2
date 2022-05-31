@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Magento/Store/etc/config.xsd">    
+	<type name="Magento\Catalog\Ui\Component\Listing\Columns\ProductActions">
+		<plugin name="make-design" type="Biztech\DesignTemplates\Plugin\ProductActions" sortOrder="10" />
+	</type>
+	<type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+		<arguments>
+			<argument name="collections" xsi:type="array">
+				<item name="designtemplates_category_listing_data_source" xsi:type="string">Biztech\DesignTemplates\Model\Mysql4\Designtemplatecategory\Grid\Collection</item>
+			</argument>
+		</arguments>
+	</type>
+	<virtualType name="Biztech\DesignTemplates\Model\Mysql4\Designtemplatecategory\Grid\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+		<arguments>
+			<argument name="mainTable" xsi:type="string">productdesigner_designtemplates_category</argument>
+			<argument name="resourceModel" xsi:type="string">Biztech\DesignTemplates\Model\Mysql4\Designtemplatecategory</argument>
+		</arguments>
+	</virtualType>
+	<virtualType name="BiztechDesignTemplatesGridDataProvider" type="Magento\Framework\View\Element\UiComponent\DataProvider\DataProvider">
+		<arguments>
+			<argument name="collection" xsi:type="object" shared="false">Biztech\DesignTemplates\Model\Mysql4\Designtemplatecategory\Collection</argument>
+			<argument name="filterPool" xsi:type="object" shared="false">BiztechDesignTemplatesGridFilterPool</argument>
+		</arguments>
+	</virtualType>
+
+
+	<type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+		<arguments>
+			<argument name="collections" xsi:type="array">
+				<item name="designtemplates_designtemplates_listing_data_source" xsi:type="string">Biztech\DesignTemplates\Model\Mysql4\Designtemplates\Grid\Collection</item>
+			</argument>
+		</arguments>
+	</type>
+	<virtualType name="Biztech\DesignTemplates\Model\Mysql4\Designtemplates\Grid\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+		<arguments>
+			<argument name="mainTable" xsi:type="string">productdesigner_designtemplates</argument>
+			<argument name="resourceModel" xsi:type="string">Biztech\DesignTemplates\Model\Mysql4\Designtemplates</argument>
+		</arguments>
+	</virtualType>
+	<virtualType name="BiztechDesignTemplatesListGridDataProvider" type="Magento\Framework\View\Element\UiComponent\DataProvider\DataProvider">
+		<arguments>
+			<argument name="collection" xsi:type="object" shared="false">Biztech\DesignTemplates\Model\Mysql4\Designtemplates\Collection</argument>
+			<argument name="filterPool" xsi:type="object" shared="false">BiztechDesignTemplatesListGridFilterPool</argument>
+		</arguments>
+	</virtualType>
+</config>

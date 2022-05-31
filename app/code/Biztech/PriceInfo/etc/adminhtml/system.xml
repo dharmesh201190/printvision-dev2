@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../Magento/Config/etc/system_file.xsd">
+    <system>
+        <tab id="biztech" translate="label comment" sortOrder="1">
+            <label>Brush Your Ideas</label>
+        </tab>
+        <section id="productdesigner" showInDefault="1" showInWebsite="1" showInStore="1">
+            <tab>biztech</tab>
+            <label>Product Designer Settings</label>
+            <resource>Biztech_ProductDesigner::biztech_productdesigner</resource>
+            <group id="general"  showInDefault="1" showInWebsite="1" showInStore="1" sortOrder="20">
+                <label>General</label>
+                <field id="enable_price_info" translate="label comment" type="select" sortOrder="25" showInDefault="1" showInWebsite="1" showInStore="1" >
+                    <label>Display Price Info.</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment>Select "Yes" to enable display Price Information on Product Designer Tool.</comment>
+                </field>
+            </group>
+        </section>        
+    </system>
+</config>

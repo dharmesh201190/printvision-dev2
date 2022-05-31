@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../Magento/Config/etc/system_file.xsd">
+    <system>
+        <section id="productdesigner" showInDefault="1" showInWebsite="1" showInStore="1">
+            <tab>biztech</tab>
+            <group id="dpi_configuration" showInDefault="1" showInWebsite="1" showInStore="1" sortOrder="170">
+                <label>DPI Configuration</label>
+
+                <field id="set_dpi" translate="label comment" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1" >
+                    <label>Set DPI</label>
+                    <source_model>Biztech\DPI\Block\Adminhtml\DPI</source_model>
+                    <comment>Select DPI For Output</comment>
+                </field>    
+            </group>
+        </section>        
+    </system>
+</config>

@@ -1,0 +1,20 @@
+<?php //echo "<pre>"; print_r($block->getComments($this->getId())); 'test'; ?>
+<?php $comments = $block->getComments($this->getRequest()->getParam('id')); ?>
+<?php $class = ''; ?>
+<?php if($comments): ?>
+	<div class="all-conversation">
+		<?php foreach($comments as $comment): ?>
+			<?php if($comment['is_customer'] == 1){ $class="customer-rply"; $label="Customer"; } else { $class="admin-rply"; $label="You"; } ?>
+					<div class="comment <?php echo $class ?>">
+				<div class="comment-by"><?php echo $label ?></div>
+				<div class="all-comment">
+					<div class="chat-person"><?php echo $comment['comment'] ?></div>
+					<?php if(isset($comment['image'])): ?>
+						<?php $imageUrl = $block->getMediaUrl().'/'.$comment['image'] ?>
+						<div><?php echo 'You can <a href="'.$imageUrl.'" download=""> Download </a>updated image.'; ?></div>
+					<?php endif; ?>	
+				</div>				
+			</div>
+		<?php endforeach; ?>
+	</div>	
+<?php endif; ?>

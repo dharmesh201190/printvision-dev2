@@ -1,0 +1,50 @@
+<body style="background:#F6F6F6; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:12px; margin:0; padding:0;">
+<div style="background:#F6F6F6; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:12px; margin:0; padding:0;">
+<table cellspacing="0" cellpadding="0" border="0" height="100%" width="100%">
+    <tr>
+        <td align="center" valign="top" style="padding:20px 0 20px 0">
+            <!-- [ header starts here] -->
+            <table bgcolor="FFFFFF" cellspacing="0" cellpadding="10" border="0" width="650" style="border:1px solid #E0E0E0; padding:40px;">
+                <tr>
+                    <td style="padding:0;">
+                        <table width="100%"> 
+                            <tbody>
+                                <tr>
+                                    <td valign="top" align="left">
+                                        <a href="{{store url=""}}" style="color:#1E7EC8;"><img src="{{var logo_url}}" alt="{{var logo_alt}}" border="0" height="50px" /></a>
+                                        
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding:0;">
+                        <table width="100%" style="margin:40px 0 0 0;" >
+                            <tbody>
+                                <tr><td colspan="4" style="font-size: 16px;font-weight: bold;text-align: center;">Check this cool design :</td></tr>
+                                <tr>
+                                    {{block class='Magento\\Framework\\View\\Element\\Template' area='frontend' images=$images
+                                    template='Biztech_SocialMediaSharing::socialmediasharing/email_design.phtml'}}
+                                    
+                                    <td valign="center" align="right" width="164" height="192" style="padding:0;display: block;vertical-align: middle;">
+                                         <table style="vertical-align: middle;height: 100%;">
+                                            <tr>
+                                                <td style="height: 60px; padding: 0; text-align: center;">
+                                                    <a href="{{var mediUrl}}" style="background:#51bdae; border: 2px solid #3d8f83; padding:20px; color:#fff; font-size:14px; text-decoration:none; font-weight:bold; margin: 0 0 10px 0;">Edit Design</a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+</div>
+</body>

@@ -1,0 +1,86 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+/** @var $block Magento\Catalog\Block\Product\View */
+?>
+<?php
+$required = '';
+if ($block->hasRequiredOptions()) {
+    $required = ' data-hasrequired="' . $block->escapeHtmlAttr(__('* Required Fields')) . '"';
+}
+?>
+<div class="product-options-wrapper" id="product-options-wrapper"<?= /* @noEscape */ $required ?>>
+    <div class="fieldset" tabindex="0">
+        <?= $block->getChildHtml('', true) ?>
+    </div>
+
+</div>
+
+<script type="text/javascript">
+    require([
+        'jquery','underscore'
+    ], function ($,_) {
+        function updateSummary(){
+            $('#swatch-option-summery').append("<div class='title'><?php echo __('Product Summary'); ?></div>");
+            $('.swatch-attribute').each(function () {
+                    var attCode = $(this).attr("attribute-code");
+                    var attLabel = $("." + attCode + " .swatch-attribute-label").html();
+                    var attValue = $("." + attCode + " .swatch-attribute-options .selected").attr('option-label');
+                    if(attValue==undefined){
+                        attValue = '';
+                    }
+                    if(attLabel== undefined){
+                        return;
+                    }
+                    var attid = $("." + attCode + " .swatch-attribute-options .selected").attr('option-label');
+                    var html = '<div class="matrix"><div class="review-label"><b>' + attLabel + '</b></div>' +
+                            '<div class="review-value ' + attCode + '">' + attValue + '</div></div>';
+                    $('#swatch-option-summery').append(html);
+            });
+        }
+
+        jQuery(document).ready(function () {
+            setTimeout(function () {
+                if (jQuery(".swatch-attribute").length > 0) {
+                    jQuery(".product-info-main").addClass("has-options");
+                }
+                updateSummary();
+                
+                if(jQuery(".product-options-wrapper .fieldset .field label span").first().text() == 'Service')
+                {
+                    var html = '<div class="matrix cus-opt" style="display:none"><div class="review-label"><b>Service</b></div>' + '<div class="review-value service"></div></div>';
+                    jQuery('#swatch-option-summery').append(html);
+                }  
+
+                jQuery(".my-custom").click(function (e) {
+                    var classString = e.target.className;
+
+                    if (classString.toLowerCase().indexOf("swatch-option") >= 0 || classString.toLowerCase().indexOf("swatch-qty-price") >= 0) {
+                        var dataid = $(e.target).parent().parent().parent().next().find('.custom-opt-class').attr('data-id');
+                       
+                        if(dataid){
+                               if(jQuery('#attribute_'+dataid).length){
+                                var topposition = jQuery('#attribute_'+dataid).offset().top;
+                                var paddingspace = 100;
+                                if(jQuery(window).width() > 768 ){
+                                    paddingspace = 250;
+                                }
+                                jQuery('html, body').animate({
+                                    scrollTop: (topposition-paddingspace)
+                                }, 600);
+                            }                       
+                        }
+                    }
+                });
+            }, 4000);
+        });
+
+        jQuery(".options-list label").click(function (e) {
+            $("#swatch-option-summery .cus-opt").show();
+            $("#swatch-option-summery .matrix .service").html(jQuery('span:first', this).text());            
+        });
+    });
+</script>

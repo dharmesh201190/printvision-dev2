@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Webkul Software.
+ *
+ * @category  Webkul
+ * @package   Webkul_JobBoard
+ * @author    Webkul
+ * @copyright Copyright (c) Webkul Software Private Limited (https://webkul.com)
+ * @license   https://store.webkul.com/license.html
+ */
+ -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Webkul\JobBoard\Api\JobRepositoryInterface" type="Webkul\JobBoard\Model\JobRepository"/>
+	<preference for="Webkul\JobBoard\Api\Data\JobInterface" type="Webkul\JobBoard\Model\Data\Job"/>
+	<preference for="Webkul\JobBoard\Api\Data\JobSearchResultsInterface" type="Magento\Framework\Api\SearchResults"/>
+
+    <preference for="Webkul\JobBoard\Api\CategoryRepositoryInterface" type="Webkul\JobBoard\Model\CategoryRepository"/>
+	<preference for="Webkul\JobBoard\Api\Data\CategoryInterface" type="Webkul\JobBoard\Model\Data\Category"/>
+	<preference for="Webkul\JobBoard\Api\Data\CategorySearchResultsInterface" type="Magento\Framework\Api\SearchResults"/>
+
+    <preference for="Webkul\JobBoard\Api\ApplicationRepositoryInterface" type="Webkul\JobBoard\Model\ApplicationRepository"/>
+	<preference for="Webkul\JobBoard\Api\Data\ApplicationInterface" type="Webkul\JobBoard\Model\Data\Application"/>
+	<preference for="Webkul\JobBoard\Api\Data\ApplicationSearchResultsInterface" type="Magento\Framework\Api\SearchResults"/>
+    
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="jobboard_job_list_data_source" xsi:type="string">Webkul\JobBoard\Model\ResourceModel\Job\Grid\Collection</item>
+                <item name="jobboard_category_list_data_source" xsi:type="string">Webkul\JobBoard\Model\ResourceModel\Category\Grid\Collection</item>
+                <item name="jobboard_application_list_data_source" xsi:type="string">Webkul\JobBoard\Model\ResourceModel\Application\Grid\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+    
+    <type name="Webkul\JobBoard\Model\ResourceModel\Job\Grid\Collection">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">wk_jobboard_job</argument>
+            <argument name="eventPrefix" xsi:type="string">jobboard_job_grid_collection</argument>
+            <argument name="eventObject" xsi:type="string">jobboard_job_grid_collection</argument>
+            <argument name="resourceModel" xsi:type="string">Webkul\JobBoard\Model\ResourceModel\Job</argument>
+        </arguments>
+    </type>
+    
+    <type name="Webkul\JobBoard\Model\ResourceModel\Category\Grid\Collection">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">wk_jobboard_category</argument>
+            <argument name="eventPrefix" xsi:type="string">jobboard_category_grid_collection</argument>
+            <argument name="eventObject" xsi:type="string">jobboard_category_grid_collection</argument>
+            <argument name="resourceModel" xsi:type="string">Webkul\JobBoard\Model\ResourceModel\Category</argument>
+        </arguments>
+    </type>
+    
+    <type name="Webkul\JobBoard\Model\ResourceModel\Application\Grid\Collection">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">wk_jobboard_application</argument>
+            <argument name="eventPrefix" xsi:type="string">jobboard_application_grid_collection</argument>
+            <argument name="eventObject" xsi:type="string">jobboard_application_grid_collection</argument>
+            <argument name="resourceModel" xsi:type="string">Webkul\JobBoard\Model\ResourceModel\Application</argument>
+        </arguments>
+    </type>
+    <type name="Magento\Cms\Helper\Wysiwyg\Images">
+        <plugin name="Webkul_Jobboard_Wyiswyg" type="Webkul\JobBoard\Plugin\Helper\Wysiwyg\Images" disabled="false"/>
+    </type>
+</config>

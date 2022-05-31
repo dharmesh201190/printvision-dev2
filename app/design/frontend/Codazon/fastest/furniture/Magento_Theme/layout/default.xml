@@ -1,0 +1,127 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2015 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+	<body>
+
+	<referenceBlock name="logo">
+        <arguments>
+            <argument name="logo_img_width" xsi:type="number">145</argument>
+            <argument name="logo_img_height" xsi:type="number">65</argument>
+        </arguments>
+    </referenceBlock>
+
+    
+
+ 	<referenceBlock name="header.links">
+        <block class="Magento\Framework\View\Element\Html\Link" name="latestnews.link12">
+            <arguments>
+                <argument name="label" xsi:type="string" translate="false">Latest News</argument>
+                <argument name="path" xsi:type="string" translate="false">latest-news</argument>
+               <argument name="class" xsi:type="string">latest-news</argument>
+            </arguments>
+        </block>
+        <block class="Magento\Framework\View\Element\Html\Link" name="howtoorder.link" before="-">
+            <arguments>
+                <argument name="label" xsi:type="string" translate="false">How to Order</argument>
+                <argument name="path" xsi:type="string" translate="false">how-to-order</argument>
+                <argument name="class" xsi:type="string">how-to-order</argument>
+            </arguments>
+        </block>
+    </referenceBlock>
+
+	<referenceContainer name="header.panel">
+		<block class="Magento\Cms\Block\Block" name="header.social.media" before="-">
+		    <arguments>
+		        <argument name="block_id" xsi:type="string">header_social_media</argument>
+		    </arguments>
+		</block>
+	</referenceContainer>
+
+	<referenceContainer name="header-wrapper">
+		<container name="header.middel.right" after="navigation.sections" htmlTag="div" htmlClass="header-middel-right"/>
+	</referenceContainer>
+
+
+	<referenceContainer name="footer.container.wrapper">
+		<container name="footerBottomMain" htmlTag="div" htmlClass="footer-bottom-main" after="-">
+			<block class="Magento\Cms\Block\Block" name="footer.social.media" before="-">
+			    <arguments>
+			        <argument name="block_id" xsi:type="string">footer_social_media</argument>
+			    </arguments>
+			</block>
+			<block class="Magento\Cms\Block\Block" name="footer.social.payment" after="-">
+			    <arguments>
+			        <argument name="block_id" xsi:type="string">footer_payment</argument>
+			    </arguments>
+			</block>
+		</container>
+	</referenceContainer>
+
+	<move element="copyright" destination="footerBottomMain" before="footer_payment"/>
+	<move element="footer.social.payment" destination="footerBottomMain" after="copyright"/>
+
+	<move element="logo" destination="header-wrapper" before="-"/>
+	<move element="minicart" destination="header.middel.right" before="navigation.sections"/>
+	<move element="navigation.sections" destination="header.middel.right" after="minicart"/>
+
+	<move element="top.links" destination="header.links" before="latestnews.link"/>
+	
+	<referenceBlock name="header.wrapper.center" remove="true"/>
+	<referenceBlock name="header.wrapper.left" remove="true"/>
+	<referenceBlock name="header.wrapper.right" remove="true"/>
+	<referenceBlock name="header.wrapper.bottom" remove="true"/>
+	<referenceBlock name="catalog.compare.sidebar" remove="true"/>
+	<referenceBlock name="catalog.compare.link" remove="true"/>
+	<referenceBlock name="sale.reorder.sidebar" remove="true"/>
+	<referenceBlock name="authorization-link-login" remove="true"/>
+	<referenceBlock name="register-link" remove="true"/>
+	<referenceBlock name="myaccount-link" remove="true"/>
+	<referenceBlock name="my-account-link" remove="true"/>
+
+	<!--	Aatish Changes Start -->
+	<move element="header.social.media" destination="header.middel.right" before="minicart"/>
+	<referenceContainer name="header.panel">
+		<block class="Magento\Cms\Block\Block" name="social_links" after="-">
+			<arguments>
+				<argument name="block_id" xsi:type="string">social_links</argument>
+			</arguments>
+		</block>
+	</referenceContainer>
+	<referenceBlock name="header.links">
+		<block class="Magento\Framework\View\Element\Html\Link" name="contact.link13">
+			<arguments>
+				<argument name="label" xsi:type="string" translate="false">Contact Us</argument>
+				<argument name="path" xsi:type="string" translate="false">contact</argument>
+				<argument name="class" xsi:type="string">contact</argument>
+			</arguments>
+		</block>
+
+<!--	Dharmesh Changes Start -->
+		 <block class="Magento\Framework\View\Element\Html\Link" name="jobboard-top-link">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">Careers</argument>
+                    <argument name="path" xsi:type="string">jobboard</argument>
+                </arguments>
+            </block>
+            <!--	Dharmesh Changes End -->
+		
+		<block class="Magento\Framework\View\Element\Html\Link" name="latestnews.link14">
+			<arguments>
+				<argument name="label" xsi:type="string" translate="false">Blog</argument>
+				<argument name="path" xsi:type="string" translate="false">latest-news</argument>
+				<argument name="class" xsi:type="string">blog</argument>
+			</arguments>
+		</block>
+	</referenceBlock>
+	<referenceBlock name="latestnews.link12" remove="true"/>
+	<!--	Aatish Changes End -->
+
+
+
+	</body>
+</page>

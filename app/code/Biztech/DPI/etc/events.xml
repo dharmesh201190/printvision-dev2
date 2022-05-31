@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../lib/internal/Magento/Framework/Event/etc/events.xsd">    
+    <event name="generated_images_saved_after">
+        <observer name="set-dpi" instance="Biztech\DPI\Observer\SetDPI"/>
+    </event>
+    <event name="generated_images_custom_size">
+        <observer name="custom-size" instance="Biztech\DPI\Observer\CustomSize"/>
+    </event>
+</config> 

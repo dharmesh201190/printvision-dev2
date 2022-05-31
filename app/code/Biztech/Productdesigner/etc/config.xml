@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <productdesigner>
+            <dynamic_message>
+                <print_area_warning>Some objects are outside the printing area and should be adjusted</print_area_warning>             
+                 <low_resolution_warning>Low Resolution Warning</low_resolution_warning>
+            </dynamic_message> 
+        </productdesigner>        
+    </default>
+</config>

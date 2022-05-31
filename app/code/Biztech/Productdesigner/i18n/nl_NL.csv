@@ -1,0 +1,290 @@
+Brush Your Ideas,Borstel uw ideeën
+Product Designer Settings,Product Designer Instellingen
+Product Designer Activation,Product Designer Activering
+Activation Key,Activatie sleutel
+Select Websites,Selecteer websites
+Enable Product Designer,Schakel Product Designer in
+"Select ""Yes"" to enable product designer in your eCommerce store.","Selecteer ""Ja"" om productontwerper in te schakelen in uw e-commerce winkel."
+General,Algemeen
+Design Button on Category Page,Ontwerpknop op categoriepagina
+"Select ""Enable"" to display ""Design It"" button on Category Page and ""Disable"" to hide ""Design It"" button from Category Page.","Selecteer ""Inschakelen"" om de knop ""Ontwerp het"" op de categoriepagina weer te geven en ""Uitschakelen"" om de knop ""Ontwerp het"" voor de categoriepagina te verbergen."
+Enable,in staat stellen
+Disable,onbruikbaar maken
+Add to Cart Button on Category Page,Toevoegen aan winkelwagentje Knop op categoriepagina
+"Select ""Enable"" to display ""Add to Cart"" button on Category Page and ""Disable"" to hide ""Add to Cart"" button on Category Page.","Selecteer ""Inschakelen"" om de knop ""Toevoegen aan winkelwagentje"" op de categoriepagina weer te geven en ""Uitschakelen"" om de knop ""Toevoegen aan winkelwagentje"" op de categoriepagina te verbergen."
+Additional Price for Customized Products,Extra prijs voor aangepaste producten
+Add a fixed cost which will be added for custom designed products.,Voeg een vaste kost toe die wordt toegevoegd voor op maat ontworpen producten.
+Placeholder Image,Placeholder afbeelding
+Delete File,Verwijder bestand
+Add image to be shown at the place of actual image before actual image loads completely.,Voeg een afbeelding toe die op de plaats van de werkelijke afbeelding moet worden weergegeven voordat de werkelijke afbeelding volledig wordt geladen.
+Product Designer Tool Page Title ,"""Titel van hulpmiddel voor productontwerperpagina"""
+Additional Cost per Added Text,Extra kosten per toegevoegde tekst
+Add price which will be charged for adding a text for Product Customization.,Voeg een prijs toe die in rekening wordt gebracht voor het toevoegen van een tekst voor productaanpassing.
+Additional Cost per Added Image,Extra kosten per toegevoegde afbeelding
+Add price which will be charged for adding an image for Product Customization.,Voeg een prijs toe die in rekening wordt gebracht voor het toevoegen van een afbeelding voor productaanpassing.
+Additional Cost per Custom Uploaded Image,Extra kosten per aangepaste geüploade afbeelding
+"Add price which will be charged for uploaded image with ""Additional Cost per Added Image"".","Voeg een prijs toe die in rekening wordt gebracht voor de geüploade afbeelding met ""Extra kosten per toegevoegde afbeelding""."
+Download Image Type,Download afbeeldingstype
+Select the image type in which customized image will be downloaded.,Selecteer het afbeeldingstype waarin de aangepaste afbeelding wordt gedownload.
+Guest User's Image Life Time ,Gastgebruiker Image Life Time
+Enter number of days for which unused design images by guest users need to be kept.,Voer het aantal dagen in dat ongebruikte ontwerpafbeeldingen door gastgebruikers moeten worden bewaard.
+Enable Generate SVG,Schakel Genereer SVG in
+"Select Yes to enable ""Generate SVG"" button for design-orders to generate SVG image as print ready file.","Selecteer Ja om de knop ""Genereer SVG"" in te schakelen voor ontwerporders om een ​​SVG-afbeelding te genereren als afdrukklaar bestand."
+Enable Handles Outside The Design Area,Handgrepen buiten het ontwerpgebied inschakelen
+Select Yes to allow handles outside the canvas. It will work for single design area only.,Selecteer Ja om grepen buiten het canvas toe te staan. Het werkt alleen voor een enkel ontwerpgebied.
+Translate Store Elements,Winkelelementen vertalen
+Click on translate button to change language of the store elements like Button and Messages. It will be translated for all availabale stores based on updated CSV in Locale files.,Klik op de vertaalknop om de taal van de winkelelementen zoals Knop en Berichten te wijzigen. Het wordt vertaald voor alle beschikbare winkels op basis van bijgewerkte CSV in lokale bestanden.
+Enable User Guide,Gebruikersgids inschakelen
+"Select ""Yes"" to enable interactive user guide on Product Designer Tool.","Selecteer ""Ja"" om de interactieve gebruikershandleiding voor de Product Designer Tool in te schakelen."
+Cache Life Time ,"""Cache Life Time"""
+Enter life span of cached data on Magento in seconds.,Voer de levensduur van gegevens in de cache op Magento in seconden in.
+Layout,lay-out
+Main Tabs,Hoofdtabs
+Text,Tekst
+Default Font Type,Standaard lettertype
+Select a default font for the text.,Selecteer een standaardlettertype voor de tekst.
+Default Font Size,Standaard lettergrootte
+Select a default font size for the text.,Selecteer een standaard lettergrootte voor de tekst.
+Enable Text-object Limit:,Tekst-objectlimiet inschakelen:
+"Select ""Yes"" to set maximum text-objects allowed in a single design area.","Selecteer ""Ja"" om het maximale aantal toegestane tekstobjecten in een enkel ontwerpgebied in te stellen."
+Text Object Limit ,"""Tekstobjectlimiet"""
+Add text object limit. User will not be able to add more text objects on single design area than the set limit.,Limiet voor tekstobject toevoegen. De gebruiker kan niet meer tekstobjecten aan één ontwerpgebied toevoegen dan de ingestelde limiet.
+Error Message,Foutmelding
+Add the message which will be displayed if the number of characters exceeds the set text limit,Voeg het bericht toe dat wordt weergegeven als het aantal tekens de ingestelde tekstlimiet overschrijdt
+Clipart,Clip art
+Enable Clipart Limit:,Clipartlimiet inschakelen:
+"Select ""Yes"" to set maximum clipart allowed in a single design area","Selecteer ""Ja"" om de maximaal toegestane clipart in een enkel ontwerpgebied in te stellen"
+Set Default Clipart Category,Stel de standaard Clipart-categorie in
+Select a default category for clipart which will be shown to users when they opt for clipart addition,Selecteer een standaardcategorie voor clipart die aan gebruikers wordt getoond wanneer ze kiezen voor clipart-toevoeging
+Clipart Limit,Clipart-limiet
+Add Clipart limit. User will not be able to add more Clipart on single design area than the set limit.,Clipart-limiet toevoegen. De gebruiker kan niet meer illustraties toevoegen aan één ontwerpgebied dan de ingestelde limiet.
+Add the message which will displayed if the number of added images exceeds the set image limit.,Voeg het bericht toe dat wordt weergegeven als het aantal toegevoegde afbeeldingen de ingestelde afbeeldingslimiet overschrijdt.
+Custom Image Upload,Aangepaste afbeelding uploaden
+Show Instruction,Instructie tonen
+"Select ""Yes"" to show instructions while uploading a customized image.","Selecteer ""Ja"" om instructies weer te geven tijdens het uploaden van een aangepaste afbeelding."
+Instruction Text,Instructietekst
+Add the instruction to be displayed while uploading a customized image,Voeg de instructie toe die moet worden weergegeven tijdens het uploaden van een aangepaste afbeelding
+Enable Image Limit,Afbeeldingslimiet inschakelen
+"Select ""Yes"" to set maximum Images allowed in a single design area","Selecteer ""Ja"" om het maximale aantal toegestane afbeeldingen in een enkel ontwerpgebied in te stellen"
+Image Limit,Afbeeldingslimiet
+Add Image limit. User will not be able to add more Images on a single design area than the set limit.,Afbeeldingslimiet toevoegen. De gebruiker kan niet meer afbeeldingen aan één ontwerpgebied toevoegen dan de ingestelde limiet.
+Add the message which will be displayed if the number of images exceeds the limit for customized images,Voeg het bericht toe dat wordt weergegeven als het aantal afbeeldingen de limiet voor aangepaste afbeeldingen overschrijdt
+Minimum Size of Image,Minimale beeldgrootte
+Please enter the minimum size of the image. It should be in MB(Megabyte),Voer de minimale grootte van de afbeelding in. Het moet in MB (Megabyte) zijn
+Maximum Size of Image,Maximale beeldgrootte
+Please enter the maximum size of the image. It should be in MB(Megabyte),Voer de maximale grootte van de afbeelding in. Het moet in MB (Megabyte) zijn
+User's Confirmation Before Uploading Image,Bevestiging van de gebruiker voordat de afbeelding wordt geüpload
+"Select ""Yes"" to ask for user's confirmation before uploading the custom image","Selecteer ""Ja"" om de bevestiging van de gebruiker te vragen voordat de csutom-afbeelding wordt geüpload"
+Text for User Confirmation,Tekst voor bevestiging van gebruiker
+Add the confirmation message which will be displayed to the user before uploading the custom image,Voeg het bevestigingsbericht toe dat aan de gebruiker wordt getoond voordat de aangepaste afbeelding wordt geüpload
+Custom Product Image Download,Aangepaste productafbeelding downloaden
+Download Customized Product Image,Download aangepaste productafbeelding
+"Select ""Yes"" to enable the download of design from the designer page","Selecteer ""Ja"" om het downloaden van het ontwerp van de ontwerperpagina in te schakelen"
+Dynamic Messages,Dynamische berichten
+Design It Label,Ontwerp het label
+Add your label for design it button,Voeg uw label toe voor ontwerp het knop
+Print area warning,Waarschuwing afdrukgebied
+Add warning message to be shown when any object goes out of the design area.,Voeg een waarschuwingsbericht toe dat wordt weergegeven wanneer een object uit het ontwerpgebied gaat.
+Low resolution warning,Lage resolutie waarschuwing
+Add warning message to be shown when added image object is of low resolution.,Voeg een waarschuwingsbericht toe dat moet worden weergegeven als het toegevoegde afbeeldingsobject een lage resolutie heeft.
+All Products,Alle producten
+Enable All Products Section ,"""Alle producten inschakelen"""
+"Select ""Yes"" to enable all products section on tool page","Selecteer ""Ja"" om alle producten op de gereedschapspagina in te schakelen"
+First Tooltip,Eerste knopinfo
+"Add first tooltip description for user guide of ""All Products""","Eerste beschrijving van de knopinfo toevoegen voor de gebruikershandleiding van ""Alle producten"""
+Second Tooltip,Tweede knopinfo
+"Add second tooltip description for user guide of ""All Products""","Tweede tooltipbeschrijving toevoegen voor de gebruikershandleiding van ""Alle producten"""
+Color Picker,Kleur kiezer
+Default Color for Color Picker ,"""Standaardkleur voor kleurenkiezer"""
+Set default color which will be shown on any color picker throughout the product customization tool.,Stel de standaardkleur in die wordt weergegeven op elke kleurkiezer in de productaanpassingstool.
+Product Designer,Product ontwerper
+Manage Tabs,Beheer tabbladen
+Edit Tab,Tabblad Bewerken
+Tab,tab
+Custom Label,Aangepast label
+User Guide,Gebruikershandleiding
+Left Panel Tooltip,Linkerpaneel Tooltip
+Right Panel Tooltip,Rechterpaneel Tooltip
+Tabs Information,Tabbladen Informatie
+Tabs,tabs
+ID,ID kaart
+Action,Actie
+Manage Sub Tabs,Beheer subtabs
+Sub Tabs,Subtabs
+The list includes all the tabs which are neither Main Tabs or Sub Tabs.,De lijst bevat alle tabbladen die geen hoofdtabs of subtabs zijn.
+Subtabs Information,Subtabs Informatie
+Delete Sub Tab,Subtab verwijderen
+Delete,Verwijder
+Add Sub Tabs,Subtabs toevoegen
+Add Sub Tab,Subtab toevoegen
+Manage Image Effects,Beheer afbeeldingseffecten
+Name,Naam
+Status,staat
+Manage Clipart Categories,Beheer Clipart-categorieën
+Add Clipart Category,Clipartcategorie toevoegen
+Title,Titel
+Assign as Root Category?,Toewijzen als rootcategorie?
+Category,Categorie
+Store Views,Winkelweergaven
+Clipart Images,Clipart-afbeeldingen
+Clipart Category Information,Clipart Categorie-informatie
+"Click here or drag and drop to add images. (Accepted Files : JPG, JPEG, PNG, SVG )","Klik hier of sleep en plaats om afbeeldingen toe te voegen. (Geaccepteerde bestanden: JPG, JPEG, PNG, SVG)"
+Category Title,Categorie Titel
+Is Root Category?,Is rootcategorie?
+Store View,Winkelweergave
+Edit Clipart Category,Clipartcategorie bewerken
+Delete Clipart Category,Verwijder Clipart-categorie
+Label,Label
+Remove,Verwijderen
+Exclude,Uitsluiten
+Tags,Tags
+NEXT,NEXT
+PREV,PREV
+Save Clipart Category,Clipart-categorie opslaan
+Save and Continue Edit,Opslaan en doorgaan met bewerken
+Save Image Effects,Afbeeldingseffecten opslaan
+"Accepted Files : jpg, jpeg, gif, png","Geaccepteerde bestanden: jpg, jpeg, gif, png"
+Effect Name,Naam van het effect
+Effect Image,Effect afbeelding
+Image Effects Information,Informatie over afbeeldingseffecten
+Edit Image Effects,Afbeeldingseffecten bewerken
+Image,Beeld
+Manage Fonts,Beheer lettertypen
+Manage Image Sides,Beheer afbeeldingszijden
+Add Image Side,Afbeelding toevoegen
+Image Side,Beeldzijde
+Image Side Information,Beeldzijde-informatie
+Save Image Side,Afbeelding opslaan
+Edit Image Side,Beeldzijde bewerken
+Delete Image Side,Afbeeldingzijde verwijderen
+Manage Printable Colors,Beheer afdrukbare kleuren
+Add Printable Color,Afdrukbare kleur toevoegen
+Color Name,Kleurnaam
+Color,Kleur
+Printable Color Information,Afdrukbare kleurinformatie
+Code,Code
+Click to view Color Picker,Klik om Kleurkiezer te bekijken
+Save Printable Color,Afdrukbare kleur opslaan
+Edit Printable Color,Afdrukbare kleur bewerken
+Delete Printable Color,Afdrukbare kleur verwijderen
+Download Order,Bestelling downloaden
+View Design,Bekijk ontwerp
+Images are not generated,Afbeeldingen worden niet gegenereerd
+Qty,Aantal
+Generate Image,Afbeelding genereren
+Images Generated,"""Gegenereerde afbeeldingen"""
+Image Side: Front,Beeldzijde: voorzijde
+Download PDF,Download PDF
+Download Image ,Afbeelding downloaden
+Download SVG,SVG downloaden
+Image Side: Back,Beeldzijde: achterkant
+Text Word,Tekst Word
+Font Family,Lettertypefamilie
+Font Color,Letterkleur
+Font Size,Lettertypegrootte
+View Designs,Bekijk ontwerpen
+Select,kiezen
+MakeDesign,MakeDesign
+Allow multiple products in add to cart,Sta meerdere producten toe aan winkelwagen
+Set Default Clipart Category,Stel de standaard Clipart-categorie in
+Preview,Voorbeeld
+Share with,Delen met
+Save Design,Ontwerp opslaan
+Product Options,Product opties
+Alignment,opstelling
+Align Left,Links uitlijnen
+Align Horizontally,Horizontaal uitlijnen
+Align Right,Rechts uitlijnen
+Align Top,Boven uitlijnen
+Align Vertically,Verticaal uitlijnen
+Align Bottom,Onder uitlijnen
+Layer,Laag
+Bring Forward,Naar voren brengen
+Send To Back,Verzenden naar terug
+Bring To Front,Naar voren brengen
+Send Backward,Terug sturen
+Flip,Omdraaien
+Flip Horizontal,Draai horizontaal
+Flip Vertical,Draai verticaal
+Tools,Hulpmiddelen
+Duplicate,Duplicaat
+Best Fit,Beste pasvorm
+Crop Image,Afbeelding bijsnijden
+Font,doopvont
+Select Font,Selecteer lettertype
+Load More,Meer laden
+Size,Grootte
+Bold,Stoutmoedig
+Italic,Cursief
+Underline,Onderstrepen
+Left,Links
+Center,Centrum
+Right ,Rechts
+Justify,Rechtvaardigen
+Stroke,Beroerte
+Reset,Reset
+Drop Shadow,Slagschaduw
+X-offset,-X offset
+Y-offset,Y-offset
+Skew,scheef
+SkewX,skewX
+SkewY,skewY
+Object Position,Object positie
+X,X
+Y,Y
+View,Uitzicht
+Back,Terug
+Front,Voorkant
+Lock,Slot
+Select Object,Selecteer object
+Hide Object,Object verbergen
+Unlock Object,Object ontgrendelen
+Lock Object,Object vergrendelen
+Delete Object,Object verwijderen
+Previous Side,Vorige zijde
+Next Side,Next Side
+Undo,ongedaan maken
+Redo,Opnieuw doen
+Zoom,Zoom
+Add to Cart,Voeg toe aan winkelmandje
+Quantity,Aantal stuks
+Invalid Quantity,Ongeldige hoeveelheid
+Add Note,Notitie toevoegen
+Used Colors,Gebruikte kleuren
+No Cliparts Found,Geen Cliparts gevonden
+Search Clipart,Zoek Clipart
+Enter Text,Tekst invoeren
+No Designs Found,Geen ontwerpen gevonden
+Get your saved designs,Ontvang uw opgeslagen ontwerpen
+Upload,Uploaden
+Get your saved images,Ontvang uw opgeslagen afbeeldingen
+Customer Login,Klant login
+Email,E-mail
+Email is required,Email is verplicht
+Invalid Email,Ongeldig e-mail
+Password,Wachtwoord
+Password is required,Een wachtwoord is verplicht
+Login,Log in
+Create An Account,Account aanmaken
+Customer Registration,Klantregistratie
+First Name,Voornaam
+First Name is required,Voornaam is verplicht
+Last Name,Achternaam
+Last Name is required,Achternaam is verplicht
+Sign Up for Newsletter,Aanmelden voor Nieuwsbrief
+Minimum length of this field must be equal or greater than 8 symbols,De minimale lengte van dit veld moet gelijk zijn aan of groter zijn dan 8 symbolen
+Confirm Password,bevestig wachtwoord
+Confirm Password is required,Bevestig wachtwoord is vereist
+Confirm Password must match with password field,Bevestig wachtwoord moet overeenkomen met wachtwoordveld
+Sign Up,Inschrijven
+Help,Helpen
+Search by Name,Zoek op naam
+Removal of main tabs which contains subtabs will result in removal of those subtabs as well,"Als u hoofdtabbladen verwijdert die subtabbladen bevatten, worden ook die subtabbladen verwijderd"
+Manage Subtabs,Subtabs beheren
+Select All,Selecteer alles
+Deselect All,Deselecteer alles
+Distribute Vertically (must select 3 or more objects),Verticaal verdelen (moet 3 of meer objecten selecteren)
+Distribute Horizontally (must select 3 or more objects),Horizontaal verdelen (moet 3 of meer objecten selecteren)
+Ultimate Lock,Ultieme vergrendeling
+Opacity,ondoorzichtigheid
+Print files will be generated in the scheduled time soon.,Afdrukbestanden worden binnenkort in de geplande tijd gegenereerd.

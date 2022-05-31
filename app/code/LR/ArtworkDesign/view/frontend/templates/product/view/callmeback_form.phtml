@@ -1,0 +1,49 @@
+<div id="popup-modal2">
+    <div class="callmeback-form-popup" style="display: none;">
+        <form class="" id="lr-callmeback-form" method="post" enctype='multipart/form-data'  data-mage-init='{"validation": {}}'>
+            <fieldset class="fieldset">
+                <div class="field note no-label">Please complete the form below to provide details about your request.</div>
+                <div class="field callmeback_name">
+                    <label class="label" for="callmeback_name"><span>Name</span></label>
+                    <div class="control">
+                        <input name="callmeback_name" id="callmeback_name" title="Name" value="" class="input-text" type="text" data-validate="{required:true}" required>
+                    </div>
+                </div>
+                <div class="field callmeback_email">
+                    <label class="label" for="callmeback_email"><span>Email</span></label>
+                    <div class="control">
+                        <input name="callmeback_email" id="callmeback_email" title="Name" value="" class="input-text" type="text" data-validate="{required:true, 'validate-email':true}">
+                    </div>
+                </div>
+                <div class="field callmeback_phone">
+                    <label class="label" for="callmeback_phone"><span>Phone</span></label>
+                    <div class="control">
+                        <input name="callmeback_phone" id="callmeback_phone" title="Name" value="" class="input-text" type="text" data-validate="{required:true}">
+                    </div>
+                </div>
+                <div class="field callmeback_likecall">
+                    <label class="label" for="callmeback_likecall"><span>When would you like us to call you?</span></label>
+                    <div class="control">
+                        <select name="callmeback_likecall" id="callmeback_likecall">
+                            <option value="Within 1 Hour"><?php echo __('Within 1 Hour') ?></option>
+                            <option value="Today AM"><?php echo __('Today AM') ?></option>
+                            <option value="Today PM"><?php echo __('Today PM') ?></option>
+                            <option value="Tomorrow"><?php echo __('Tomorrow') ?></option>
+                            <option value="Other"><?php echo __('Other') ?></option>
+                        </select>
+                    </div>
+                </div>
+            </fieldset>
+            <div class="actions-toolbar">
+                <div class="primary">
+                    <button type="submit" title="Submit" class="action submit primary callmeback-submit">
+                        <span>Submit</span>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="callmeback-static-block-message" style="display: none;">
+        <span>Thanks for submit your request. We\'ll respond to you very soon.</span>
+    </div>
+</div>

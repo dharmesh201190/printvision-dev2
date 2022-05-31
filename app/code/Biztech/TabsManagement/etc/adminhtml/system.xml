@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../Magento/Config/etc/system_file.xsd">
+    <system>
+        <section id="productdesigner" showInDefault="1" showInWebsite="1" showInStore="1">
+            <tab>biztech</tab>
+            <label>Product Designer Settings</label>
+             <group id="layout_general" showInDefault="1" showInWebsite="1" showInStore="1" sortOrder="30">
+                <field id="main_tab" translate="label comment" type="multiselect" sortOrder="4" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <source_model>Biztech\TabsManagement\Model\Adminhtml\Config\Source\Maintab</source_model>
+                    <frontend_model>Biztech\TabsManagement\Block\DragDrop</frontend_model>
+                    <comment>Select all the tabs to be shown on product designer tool as default. Slightly drag and move to set orders of the options to be shown.</comment>
+                </field>
+            </group>
+        </section>        
+    </system>
+</config>

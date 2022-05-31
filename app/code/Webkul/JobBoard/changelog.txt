@@ -1,0 +1,15 @@
+Legend
+
++ Features
+- Bugs
+
+-------------------------------- Version 3.0.0 --------------------------------------
+	- Bugs fixed.
+
+-------------------------------- Version 2.1.0 --------------------------------------
+	+ Compatible with Magento 2.3.x
+
+-------------------------------- Version 2.0.0 --------------------------------------
+	+ Allow to manage Job, Categories and Job Application from Admin Panel
+    + Browse Job Categories & Job from Frontend.
+    + Allow to submit Job Application from Frontend

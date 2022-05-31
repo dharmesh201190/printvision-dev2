@@ -1,0 +1,720 @@
+<?php
+$elementName = $block->getElement()->getName() . '[images]';
+$formName = $block->getFormName();
+$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+$model = $objectManager->create('Biztech\Productdesigner\Model\Mysql4\Side\Collection')->addFieldToFilter('status',
+  array('eq' => 1));
+$imageSideCollection = $model->getData();
+$product_id = $this->getRequest()->getParam('id');
+$obj_product = $objectManager->create('Magento\Catalog\Model\Product');
+$product = $obj_product->load($product_id);
+?>
+
+<div class="row">
+  <div class="add-video-button-container">
+    <button id="add_video_button"
+    title="<?php echo $block->escapeHtml(__('Add Video'));?>"
+    data-role="add-video-button"
+    type="button"
+    class="action-secondary"
+    data-ui-id="widget-button-1">
+    <span><?php echo $block->escapeHtml(__('Add Video')) ?></span>
+  </button>
+</div>
+</div>
+
+<?php
+$element = $block->getElement();
+$elementToggleCode = $element->getToggleCode() ? $element->getToggleCode() : 'toggleValueElements(this, this.parentNode.parentNode.parentNode)';
+?>
+
+<div id="<?php echo $block->getHtmlId() ?>"
+ class="gallery"
+ data-mage-init='{"openVideoModal":{}}'
+ data-parent-component="<?php echo $block->escapeHtml($block->getData('config/parentComponent')) ?>"
+ data-images="<?php echo $block->escapeHtml($block->getImagesJson()) ?>"
+ data-types="<?php echo $block->escapeHtml(
+ $this->helper('Magento\Framework\Json\Helper\Data')->jsonEncode($block->getImageTypes())
+ ) ?>"
+ >
+
+ <?php
+ if (!$block->getElement()->getReadonly()):
+  ?>
+<div class="image image-placeholder">
+  <?php /* @escapeNotVerified */ echo $block->getUploaderHtml();
+  ?>
+  <div class="product-image-wrapper">
+    <p class="image-placeholder-text">
+      <?php echo $block->escapeHtml(
+        __('Browse to find or drag image here')
+      ); ?>
+    </p>
+  </div>
+</div>
+<?php /* @escapeNotVerified */ echo $block->getChildHtml('additional_buttons'); ?>
+<?php
+endif;
+?>
+<?php
+foreach ($block->getImageTypes() as $typeData):
+  ?>
+  <input name="<?php echo $block->escapeHtml($typeData['name']) ?>"
+  data-form-part="<?php /* @escapeNotVerified */ echo $formName ?>"
+  class="image-<?php echo $block->escapeHtml($typeData['code']) ?>"
+  type="hidden"
+  value="<?php echo $block->escapeHtml($typeData['value']) ?>"/>
+  <?php
+endforeach;
+?>
+<script id="<?php /* @escapeNotVerified */ echo $block->getHtmlId() ?>-template" data-template="image" type="text/x-magento-template">
+  <div class="image item <% if (data.disabled == 1) { %>hidden-for-front<% } %>  <% if (data.video_url) { %>video-item<% } %>"
+   data-role="image">
+   <input type="hidden"
+   name="<?php /* @escapeNotVerified */ echo $elementName ?>[<%- data.file_id %>][position]"
+   value="<%- data.position %>"
+   data-form-part="<?php /* @escapeNotVerified */ echo $formName ?>"
+   class="position"/>
+   <% if (data.media_type !== 'external-video') {%>
+   <input type="hidden"
+   name="<?php /* @escapeNotVerified */ echo $elementName ?>[<%- data.file_id %>][media_type]"
+   data-form-part="<?php /* @escapeNotVerified */ echo $formName ?>"
+   value="image"/>
+   <% } else { %>
+   <input type="hidden"
+   name="<?php /* @escapeNotVerified */ echo $elementName ?>[<%- data.file_id %>][media_type]"
+   value="<%- data.media_type %>"
+   data-form-part="<?php /* @escapeNotVerified */ echo $formName ?>"/>
+   <% } %>
+   <input type="hidden"
+   name="<?php /* @escapeNotVerified */ echo $elementName ?>[<%- data.file_id %>][video_provider]"
+   value="<%- data.video_provider %>"
+   data-form-part="<?php /* @escapeNotVerified */ echo $formName ?>"/>
+   <input type="hidden"
+   name="<?php /* @escapeNotVerified */ echo $elementName ?>[<%- data.file_id %>][file]"
+   value="<%- data.file %>"
+   data-form-part="<?php /* @escapeNotVerified */ echo $formName ?>"/>
+   <input type="hidden"
+   name="<?php /* @escapeNotVerified */ echo $elementName ?>[<%- data.file_id %>][value_id]"
+   value="<%- data.value_id %>"
+   data-form-part="<?php /* @escapeNotVerified */ echo $formName ?>"/>
+   <input type="hidden"
+   name="<?php /* @escapeNotVerified */ echo $elementName ?>[<%- data.file_id %>][label]"
+   value="<%- data.label %>"
+   data-form-part="<?php /* @escapeNotVerified */ echo $formName ?>"/>
+   <input type="hidden"
+   name="<?php /* @escapeNotVerified */ echo $elementName ?>[<%- data.file_id %>][disabled]"
+   value="<%- data.disabled %>"
+   data-form-part="<?php /* @escapeNotVerified */ echo $formName ?>"/>
+   <input type="hidden"
+   name="<?php /* @escapeNotVerified */ echo $elementName ?>[<%- data.file_id %>][removed]"
+   value="" class="is-removed"
+   data-form-part="<?php /* @escapeNotVerified */ echo $formName ?>"/>
+   <input type="hidden"
+   name="<?php /* @escapeNotVerified */ echo $elementName ?>[<%- data.file_id %>][video_url]"
+   value="<%- data.video_url %>"
+   data-form-part="<?php /* @escapeNotVerified */ echo $formName ?>"/>
+   <input type="hidden"
+   name="<?php /* @escapeNotVerified */ echo $elementName ?>[<%- data.file_id %>][video_title]"
+   value="<%- data.video_title %>"
+   data-form-part="<?php /* @escapeNotVerified */ echo $formName ?>"/>
+   <input type="hidden"
+   name="<?php /* @escapeNotVerified */ echo $elementName ?>[<%- data.file_id %>][video_description]"
+   value="<%- data.video_description %>"
+   data-form-part="<?php /* @escapeNotVerified */ echo $formName ?>"/>
+   <input type="hidden"
+   name="<?php /* @escapeNotVerified */ echo $elementName ?>[<%- data.file_id %>][video_metadata]"
+   value="<%- data.video_metadata %>"
+   data-form-part="<?php /* @escapeNotVerified */ echo $formName ?>"/>
+   <input type="hidden"
+   name="<?php /* @escapeNotVerified */ echo $elementName ?>[<%- data.file_id %>][role]"
+   value="<%- data.video_description %>"
+   data-form-part="<?php /* @escapeNotVerified */ echo $formName ?>"/>
+   <input type="hidden"
+   name="<?php /* @escapeNotVerified */ echo $elementName ?>[<%- data.file_id %>][image_side]"
+   value="<%- data.image_side_default %>"
+   data-form-part="<?php /* @escapeNotVerified */ echo $formName ?>"/> 
+
+   <div class="product-image-wrapper">
+    <img class="product-image"
+    data-role="image-element"
+    src="<%- data.url %>"
+    alt="<%- data.label %>"/>
+
+    <div class="actions">
+      <button type="button"
+      class="action-remove"
+      data-role="delete-button"
+      title="<% if (data.media_type == 'external-video') {%>
+      <?php echo $block->escapeHtml(
+        __('Delete video')
+      ); ?>
+      <%} else {%>
+      <?php echo $block->escapeHtml(
+        __('Delete image')
+      ); ?>
+      <%}%>">
+      <span>
+        <% if (data.media_type == 'external-video') { %>
+        <?php echo $block->escapeHtml(
+          __('Delete video')
+        ); ?>
+        <% } else {%>
+        <?php echo $block->escapeHtml(
+          __('Delete image')
+        ); ?>
+        <%} %>
+      </span>
+    </button>
+    <button type="button" class="design-area-button" onclick="getAllDesignAreas('<%- data.file %>','<%- data.value_id %>','<?php /* @escapeNotVerified */ echo $product_id ?>','<%- data.image_side_default %>')" href="javascript:void(0)"><span><?php /* @escapeNotVerified */ echo __('Make Design Area') ?>
+  </span></button>
+  <div class="draggable-handle"></div>
+</div>
+<div class="image-fade"><span><?php echo $block->escapeHtml(
+  __('Hidden')
+  ); ?></span></div>
+</div>
+
+<div class="item-description">
+  <% if (data.media_type !== 'external-video') {%>
+  <div class="item-title" data-role="img-title"><%- data.label %></div>
+  <div class="item-size">
+    <span data-role="image-dimens"></span>, <span data-role="image-size"><%- data.sizeLabel %></span>
+  </div>
+  <% } else { %>
+  <div class="item-title" data-role="img-title"><%- data.video_title %></div>
+  <% } %>
+</div>
+
+<ul class="item-roles" data-role="roles-labels">
+  <?php
+  foreach ($block->getImageTypes() as $typeData):
+    ?>
+    <li data-role-code="<?php echo $block->escapeHtml(
+      $typeData['code']
+    ) ?>" class="item-role item-role-<?php echo $block->escapeHtml(
+      $typeData['code']
+      ) ?>">
+      <?php echo $block->escapeHtml($typeData['label']) ?>
+    </li>
+    <?php
+  endforeach;
+  ?>
+</ul>
+</div>
+</script>
+
+<script data-role="img-dialog-container-tmpl" type="text/x-magento-template">
+  <div class="image-panel" data-role="dialog">
+  </div>
+</script>
+
+<script data-role="img-dialog-tmpl" type="text/x-magento-template">
+  <div class="image-panel-preview">
+    <img src="<%- data.url %>" alt="<%- data.label %>" />
+  </div>
+  <div class="image-panel-controls">
+    <strong class="image-name"><%- data.label %></strong>
+
+    <fieldset class="admin__fieldset fieldset-image-panel">
+      <div class="admin__field field-image-description">
+        <label class="admin__field-label" for="image-description">
+          <span><?php /* @escapeNotVerified */ echo __('Alt Text')?></span>
+        </label>
+
+        <div class="admin__field-control">
+          <textarea data-role="image-description"
+          rows="3"
+          class="admin__control-textarea"
+          name="<?php /* @escapeNotVerified */
+          echo $elementName
+          ?>[<%- data.file_id %>][label]"><%- data.label %></textarea>
+        </div>
+      </div>
+
+      <div class="admin__field field-image-role">
+        <label class="admin__field-label">
+          <span><?php echo $block->escapeHtml(
+            __('Role')
+            ); ?></span>
+          </label>
+          <div class="admin__field-control">
+            <ul class="multiselect-alt">
+              <?php
+              foreach ($block->getMediaAttributes() as $attribute) :
+                ?>
+                <li class="item">
+                  <label>
+                    <input class="image-type"
+                    data-role="type-selector"
+                    data-form-part="<?php /* @escapeNotVerified */ echo $formName ?>"
+                    type="checkbox"
+                    value="<?php echo $block->escapeHtml(
+                     $attribute->getAttributeCode()
+                     ) ?>"
+                     />
+                     <?php /* @escapeNotVerified */ echo $block->escapeHtml(
+                      $attribute->getFrontendLabel()
+                    ) ?>
+                  </label>
+                </li>
+                <?php
+              endforeach;
+              ?>
+            </ul>
+          </div>
+        </div>
+
+        <div class="admin__field admin__field-inline field-image-size" data-role="size">
+          <label class="admin__field-label">
+            <span><?php /* @escapeNotVerified */ echo __('Image Size') ?></span>
+          </label>
+          <div class="admin__field-value" data-message="<?php /* @escapeNotVerified */ echo __('{size}') ?>"></div>
+        </div>
+
+        <div class="admin__field admin__field-inline field-image-resolution" data-role="resolution">
+          <label class="admin__field-label">
+            <span><?php /* @escapeNotVerified */ echo __('Image Resolutions') ?></span>
+          </label>
+          <div class="admin__field-value" data-message="<?php /* @escapeNotVerified */ echo __('{width}^{height} px') ?>"></div>
+        </div>
+        <div class="admin__field admin__field-inline field-image-side">
+          <label class="admin__field-label">
+            <span><?php /* @escapeNotVerified */ echo __('Image Side') ?></span>
+          </label>
+          <div class="admin__field-control">
+            <select class="image_side" id="image-side" style="width: 100px;"name="<?php /* @escapeNotVerified */ echo $elementName ?>[<%- data.file_id %>][image_side]">
+              <option value=""><?php echo __('--Select Side--') ?></option>
+              <?php foreach ($imageSideCollection as $imageSide) : ?>
+                <option data-role="type-imageSide" value="<?php echo $imageSide['imageside_id']; ?>"><?php echo $imageSide['imageside_title']; ?></option>
+              <?php endforeach; ?>                            
+            </select>
+          </div>
+        </div>
+        <div class="admin__field field-image-hide">
+          <div class="admin__field-control">
+            <div class="admin__field admin__field-option">
+              <input type="checkbox"
+              id="hide-from-product-page"
+              data-role="visibility-trigger"
+              data-form-part="<?php /* @escapeNotVerified */ echo $formName ?>"
+              value="1"
+              class="admin__control-checkbox"
+              name="<?php /* @escapeNotVerified */ echo $elementName ?>[<%- data.file_id %>][disabled]"
+              <% if (data.disabled == 1) { %>checked="checked"<% } %> />
+
+              <label for="hide-from-product-page" class="admin__field-label">
+                <?php echo $block->escapeHtml(
+                  __('Hide from Product Page')
+                ); ?>
+              </label>
+            </div>
+          </div>
+        </div>
+      </fieldset>
+    </div>
+  </script>
+  <div id="<?php /* @noEscape */ echo $block->getNewVideoBlockName();?>" style="display:none">
+    <?php /* @escapeNotVerified */ echo $block->getFormHtml();?>
+    <div id="video-player-preview-location" class="video-player-sidebar">
+      <div class="video-player-container"></div>
+      <div class="video-information title">
+        <label><?php echo $block->escapeHtml(
+          __('Title:')
+          ); ?> </label><span></span>
+        </div>
+        <div class="video-information uploaded">
+          <label><?php echo $block->escapeHtml(
+            __('Uploaded:')
+            ); ?> </label><span></span>
+          </div>
+          <div class="video-information uploader">
+            <label><?php echo $block->escapeHtml(
+              __('Uploader:')
+              ); ?> </label><span></span>
+            </div>
+            <div class="video-information duration">
+              <label><?php echo $block->escapeHtml(
+                __('Duration:')
+                ); ?> </label><span></span>
+              </div>
+            </div>
+          </div>
+
+          <?php echo $block->getChildHtml('new-video'); ?>
+        </div>
+        <script>
+          jQuery('body').trigger('contentUpdated');
+        </script>
+        <script type="text/javascript">
+
+          var globalFile;
+          var globalImageId;
+          var globalProductId;
+          var globalImageSide;
+          var globalAllDesignAreasIds;
+
+          function getAllDesignAreas(file, imageId, productId, imageSide) {
+
+            if (imageId == "" || imageSide == "" || imageSide == 0)
+            {
+              alert("Please choose image side then save product then set design area.");
+              return;
+            }
+            globalFile = file;
+            globalImageId = imageId;
+            globalProductId = productId;
+            globalImageSide = imageSide;
+
+            var getDesignAreaUrl = '<?php
+            echo $this->getUrl("productdesigner/productdesigner/getDesignArea",
+            array("_secure" => $this->getRequest()->isSecure()));
+            ?>';
+
+            new Ajax.Request(getDesignAreaUrl, {
+              method: 'post',
+              parameters: {imageid: imageId, image_url: file, product_id: productId, imageSide: imageSide},
+              onSuccess: function (transport) {
+                var response = transport.responseText.evalJSON();
+                globalAllDesignAreasIds = response;
+                current_design_area_id = false;
+                next_design_area_id = false;
+                if (globalAllDesignAreasIds[0] != undefined) {
+                  current_design_area_id = globalAllDesignAreasIds[0];
+                }
+
+                if (globalAllDesignAreasIds[1] != undefined) {
+                  next_design_area_id = globalAllDesignAreasIds[1];
+                }
+                
+                changeDesignArea(globalFile, globalImageId, globalProductId, current_design_area_id, next_design_area_id, '', imageSide);
+              }
+            });
+          }
+
+          function addNewArea(next_design_area_id) {
+            if (next_design_area_id != false)
+            {          
+
+              require([
+                'jquery',
+                'jquery/ui',
+                'Magento_Ui/js/modal/modal'
+                ], function ($) {
+                  $('#designarea-popup').modal('closeModal');
+                  $('#designarea-popup').remove();
+                });
+              saveDesignArea(true);
+              setTimeout(function () {
+                current_design_area_id = next_design_area_id;
+                next_design_area_id = false;
+                for (var ids in globalAllDesignAreasIds) {
+                  if (globalAllDesignAreasIds[ids] == current_design_area_id) {
+                    id = parseInt(ids) + 1;
+                  }
+                }
+                if (globalAllDesignAreasIds[id] != undefined) {
+                  next_design_area_id = globalAllDesignAreasIds[id];
+                }
+
+                changeDesignArea(globalFile, globalImageId, globalProductId, current_design_area_id, next_design_area_id, false, globalImageSide);
+              }, 300);
+            } else {
+              require([
+                'jquery',
+                'jquery/ui',
+                'Magento_Ui/js/modal/modal'
+                ], function ($) {
+                  $('#designarea-popup').modal('closeModal');
+                  $('#designarea-popup').remove();
+                });
+              saveDesignArea(true);
+              setTimeout(function () {
+                changeDesignArea(globalFile, globalImageId, globalProductId, false, false, true, globalImageSide);
+              }, 2000);
+            }
+          }
+          function changeDesignArea(file, imageId, productId, current_design_area_id, next_design_area_id, new1, imageSide)
+          {
+            require([
+              'jquery',
+              'jquery/ui',
+              'Magento_Ui/js/modal/modal'
+              ], function ($) {
+
+              });
+
+            var designAreaUrl = '<?php
+            echo $this->getUrl("productdesigner/productdesigner/setDesignArea",
+            array("_secure" => $this->getRequest()->isSecure()));
+            ?>';
+
+            var product_container = $('#designarea-popup');
+            new Ajax.Request(designAreaUrl, {
+              method: 'post',
+              parameters: {imageid: imageId, image_url: file, product_id: productId, image_Side: imageSide, current_design_area_id: current_design_area_id, next_design_area_id: next_design_area_id},
+              onSuccess: function (transport) {
+                var response = transport.responseText.evalJSON();
+                var designArea = response.design_area;
+                var selection = response.selection;
+                var last_design_area_id = response.last_design_area_id;
+
+                require([
+                  'jquery',
+                  'jquery/ui',
+                  'Magento_Ui/js/modal/modal'
+                  ], function ($) {
+                    $('#designarea-popup').modal('closeModal');
+                    $('#designarea-popup').remove();
+                    $('<div id="designarea-popup"/>').html(designArea)
+                    .modal({
+                      title: 'Create Design Area',
+                      autoOpen: true,
+                      buttons: [],
+                      opened: function () {                       
+                        if ((!response.selection) || (new1 == true)) {
+                          if (response.selection != "") {
+                            for (var select in response.selection) {
+                              var selection = response.selection[select].evalJSON();
+                              var designArea = document.createElement('div');
+                              designArea.setAttribute('class', 'design-container');
+                              designArea.setAttribute('id', 'designArea-' + select);
+                              designArea.style.position = 'absolute';
+                              selection.y1 = parseInt($('#canvas_top_' + select).val());
+                              designArea.style.left = $('#canvas_left_' + select).val() + 'px';
+                              designArea.style.top = $('#canvas_top2_' + select).val() + 'px';
+                              designArea.style.width = $('#canvas_width_' + select).val() + 'px';
+                              designArea.style.height = $('#canvas_height_' + select).val() + 'px';
+                              designArea.style.border = '1px dashed #fff';
+                              designArea.style.zIndex = '500';
+                              var canvas = document.createElement('canvas');
+                              canvas.setAttribute('class', 'canvas-panel');
+                              canvas.setAttribute('width', $('#canvas_width_' + select).val());
+                              canvas.setAttribute('height', $('#canvas_height_' + select).val());
+                              designArea.appendChild(canvas);
+                              $('#all_design_area_' + select).append(designArea);
+
+                              jQuery('#all_design_area_' + select).css('position', 'relative');                                              
+                              canvas.selection = false;
+                            }
+                          }
+                          $('#design_image').cropper('destroy');
+                          $('#design_image').cropper({
+                            viewMode: 2,
+                            zoomable: false,
+                            built: function (e) {
+                              var x1 = 100;
+                              var y1 = 100;
+                              var x2 = 300;
+                              var y2 = 300;
+                              var cropBoxData = {
+                                x: parseInt(x1),
+                                y: parseInt(y1),
+                                width: parseInt(x2 - x1),
+                                height: parseInt(y2 - y1),
+                                scaleX: 1,
+                                scaleY: 1
+                              }
+                              $('#design_image').cropper('setData', cropBoxData);
+                              getParams(e);
+                              $('#design_image').on('cropend.cropper', function (e) {
+                                getParams(e);
+                              });
+                            }
+                          });
+                        }
+                        else {
+                          var product_container = $('designarea-popup');
+                          for (var select in response.selection) {
+                            var selection = response.selection[select].evalJSON();
+                            var designArea = document.createElement('div');
+                            designArea.setAttribute('class', 'design-container');
+                            designArea.setAttribute('id', 'designArea-' + select);
+                            designArea.style.position = 'absolute';
+                            selection.y1 = parseInt($('#canvas_top_' + select).val());
+                            designArea.style.left = $('#canvas_left_' + select).val() + 'px';
+                            designArea.style.top = $('#canvas_top2_' + select).val() + 'px';
+                            designArea.style.width = $('#canvas_width_' + select).val() + 'px';
+                            designArea.style.height = $('#canvas_height_' + select).val() + 'px';
+                            designArea.style.border = '1px dashed #fff';
+                            designArea.style.zIndex = '500';
+                            var canvas = document.createElement('canvas');
+                            canvas.setAttribute('class', 'canvas-panel');
+                            canvas.setAttribute('width', $('#canvas_width_' + select).val());
+                            canvas.setAttribute('height', $('#canvas_height_' + select).val());
+                            designArea.appendChild(canvas);
+                            $('#all_design_area_' + select).append(designArea);
+
+                            jQuery('#all_design_area_' + select).css('position', 'relative');
+                            canvas.selection = false;
+                          }
+                          $('#design_image').cropper('destroy');
+                          $('#design_image').cropper({
+                            viewMode: 2,
+                            zoomable: false,
+                            built: function (e) {
+                              var selection = response.selection[response.current_design_area_id].evalJSON();
+                              var x1 = selection.x1;
+                              var y1 = selection.y1;
+                              var x2 = selection.x2;
+                              var y2 = selection.y2;
+                              var cropBoxData = {
+                                x: parseInt(x1),
+                                y: parseInt(y1),
+                                width: parseInt(x2 - x1),
+                                height: parseInt(y2 - y1),
+                                scaleX: 1,
+                                scaleY: 1
+                              }
+                              $('#design_image').cropper('setData', cropBoxData);
+                              getParams(e);
+                              $('#design_image').on('cropend.cropper', function (e) {
+                                getParams(e);
+                              });
+                            }
+                          });
+                        }
+                      },
+                      closed: function () {
+                        $('.image-panel').modal('closeModal');
+                      },
+                    });
+}
+);
+}
+});
+}
+
+function getParams(e) {
+
+  require([
+    'jquery',
+    'jquery/ui',
+    'Magento_Ui/js/modal/modal'
+    ], function ($) {
+
+      var dataDesign = $(e.target).cropper("getData", {rounded: true});
+      $('#x1').val(dataDesign.x);
+      $('#y1').val(dataDesign.y);
+      $('#x2').val(dataDesign.x + dataDesign.width);
+      $('#y2').val(dataDesign.y + dataDesign.height);
+      var widthCm = Number(dataDesign.width / 37.795275591).toFixed(2);
+      var heightCm = Number(dataDesign.height / 37.795275591).toFixed(2);
+      $('#areaWidth').val(dataDesign.width);
+      $('#areaHeight').val(dataDesign.height);
+      $('#areaWidthCm').val(widthCm);
+      $('#areaHeightCm').val(heightCm);
+
+    });
+}
+
+function saveDesignArea()
+{
+ 
+  var save_design_area_url = '<?php echo $this->getUrl('productdesigner/productdesigner/saveDesignArea'); ?>';
+  var params = new Object();
+  params.x1 = new Array();
+  params.y1 = new Array();
+  params.x2 = new Array();
+  params.y2 = new Array();
+  params.w = new Array();
+  params.h = new Array();
+  params.ow = new Array();
+  params.oh = new Array();
+  params.image_id = new Array();
+  params.image_side = new Array();
+  params.current_design_area_id = new Array();
+  params.maskig_id = new Array();
+  params.is_apply_all = new Array();
+  params.product_id = new Array();
+  params.imageside_id = new Array();
+  params.masking_image=new Array();
+  params.masking_label=new Array();
+  // params.maskingid = new Array();
+
+  params.x1.push($('x1').value);
+  params.y1.push($('y1').value);
+  params.x2.push($('x2').value);
+  params.y2.push($('y2').value);
+  params.w.push($('areaWidth').value);
+  params.h.push($('areaHeight').value);
+  params.image_id.push($('image_id').value);
+  params.image_side.push($('image_side').value);
+  params.ow.push($('areaWidthCm').value);
+  params.oh.push($('areaHeightCm').value);
+  params.current_design_area_id.push($('current_design_area_id').value);
+  params.maskig_id.push($('maskig_id').value);
+  // params.maskingid.push($('category_masking').value);
+  params.is_apply_all.push($('apply_for_all_images').checked);
+  params.product_id.push(<?php echo $product_id; ?>);
+  
+
+  new Ajax.Request(save_design_area_url, {
+    method: 'post',
+    parameters: params,
+    onSuccess: function (transport) {
+      var response = transport.responseText.evalJSON();
+      if (response.status == 'success') {
+        require([
+          'jquery',
+          'jquery/ui',
+          'Magento_Ui/js/modal/modal'
+          ], function ($) {
+            $('#designarea-popup').modal('closeModal');
+          });
+      } else if (response.status == 'error') {
+        alert(response.message);
+      }
+    }
+  });
+}
+
+function getDesignAreaImage(globalFile, globalImageId, globalProductId, current_design_area_id) {
+  var getDesignAreaImage = '<?php
+  echo $this->getUrl("productdesigner/productdesigner/getDesignAreaImage",
+  array("_secure" => $this->getRequest()->isSecure()));
+  ?>';
+  new Ajax.Request(getDesignAreaImage, {
+    method: 'post',
+    parameters: {current_design_area_id: current_design_area_id, alldesignarea: Object.toJSON(globalAllDesignAreasIds)},
+    onSuccess: function (transport) {
+      var response = transport.responseText.evalJSON();
+      changeDesignArea(globalFile, globalImageId, globalProductId, current_design_area_id, response.next_design_area_id, false, globalImageSide);
+    }
+  });
+}
+
+function DeleteArea(key, design_id)
+{
+  var r = confirm('This design is not made for this product, Do You want to continue?');
+  if (r == true) {
+    var delete_design_area_url = '<?php echo $this->getUrl('productdesigner/productdesigner/deleteDesignArea'); ?>';
+    var params = new Object();
+    params.design_id = new Array();
+    params.design_id.push(design_id);
+    new Ajax.Request(delete_design_area_url, {
+      method: 'post',
+      parameters: params,
+      onSuccess: function (transport) {
+        var response = transport.responseText.evalJSON();
+        console.log(response);
+
+        if (response.status == 'success') {
+          console.log('close');
+          require([
+            'jquery',
+            'jquery/ui',
+            'Magento_Ui/js/modal/modal'
+            ], function ($) {
+
+              $('#designarea-popup').modal('closeModal');
+              getAllDesignAreas(globalFile, globalImageId, globalProductId, globalImageSide);
+            });
+        } else if (response.status == 'error') {
+          alert(response.message);
+        }
+      }
+    });
+  }
+}
+</script>

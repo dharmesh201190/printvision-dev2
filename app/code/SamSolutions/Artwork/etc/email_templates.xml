@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Email:etc/email_templates.xsd">
+    <template id="artwork_notification_template"
+              label="Artwork notification"
+              file="artwork.html"
+              type="html"
+              module="SamSolutions_Artwork"
+              area="frontend"/>
+</config>

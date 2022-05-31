@@ -1,0 +1,44 @@
+<!--@subject CallMeBack Request  @-->
+<!--@vars {
+"var data.callmeback_likecall":"Test",
+"var data.callmeback_email":"Sender Email",
+"var data.callmeback_name":"Sender Name",
+"var data.callmeback_phone":"Sender Phone No"
+} @-->
+{{template config_path="design/email/header_template"}} <!-- pathe of template header-->
+
+<table>
+    <tr class="email-intro">
+        <td>
+            <p class="greeting">{{trans "Hi,"}}</p>
+            <p class="greeting">{{trans "%name has requested new artworkd design for the flag, which detail as below with attachment." name=$data.callmeback_name}}</p>
+        </td>
+    </tr>
+    <tr><td><br></td></tr>
+    <tr class="email-information">
+        <td>
+            <table class="email-items">
+                <tbody>
+                    <tr>
+                        <th class="item-info">{{trans "Name"}}</th>
+                        <td class="item-info">{{trans "%name" name=$data.callmeback_name}}</td>
+                    </tr>
+                    <tr>
+                        <th class="item-info">{{trans "Email"}}</th>
+                        <td class="item-info">{{trans "%email" email=$data.callmeback_email}}</td>
+                    </tr>
+                    <tr>
+                        <th class="item-info">{{trans "Phone"}}</th>
+                        <td class="item-info">{{trans "%phone" phone=$data.callmeback_phone}}</td>
+                    </tr>
+                    <tr>
+                        <th class="item-info">{{trans "Call You"}}</th>
+                        <td class="item-info">{{trans "%comment" comment=$data.callmeback_likecall}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+    </tr>
+</table>
+
+{{template config_path="design/email/footer_template"}} <!--footer of template-->

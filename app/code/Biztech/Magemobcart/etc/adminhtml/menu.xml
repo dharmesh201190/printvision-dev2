@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Biztech, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Backend/etc/menu.xsd">
+    <menu>
+        <add id="Biztech_Magemobcart::magemobcart" title="MageMob App Builder" module="Biztech_Magemobcart" sortOrder="20" dependsOnModule="Biztech_Magemobcart" resource="Biztech_Magemobcart::magemobcart"/>
+        <add id="Biztech_Magemobcart::bannerslider" title="Manage Banners" module="Biztech_Magemobcart" sortOrder="10" parent="Biztech_Magemobcart::magemobcart" action="magemobcart/bannerslider/index" resource="Biztech_Magemobcart::bannerslider"/>
+
+        <add id="Biztech_Magemobcart::items" title="Manage Featured Category Blocks" module="Biztech_Magemobcart" sortOrder="10" parent="Biztech_Magemobcart::magemobcart" action="magemobcart/magemobcart/index" resource="Biztech_Magemobcart::items"/>
+
+        <add id="Biztech_Magemobcart::offer" title="Manage Offer Slider" module="Biztech_Magemobcart" sortOrder="10" parent="Biztech_Magemobcart::magemobcart" action="magemobcart/offerslider/index" resource="Biztech_Magemobcart::offer"/>
+
+        <add id="Biztech_Magemobcart::notification" title="Manage Notification" module="Biztech_Magemobcart" sortOrder="10" parent="Biztech_Magemobcart::magemobcart" action="magemobcart/notification/index" resource="Biztech_Magemobcart::notification"/>
+    </menu>
+</config>

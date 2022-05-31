@@ -1,0 +1,92 @@
+<?php
+
+/** @var \SamSolutions\Artwork\Block\Email\ArtworkNotification $block */
+/** @var \Magento\Framework\Escaper $escaper */
+?>
+<?php if ($items = $block->getItems()): ?>
+    <p><?= $block->escapeHtml(__("You have products which need to artwork")) ?></p>
+    <table>
+        <tr>
+            <th>Image</th>
+            <th>Items</th>
+            <th style="width: 20%">Price</th>
+            <th style="width: 20%">Qty</th>
+        </tr>
+        <?php foreach ($items as $item): ?>
+            <?php
+            $product = $block->getProduct($item->getProductId());
+            ?>
+            <tr>
+                <td class="col photo">
+                    <a href="<?= /* @noEscape */
+                    $product->getProductUrl() ?>"
+                       title="<?= $block->escapeHtml($product->getName()) ?>"
+                       class="product photo">
+                        <?= $block->getImage($product, 'product_thumbnail_image',
+                            ['class' => 'photo image'])->toHtml() ?>
+                    </a>
+                </td>
+                <td class="col item"><p>
+                        <strong class="product name">
+                            <a href="<?= $block->escapeUrl($product->getProductUrl()) ?>">
+                                <?= $block->escapeHtml($product->getName()) ?>
+                            </a>
+                        </strong>
+                    <p>
+                        <strong>
+                            SKU:
+                        </strong>
+                        <span><?= $item->getSku() ?></span>
+                    </p>
+                    <?php if (isset($item->getProductOptions()['attributes_info'])): ?>
+                        <?php foreach ($item->getProductOptions()['attributes_info'] as $option): ?>
+                            <p>
+                                <strong>
+                                    <?= $option['label']; ?>:
+                                </strong>
+                                <?= $option['value']; ?>
+                            </p>
+                        <?php endforeach; ?>
+                    <?php endif; ?>
+                    <?php if (isset($item->getProductOptions()['additional_options'])): ?>
+                        <?php foreach ($item->getProductOptions()['additional_options'] as $option): ?>
+                            <p>
+                                <strong>
+                                    <?= $option['label']; ?>:
+                                </strong>
+                                <?= $option['value']; ?>
+                            </p>
+                        <?php endforeach; ?>
+                    <?php endif; ?>
+                    <?php if ($shortDescription = $block->getFilteredContent($product->getShortDescription())): ?>
+                        <p><small><?= /* @noEscape */
+                                $shortDescription ?></small></p>
+                    <?php endif; ?>
+
+                </td>
+                <td class="col price"><p>
+                        <span>£<?= $item->getPrice() * $item->getQtyOrdered() ?></span>
+                    </p>
+                </td>
+                <td class="col qty"><p>
+                        <span><?= $item->getQtyOrdered() ?></span>
+                    </p></td>
+            </tr>
+        <?php endforeach; ?>
+    </table>
+    <p style="text-align: center"><a href="<?= $block->escapeUrl($block->getOrderLinkUrl()) ?>">
+            <button style="  display: inline-block;
+    background-color:#addf27 ;
+    padding: 10px 20px;
+    color: #fff;
+    font-family: 'Gotham';
+    border: 1px solid #003768;
+    border-radius: 1px;
+    width: 48%;
+    font-size: 19px;
+    text-align: center;
+    margin-left: 2px;">
+                <?= $block->escapeHtml(__('Go to upload artwork')) ?>
+            </button>
+        </a></p>
+<?php endif; ?>

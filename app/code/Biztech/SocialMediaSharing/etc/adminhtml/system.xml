@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../Magento/Config/etc/system_file.xsd">
+    <system>
+        <section id="productdesigner" showInDefault="1" showInWebsite="1" showInStore="1">
+            <tab>biztech</tab>
+            <label>Product Designer Settings</label>
+            <resource>Biztech_ProductDesigner::biztech_productdesigner</resource>
+            <group id="social_media_upload" showInDefault="1" showInWebsite="1" showInStore="1" sortOrder="100">
+                <label>Social Media Upload</label>
+
+                <field id="facebook_appid" translate="label comment" type="text" sortOrder="8" showInDefault="1" showInWebsite="1" showInStore="1" >
+                    <label>Facebook App Id</label>
+                    <comment>Add your facebook application id</comment>
+                </field>
+
+                <field id="instagram_clientid" translate="label comment" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Instagram Client Id</label>
+                    <comment>Add your instagram client id</comment>
+                </field>
+
+                <field id="instagram_clientsecret" translate="label comment" sortOrder="3" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Instagram Client Secret Key</label>
+                    <comment>Add your instagram client secret key</comment>
+                </field>
+            </group> 
+        </section>        
+    </system>
+</config>

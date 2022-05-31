@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../Magento/Config/etc/system_file.xsd">
+    <system>
+        <section id="productdesigner" showInDefault="1" showInWebsite="1" showInStore="1">
+            <tab>biztech</tab>
+            <label>Product Designer Settings</label>
+            <resource>Biztech_ProductDesigner::biztech_productdesigner</resource>
+            <group id="background_pattern" showInDefault="1" showInWebsite="1" showInStore="1" sortOrder="100">
+                <label>Background Pattern</label>
+
+                <field id="default_background_pattern_category" translate="label comment" type="select" sortOrder="4" showInDefault="1" showInWebsite="1" showInStore="1" >
+                    <label>Set Default Background Pattern Category</label>
+                    <source_model>Biztech\BackgroundPatterns\Model\Entity\Attribute\Source\ClipartCategoriesConfig</source_model>
+                    <comment>Select a default category for background pattern which will be shown to users when they select for background pattern tab</comment>
+                </field>
+            </group> 
+        </section>        
+    </system>
+</config>

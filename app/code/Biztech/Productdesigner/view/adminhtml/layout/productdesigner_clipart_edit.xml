@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="admin-2columns-left" xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="Biztech_Productdesigner::css/productdesigner.css"/>
+    </head>
+    <body>
+        <referenceContainer name="left">
+            <block class="Biztech\Productdesigner\Block\Adminhtml\Clipart\Edit\Tabs" name="biztech_productdesigner_clipart_edit_tabs">
+                <block class="Biztech\Productdesigner\Block\Adminhtml\Clipart\Edit\Tab\Main" name="biztech_productdesigner_clipart_edit_tab_main"/>
+                <action method="addTab">
+                    <argument name="name" xsi:type="string">main_section</argument>
+                    <argument name="block" xsi:type="string">biztech_productdesigner_clipart_edit_tab_main</argument>
+                </action>
+            </block>
+        </referenceContainer>
+        <referenceContainer name="content">
+            <block class="Biztech\Productdesigner\Block\Adminhtml\Clipart\Edit" name="productdesigner_clipart_edit"/>
+        </referenceContainer>
+    </body>
+</page>

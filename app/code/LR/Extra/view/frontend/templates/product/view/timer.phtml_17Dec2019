@@ -1,0 +1,164 @@
+<?php 
+$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+$magentoDateObject = $objectManager->create('Magento\Framework\Stdlib\DateTime\DateTime');
+$magentoDate = $magentoDateObject->gmtDate();
+$pieces = explode(" ", $magentoDate);
+$pieces[0];
+$tomorrow = new DateTime($pieces[0].' + 1 day');
+$tomorrowTime = $tomorrow->format('Y-m-d').' 12:00:00';
+?>
+<script type="text/javascript">
+    require(['jquery', 'jquery/ui'], function($){
+        $(document).ready(function() {
+            var endTime = 10 * 2;
+            var date = new Date();
+           	var endTime = (new Date("<?php echo $tomorrowTime ?>") - new Date("<?php echo $magentoDate ?>") ) / 1000;
+            display = $('#reverse-timer');
+            startTimer(endTime, display);
+        });
+
+        var timer;
+        function startTimer(duration, display)
+        {
+            timer = duration;
+            var minutes, seconds;
+            setInterval(function () {
+                var hours = Math.floor((timer) / 3600);
+                var minutes = Math.floor((timer - (hours * 3600 )) / 60);
+                var seconds = Math.floor((timer - (hours * 3600) - (minutes * 60)));
+
+                if(hours < "10"){ hours = "0" + hours; }
+                if(minutes < "10"){ minutes = "0" + minutes; }
+                if(seconds < "10"){ seconds = "0" + seconds; }
+
+                //display.html(hours + ' Hour(s) ' + minutes + ' Minute(s) ' + seconds + ' Second(s)');
+                $("#reverse-timer #timer-hours").html(hours);
+                $("#reverse-timer #timer-mins").html(minutes);
+                $("#reverse-timer #timer-secs").html(seconds);
+
+                if (--timer < 0)
+                {
+                    timer = duration;
+                    var standarDeliveryDate = $(".standard_box .delivery_date").html();
+                    var splitSDDate = standarDeliveryDate.split('/');
+                    var date = new Date(splitSDDate[1]+'/'+splitSDDate[0]+'/'+splitSDDate[2]);
+                    var newdate = new Date(date);
+                    newdate.setDate(newdate.getDate() + 1);
+                    standarDeliveryDate = newdate.getDate()+'/'+(newdate.getMonth()+1)+'/'+newdate.getFullYear();
+
+                    var expressDeliveryDate = $(".express_box .delivery_date").html();
+                    var splitEDDate = expressDeliveryDate.split('/');
+                    var date = new Date(splitEDDate[1]+'/'+splitEDDate[0]+'/'+splitEDDate[2]);
+                    var newdate = new Date(date);
+                    newdate.setDate(newdate.getDate() + 1);
+                    expressDeliveryDate = newdate.getDate()+'/'+(newdate.getMonth()+1)+'/'+newdate.getFullYear();
+
+                    var superExpressDeliveryDate = $(".super_box .delivery_date").html();
+                    var splitSEDDate = superExpressDeliveryDate.split('/');
+                    var date = new Date(splitSEDDate[1]+'/'+splitSEDDate[0]+'/'+splitSEDDate[2]);
+                    var newdate = new Date(date);
+                    newdate.setDate(newdate.getDate() + 1);
+                    superExpressDeliveryDate = newdate.getDate()+'/'+(newdate.getMonth()+1)+'/'+newdate.getFullYear();
+
+                    $(".standard_box .delivery_date").html(standarDeliveryDate);
+                    $(".express_box .delivery_date").html(expressDeliveryDate);
+                    $(".super_box .delivery_date").html(superExpressDeliveryDate);
+                }
+            }, 1000);
+        }
+});
+</script>
+
+<div class="delivery_boxes">
+    <div id="reverse-timer" class="need_quick_container">
+        <div class="need_quick">Order Within</div>
+        <div class="ticker">
+            <div class="time-containter">
+                <span id="timer-hours" class="counter-cnt">3</span>
+                <span class="time-text">H</span>
+            </div>
+            <div class="time-containter">
+                <span id="timer-mins" class="counter-cnt">41</span>
+                <span class="time-text">M</span>
+            </div>
+            <div class="time-containter">
+                <span id="timer-secs" class="counter-cnt">35</span>
+                <span class="time-text">S</span>
+            </div>     
+        </div>
+    </div>
+
+    <div class="delivery_boxes_items">
+        <div class="deliverBox">
+            <div class="db-box-label">STANDARD</div>
+            <div class="db-box standard_box">
+                <span class="delivery_date_title">Delivered By</span>
+                <span class="delivery_date">20/12/2019</span>
+            </div>
+        </div>
+        <div class="deliverBox">
+            <div class="db-box-label">EXPRESS</div>
+            <div class="db-box express_box">
+                <span class="delivery_date_title">Delivered By</span>
+                <span class="delivery_date">19/12/2019</span>
+            </div>
+        </div>
+        <div class="deliverBox">
+            <div class="db-box-label">SUPER EXPRESS</div>
+            <div class="db-box super_box">
+                <span class="delivery_date_title">Delivered By</span>
+                <span class="delivery_date">18/12/2019</span>
+            </div>
+        </div>
+    </div>
+</div>
+<style type="text/css">
+    .delivery_boxes {
+        background: #408de4;
+        padding: 5px;
+        border-radius: 5px;
+        clear: both;
+        color: #fff;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+    .delivery_boxes .need_quick {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 28px;
+    }
+    .delivery_boxes .ticker {
+        background: #fff;
+        color: #000;
+        font-size: 28px;
+    }
+    .delivery_boxes .ticker .time-containter {
+        padding-right: 10px;
+        display: inline-block;
+    }
+
+    .delivery_boxes .deliverBox{
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .delivery_boxes .deliverBox .db-box-label{
+        color: #000;
+        text-transform: uppercase;
+        font-size: 24px;
+    }
+    .delivery_boxes .deliverBox .db-box {
+        text-align: center;
+        font-size: 20px;
+    }
+    .delivery_boxes .deliverBox .db-box .delivery_date_title {
+        padding-right: 5px;
+    }
+    .delivery_boxes .deliverBox .delivery_date {
+        color: #fff;
+    }
+    .sidebar-additional{display: block!important;}
+
+</style>
+    <div class="product-summery">
+    	<div id="swatch-option-summery"></div>
+	</div>

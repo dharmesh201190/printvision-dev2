@@ -1,0 +1,19 @@
+
+<script type="text/javascript">
+    //<![CDATA[
+    function saveTheme() {
+    	var data = {};
+    	data['themecolor'] = $('productdesigner_themedesigner_general_primary_background').value;
+        data['themetype'] = $('productdesigner_themedesigner_general_theme_type').value;
+        data['store'] = '<?php echo $this->getCurrentStore(); ?>';
+       
+        new Ajax.Request('<?php echo $this->getUrl('themecolors/system_config/SaveThemeConfiguration/'); ?>', {
+            method: 'get',
+            parameters : data,
+            onSuccess: function (transport) {
+                alert('Theme changed successfully.');
+            }
+        });
+    }
+</script>
+<?php echo $block->getButtonHtml() ?>

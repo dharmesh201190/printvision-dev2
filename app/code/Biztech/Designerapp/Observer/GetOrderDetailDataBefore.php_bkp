@@ -1,0 +1,63 @@
+<?php
+
+namespace Biztech\Designerapp\Observer;
+
+use Magento\Framework\Event\ObserverInterface;
+
+class GetOrderDetailDataBefore implements ObserverInterface {
+
+	// Variable Declaration	
+	protected $_designImageCollection;
+	protected $_storeManager;
+	
+	// Dependancy Injector
+	public function __construct(
+		\Magento\Store\Model\StoreManagerInterface $storeManager,
+		\Biztech\Productdesigner\Model\Mysql4\Designimages\Collection $designImageCollection
+	) {
+		$this->_storeManager = $storeManager;
+		$this->_designImageCollection = $designImageCollection;
+	}
+
+	// Init Function
+	public function execute(\Magento\Framework\Event\Observer $observer) {
+
+		// get event data
+		$eventResponse = $observer->getData('productDetailData');
+
+		// get order data
+		$order = $observer->getData('orderData');
+		$designId = null;
+
+		$additionalOptions = null;
+		foreach($order->getAllVisibleItems() as $orderItem) {
+			$productOptions = $orderItem->getData('product_options');                        
+			if(isset($productOptions['additional_options'])) {
+				$additionalOptions = $productOptions['additional_options'];
+				break;
+			}
+		}
+		if($additionalOptions) {                        
+			foreach($additionalOptions as $additionalOption) {
+				if(isset($additionalOption['design_id'])) {
+					$designId = $additionalOption['design_id'];
+					break;
+				}
+			}
+		}
+		// get product details
+		$productDetailData = $eventResponse->getProductData();			
+
+		if($designId != null) {
+			$designImages  = $this->_designImageCollection->addFieldToFilter('design_id', Array('eq' => $designId))->addFieldToFilter('design_image_type', 'base')->getFirstItem()->getData();
+			if (isset($designImages['image_path'])) {
+				$path = $designImages['image_path'];
+				$mediaUrl = $this->_storeManager->getStore()->getBaseUrl(\Magento\Framework\UrlInterface::URL_TYPE_MEDIA);
+				$productDetailData[0]['image'] = $mediaUrl . "productdesigner/designs/" . $designId . "/base/" . $path;
+			}
+		}
+
+		// 
+		$eventResponse->setProductData($productDetailData);
+	}
+}

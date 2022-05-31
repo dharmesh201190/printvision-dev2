@@ -1,0 +1,58 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+?>
+<?php $objectManager = \Magento\Framework\App\ObjectManager::getInstance();?>
+<?php $registery = $objectManager->get('\Magento\Framework\Registry');?>
+<?php $currentProduct = $registery->registry('current_product');?>
+<?php $storeManager = $objectManager->get('\Magento\Store\Model\StoreManagerInterface');?>
+<?php $baseUrl = $storeManager->getStore()->getBaseUrl(\Magento\Framework\UrlInterface::URL_TYPE_WEB);?>
+
+<?php /** @var $block \Magento\Swatches\Block\Product\Renderer\Configurable */ ?>
+<div class="swatch-opt overwrite-custom" data-role="swatch-options"></div>
+
+<script type="text/x-magento-init">
+    {
+        "[data-role=swatch-options]": {
+            "Magento_Swatches/js/swatch-renderer": {
+                "jsonConfig": <?= /* @noEscape */ $swatchOptions = $block->getJsonConfig() ?>,
+                "jsonSwatchConfig": <?= /* @noEscape */ $swatchOptions = $block->getJsonSwatchConfig() ?>,
+                "mediaCallback": "<?= $block->escapeJs($block->escapeUrl($block->getMediaCallback())) ?>",
+                "gallerySwitchStrategy": "<?= $block->escapeJs($block->getVar('gallery_switch_strategy', 'Magento_ConfigurableProduct')) ?: 'replace'; ?>",
+                "jsonSwatchImageSizeConfig": <?= /* @noEscape */ $block->getJsonSwatchSizeConfig() ?>
+            }
+        },
+        "*" : {
+            "Magento_Swatches/js/catalog-add-to-cart": {}
+        }
+    }
+</script>
+
+<script type="text/javascript">
+    require(['jquery', 'jquery/ui'], function($){ 
+        $(".overwrite-custom").click(function (e) {
+            $.ajax({
+                showLoader: true,
+                url: '<?php echo $baseUrl . "productattach/index/ProductAttachment"; ?>',
+                type: "POST",
+                dataType: 'json',
+                data: {
+                    sku: '<?php echo $currentProduct->getSku(); ?>',
+                    selectedvalues: jQuery('#product_addtocart_form').serialize(),
+                }
+            }).done(function (data) {
+                if (data.status == "success") {
+                    jQuery("#productattach").html(data.attachment);
+                    jQuery('[itemprop="sku"]').text(data.simple_product_sku);
+                    /*if(data.attachment !=''){
+                        jQuery('.product-options-wrapper .attachments').replaceWith(data.attachment);
+                    }*/
+                }
+            });
+        });
+     });
+     
+</script>
+

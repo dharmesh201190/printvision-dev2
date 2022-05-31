@@ -1,0 +1,499 @@
+<?php
+   $image_id = $this->getImageId();
+   $image_url = $this->getProductImgUrl();
+   $product_id = $this->getProductId();
+   $image_side = $this->getImageSide();
+   $current_design_area_id = $this->getCurrentDesignAreaId();
+   $next_design_area_id = $this->getNextDesignAreaId();
+   $selection_data = $this->getSelectionData();
+   $design_id = $this->getDesignId();
+   
+   $objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+   
+   
+   //masking category collection
+   $maskingCategoryCollection = $objectManager->create('Biztech\Productdesigner\Model\Mysql4\Maskingcategory\Collection');
+   
+   $helper_image = $objectManager->create('Magento\Catalog\Helper\Image');
+   $obj_product = $objectManager->create('Magento\Catalog\Model\Product');
+   $product = $obj_product->load($product_id);
+   $path = $block->getBaseUrl();
+   $path = $path . "catalog/product" . $image_url;
+   $_imagehelper = $this->helper('Magento\Catalog\Helper\Image');
+   $resize_width = \Biztech\Productdesigner\Helper\Info::ResizeWidth;
+   $resize_height = \Biztech\Productdesigner\Helper\Info::ResizeHeight;
+   
+   // delete icon url
+   $delete_icon_url = $block->getBaseUrl() . "productdesigner/delete_icon.png";
+   
+   $image = $helper_image->init($product, 'product_page_image')->setImageFile($image_url)->keepAspectRatio(true)->constrainOnly(false)->getUrl();
+   $mid = $objectManager->create('Biztech\Productdesigner\Model\Selectionarea')->load($current_design_area_id)->getMaskingImageId();
+   
+   $masking_cat_id = 0;
+   $masking_cat_name = '';
+   $masking_label = '';
+   if($mid != 0){
+       $maskingCollection = $objectManager->create('Biztech\Productdesigner\Model\Mysql4\Masking\Collection');
+       $maskingCollectionData = $maskingCollection->addFieldToFilter('masking_id', $mid)->getFirstItem()->getData();
+       $masking_cat_id = isset($maskingCollectionData['masking_category_id']) ? $maskingCollectionData['masking_category_id'] : 0;
+       $masking_label = isset($maskingCollectionData['masking_label']) ? $maskingCollectionData['masking_label'] : '';
+   
+   
+       // get masking category name
+       $maskingCategoryCollections = $objectManager->create('Biztech\Productdesigner\Model\Mysql4\Maskingcategory\Collection');
+       $maskingCategoryCollectionData = $maskingCategoryCollections->addFieldToFilter('category_id', $masking_cat_id)->getFirstItem()->getData();
+       $masking_cat_name = isset($maskingCategoryCollectionData['masking_category_title']) ? $maskingCategoryCollectionData['masking_category_title'] : '';
+   
+       // get list of masking
+       if($masking_cat_id > 0){
+           $maskingCollectionlist = $objectManager->create('Biztech\Productdesigner\Model\Mysql4\Masking\Collection');
+           $maskingCollectionByCategory = $maskingCollectionlist->addFieldToFilter('masking_category_id', $masking_cat_id)->getData();
+       }
+   }
+   
+   /*
+     Start :  getimagesize issue
+    */
+     $filesystem = $objectManager->get('Magento\Framework\Filesystem');
+     $image = $filesystem->getDirectoryRead(\Magento\Framework\App\Filesystem\DirectoryList::MEDIA)->getAbsolutePath() . "catalog/product" . $image_url;
+   /*
+     END :  getimagesize issue
+    */
+     list($iWidth, $iHeight) = getimagesize($image);
+     if ($iWidth > $iHeight) {
+       $resize_height = ($resize_height * $iHeight) / $iWidth;
+   } else {
+       $resize_width = ($resize_width * $iWidth) / $iHeight;
+   }
+   $url = $_imagehelper->init($product, 'product_page_image')
+   ->setImageFile($image_url)
+   ->resize($resize_width, $resize_height)
+   ->keepAspectRatio(true)
+   ->constrainOnly(false)
+   ->getUrl();
+   ?>  
+<div id="selection_area_edit">
+   <div id="design_area">
+      <!--  <div id="select_area_size">
+         <strong><?php echo __('Width:'); ?></strong> <input type="text" class="input-text" value="0" id="areaWidth" name="areaWidth" readonly > <?php echo __('px'); ?>&nbsp;&nbsp;&nbsp;&nbsp;
+         <strong><?php echo __('Height:'); ?></strong> <input type="text" value="0" class="input-text" id="areaHeight" name="areaHeight" readonly> <?php echo __('px'); ?><br/><br/>
+         <strong><?php echo __('Output Width:'); ?></strong> 
+         <input type="text" class="input-text" value="0" id="areaWidthCm" name="areaWidthCm"
+                readonly> <?php echo __('cm'); ?>&nbsp;&nbsp;&nbsp;&nbsp;
+         <strong><?php echo __('Output Height:'); ?></strong> <input type="text" value="0" class="input-text" id="areaHeightCm" name="areaHeightCm" readonly> <?php echo __('cm'); ?>
+         <input type="hidden" id="x1">
+         <input type="hidden" id="y1">
+         <input type="hidden" id="x2">
+         <input type="hidden" id="y2">
+         <input type="hidden" value="<?php echo $image_id; ?>" id="image_id">
+         <input type="hidden" value="<?php echo $image_side; ?>" id="image_side">
+         <input type="hidden" value="<?php echo $current_design_area_id; ?>" id="current_design_area_id">
+         <input type="hidden" id="maskig_id" value="<?php echo $mid; ?>" id="masking_id">
+         </div> -->
+      <div id="select_area_size">
+         <div class="input-element">
+            <strong class="input-element_label"><?php echo __('Width:'); ?></strong> 
+            <input type="text" class="input-element_item" value="0" id="areaWidth" name="areaWidth" readonly >
+            <span class="input-element_unit"><?php echo __('px'); ?></span>
+         </div>
+         <div class="input-element">
+            <strong class="input-element_label"><?php echo __('Height:'); ?></strong>
+            <input type="text" value="0" class="input-element_item" id="areaHeight" name="areaHeight" readonly> 
+            <span class="input-element_unit"><?php echo __('px'); ?></span>
+         </div>
+         <div class="input-element">
+            <strong class="input-element_label"><?php echo __('Output Width:'); ?></strong> 
+            <input type="text" class="input-element_item" value="0" id="areaWidthCm" name="areaWidthCm" readonly>
+            <span class="input-element_unit"><?php echo __('cm'); ?></span>
+         </div>
+         <div class="input-element">
+            <strong class="input-element_label"><?php echo __('Output Height:'); ?></strong>
+            <input type="text" value="0" class="input-element_item" id="areaHeightCm" name="areaHeightCm" readonly>
+            <span class="input-element_unit"><?php echo __('cm'); ?></span>
+         </div>
+         <input type="hidden" id="x1">
+         <input type="hidden" id="y1">
+         <input type="hidden" id="x2">
+         <input type="hidden" id="y2">
+         <input type="hidden" value="<?php echo $image_id; ?>" id="image_id">
+         <input type="hidden" value="<?php echo $image_side; ?>" id="image_side">
+         <input type="hidden" value="<?php echo $current_design_area_id; ?>" id="current_design_area_id">
+         <input type="hidden" id="maskig_id" value="<?php echo $mid; ?>" id="masking_id">
+      </div>
+      <div id="image_area">
+         <img src="<?php echo $url; ?>" alt="" id="design_image">
+         <div id="selection_areas">
+            <?php
+               if ($selection_data) {
+                   foreach ($selection_data as $key => $value) {
+                       $selection_area = json_decode($value);
+                       ?>
+            <div id="all_design_area_<?php echo $design_id[$key] ?>" class=" all-design-area <?php echo ($current_design_area_id == $key ) ? 'active' : ''; ?>">
+               <?php
+                  $url = $_imagehelper->init($product, 'product_page_image')->setImageFile($image_url)->resize(150, 150)->keepAspectRatio(true)->constrainOnly(false)->getUrl();
+                  ?>
+               <img onclick="getDesignAreaImage(globalFile, globalImageId, globalProductId,<?php echo $key ?>)" src="<?php echo $url; ?>" alt="" style="padding: 10px;cursor:pointer;">
+               <?php
+                  $canvas_width = ($selection_area->width * ((150 / $resize_width) * 100)) / 100;
+                  $canvas_height = ($selection_area->height * ((150 / $resize_height) * 100)) / 100;
+                  $canvas_left = ($selection_area->x1 * ((150 / $resize_width) * 100)) / 100;
+                  $canvas_top = (($selection_area->y1 + 19) * ((150 / $resize_height) * 100)) / 100;
+                  $canvas_top2 = (($selection_area->y1) * ((150 / $resize_height) * 100)) / 100;
+                  ?>
+               <input type="hidden" id="canvas_width_<?php echo $design_id[$key] ?>" value="<?php echo ($canvas_width - 9) ?>" />
+               <input type="hidden" id="canvas_height_<?php echo $design_id[$key] ?>" value="<?php echo $canvas_height ?>" />
+               <input type="hidden" id="canvas_left_<?php echo $design_id[$key] ?>" value="<?php echo ($canvas_left + 17) ?>" />
+               <input type="hidden" id="canvas_top_<?php echo $design_id[$key] ?>" value="<?php echo $canvas_top ?>" />
+               <input type="hidden" id="canvas_top2_<?php echo $design_id[$key] ?>" value="<?php echo ($canvas_top2 + 9) ?>" />                 
+               <button id="delete_area_<?php echo ($key) ?>" class="btn" type="button" onclick="DeleteArea(<?php echo $key ?>,<?php echo $design_id[$key] ?>, true, '')"><?php echo __('Delete'); ?></button>
+            </div>
+            <?php
+               }
+               }
+               ?>
+         </div>
+      </div>
+      <div class="save-settings" id="save-settings">
+         <h3>Create New Masking</h3>
+         <div class="mask-wrapper">
+            <div class="mask-wrapper_upload">
+               <input placeholder="<?php echo __('Masking Category'); ?>" type="label" name="masking_category" id="masking_category"/>
+               <button id="createCategory"><?php echo __('Create Masking Category'); ?></button>
+            </div>
+         </div>
+         <div class="mask-wrapper">
+            <h3>Select Masking Image</h3>
+            <div class="mask-wrapper_input">
+               <input style="display:none" type="checkbox" id="apply_for_all_images">
+               <input id="fileupload" type="file" name="masking-image" />
+               <!-- <div id="masking-validation">
+                  <label id="mask_alert"><?php echo __('Please upload SVG Image'); ?></label>
+                  </div> -->
+            </div>
+            <div class="mask-wrapper_upload">
+               <input placeholder="Masking Label" type="label" name="masking-label" id="masking_label"/>
+            </div>
+            <div class="dropdown">
+               <button onclick="openDropdown('masking_category_one')" class="dropbtn" id="maksing_category_text" data-id=""><?php echo __('Select Masking Category') ?></button>
+               <div id="masking_category_one" class="dropdown-content">
+                  <ul id="masking_category_ul">
+                     <li><a class="dropdown-item" href="#" ><span><?php echo __('Select Masking Category') ?></span></a></li>
+                     <?php foreach ($maskingCategoryCollection as $mask) : ?>
+                     <li data-id="<?php echo $mask->getCategoryId(); ?>">
+                        <a class="dropdown-item"  href="#" ><span><?php echo $mask->getMaskingCategoryTitle(); ?></span></a>
+                        <!-- <span class="close-icon" onclick="deleteCategory(this)">
+                           <span></span>
+                           </span> -->
+                        <?php endforeach; ?>  
+                  </ul>
+               </div>
+            </div>
+            <div class="mask-wrapper_upload"> 
+               <button id="uploadFile"><?php echo __('Upload'); ?></button>
+            </div>
+         </div>
+         <div class="action-wrap">
+            <h3>Or Select Existing Masking</h3>
+            <div class="dropdown">
+               <?php if($masking_cat_id > 0) { ?>
+               <button onclick="openDropdown('masking_category_two')" style="margin-left: 0;" class="dropbtn" id="maksing_category_text_two" data-id="<?php echo $masking_cat_id; ?>"><?php echo $masking_cat_name; ?></button>
+               <?php } else { ?>
+               <button onclick="openDropdown('masking_category_two')" style="margin-left: 0;" class="dropbtn" id="maksing_category_text_two" data-id=""><?php echo __('Select Masking Category') ?></button>
+               <?php } ?>
+               <div id="masking_category_two" class="dropdown-content">
+                  <ul id="masking_category_ul_two">
+                     <li ><a class="dropdown-item-two" href="#" ><span><?php echo __('Select Masking Category') ?></span></a></li>
+                     <?php foreach ($maskingCategoryCollection as $mask) : ?>
+                     <li data-id="<?php echo $mask->getCategoryId(); ?>"><a href="#" class="dropdown-item-two" ><span><?php echo $mask->getMaskingCategoryTitle(); ?></span></a>
+                        <span class="close-icon" onclick="deleteCategory(this)">
+                        <span></span>
+                        </span>
+                        <?php endforeach; ?>  
+                  </ul>
+               </div>
+            </div>
+            <br>
+            <div class="dropdown">
+               <?php if($mid > 0 && $masking_cat_id > 0) { ?>
+               <button onclick="openDropdown('masking_file')" class="dropbtn" id="maksing_file_text" data-id="<?php echo $masking_cat_id; ?>"><?php echo $masking_label; ?></button>
+               <?php } else { ?>
+               <button onclick="openDropdown('masking_file')" class="dropbtn" id="maksing_file_text" data-id=""><?php echo __('Select Masking File') ?></button>
+               <?php } ?>
+               <div id="masking_file" class="dropdown-content">
+                  <ul id="masking_file_ul">
+                     <li><a class="dropdown-item-file" href="#" ><span><?php echo __('Select Masking File') ?></span></a></li>
+                     <?php if(!empty($maskingCollectionByCategory)) { ?>
+                     <?php foreach ($maskingCollectionByCategory as $mask) : ?>
+                     <li data-id="<?php echo $mask['masking_id']; ?>">
+                        <a href="#" class="dropdown-item-file" ><span><?php echo $mask['masking_label']; ?></span></a>
+                        <span class="close-icon" onclick="deleteFile(this)">
+                        <span></span>
+                        </span>
+                        <!-- <img class="delete_masking_file" src="<?php echo $delete_icon_url; ?>" ></li> -->
+                        <?php endforeach; ?> 
+                        <?php } ?> 
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <br />
+         <div class="action-wrap_btn">
+            <button id="save_design_area" class="btn" type="button" onclick="saveDesignArea()"><?php echo __('Save Design Area'); ?></button>
+            <?php if ($next_design_area_id != "false"): ?>
+            <button id="add_new_area" class="btn" type="button" onclick="addNewArea(<?php echo $next_design_area_id ?>);"><?php echo __('Edit Next Area'); ?></button> 
+            <?php else: ?>
+            <button id="add_new_area" class="btn" type="button" onclick="addNewArea(<?php echo $next_design_area_id ?>);"><?php echo __('Save and Add New Area'); ?></button>            
+            <?php endif; ?>
+         </div>
+      </div>
+   </div>
+</div>
+<script>
+function openDropdown(el) {
+    document.getElementById(el).classList.toggle("show");
+}
+
+window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+        }
+    }
+}
+
+function deleteFile(el) {
+    var confirm = window.confirm('Are you sure want to delete masking file?');
+    if (confirm) {
+        var masking_id = jQuery(el).closest('li').attr('data-id');
+        var self = jQuery(el);
+        var item_value = self.prev(".dropdown-item-file").find('span').text();
+        var selected_text = jQuery("#maksing_file_text").text();
+        if (masking_id != undefined || masking_id != '') {
+            var url = "<?php echo $this->getUrl('productdesigner/masking/deletemaskingcategory'); ?>";
+            jQuery.ajax({
+                url: url,
+                data: {
+                    'masking_id': masking_id,
+                    'type': 'file'
+                },
+                type: 'post',
+                dataType: 'json',
+                success: function(data) {
+                    if (data.status) {
+                        self.closest('li').remove();
+                        if (item_value == selected_text) {
+                            jQuery("#maksing_file_text").text('Select Masking File');
+                        }
+                    }
+                }
+            });
+        }
+    }
+}
+
+function deleteCategory(el) {
+    var confirm = window.confirm('Are you sure want to delete masking this category? It will delete all masking files belongs to this category.');
+    if (confirm) {
+        var category_id = jQuery(el).closest('li').attr('data-id');
+        var self = jQuery(el);
+        var item_value = self.prev(".dropdown-item-two").find('span').text();
+        var selected_text = jQuery("#maksing_category_text_two").text();
+
+        if (category_id != undefined || category_id != '') {
+            var url = "<?php echo $this->getUrl('productdesigner/masking/deletemaskingcategory'); ?>";
+            jQuery.ajax({
+                url: url,
+                data: {
+                    'masking_category_id': category_id,
+                    'type': 'category'
+                },
+                type: 'post',
+                dataType: 'json',
+                success: function(data) {
+                    if (data.status) {
+                        jQuery("li[data-id=" + category_id + "]").remove();
+                        if (item_value == selected_text) {
+                            jQuery("#maksing_category_text_two").text('Select Masking Category');
+                        }
+                    }
+                }
+            });
+        }
+    }
+}
+
+require([
+    'jquery',
+    'Magento_Ui/js/modal/confirm'
+], function($, confirmation) {
+    'use strict';
+
+    function confirmpopup(contentdata) {
+        confirmation({
+            title: $.mage.__('Warning'),
+            content: contentdata,
+            actions: {
+                always: function() {}
+            },
+            buttons: [{
+                text: $.mage.__('OK'),
+                class: 'action primary action-accept',
+                click: function(event) {
+                    this.closeModal(event, true);
+                }
+            }]
+        });
+    }
+
+    jQuery(document).ready(function() {
+        // jQuery('#mask_alert').hide();
+        var fileName = '';
+        var fileData = '';
+        var thisFile = '';
+        jQuery(document).on('change', '#fileupload', function() {
+            fileName = jQuery(this).val();
+            fileData = jQuery(this).prop('files')[0];
+            thisFile = jQuery(this);
+        });
+        jQuery(document).on('click', '.dropdown-item-file', function() {
+            var masking_id = jQuery(this).closest('li').attr('data-id');
+            var item_value = jQuery(this).find('span').text();
+            jQuery('#maskig_id').val(masking_id);
+            jQuery("#maksing_file_text").text(item_value);
+            jQuery("#maksing_file_text").attr('data-id', masking_id);
+        });
+
+        jQuery(document).on('click', '.dropdown-item-two', function() {
+            var item_value = jQuery(this).find('span').text();
+            var category_id = jQuery(this).closest('li').attr('data-id') != undefined ? jQuery(this).closest('li').attr('data-id') : '';
+            jQuery("#maksing_category_text_two").text(item_value);
+            jQuery("#maksing_category_text_two").attr('data-id', category_id);
+            if (item_value != 'Select Masking Category') {
+                var url = "<?php echo $this->getUrl('productdesigner/masking/getmaskingdata'); ?>";
+                jQuery.ajax({
+                    url: url,
+                    data: {
+                        'masking_category_id': category_id
+                    },
+                    type: 'post',
+                    dataType: 'json',
+                    success: function(data) {
+                        if (data.status) {
+                            jQuery("#masking_file_ul").html('');
+                            jQuery("#masking_file_ul").html('<li><a class="dropdown-item-file" href="#" ><span><?php echo __('Select Masking File ') ?></span></a></li>');
+                            var masking_data = data.masking_data;
+                            if (masking_data.length > 0) {
+                                jQuery.each(masking_data, function(index, value) {
+                                    jQuery("#masking_file_ul").append("<li data-id=" + value.masking_id + "><a class='dropdown-item-file'  href='#''><span>" + value.masking_label + "</span></a><span class='close-icon' onclick='deleteFile(this)'><span></span></span></li>");
+                                    jQuery("#maksing_file_text").text('Select Masking File');
+                                });
+                            } else {
+                                jQuery("#maksing_file_text").text('Select Masking File');
+                            }
+                        }
+                    }
+                });
+            } else {
+                jQuery("#masking_file_ul").html('');
+                jQuery("#masking_file_ul").html('<li><a class="dropdown-item-file" href="#" ><span><?php echo __('Select Masking File ') ?></span></a></li>');
+                jQuery("#maksing_file_text").text('Select Masking File');
+            }
+        });
+
+        jQuery(document).on('click', '.dropdown-item', function() {
+            var item_value = jQuery(this).find('span').text();
+            var category_id = jQuery(this).closest('li').attr('data-id') != undefined ? jQuery(this).closest('li').attr('data-id') : '';
+            jQuery("#maksing_category_text").text(item_value);
+            jQuery("#maksing_category_text").attr('data-id', category_id);
+        });
+
+        // create masking category
+        jQuery(document).on('click', '#createCategory', function(e) {
+            var url = "<?php echo $this->getUrl('productdesigner/masking/createmaskingcategory'); ?>";
+            var masking_category_name = jQuery("#masking_category").val();
+            if (masking_category_name.trim() != "") {
+                jQuery.ajax({
+                    url: url,
+                    data: {
+                        'masking_category_name': masking_category_name
+                    },
+                    type: 'post',
+                    dataType: 'json',
+                    success: function(data) {
+                        if (data.status) {
+                            var category_id = data.id;
+                            var maskingcategory_two = 'masking_category_two';
+                            var maskingcategory_one = 'masking_category_one';
+
+                            jQuery("#masking_category").val('');
+                            jQuery("#masking_category_ul").append("<li data-id=" + category_id + "><a class='dropdown-item'  href='#''><span>" + masking_category_name + "</span></a></li>");
+                            jQuery("#masking_category_ul_two").append("<li data-id=" + category_id + "><a class='dropdown-item-two'  href='#'><span>" + masking_category_name + "</span></a><span class='close-icon' onclick='deleteCategory(this)'><span></span></span></li>");
+                        }
+                    }
+                });
+                e.stopImmediatePropagation();
+            }
+        });
+
+        jQuery(document).on('click', '#uploadFile', function(e) {
+            var url = "<?php echo $this->getUrl('productdesigner/masking_gallery/upload'); ?>";
+            var imagName = fileName;
+            var getExtension = imagName.lastIndexOf(".");
+            var extension = imagName.substr(getExtension + 1, 4);
+            var category_id = jQuery("#maksing_category_text").attr('data-id');
+            var label = jQuery('#masking_label').val();
+            if (fileName != "" && category_id != '' && (extension == "svg" || extension == "SVG") && label.trim() != '') {
+                var form_data = new FormData();
+                var file_data = fileData;
+                form_data.append("file", file_data);
+                form_data.append("action", 'upload_image');
+                form_data.append("label", label);
+                form_data.append("category_id", category_id);
+                form_data.append("form_key", '<?php echo $block->getFormKey() ?>');
+                jQuery.ajax({
+                    url: url,
+                    cache: false,
+                    contentType: false,
+                    processData: false,
+                    data: form_data,
+                    type: 'post',
+                    dataType: 'json',
+                    success: function(data) {
+                        if (!data.status) {
+                            // jQuery('#mask_alert').text(data.error);
+                            confirmpopup(data.error);
+                            // jQuery('#mask_alert').alert({title: 'Warning', actions: {always: function () {}}});
+                        } else {
+                            thisFile.val('');
+                            jQuery('#masking_label').val('');
+                            fileName = "";
+                            jQuery('#maskig_id').val(data.id);
+                            jQuery('#masking_file_ul').append("<li data-id=" + data.id + "><a class='dropdown-item-file'  href='#''><span>" + data.label + "</span></a><span class='close-icon' onclick='deleteFile(this)'><span></span></span></li>");
+                        }
+                    }
+                });
+                e.stopImmediatePropagation();
+
+            } else {
+                if (fileName == "") {
+                    confirmpopup('Please select a file');
+                }
+                if (fileName != "" && extension.toLowerCase() != 'svg') {
+                    confirmpopup('Please upload SVG Image');
+                }
+                if (fileName != "" && extension.toLowerCase() == 'svg' && label.trim() == '') {
+                    confirmpopup('Please enter masking label');
+                }
+                if (fileName != '' && category_id == '' && label.trim() != '' && extension.toLowerCase() == 'svg') {
+                    confirmpopup('Please select masking category first');
+                }
+            }
+        });
+    });
+});
+</script>

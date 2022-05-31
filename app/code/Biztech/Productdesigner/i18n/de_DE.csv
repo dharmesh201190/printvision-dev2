@@ -1,0 +1,290 @@
+Brush Your Ideas,Putzen Sie Ihre Ideen
+Product Designer Settings,Produktdesigner-Einstellungen
+Product Designer Activation,Aktivierung des Produktdesigners
+Activation Key,Aktivierungsschlüssel
+Select Websites,Wählen Sie Websites
+Enable Product Designer,Aktivieren Sie Product Designer
+"Select ""Yes"" to enable product designer in your eCommerce store.","Wählen Sie ""Ja"", um den Produktdesigner in Ihrem E-Commerce-Shop zu aktivieren."
+General,Allgemeines
+Design Button on Category Page,Design-Schaltfläche auf der Kategorieseite
+"Select ""Enable"" to display ""Design It"" button on Category Page and ""Disable"" to hide ""Design It"" button from Category Page.","Wählen Sie ""Aktivieren"", um die Schaltfläche ""Gestalten"" auf der Kategorieseite anzuzeigen, und ""Deaktivieren"", um die Schaltfläche ""Gestalten"" auf der Kategorieseite auszublenden."
+Enable,Aktivieren
+Disable,Deaktivieren
+Add to Cart Button on Category Page,In den Warenkorb Button auf der Kategorieseite
+"Select ""Enable"" to display ""Add to Cart"" button on Category Page and ""Disable"" to hide ""Add to Cart"" button on Category Page.","Wählen Sie ""Aktivieren"", um die Schaltfläche ""In den Warenkorb"" auf der Kategorieseite anzuzeigen, und ""Deaktivieren"", um die Schaltfläche ""In den Warenkorb"" auf der Kategorieseite auszublenden."
+Additional Price for Customized Products,Mehrpreis für Sonderanfertigungen
+Add a fixed cost which will be added for custom designed products.,"Fügen Sie feste Kosten hinzu, die für kundenspezifische Produkte hinzugefügt werden."
+Placeholder Image,Platzhalter-Bild
+Delete File,Datei löschen
+Add image to be shown at the place of actual image before actual image loads completely.,"Fügen Sie ein Bild hinzu, das an der Stelle des tatsächlichen Bildes angezeigt werden soll, bevor das tatsächliche Bild vollständig geladen wird."
+Product Designer Tool Page Title ,"""Seitentitel des Product Designer Tools"""
+Additional Cost per Added Text,Zusätzliche Kosten für hinzugefügten Text
+Add price which will be charged for adding a text for Product Customization.,"Fügen Sie den Preis hinzu, der für das Hinzufügen eines Texts zur Produktanpassung berechnet wird."
+Additional Cost per Added Image,Zusätzliche Kosten pro hinzugefügtem Bild
+Add price which will be charged for adding an image for Product Customization.,"Fügen Sie den Preis hinzu, der für das Hinzufügen eines Bildes zur Produktanpassung berechnet wird."
+Additional Cost per Custom Uploaded Image,Zusätzliche Kosten pro benutzerdefiniertem hochgeladenem Bild
+"Add price which will be charged for uploaded image with ""Additional Cost per Added Image"".","Fügen Sie den Preis hinzu, der für das hochgeladene Bild mit ""Zusätzliche Kosten pro hinzugefügtem Bild"" berechnet wird."
+Download Image Type,Bildtyp herunterladen
+Select the image type in which customized image will be downloaded.,"Wählen Sie den Bildtyp aus, in den das benutzerdefinierte Bild heruntergeladen werden soll."
+Guest User's Image Life Time ,Bild-Lebenszeit des Gastbenutzers
+Enter number of days for which unused design images by guest users need to be kept.,"Geben Sie die Anzahl der Tage ein, für die nicht verwendete Designbilder von Gastbenutzern aufbewahrt werden müssen."
+Enable Generate SVG,Aktivieren Sie Generate SVG
+"Select Yes to enable ""Generate SVG"" button for design-orders to generate SVG image as print ready file.","Wählen Sie ""Ja"", um die Schaltfläche ""SVG generieren"" für Konstruktionsaufträge zu aktivieren, damit ein SVG-Bild als druckfertige Datei generiert wird."
+Enable Handles Outside The Design Area,Handles außerhalb des Designbereichs aktivieren
+Select Yes to allow handles outside the canvas. It will work for single design area only.,"Wählen Sie Ja, um Handles außerhalb der Zeichenfläche zuzulassen. Es funktioniert nur für einen Designbereich."
+Translate Store Elements,Store-Elemente übersetzen
+Click on translate button to change language of the store elements like Button and Messages. It will be translated for all availabale stores based on updated CSV in Locale files.,"Klicken Sie auf die Schaltfläche ""Übersetzen"", um die Sprache der Store-Elemente wie ""Schaltfläche"" und ""Nachrichten"" zu ändern. Es wird für alle verfügbaren Stores übersetzt, die auf aktualisierten CSV-Dateien im Gebietsschema basieren."
+Enable User Guide,Benutzerhandbuch aktivieren
+"Select ""Yes"" to enable interactive user guide on Product Designer Tool.","Wählen Sie ""Ja"", um das interaktive Benutzerhandbuch für Product Designer Tool zu aktivieren."
+Cache Life Time ,"""Cache-Lebensdauer"""
+Enter life span of cached data on Magento in seconds.,Geben Sie die Lebensdauer der zwischengespeicherten Daten in Magento in Sekunden ein.
+Layout,Layout
+Main Tabs,Hauptregisterkarten
+Text,Text
+Default Font Type,Standardschriftart
+Select a default font for the text.,Wählen Sie eine Standardschriftart für den Text.
+Default Font Size,Standardschriftgröße
+Select a default font size for the text.,Wählen Sie eine Standardschriftgröße für den Text.
+Enable Text-object Limit:,Textobjektlimit aktivieren:
+"Select ""Yes"" to set maximum text-objects allowed in a single design area.","Wählen Sie ""Ja"", um die maximale Anzahl von Textobjekten festzulegen, die in einem einzelnen Entwurfsbereich zulässig sind."
+Text Object Limit ,"""Textobjektbegrenzung"""
+Add text object limit. User will not be able to add more text objects on single design area than the set limit.,Textobjektbegrenzung hinzufügen. Der Benutzer kann in einem Entwurfsbereich nicht mehr Textobjekte als die festgelegte Grenze hinzufügen.
+Error Message,Fehlermeldung
+Add the message which will be displayed if the number of characters exceeds the set text limit,"Fügen Sie die Meldung hinzu, die angezeigt wird, wenn die Anzahl der Zeichen das festgelegte Textlimit überschreitet"
+Clipart,Clip Art
+Enable Clipart Limit:,Clipart-Limit aktivieren:
+"Select ""Yes"" to set maximum clipart allowed in a single design area","Wählen Sie ""Ja"", um die maximal zulässige Clipart für einen einzelnen Designbereich festzulegen"
+Set Default Clipart Category,Festlegen der Standard-Clipart-Kategorie
+Select a default category for clipart which will be shown to users when they opt for clipart addition,"Wählen Sie eine Standardkategorie für Clipart aus, die den Benutzern angezeigt wird, wenn sie sich für das Hinzufügen von Clipart entscheiden"
+Clipart Limit,Clipart-Limit
+Add Clipart limit. User will not be able to add more Clipart on single design area than the set limit.,Clipart-Limit hinzufügen. Der Benutzer kann in einem Designbereich nicht mehr Clipart als die festgelegte Grenze hinzufügen.
+Add the message which will displayed if the number of added images exceeds the set image limit.,"Fügen Sie die Meldung hinzu, die angezeigt wird, wenn die Anzahl der hinzugefügten Bilder das festgelegte Bildlimit überschreitet."
+Custom Image Upload,Benutzerdefinierter Bildupload
+Show Instruction,Anleitung anzeigen
+"Select ""Yes"" to show instructions while uploading a customized image.","Wählen Sie ""Ja"", um Anweisungen beim Hochladen eines benutzerdefinierten Bildes anzuzeigen."
+Instruction Text,Anweisungstext
+Add the instruction to be displayed while uploading a customized image,"Fügen Sie die Anweisung hinzu, die beim Hochladen eines benutzerdefinierten Bildes angezeigt werden soll"
+Enable Image Limit,Bildlimit aktivieren
+"Select ""Yes"" to set maximum Images allowed in a single design area","Wählen Sie ""Ja"", um die maximal zulässige Anzahl von Bildern in einem einzelnen Designbereich festzulegen"
+Image Limit,Bildlimit
+Add Image limit. User will not be able to add more Images on a single design area than the set limit.,Bildlimit hinzufügen. Der Benutzer kann nicht mehr Bilder als die festgelegte Grenze in einem Designbereich hinzufügen.
+Add the message which will be displayed if the number of images exceeds the limit for customized images,"Fügen Sie die Meldung hinzu, die angezeigt wird, wenn die Anzahl der Bilder das Limit für benutzerdefinierte Bilder überschreitet"
+Minimum Size of Image,Mindestgröße des Bildes
+Please enter the minimum size of the image. It should be in MB(Megabyte),Bitte geben Sie die Mindestgröße des Bildes ein. Es sollte in MB (Megabyte) sein
+Maximum Size of Image,Maximale Bildgröße
+Please enter the maximum size of the image. It should be in MB(Megabyte),Bitte geben Sie die maximale Größe des Bildes ein. Es sollte in MB (Megabyte) sein
+User's Confirmation Before Uploading Image,Bestätigung des Benutzers vor dem Hochladen des Bildes
+"Select ""Yes"" to ask for user's confirmation before uploading the custom image","Wählen Sie ""Ja"", um die Bestätigung des Benutzers anzufordern, bevor Sie das csutom-Image hochladen"
+Text for User Confirmation,Text zur Benutzerbestätigung
+Add the confirmation message which will be displayed to the user before uploading the custom image,"Fügen Sie die Bestätigungsnachricht hinzu, die dem Benutzer angezeigt wird, bevor Sie das benutzerdefinierte Bild hochladen"
+Custom Product Image Download,Herunterladen von benutzerdefinierten Produktbildern
+Download Customized Product Image,Laden Sie das angepasste Produktbild herunter
+"Select ""Yes"" to enable the download of design from the designer page","Wählen Sie ""Ja"", um den Download des Designs von der Designerseite zu aktivieren"
+Dynamic Messages,Dynamische Nachrichten
+Design It Label,Design It Label
+Add your label for design it button,Fügen Sie Ihren Aufkleber für Entwurf es Knopf hinzu
+Print area warning,Druckbereichswarnung
+Add warning message to be shown when any object goes out of the design area.,"Fügen Sie eine Warnmeldung hinzu, die angezeigt wird, wenn ein Objekt den Entwurfsbereich verlässt."
+Low resolution warning,Warnung zu niedriger Auflösung
+Add warning message to be shown when added image object is of low resolution.,"Warnmeldung hinzufügen, die angezeigt wird, wenn das hinzugefügte Bildobjekt eine niedrige Auflösung hat."
+All Products,Alle Produkte
+Enable All Products Section ,"""Abschnitt"" Alle Produkte aktivieren """""
+"Select ""Yes"" to enable all products section on tool page","Wählen Sie ""Ja"", um den Abschnitt ""Alle Produkte"" auf der Werkzeugseite zu aktivieren"
+First Tooltip,Erster Tooltip
+"Add first tooltip description for user guide of ""All Products""","Fügen Sie die erste QuickInfo-Beschreibung für das Benutzerhandbuch von ""Alle Produkte"" hinzu"
+Second Tooltip,Zweiter Tooltip
+"Add second tooltip description for user guide of ""All Products""","Fügen Sie eine zweite QuickInfo-Beschreibung für das Benutzerhandbuch von ""Alle Produkte"" hinzu."
+Color Picker,Farbwähler
+Default Color for Color Picker ,"""Standardfarbe für Farbwähler"""
+Set default color which will be shown on any color picker throughout the product customization tool.,"Legen Sie die Standardfarbe fest, die in jedem Farbwähler im gesamten Produktanpassungstool angezeigt wird."
+Product Designer,Produktdesigner
+Manage Tabs,Registerkarten verwalten
+Edit Tab,Tab bearbeiten
+Tab,Tab
+Custom Label,Benutzerdefiniertes Etikett
+User Guide,Benutzerhandbuch
+Left Panel Tooltip,Tooltip für das linke Bedienfeld
+Right Panel Tooltip,Tooltip für das rechte Bedienfeld
+Tabs Information,Informationen zu Registerkarten
+Tabs,Tabs
+ID,ICH WÜRDE
+Action,Aktion
+Manage Sub Tabs,Unterregister verwalten
+Sub Tabs,Unterregister
+The list includes all the tabs which are neither Main Tabs or Sub Tabs.,"Die Liste enthält alle Registerkarten, die weder Hauptregisterkarten noch Unterregisterkarten sind."
+Subtabs Information,Informationen zu Unterregistern
+Delete Sub Tab,Unterregisterkarte löschen
+Delete,Löschen
+Add Sub Tabs,Unterregisterkarten hinzufügen
+Add Sub Tab,Unterregisterkarte hinzufügen
+Manage Image Effects,Bildeffekte verwalten
+Name,Name
+Status,Status
+Manage Clipart Categories,Clipart-Kategorien verwalten
+Add Clipart Category,Clipart-Kategorie hinzufügen
+Title,Titel
+Assign as Root Category?,Als Stammkategorie zuweisen?
+Category,Kategorie
+Store Views,Ansichten speichern
+Clipart Images,Clipart-Bilder
+Clipart Category Information,Informationen zur Clipart-Kategorie
+"Click here or drag and drop to add images. (Accepted Files : JPG, JPEG, PNG, SVG )","Klicken Sie hier oder ziehen Sie die Maus und legen Sie sie ab, um Bilder hinzuzufügen. (Akzeptierte Dateien: JPG, JPEG, PNG, SVG)"
+Category Title,Kategorietitel
+Is Root Category?,Ist Wurzelkategorie?
+Store View,Store-Ansicht
+Edit Clipart Category,Clipart-Kategorie bearbeiten
+Delete Clipart Category,Clipart-Kategorie löschen
+Label,Etikette
+Remove,Löschen
+Exclude,Ausschließen
+Tags,Stichworte
+NEXT,NÄCHSTER
+PREV,PREV
+Save Clipart Category,Clipart-Kategorie speichern
+Save and Continue Edit,Speichern und weiter bearbeiten
+Save Image Effects,Bildeffekte speichern
+"Accepted Files : jpg, jpeg, gif, png","Akzeptierte Dateien: jpg, jpeg, gif, png"
+Effect Name,Effektname
+Effect Image,Effektbild
+Image Effects Information,Informationen zu Bildeffekten
+Edit Image Effects,Bildeffekte bearbeiten
+Image,Bild
+Manage Fonts,Schriften verwalten
+Manage Image Sides,Bildseiten verwalten
+Add Image Side,Bildseite hinzufügen
+Image Side,Bildseite
+Image Side Information,Bildseitige Informationen
+Save Image Side,Bildseite speichern
+Edit Image Side,Bildseite bearbeiten
+Delete Image Side,Bildseite löschen
+Manage Printable Colors,Druckbare Farben verwalten
+Add Printable Color,Druckbare Farbe hinzufügen
+Color Name,Farbname
+Color,Farbe
+Printable Color Information,Druckbare Farbinformationen
+Code,Code
+Click to view Color Picker,"Klicken Sie hier, um den Farbwähler anzuzeigen"
+Save Printable Color,Druckbare Farbe speichern
+Edit Printable Color,Druckbare Farbe bearbeiten
+Delete Printable Color,Druckbare Farbe löschen
+Download Order,Bestellung herunterladen
+View Design,Design anzeigen
+Images are not generated,Bilder werden nicht generiert
+Qty,Menge
+Generate Image,Image generieren
+Images Generated,"""Bilder generiert"""
+Image Side: Front,Bildseite: Vorderseite
+Download PDF,PDF Herunterladen
+Download Image ,Bild herunterladen
+Download SVG,SVG herunterladen
+Image Side: Back,Bildseite: Rückseite
+Text Word,Textwort
+Font Family,Schriftfamilie
+Font Color,Schriftfarbe
+Font Size,Schriftgröße
+View Designs,Designs anzeigen
+Select,Wählen
+MakeDesign,MakeDesign
+Allow multiple products in add to cart,Mehrere Produkte in den Warenkorb legen
+Set Default Clipart Category,Festlegen der Standard-Clipart-Kategorie
+Preview,Vorschau
+Share with,Teilen mit
+Save Design,Design speichern
+Product Options,Produktoptionen
+Alignment,Ausrichtung
+Align Left,Linksbündig
+Align Horizontally,Horizontal ausrichten
+Align Right,Rechts ausrichten
+Align Top,Oben ausrichten
+Align Vertically,Vertikal ausrichten
+Align Bottom,Unten ausrichten
+Layer,Schicht
+Bring Forward,Vorwärts bringen
+Send To Back,An Zurück senden
+Bring To Front,Nach vorne bringen
+Send Backward,Rückwärts senden
+Flip,Flip
+Flip Horizontal,Horizontal spiegeln
+Flip Vertical,Vertikal spiegeln
+Tools,Werkzeuge
+Duplicate,Duplikat
+Best Fit,Beste Passform
+Crop Image,Bild zuschneiden
+Font,Schriftart
+Select Font,Wählen Sie Schriftart
+Load More,Mehr laden
+Size,Größe
+Bold,Fett gedruckt
+Italic,Kursiv
+Underline,Unterstreichen
+Left,Links
+Center,Center
+Right ,Recht
+Justify,Rechtfertigen
+Stroke,Schlaganfall
+Reset,Zurücksetzen
+Drop Shadow,Schlagschatten
+X-offset,X-Offset
+Y-offset,Y-Versatz
+Skew,Skew
+SkewX,SkewX
+SkewY,SkewY
+Object Position,Objektposition
+X,X
+Y,Y.
+View,Aussicht
+Back,Zurück
+Front,Vorderseite
+Lock,Sperren
+Select Object,Objekt auswählen
+Hide Object,Objekt ausblenden
+Unlock Object,Objekt entsperren
+Lock Object,Objekt sperren
+Delete Object,Objekt löschen
+Previous Side,Vorherige Seite
+Next Side,Nächste Seite
+Undo,Rückgängig machen
+Redo,Redo
+Zoom,Zoomen
+Add to Cart,in den Warenkorb legen
+Quantity,Menge
+Invalid Quantity,Ungültige Menge
+Add Note,Notiz hinzufügen
+Used Colors,Verwendete Farben
+No Cliparts Found,Keine Cliparts gefunden
+Search Clipart,Cliparts suchen
+Enter Text,Text eingeben
+No Designs Found,Keine Designs gefunden
+Get your saved designs,Holen Sie sich Ihre gespeicherten Designs
+Upload,Hochladen
+Get your saved images,Holen Sie sich Ihre gespeicherten Bilder
+Customer Login,Kundenlogin
+Email,Email
+Email is required,E-Mail ist erforderlich
+Invalid Email,Ungültige E-Mail
+Password,Passwort
+Password is required,Passwort wird benötigt
+Login,Anmeldung
+Create An Account,Ein Konto erstellen
+Customer Registration,Kundenregistrierung
+First Name,Vorname
+First Name is required,Vorname ist erforderlich
+Last Name,Nachname
+Last Name is required,Nachname ist erforderlich
+Sign Up for Newsletter,Anmeldung für Newsletter
+Minimum length of this field must be equal or greater than 8 symbols,Die Mindestlänge dieses Feldes muss mindestens 8 Zeichen betragen
+Confirm Password,Passwort bestätigen
+Confirm Password is required,Passwort bestätigen ist erforderlich
+Confirm Password must match with password field,Passwort bestätigen muss mit Passwortfeld übereinstimmen
+Sign Up,Anmelden
+Help,Hilfe
+Search by Name,Suche mit Name
+Removal of main tabs which contains subtabs will result in removal of those subtabs as well,"Das Entfernen der Hauptregisterkarten, die Unterregisterkarten enthalten, führt auch zum Entfernen dieser Unterregisterkarten"
+Manage Subtabs,Unterregister verwalten
+Select All,W�hlen Sie Alle
+Deselect All,Alle abw�hlen
+Distribute Vertically (must select 3 or more objects),Vertikal verteilen (muss 3 oder mehr Objekte ausw�hlen)
+Distribute Horizontally (must select 3 or more objects),Horizontal verteilen (muss 3 oder mehr Objekte ausw�hlen)
+Ultimate Lock,Ultimate Lock
+Opacity,Opazit�t
+Printing files will be generated soon in the scheduled time.,Druckdateien werden in Kürze zum geplanten Zeitpunkt erstellt.

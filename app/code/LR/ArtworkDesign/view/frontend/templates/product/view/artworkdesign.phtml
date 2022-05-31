@@ -1,0 +1,281 @@
+<?php
+$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+$context = $objectManager->get('Magento\Framework\App\Http\Context');
+$isLoggedIn = $context->getValue(\Magento\Customer\Model\Context::CONTEXT_AUTH);
+$title = $objectManager->get('Magento\Framework\App\Config\ScopeConfigInterface')->getValue('artwork_design/email/popup_title');
+$errMsg = $objectManager->get('Magento\Framework\App\Config\ScopeConfigInterface')->getValue('artwork_design/email/error_msg');
+?>
+<?php $_product = $block->getProduct(); ?>
+<?php if ($block->shouldRenderQuantity()) : ?>
+    <div class="field qty">
+        <label class="label" for="qty"><span><?= /* @noEscape */
+                __('Qty') ?></span></label>
+        <div class="control">
+            <input type="number"
+                   name="qty"
+                   id="qty"
+                   value="<?= /* @noEscape */
+                   $block->getProductDefaultQty() * 1 ?>"
+                   title="<?= /* @noEscape */
+                   __('Qty') ?>"
+                   class="input-text qty"
+                   data-validate="<?= $block->escapeHtml(json_encode($block->getQuantityValidators())) ?>"
+            />
+        </div>
+    </div>
+<?php endif; ?>
+<div class="custom-buttons">
+    <?php if ($_product->getDesignOnline()): ?>
+        <button type="button"
+                class="action primary design-online"
+                id="product-design-online-button"
+                onclick="location.href='#';">
+            <span><i class="fa fa-pencil-square-o"></i><?php /* @escapeNotVerified */
+                echo "Design Online" ?></span>
+            <span class="tooltip-content"><?php echo __('Use our online design tool to create your own product'); ?></span>
+        </button>
+    <?php endif; ?>
+
+    <?php if ($_product->getUploadArtwork()): ?>
+        <div class="radio-toolbar">
+            <input type="radio" name="artwork" value="1" class="action primary design-artwork-upload"
+                   id="product-upload-artwork-button" style="display: none;" checked>
+            <label for="product-upload-artwork-button" class="now"
+                   title="<?php echo __('Compatible file extensions to upload: pdf, indt, ai'); ?>"><span><?php /* @escapeNotVerified */
+                    echo "Upload Artwork" ?> </span></label>
+            <input type="radio" name="artwork" value="2" class="action primary design-artwork-upload-after"
+                   id="product-upload-artwork-button-after" style="display: none">
+            <label for="product-upload-artwork-button-after" class="after"><span
+                        style="font-size: smaller;"><?php /* @escapeNotVerified */
+                    echo "Upload Artwork After" ?></span></label>
+        </div>
+
+        <!--        <button type="button"-->
+        <!--                class="action primary design-artwork-upload"-->
+        <!--                id="product-upload-artwork-button">-->
+        <!--            <span>--><?php ///* @escapeNotVerified */ echo "Upload Artwork" ?><!--</span>-->
+        <!--        </button>-->
+        <!--        <button type="button"-->
+        <!--                class="action primary design-artwork-upload-after"-->
+        <!--                id="product-upload-artwork-button">-->
+        <!--            <span>--><?php ///* @escapeNotVerified */ echo "Upload Artwork After" ?><!--</span>-->
+        <!--        </button>-->
+    <?php endif; ?>
+
+    <?php if ($_product->getDesignForMe()): ?>
+        <button type="button"
+                class="action primary design-for-us"
+                id="product-design-for-us-button">
+            <span><?php /* @escapeNotVerified */
+                echo "Design for Me" ?></span>
+            <span class="tooltip-content"><?php echo __('Request a design quote from our expert in-house artwork team'); ?><p
+                        class="design-extra-charge"></p></span>
+        </button>
+    <?php endif; ?>
+
+    <?php /*?><?php if($_product->getId() == "472"):?>
+        <button type="button"
+                class="action primary call-me-back"
+                id="product-call-me-back-button">
+            <span><?php echo __("Call Me Back") ?></span>
+        </button>
+    <?php endif;?><?php */ ?>
+
+    <div class="field artwork">
+    <label class="label" for="options_58_file" id="options_58_file-label">
+        <span>Artwork</span>
+            </label>
+        <div class="control" id="input-box-options_58_file">
+        <input type="file" name="options_58_file" id="options_58_file" class="product-custom-option">
+        <input type="hidden" name="options_58_file_action" value="save_new">
+                    <p class="note">
+                Compatible file extensions to upload: <strong>pdf, indt, ai</strong>
+            </p>
+                            </div>
+</div>
+
+</div>
+
+
+
+
+
+<style type="text/css">
+     .artwork {
+        display: none;
+    }
+
+
+   
+    .product-options-bottom {
+        display: none;
+    }
+    .design_for_me {
+        display: none !important;
+    }
+
+    /* .no_charge{display: none !important;} */
+</style>
+
+<script type="text/javascript">
+    require([
+            'jquery',
+            'Magento_Ui/js/modal/modal'
+        ], function ($, modal) {
+            jQuery(document).ready(function () {
+                var options = {
+                    type: 'popup',
+                    responsive: true,
+                    innerScroll: true,
+                    title: '<?php echo $title; ?>',
+                    opened: function ($Event) {
+                        $(".modal-footer").hide();
+                    }
+                };
+                var openModal = modal(options, $('#popup-modal'));
+                var artworkdesignForm = $('#lr-artworkdesign-form');
+                var requiredCheckboxes = $('.radio-toolbar :checkbox[required]');
+                requiredCheckboxes.change(function () {
+                    if (requiredCheckboxes.is(':checked')) {
+                        requiredCheckboxes.removeAttr('required');
+                    } else {
+                        requiredCheckboxes.attr('required', 'required');
+                    }
+                });
+                var extraCharge = $('.extra_charge label span.price-wrapper').text();
+                if (extraCharge) {
+                    $('.design-extra-charge').text('Extra Charge: ' + extraCharge);
+                }
+                $(".product-addto-links").appendTo(".product-options-bottom");
+                $(".product-info-price").insertBefore(".custom-buttons");
+                $(".artwork").insertAfter(".custom-buttons");
+                $('.artwork').show();
+                $(".artwork .control input").prop('required', true);
+
+                //$('.extra_charge').parents('.field').hide();
+                jQuery('body').on('click', '.design-for-us', function () {
+                    // $('.extra_charge').parents('.field').show();
+                    <?php if($isLoggedIn) { ?>
+                    jQuery('.artwork-design-form-popup').show();
+                    jQuery('.static-block-message').hide();
+                    jQuery('.login-block-message').hide();
+                    jQuery('#popup-modal').modal('openModal');
+                    $('.extra_charge .radio').trigger("click");
+                    $('.product-options-bottom').css('display', 'flex');
+                    $('.artwork').hide();
+                    <?php } else { ?>
+                    jQuery('.artwork-design-form-popup').hide();
+                    jQuery('.static-block-message').hide();
+                    jQuery('.login-block-message').show();
+                    jQuery('#popup-modal').modal('openModal');
+                    $('.artwork').hide();
+                    //alert('Please logged in to submit you custom design! ');
+                    <?php } ?>
+                });
+                jQuery('body').on('click', '#product-upload-artwork-button-after', function () {
+                    // $('.extra_charge').parents('.field').show();
+                    <?php if($isLoggedIn) { ?>
+                    $('.artwork').hide();
+                    $(".artwork .control input").removeAttr('required');
+                    $('.extra_charge .radio').trigger("click");
+                    $('.product-options-bottom').css('display', 'flex');
+                    $('.artwork').hide();
+                    <?php } else { ?>
+                    $('.login-block-message-artwork').show();
+                    jQuery('#popup-modal').modal('openModal');
+                    $('#product-upload-artwork-button').prop('checked', true);
+                    // $('.artwork').show();
+                    //alert('Please logged in to submit you custom design! ');
+                    <?php } ?>
+                });
+                jQuery('body').on('click', '.design-artwork-upload', function () {
+                    //$('.product-options-bottom').show();
+                    $('.product-options-bottom').css('display', 'flex');
+                    $('.artwork').show();
+                    $('.no_charge .radio').trigger("click");
+                    $(".artwork .control input").prop('required', true);
+                });
+                jQuery('body').on('click', '.design-artwork-upload-after', function () {
+
+                });
+
+                /* jQuery('body').on('click', '.extra_charge', function(){
+                     if($(this).parents('.field').find('span').hasClass( "cancle-extra" ) == true)
+                     {
+                         jQuery('.artwork-design-form-popup').show();
+                         jQuery('.static-block-message').hide();
+                         jQuery('#popup-modal').modal('openModal');
+                     } else {
+                         $(this).parents('.field').append( "<span class='cancle-extra'>cancle</span>" );
+                         jQuery('.artwork-design-form-popup').show();
+                         jQuery('.static-block-message').hide();
+                         jQuery('#popup-modal').modal('openModal');
+                     }
+                 });
+
+                 jQuery('body').on('click', '.cancle-extra', function(){
+                     $('.no_charge .radio').trigger( "click" );
+                 }); */
+
+                jQuery("#lr-artworkdesign-form").on("submit", function (e) {
+                    e.preventDefault();
+                    if (artworkdesignForm.validation('isValid')) {
+                        jQuery.ajax({
+                            url: '<?php echo $block->getUrl("artworkdesign/index/save") ?>',
+                            type: 'POST',
+                            data: new FormData(this),
+                            contentType: false,
+                            cache: false,
+                            processData: false,
+                            success: function (response) {
+                                if (response.success == 1) {
+                                    jQuery('.artwork-design-form-popup').hide();
+                                    jQuery('.static-block-message').show();
+                                } else {
+                                    jQuery('.modal-inner-wrap header').after('<div class="mage-error" style="padding-left:3rem; padding-right:3rem; color:#e02b27;"><?php echo $errMsg; ?></div>');
+                                }
+                            }
+                        });
+                    }
+                });
+
+                var openCallmebackModel = modal(options, $('#popup-modal2'));
+                var callmebackForm = $('#lr-callmeback-form');
+
+                //$('.extra_charge').parents('.field').hide();
+                jQuery('body').on('click', '.call-me-back', function () {
+                    // $('.extra_charge').parents('.field').show();
+                    jQuery('.callmeback-form-popup').show();
+                    jQuery('.callmeback-static-block-message').hide();
+                    jQuery('#popup-modal2').modal('openModal');
+                });
+
+                jQuery("#lr-callmeback-form").on("submit", function (e) {
+                    e.preventDefault();
+                    if (callmebackForm.validation('isValid')) {
+                        jQuery.ajax({
+                            url: '<?php echo $block->getUrl("artworkdesign/index/savecallmeback") ?>',
+                            type: 'POST',
+                            data: new FormData(this),
+                            contentType: false,
+                            cache: false,
+                            processData: false,
+                            success: function (response) {
+                                if (response.success == 1) {
+                                    jQuery('.callmeback-form-popup').hide();
+                                    jQuery('.callmeback-static-block-message').show();
+                                } else {
+                                    jQuery('.modal-inner-wrap header').after('<div class="mage-error" style="padding-left:3rem; padding-right:3rem; color:#e02b27;">We can not process your request right now.</div>');
+                                }
+                            }
+                        });
+                    }
+                });
+            });
+        }
+    );
+</script>
+
+
+
+

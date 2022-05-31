@@ -1,0 +1,97 @@
+<?php
+$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+$customerSession = $objectManager->get('Magento\Customer\Model\Session');
+$customerId = '';
+$customerName = '';
+$customerEmail = '';
+if($customerSession->isLoggedIn()) {
+    $customerId = $customerSession->getCustomer()->getId();
+    $customerName = $customerSession->getCustomer()->getName();
+    $customerEmail = $customerSession->getCustomer()->getEmail();
+}
+$successMsg1 = $objectManager->get('Magento\Framework\App\Config\ScopeConfigInterface')->getValue('artwork_design/email/success_msg1');
+$successMsg2 = $objectManager->get('Magento\Framework\App\Config\ScopeConfigInterface')->getValue('artwork_design/email/success_msg2');
+$successMsg3 = $objectManager->get('Magento\Framework\App\Config\ScopeConfigInterface')->getValue('artwork_design/email/success_msg3');
+
+?>
+<div id="popup-modal">
+    <div class="artwork-design-form-popup" style="display: none;">
+        <form class="" id="lr-artworkdesign-form" method="post" enctype='multipart/form-data'  data-mage-init='{"validation": {}}'>
+            <fieldset class="fieldset">
+                <div class="field note no-label">Please complete the form below to provide details about your request.</div>
+                <input name="product_name" id="product_name" value="<?php echo $block->getProduct()->getName(); ?>" type="hidden">
+                <input name="customer_id" id="customer_id" value="<?php echo $customerId; ?>" type="hidden">
+                <div class="field artworkdesign_name">
+                    <label class="label" for="artworkdesign_name"><span>Name</span></label>
+                    <div class="control">
+                        <input name="artworkdesign_name" id="artworkdesign_name" title="Name" value="<?php echo $customerName; ?>" class="input-text" type="text" data-validate="{required:true}" required>
+                    </div>
+                </div>
+                <div class="field artworkdesign_email">
+                    <label class="label" for="artworkdesign_email"><span>Email</span></label>
+                    <div class="control">
+                        <input name="artworkdesign_email" id="artworkdesign_email" title="Name" value="<?php echo $customerEmail; ?>" class="input-text" type="text" data-validate="{required:true, 'validate-email':true}">
+                    </div>
+                </div>
+                <div class="field artworkdesign_phone">
+                    <label class="label" for="artworkdesign_phone"><span>Phone</span></label>
+                    <div class="control">
+                        <input name="artworkdesign_phone" id="artworkdesign_phone" title="Name" value="" class="input-text" type="text" data-validate="{required:true, 'validate-number':true}">
+                    </div>
+                </div>
+                <div class="field artworkdesign_comment">
+                    <label class="label" for="artworkdesign_comment"><span>Design Brief</span></label>
+                    <div class="control">
+                        <textarea name="artworkdesign_comment" id="artworkdesign_comment" title="Content" class="input-text" cols="5" rows="3" data-validate="{required:true}"></textarea>
+                    </div>
+                </div>
+                <div class="field artworkdesign_image">
+                    <label class="label" for="artworkdesign_image"><span>Please Upload Your Photographs, Images or Logos</span></label>
+                    <div class="control">
+                        <input name="artworkdesign_image" id="artworkdesign_image" title="Artwork Image" value="" class="input-text" type="file">
+                    </div>
+                    <p class="note"><?php echo __('Compatible file extensions to upload: <strong>svg, jpg, jpeg, png, docx, doc, pdf</strong>'); ?></p>
+                </div>
+            </fieldset>
+            <div class="actions-toolbar">
+                <div class="primary">
+                    <button type="submit" title="Submit" class="action submit primary artwork-design-submit">
+                        <span>Submit</span>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="static-block-message" style="display: none;">
+        <span class="msg1"><p><?php echo $successMsg1; ?></p></span>
+        <span class="msg2"><p><?php echo $successMsg2; ?></p></span>
+        <span class="msg3"><p><?php echo $successMsg3; ?></p></span>
+    </div>
+    <div class="login-block-message" style="display: none;">
+        <?php $url = $this->getUrl('*/*/*', ['_current' => true, '_use_rewrite' => true]); ?>
+        <?php $loginUrl = $block->getUrl('customer/account/login', array('referer' => base64_encode($url))); ?>
+
+        <p><?php echo __('Please login to Design your Artwork') ?></p>
+        <div class="actions-toolbar">
+            <div class="primary">
+                <button type="button" title="Login" class="action submit primary artwork-design-login" onclick="location.href=' <?php echo $loginUrl; ?> '">
+                    <span><?php echo __('Login') ?></span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="login-block-message-artwork" style="display: none;">
+        <?php $url = $this->getUrl('*/*/*', ['_current' => true, '_use_rewrite' => true]); ?>
+        <?php $loginUrl = $block->getUrl('customer/account/login', array('referer' => base64_encode($url))); ?>
+        <p><?php echo __('Please login to add your Artwork After') ?></p>
+        <div class="actions-toolbar">
+            <div class="primary">
+                <button type="button" title="Login" class="action submit primary artwork-design-login" onclick="location.href=' <?php echo $loginUrl; ?> '">
+                    <span><?php echo __('Login') ?></span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+</div>
+

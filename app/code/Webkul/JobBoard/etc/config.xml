@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Webkul Software.
+ *
+ * @category  Webkul
+ * @package   Webkul_JobBoard
+ * @author    Webkul
+ * @copyright Copyright (c) Webkul Software Private Limited (https://webkul.com)
+ * @license   https://store.webkul.com/license.html
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <jobboard>
+            <general_settings>
+                <adminname>Admin</adminname>
+                <adminemail>owner@example.com</adminemail>
+                <jobboardlabel>JobBoard</jobboardlabel>
+                <jobboardcontent>Join our innovative and passionate company to grow and excel together.</jobboardcontent>
+                <allowedresumeextensions>pdf,doc,txt</allowedresumeextensions>
+            </general_settings>
+            <email_templates>
+                <notifyEmailToAdmin>jobboard_email_templates_notifyEmailToAdmin</notifyEmailToAdmin>
+                <notifyEmailToApplicant>jobboard_email_templates_notifyEmailToAdmin</notifyEmailToApplicant>
+            </email_templates>
+        </jobboard>
+    </default>
+</config>

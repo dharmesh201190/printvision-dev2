@@ -1,0 +1,36 @@
+.product-options-bottom
+{
+    position: unset !important;
+}
+.swatch-option.image
+{
+    width: 100px !important;
+    height: 100px !important;
+}
+.product-info-main .page-title-wrapper {
+margin-top: 30px;
+}
+.printed_sides .custom-opt-class .swatch-attribute-options .swatch-option{
+    display: inline-block;
+    background-color: #addf27;
+    padding: 10px 20px;
+    color: #fff;
+    font-family: 'Gotham';
+    border: 1px solid #fff;
+    border-radius: 1px;
+    width: 160px;
+    text-align: left;
+}
+.printed_sides .custom-opt-class .swatch-attribute-options .swatch-option.selected{
+    background-color:#fff !important;
+    color: black;
+    border-color: black !important;
+}
+.printed_sides .custom-opt-class .swatch-attribute-options .swatch-option div:after{
+    content: url("../images/single-sided.png");
+    vertical-align: middle;
+}
+.sidebar .block-addbysku .fieldset .fields .field.qty .qty {
+    width: 360px;
+    text-align: left;
+}

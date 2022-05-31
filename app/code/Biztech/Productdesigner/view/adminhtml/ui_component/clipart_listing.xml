@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<listing xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+	<argument name="data" xsi:type="array">
+        <item name="js_config" xsi:type="array">
+            <item name="provider" xsi:type="string">clipart_listing.clipart_listing_data_source</item>
+            <item name="deps" xsi:type="string">clipart_listing.clipart_listing_data_source</item>
+        </item>
+        <item name="spinner" xsi:type="string">cms_page_columns</item>
+        <item name="buttons" xsi:type="array">
+            <item name="add" xsi:type="array">
+                <item name="name" xsi:type="string">add</item>
+                <item name="label" xsi:type="string" translate="true">Add New Page</item>
+                <item name="class" xsi:type="string">primary</item>
+                <item name="url" xsi:type="string">*/*/new</item>
+            </item>
+        </item>
+        <item name="acl" xsi:type="string">Magento_Cms::page</item>
+    </argument>
+	<columns name="adminhtml.promo.quote.grid.columnSet">
+		<column name="store_id" class="Magento\Store\Ui\Component\Listing\Column\Store">
+			<argument name="data" xsi:type="array">
+				<item name="config" xsi:type="array">
+					<item name="bodyTmpl" xsi:type="string">ui/grid/cells/html</item>
+					<item name="sortable" xsi:type="boolean">false</item>
+					<item name="label" xsi:type="string" translate="true">Store View</item>
+				</item>
+			</argument>
+		</column>
+	</columns>
+</listing>

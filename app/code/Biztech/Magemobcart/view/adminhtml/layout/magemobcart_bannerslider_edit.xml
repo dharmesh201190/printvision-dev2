@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * Copyright © Biztech, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="admin-2columns-left" xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/View/Layout/etc/page_configuration.xsd">
+    <update handle="editor"/>
+    <body>
+        <referenceContainer name="content">
+            <block class="Biztech\Magemobcart\Block\Adminhtml\Bannerslider\Edit" name="magemobcart_bannerslider_edit"/>
+        </referenceContainer>
+        <referenceContainer name="left">
+            <block class="Biztech\Magemobcart\Block\Adminhtml\Bannerslider\Edit\Tabs" name="bannerslider_edit_tabs">
+                <block class="Biztech\Magemobcart\Block\Adminhtml\Bannerslider\Edit\Tab\Bannerslider" name="bannerslider_edit_tab_bannerslider"/>
+                    <action method="addTab">
+                        <argument name="name" xsi:type="string">main_section</argument>
+                        <argument name="block" xsi:type="string">bannerslider_edit_tab_bannerslider</argument>
+                    </action>
+            </block>
+        </referenceContainer>
+    </body>
+</page>

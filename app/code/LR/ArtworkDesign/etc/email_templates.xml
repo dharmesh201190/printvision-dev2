@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Email:etc/email_templates.xsd">
+    <template id="artwork_design_email_email_template" label="Artwork Design Email Template" file="artwork_design_email.html" type="html" module="LR_ArtworkDesign" area="frontend"/>
+    <template id="artwork_design_email_callmeback_email_template" label="Callmeback Email Template" file="callmeback_email.html" type="html" module="LR_ArtworkDesign" area="frontend"/>
+    <template id="artwork_design_email_artworkadmin_email_template" label="Artwork Admin Email Template" file="artworkadmin_email.html" type="html" module="LR_ArtworkDesign" area="frontend"/>
+</config>
+<!-- here you define your email template and its template location path-->

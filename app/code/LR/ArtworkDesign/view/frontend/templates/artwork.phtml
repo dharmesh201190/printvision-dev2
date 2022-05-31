@@ -1,0 +1,45 @@
+<?php 
+$om = \Magento\Framework\App\ObjectManager::getInstance();
+$customerSession = $om->get('Magento\Customer\Model\Session');
+$customerId = '';
+if($customerSession->isLoggedIn()) {
+    $customerId = $customerSession->getCustomer()->getId(); 
+}
+$artworks = $block->getCustomerComments($customerId);
+$count = count($artworks);
+?>
+<div class="block block-orders">
+	<div class="block-content">
+		<?php if ($count > 0) : ?>
+			<div class="table-wrapper orders-history">
+				<table class="data table table-order-items history" id="my-artwork-table">
+					<caption class="table-caption">Orders</caption>
+					<thead>
+						<tr>
+							<th scope="col" class="col id">Artwork #</th>
+							<th scope="col" class="col date">Product Name</th>
+							<th scope="col" class="col shipping">Email</th>
+							<th scope="col" class="col actions">Action</th>
+						</tr>
+					</thead>
+					<tbody>
+						<?php foreach($artworks as $artwork): ?>
+							<tr>
+								<td data-th="Artwork #" class="col id"><?php echo $artwork->getId() ?></td>
+								<td data-th="Product Name" class="col date"><?php echo $artwork->getProductName() ?></td>
+								<td data-th="Email" class="col shipping"><?php echo $artwork->getArtworkdesignEmail() ?></td>
+								<td data-th="Actions" class="col actions">
+									<a href="<?php echo $block->getBaseUrl(); ?>artworkdesign/customer/comments/id/<?php echo $artwork->getArtworkdesignId() ?>" class="action view">
+										<span>View Comments</span>
+									</a>
+								</td>
+							</tr>
+						<?php endforeach; ?>
+					</tbody>
+				</table>
+			</div>	
+		<?php else : ?>
+	        <div class="message info empty"><span><?= $block->escapeHtml(__("You don't have any artwroks.")) ?></span></div>
+	    <?php endif; ?>
+	</div>
+</div>

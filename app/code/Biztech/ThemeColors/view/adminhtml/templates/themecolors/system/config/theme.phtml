@@ -1,0 +1,12 @@
+<?php
+
+$primary_background = $this->getPrimaryBackground();
+$theme_type = $this->getThemeType();
+$isDarkTheme = 'false';
+if($theme_type == 'dark'){
+	$isDarkTheme = 'true';
+}
+$css = '$byi-theme: ' . $primary_background . ';' . PHP_EOL;
+$css .= '$byi-dark-scheme:' . $isDarkTheme . ';' . PHP_EOL;
+echo $css;
+?>

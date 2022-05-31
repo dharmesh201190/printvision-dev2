@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../Magento/Config/etc/system_file.xsd">
+    <system>       
+        <section id="productdesigner" showInDefault="1" showInWebsite="1" showInStore="1">
+            <tab>biztech</tab>
+            <label>Product Designer Settings</label>
+            <group id="downloaddesign_general" showInDefault="1" showInWebsite="1" showInStore="1" sortOrder="70">
+                <field id="watermark_type" translate="label comment" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1" >
+                    <depends>
+                        <field id="enabled">1</field>
+                    </depends>
+
+                    <label>Watermark Type</label>
+                    <source_model>Biztech\Watermark\Model\Config\Backend\WatermarkType</source_model>
+                    <comment>Select "Image" to set watermark image or add "Text" to set in watermark.</comment>
+                </field>
+
+                <field id="watermark" translate="label comment" type="image" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <depends>
+                        <field id="watermark_type">image</field>
+                        <field id="enabled">1</field>
+                    </depends>
+
+                    <label>Download Image Watermark </label>
+                    <backend_model>Biztech\Watermark\Model\Config\Backend\Image</backend_model>
+                    <base_url type="media" scope_info="1">productdesigner\uploadwatermark</base_url>
+                    <comment>Add an Image which will be added as a watermark in the downloaded customized product image. Allowed file type: png.</comment>
+                </field>
+                <field id="watermark_text" translate="label comment" type="text" sortOrder="3" showInDefault="1" showInWebsite="1" showInStore="1" >
+                    <depends>
+                        <field id="watermark_type">text</field>
+                    </depends>
+
+                    <label>Text for Watermark Image</label>
+                    <validate>validate-length maximum-length-14 minimum-length-5</validate>
+                    <comment>Add text which will be displayed as watermark in the downloaded customized product image. You can add minimum 5 to 14 characters for the text.</comment>
+                </field>  
+                <field id="check1" translate="label comment" type="button" sortOrder="10" showInDefault="1" showInWebsite="1"  showInStore="1">
+                    <depends>
+                        <field id="watermark_type">text</field>
+                    </depends>
+                    <frontend_model>Biztech\Watermark\Block\System\Config\Watermark</frontend_model>
+                </field>
+            </group>  
+        </section>        
+    </system>
+</config>

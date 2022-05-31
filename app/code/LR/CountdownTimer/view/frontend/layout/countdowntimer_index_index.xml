@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+	<head>
+	    <css src="LR_CountdownTimer::css/custom_countdowntimer.css" />
+	    <script src="LR_CountdownTimer::js/custom_countdowntimer.js"/>
+	</head>
+    <body>
+        <referenceContainer name="content">
+            <block class="LR\CountdownTimer\Block\CountdownTimer" name="countdowntimer.list" template="countdowntimer.phtml">
+            </block>
+        </referenceContainer>
+    </body>
+</page>

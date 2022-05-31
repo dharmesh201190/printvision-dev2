@@ -1,0 +1,186 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Magento/Store/etc/config.xsd">    
+    <preference for="Magento\ProductVideo\Observer\ChangeTemplateObserver" type="Biztech\Productdesigner\Observer\ChangeTemplateObserver" />
+    <preference for="Magento\Checkout\Block\Cart\Item\Renderer\Actions\Edit" type="Biztech\Productdesigner\Block\Cart\Item\Renderer\Actions\Edit" />   
+    <type name="Magento\Catalog\Model\Product\Gallery\CreateHandler">
+        <plugin name="image_side_save" type="Biztech\Productdesigner\Model\Plugin\Catalog\Product\Gallery\CreateHandler" />
+    </type>
+    <type name="Magento\Catalog\Model\ResourceModel\Product\Gallery">
+        <plugin name="Biztech_Productdesigner::Get_Image_Sides" type="Biztech\Productdesigner\Plugin\Gallery" sortOrder="1"/>
+    </type>
+    <type name="Magento\Checkout\CustomerData\AbstractItem">
+        <plugin name="Biztech_Productdesigner::Minicart_Image_Changer" type="Biztech\Productdesigner\Plugin\Minicart\Image" sortOrder="1"/>
+    </type>
+    <virtualType name="BiztechTooltipGridFilterPool" type="Magento\Framework\View\Element\UiComponent\DataProvider\FilterPool">
+        <arguments>
+            <argument name="appliers" xsi:type="array">
+                <item name="regular" xsi:type="object">Magento\Framework\View\Element\UiComponent\DataProvider\RegularFilter</item>
+                <item name="fulltext" xsi:type="object">Magento\Framework\View\Element\UiComponent\DataProvider\FulltextFilter</item>
+            </argument>
+        </arguments>
+    </virtualType>
+    <virtualType name="BiztechTooltipGridDataProvider" type="Magento\Framework\View\Element\UiComponent\DataProvider\DataProvider">
+        <arguments>
+            <argument name="collection" xsi:type="object" shared="false">Biztech\Productdesigner\Model\ResourceModel\Tooltip\Collection</argument>
+            <argument name="filterPool" xsi:type="object" shared="false">BiztechTooltipGridFilterPool</argument>
+        </arguments>
+    </virtualType>
+    <virtualType name="Biztech\Productdesigner\Model\ResourceModel\Tooltip\Grid\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">productdesigner_tooltip</argument>
+            <argument name="resourceModel" xsi:type="string">Biztech\Productdesigner\Model\ResourceModel\Tooltip</argument>
+        </arguments>
+    </virtualType>
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="productdesigner_index_listing_data_source" xsi:type="string">Biztech\Productdesigner\Model\ResourceModel\Tooltip\Grid\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+    <!-- FOR MAINTABS -->
+    <virtualType name="BiztechTabsGridDataProvider" type="Magento\Framework\View\Element\UiComponent\DataProvider\DataProvider">
+        <arguments>
+            <argument name="collection" xsi:type="object" shared="false">Biztech\Productdesigner\Model\Mysql4\TabsData\Collection</argument>
+        </arguments>
+    </virtualType>
+    <virtualType name="Biztech\Productdesigner\Model\Mysql4\TabsData\Grid\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">productdesigner_tabs</argument>
+            <argument name="resourceModel" xsi:type="string">Biztech\Productdesigner\Model\Mysql4\TabsData</argument>
+        </arguments>
+    </virtualType>
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="productdesigner_tabs_listing_data_source" xsi:type="string">Biztech\Productdesigner\Model\Mysql4\TabsData\Grid\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+    <!-- FOR SUBTABS -->
+    <virtualType name="BiztechSubtabsGridDataProvider" type="Magento\Framework\View\Element\UiComponent\DataProvider\DataProvider">
+        <arguments>
+            <argument name="collection" xsi:type="object" shared="false">Biztech\Productdesigner\Model\Mysql4\Subtabs\Collection</argument>
+        </arguments>
+    </virtualType>
+    <virtualType name="Biztech\Productdesigner\Model\Mysql4\Subtabs\Grid\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">productdesigner_subtabs</argument>
+            <argument name="resourceModel" xsi:type="string">Biztech\Productdesigner\Model\Mysql4\Subtabs</argument>
+        </arguments>
+    </virtualType>
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="productdesigner_subtabs_listing_data_source" xsi:type="string">Biztech\Productdesigner\Model\Mysql4\Subtabs\Grid\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+    <!-- FOR IMAGE EFFECT -->
+    <virtualType name="BiztechImageEffectGridDataProvider" type="Magento\Framework\View\Element\UiComponent\DataProvider\DataProvider">
+        <arguments>
+            <argument name="collection" xsi:type="object" shared="false">Biztech\Productdesigner\Model\Mysql4\Imageeffects\Collection</argument>
+        </arguments>
+    </virtualType>
+    <virtualType name="Biztech\Productdesigner\Model\Mysql4\Imageeffects\Grid\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">productdesigner_imageeffects</argument>
+            <argument name="resourceModel" xsi:type="string">Biztech\Productdesigner\Model\Mysql4\Imageeffects</argument>
+        </arguments>
+    </virtualType>
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="productdesigner_imageeffects_listing_data_source" xsi:type="string">Biztech\Productdesigner\Model\Mysql4\Imageeffects\Grid\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+    <!-- FOR CLIPART -->
+    <virtualType name="BiztechClipartGridDataProvider" type="Magento\Framework\View\Element\UiComponent\DataProvider\DataProvider">
+        <arguments>
+            <argument name="collection" xsi:type="object" shared="false">Biztech\Productdesigner\Model\Mysql4\Clipart\Collection</argument>
+        </arguments>
+    </virtualType>
+    <virtualType name="Biztech\Productdesigner\Model\Mysql4\Clipart\Grid\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">productdesigner_clipart</argument>
+            <argument name="resourceModel" xsi:type="string">Biztech\Productdesigner\Model\Mysql4\Clipart</argument>
+        </arguments>
+    </virtualType>
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="productdesigner_clipart_listing_data_source" xsi:type="string">Biztech\Productdesigner\Model\Mysql4\Clipart\Grid\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+    <!-- FOR FONT -->
+    <virtualType name="BiztechFontGridDataProvider" type="Magento\Framework\View\Element\UiComponent\DataProvider\DataProvider">
+        <arguments>
+            <argument name="collection" xsi:type="object" shared="false">Biztech\Productdesigner\Model\Mysql4\Fonts\Collection</argument>
+        </arguments>
+    </virtualType>
+    <virtualType name="Biztech\Productdesigner\Model\Mysql4\Fonts\Grid\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">productdesigner_fonts</argument>
+            <argument name="resourceModel" xsi:type="string">Biztech\Productdesigner\Model\Mysql4\Fonts</argument>
+        </arguments>
+    </virtualType>
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="productdesigner_fonts_listing_data_source" xsi:type="string">Biztech\Productdesigner\Model\Mysql4\Fonts\Grid\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+    <!-- FOR Image Side -->
+    <virtualType name="BiztechImageSideGridDataProvider" type="Magento\Framework\View\Element\UiComponent\DataProvider\DataProvider">
+        <arguments>
+            <argument name="collection" xsi:type="object" shared="false">Biztech\Productdesigner\Model\Mysql4\Side\Collection</argument>
+        </arguments>
+    </virtualType>
+    <virtualType name="Biztech\Productdesigner\Model\Mysql4\Side\Grid\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">productdesigner_imageside</argument>
+            <argument name="resourceModel" xsi:type="string">Biztech\Productdesigner\Model\Mysql4\Side</argument>
+        </arguments>
+    </virtualType>
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="productdesigner_imageside_listing_data_source" xsi:type="string">Biztech\Productdesigner\Model\Mysql4\Side\Grid\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+    <!-- FOR Image Side -->
+    <virtualType name="BiztechPrintableColorsGridDataProvider" type="Magento\Framework\View\Element\UiComponent\DataProvider\DataProvider">
+        <arguments>
+            <argument name="collection" xsi:type="object" shared="false">Biztech\Productdesigner\Model\Mysql4\Printablecolor\Collection</argument>
+        </arguments>
+    </virtualType>
+    <virtualType name="Biztech\Productdesigner\Model\Mysql4\Printablecolor\Grid\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">productdesigner_printablecolor</argument>
+            <argument name="resourceModel" xsi:type="string">Biztech\Productdesigner\Model\Mysql4\Printablecolor</argument>
+        </arguments>
+    </virtualType>
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="productdesigner_printablecolor_listing_data_source" xsi:type="string">Biztech\Productdesigner\Model\Mysql4\Printablecolor\Grid\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+    <preference for="Magento\Catalog\Model\Product" type="Biztech\Productdesigner\Model\Rewrite\Catalog\Product" />	
+    <preference for="Magento\Framework\Serialize\Serializer\Json" type="Biztech\Productdesigner\Model\Serialize\Json" />
+    <!-- Start Added BY A.S. Reorder -->
+    <!-- <preference for="Magento\Checkout\Model\Cart" type="Biztech\Productdesigner\Model\Cart" />
+    <preference for="Magento\Quote\Model\Quote" type="Biztech\Productdesigner\Model\Quote" /> -->
+    <!-- End Added BY A.S. Reorder -->
+
+
+     <type name="Magento\Sales\Controller\AbstractController\Reorder">
+        <plugin name="product_reorder" type="Biztech\Productdesigner\Plugin\Reorder" />
+    </type>
+
+</config>

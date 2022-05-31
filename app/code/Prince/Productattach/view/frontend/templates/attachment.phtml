@@ -1,0 +1,44 @@
+<?php
+/** @var \Prince\Productattach\Block\Attachment $block */
+?>
+
+<?php if($block->isEnable()): ?>
+    <?php $productId = $block->getCurrentId(); ?>
+    <?php $attachments = $block->getAttachment($productId); ?>
+    <?php $isSize = $block->getConfig('productattach/general/attachmentsize'); ?>
+    <?php $productImage = $block->getProductImage();?>
+    <div class="attachments">
+        <?php if($productImage):?>
+            <div class="product-attachment">
+                <a href="<?php echo $productImage;?>" target="_blank" download>
+                    <div class="attachment-icon">
+                        <img src="<?php echo $productImage;?>"/>
+                    </div>
+                </a>
+            </div>
+        <?php endif;?>
+        <?php foreach ($attachments as $attachment) : ?>
+            <?php if ($attachment->getActive()) : ?>
+                <div class="product-attachment">
+                    <?php if ($attachment->getFile()) : ?>
+                        <a href="<?php /* @noEscape */ echo $block->getAttachmentUrl($attachment->getFile()); ?>" target="_blank" download>
+                            <div class="attachment-icon">
+                                <img src="<?php /* @noEscape */ echo $block->getFileIcon($attachment->getFileExt()) ?>"/>
+                            </div>
+                        </a>
+                        <?php if ($isSize) : ?>
+                            <?php $size = '(Size: '.$block->getFileSize($attachment->getFile()).')' ?>
+                            <?php /* @noEscape */ echo __($size); ?>
+                        <?php endif; ?>
+                    <?php elseif ($attachment->getUrl()) : ?>
+                        <div class="nofile">
+                            <div class="attachment-icon">
+                                <img src="<?php /* @noEscape */ echo $block->getLinkIcon(); ?>" />
+                            </div>
+                        </div>
+                    <?php endif; ?>
+                </div>
+            <?php endif; ?>
+        <?php endforeach; ?>
+    </div>
+<?php endif; ?

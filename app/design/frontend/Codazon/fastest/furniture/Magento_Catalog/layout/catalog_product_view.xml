@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+
+<page layout="2columns-left" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <move element="product.info.addto" destination="product.info.main"/>
+    <move element="product.price.tier" destination="product.info.price"/>
+   
+    <body>
+
+
+        <referenceContainer name="page.wrapper">
+            <block class="Magento\Cms\Block\Block" name="free.delivery" before="-">
+                <arguments>
+                    <argument name="block_id" xsi:type="string">free_delivery</argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+        <referenceBlock name="product.info.details">
+            <block class="Magento\Catalog\Block\Product\View" name="technical.info.tab" template="Magento_Catalog::product/view/attribute.phtml" group="detailed_info" before="productattach.tab">
+                <arguments>
+                    <argument name="at_call" xsi:type="string">getTechnicalInformation</argument>
+                    <argument name="at_code" xsi:type="string">technical_information</argument>
+                    <argument name="css_class" xsi:type="string">technical_information</argument>
+                    <argument name="at_label" xsi:type="string">none</argument>
+                    <argument name="title" translate="true" xsi:type="string">Technical Information</argument>
+                    <argument name="add_attribute" xsi:type="string">itemprop="technical_information"</argument>
+                    <argument name="sort_order" xsi:type="string">24</argument>
+                </arguments>
+            </block>
+            <block class="Magento\Catalog\Block\Product\View" name="how_to_order.info.tab" template="Magento_Catalog::product/view/attribute.phtml" group="detailed_info" after="productattach.tab">
+                <arguments>
+                    <argument name="at_call" xsi:type="string">getHowToOrder</argument>
+                    <argument name="at_code" xsi:type="string">how_to_order</argument>
+                    <argument name="css_class" xsi:type="string">how_to_order</argument>
+                    <argument name="at_label" xsi:type="string">none</argument>
+                    <argument name="title" translate="true" xsi:type="string">How To Order</argument>
+                    <argument name="add_attribute" xsi:type="string">itemprop="how_to_order"</argument>
+                    <argument name="sort_order" xsi:type="string">26</argument>
+                </arguments>
+            </block>
+
+             
+        </referenceBlock>
+
+
+        <!-- <referenceContainer name="product.info.options.wrapper">
+            <block class="Magento\Catalog\Block\Product\View" name="addto.design" template="Magento_Catalog::product/view/addtodesign.phtml" after="-"/>
+        </referenceContainer> -->
+        <referenceBlock name="product.info.review" remove="true"/>
+        <referenceBlock name="view.addto.compare" remove="true"/>
+        <referenceBlock name="product.attributes" remove="true"/>
+        <move element="product.info.overview" destination="page.main.title"/>
+        <move element="product.price.price" destination="page.main.title" after="product.info.overview"/>
+
+    </body>
+</page>

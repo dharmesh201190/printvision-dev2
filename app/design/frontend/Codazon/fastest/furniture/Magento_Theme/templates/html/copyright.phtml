@@ -1,0 +1,42 @@
+<?php
+/**
+ * Copyright © 2015 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+?>
+<small class="copyright">    
+    <span class="f-left">
+		<?php /* @escapeNotVerified */ echo $block->getCopyright() ?>		
+	</span>						
+</small>
+
+
+<!--
+
+<script type="text/javascript">
+    
+require([
+        'jquery',
+        'jquery/jquery.cookie',
+    ], function($) {
+        if (!window.matchMedia('(max-width: 1024px)').matches) {
+            Tawk_API.onLoad = function(){
+                if($.cookie('tawkonlinechat') == null) 
+                {
+                    Tawk_API.toggle();
+                }
+                var date = new Date();
+                var minutes = 1440;
+                date.setTime(date.getTime() + (minutes * 60 * 1000));
+                $.cookie('tawkonlinechat', '1', {expires: date}); // Set Cookie Expiry Time        
+            };
+        }
+
+        /* Open quick chat box when click on homepage "Quickchat Feature" text under welcome text */
+        $(".home-quickchat").on( "click", function() {
+          Tawk_API.toggle();
+        });
+    });
+
+</script>
+-->

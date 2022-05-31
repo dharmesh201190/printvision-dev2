@@ -1,0 +1,51 @@
+<!--
+/**
+ * Copyright © 2016 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<!--@subject {{trans "Artwork Design Request"}} @-->
+<!--@vars {
+"var data.artworkdesign_comment":"Test",
+"var data.artworkdesign_email":"Sender Email",
+"var data.artworkdesign_name":"Sender Name",
+"var data.artworkdesign_phone":"Sender Phone No"
+} @-->
+
+{{template config_path="design/email/header_template"}}
+
+<table>
+    <tr class="email-intro">
+        <td>
+            <p class="greeting">{{trans "Hi,"}}</p>
+            <p class="greeting">{{trans "%name has requested new artworkd design for the flag, which detail as below with attachment." name=$data.artworkdesign_name}}</p>
+        </td>
+    </tr>
+    <tr><td><br></td></tr>
+    <tr class="email-information">
+        <td>
+            <table class="email-items">
+                <tbody>
+                    <tr>
+                        <th class="item-info">{{trans "Name"}}</th>
+                        <td class="item-info">{{trans "%name" name=$data.artworkdesign_name}}</td>
+                    </tr>
+                    <tr>
+                        <th class="item-info">{{trans "Email"}}</th>
+                        <td class="item-info">{{trans "%email" email=$data.artworkdesign_email}}</td>
+                    </tr>
+                    <tr>
+                        <th class="item-info">{{trans "Phone"}}</th>
+                        <td class="item-info">{{trans "%phone" phone=$data.artworkdesign_phone}}</td>
+                    </tr>
+                    <tr>
+                        <th class="item-info">{{trans "Comment"}}</th>
+                        <td class="item-info">{{trans "%comment" comment=$data.artworkdesign_comment}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+    </tr>
+</table>
+
+{{template config_path="design/email/footer_template"}}

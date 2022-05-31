@@ -1,0 +1,57 @@
+{
+    "wk_jobboard_job": {
+        "column": {
+            "entity_id": true,
+            "designation": true,
+            "category": true,
+            "description": true,
+            "eligibility": true,
+            "location": true,
+            "skills": true,
+            "salary_type": true,
+            "salary": true,
+            "experience": true,
+            "sort": true,
+            "status": true,
+            "created_at": true,
+            "updated_at": true
+        },
+        "constraint": {
+            "PRIMARY": true
+        }
+    },
+    "wk_jobboard_category": {
+        "column": {
+            "entity_id": true,
+            "name": true,
+            "sort": true,
+            "status": true,
+            "created_at": true,
+            "updated_at": true
+        },
+        "constraint": {
+            "PRIMARY": true
+        }
+    },
+    "wk_jobboard_application": {
+        "column": {
+            "entity_id": true,
+            "job": true,
+            "firstname": true,
+            "lastname": true,
+            "email": true,
+            "telephone": true,
+            "address": true,
+            "qualification": true,
+            "experience": true,
+            "position": true,
+            "company": true,
+            "resume": true,
+            "created_at": true,
+            "updated_at": true
+        },
+        "constraint": {
+            "PRIMARY": true
+        }
+    }
+}

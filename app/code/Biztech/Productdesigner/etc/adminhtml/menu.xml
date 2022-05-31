@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+	<menu>
+		<add id="biztech_productdesigner::base" title="Product Designer" module="Biztech_Productdesigner" sortOrder="40" resource="Biztech_Productdesigner::sample"/>    
+
+		<add id="biztech_productdesigner::tabs" title="Manage Tabs" module="Biztech_Productdesigner" sortOrder="10" parent="biztech_productdesigner::base" action="productdesigner/tabs/" resource="Biztech_Productdesigner::tabs"/>
+
+		<add id="biztech_productdesigner::subtabs" title="Manage Sub Tabs" module="Biztech_Productdesigner" sortOrder="10" parent="biztech_productdesigner::base" action="productdesigner/subtabs/" resource="Biztech_Productdesigner::subtabs"/>
+
+        <add id="biztech_productdesigner::clipart" title="Manage Clipart Categories" module="Biztech_Productdesigner" sortOrder="20" parent="biztech_productdesigner::base" action="productdesigner/clipart/" resource="Biztech_Productdesigner::clipart"/>
+
+        <add id="biztech_Productdesigner::fonts" title="Manage Fonts" module="Biztech_Productdesigner" sortOrder="30" parent="biztech_productdesigner::base" action="productdesigner/fonts/index/" resource="Biztech_Productdesigner::fonts"/>  
+
+		<add id="biztech_productdesigner::side" title="Manage Image Sides" module="Biztech_Productdesigner" sortOrder="40" parent="biztech_productdesigner::base" action="productdesigner/side/" resource="Biztech_Productdesigner::side"/>
+
+		 <add id="biztech_productdesigner::printablecolor" title="Manage Printable Colors" module="Biztech_Productdesigner" sortOrder="50" parent="biztech_productdesigner::base" action="productdesigner/printablecolor/" resource="Biztech_Productdesigner::printablecolor"/>
+
+
+		 <add id="biztech_Productdesigner::imageeffects" title="Manage Image Effects and Filters" module="Biztech_Productdesigner" sortOrder="11" parent="biztech_productdesigner::base" action="productdesigner/imageeffects/" resource="Biztech_Productdesigner::imageeffects"/>
+
+	</menu>
+</config>

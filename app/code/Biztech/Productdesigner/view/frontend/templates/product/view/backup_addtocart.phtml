@@ -1,0 +1,84 @@
+
+<?php $_product = $block->getProduct(); ?>
+<?php $buttonTitle = __('Add to Cart'); ?>
+<?php if ($_product->isSaleable()): ?>
+    <div class="box-tocart">
+        <div class="fieldset">
+            <?php if ($block->shouldRenderQuantity()): ?>
+                <div class="field qty">
+                    <label class="label" for="qty"><span><?= /* @escapeNotVerified */ __('Qty') ?></span></label>
+                    <div class="control">
+                        <input type="number"
+                               name="qty"
+                               id="qty"
+                               value="<?= /* @escapeNotVerified */ $block->getProductDefaultQty() * 1 ?>"
+                               title="<?= /* @escapeNotVerified */ __('Qty') ?>"
+                               class="input-text qty"
+                               data-validate="<?= $block->escapeHtml(json_encode($block->getQuantityValidators())) ?>"
+                               />
+                    </div>
+                </div>
+            <?php endif; ?>
+            <div class="actions">
+                <button type="submit"
+                        title="<?= /* @escapeNotVerified */ $buttonTitle ?>"
+                        class="action primary tocart"
+                        id="product-addtocart-button">
+                    <span><?= /* @escapeNotVerified */ $buttonTitle ?></span>
+                </button>
+                <?= $block->getChildHtml('', true) ?>
+                <?php
+				    $objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+				    $currentStoreId = $objectManager->get('Magento\Store\Model\StoreManagerInterface')->getStore()->getId(); 
+				    $buttonLabel=$this->helper('Biztech\Productdesigner\Helper\Data')->getConfig('productdesigner/dynamic_message/designit_label', $currentStoreId);
+				    $isPdEnable = $this->helper('Biztech\Productdesigner\Helper\Info')->isPdEnable($_product->getId());
+                    $isEnable = $this->helper('Biztech\Productdesigner\Helper\Info')->isEnable($currentStoreId); 
+                    if(isset($isEnable) && $isEnable){
+    				    if(isset($isPdEnable) && $isPdEnable) {
+    				    ?>
+    				     <div class="product-page-designer">
+    				            <?php
+    				            $designerTitle =$buttonLabel;
+    				            ?>
+    				            <button type="button"  title="<?php /* @escapeNotVerified */ //echo $designerTitle ?>" class="action primary tocart product-designer-button" value="<?php /* @escapeNotVerified */ echo $designerTitle ?>"><?php /* @escapeNotVerified */ echo $designerTitle ?></button>
+    				        </div> 
+				    <?php } 
+                    } ?>  
+				<?php endif; ?>
+            </div>
+        </div>
+    </div>
+    
+<script type="text/x-magento-init">
+    {
+    "#product_addtocart_form": {
+    "Magento_Catalog/js/validate-product": {}
+    }
+    }
+</script>
+<script>
+    require([
+        'jquery',
+    ], function ($) {
+        'use strict';
+        $('.product-designer-button').click(function () {
+            var designerURL = "<?php echo $this->getUrl('productdesigner', array('_secure' => $this->getRequest()->isSecure(), 'id' => $_product->getId())); ?>";
+            var productdata = jQuery("#product_addtocart_form").serializeArray();
+            //create a custom form
+            var form = document.createElement("form");
+            form.setAttribute('method', "post");
+            form.setAttribute('action', designerURL);
+            // Create field based on add to cart form field and add in custom form
+            jQuery(productdata).each(function (i, data) {
+                var field = document.createElement("input");
+                field.type = "hidden";
+                field.name = data.name;
+                field.value = data.value;
+                form.appendChild(field);
+            });
+            jQuery("body").append(form);
+            jQuery(form).submit();
+        });
+
+    });
+</script>

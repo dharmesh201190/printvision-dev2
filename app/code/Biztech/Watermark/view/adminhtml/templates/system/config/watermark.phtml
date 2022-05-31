@@ -1,0 +1,38 @@
+<?php
+/**
+ * Copyright © 2017-2018 AppJetty. All rights reserved.
+ * See LICENSE.txt for license details.
+ */
+?>
+<?php /* @var $block \Biztech\Productdesigner\Block\System\Config\Collect */ ?>
+<script type="text/javascript">
+    //<![CDATA[
+    function watermarkcheck() {
+        var data = {};
+        data['watermarktext'] = $('productdesigner_downloaddesign_general_watermark_text').value;
+        if (data['watermarktext'].length > 14) {
+            alert('Please enter watermark text less or equal than 14 characters.');
+            return false;
+        }
+        if(data['watermarktext'].length < 5){
+            alert('Please enter watermark text greater or equal than 5 characters.');
+            return false;
+        }
+        new Ajax.Request('<?php echo $this->getUrl('watermark/system_config/watermark/'); ?>', {
+            method: 'get',
+            parameters: data,
+            onSuccess: function (transport) {
+
+                if (data['watermarktext'] == '') {
+                    alert('Please enter Text for watermark image.');
+                    return false;
+                }
+
+                if (transport.responseText) {
+                    alert('Text Watermark generated successfully.');
+                }
+            }
+        });
+    }
+</script>
+<?php echo $block->getButtonHtml() ?>

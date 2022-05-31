@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+	<preference for="Biztech\Productdesigner\Controller\Adminhtml\Printablecolor\Edit" type="Biztech\EditablePdf\Controller\Adminhtml\Printablecolor\Edit" />
+	<preference for="Biztech\Productdesigner\Block\Adminhtml\Printablecolor\Edit\Tab\Main" type="Biztech\EditablePdf\Block\Adminhtml\Printablecolor\Edit\Tab\Main" />
+	<preference for="Biztech\Productdesigner\Controller\Adminhtml\Productdesigner\viewDesign" type="Biztech\EditablePdf\Controller\Adminhtml\Productdesigner\viewDesign" />
+</config>

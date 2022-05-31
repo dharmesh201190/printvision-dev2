@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/View/Layout/etc/page_configuration.xsd">
+    <update handle="editor"/>
+    <head>
+        <css src="Biztech_Productdesigner::css/productdesigner.css"/>        
+    </head>
+    <body>
+        <!-- <referenceBlock name="viewDesign" remove="true"/>   
+        <referenceContainer name="content">
+            <block class="Biztech\BackgroundPatterns\Block\BackgroundPatterns" after="viewDesign" as="backgroundpattern" name="backgroundpattern" template="Biztech_BackgroundPatterns::backgroundpatternlist.phtml">
+            </block>
+        </referenceContainer> -->
+    </body>
+</page>

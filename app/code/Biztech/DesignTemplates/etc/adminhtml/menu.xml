@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+	<menu>
+		<add id="biztech_DesignTemplates::designtemplatecategory" title="Manage Design Template Categories" module="Biztech_DesignTemplates" sortOrder="10" parent="biztech_productdesigner::base" action="designtemplates/designtemplatecategory/" resource="Biztech_DesignTemplates::designtemplatecategory"/>
+		<add id="biztech_DesignTemplates::designtemplate" title="Manage Design Templates" module="Biztech_DesignTemplates" sortOrder="10" parent="biztech_productdesigner::base" action="designtemplates/designtemplates/" resource="Biztech_DesignTemplates::designtemplates"/>
+	</menu>
+</config>

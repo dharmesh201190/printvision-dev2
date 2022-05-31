@@ -1,0 +1,35 @@
+clipart_title,is_root_category,parent_categories,status,store_id,level
+Animals,1,,1,0,0
+Alligator,0,Animals,1,0,1
+Lions,0,Animals,1,0,1
+Dogs,0,Animals,1,0,1
+Bulls,0,Animals,1,0,1
+Avatars,1,,1,0,0
+Mustache,0,Avatars,1,0,1
+Sad,0,Avatars,1,0,1
+Angry,0,Avatars,1,0,1
+Smiley,0,Avatars,1,0,1
+Eyes,0,Avatars,1,0,1
+Careers,1,,1,0,0
+Medical ,0,Careers,1,0,1
+Mechanics,0,Careers,1,0,1
+Photography,0,Careers,1,0,1
+Food/Drink,1,,1,0,0
+Desserts,0,Food/Drink,1,0,1
+Eggs,0,Food/Drink,1,0,1
+Drinks,0,Food/Drink,1,0,1
+Love,1,,1,0,0
+Hearts,0,Love,1,0,1
+Romance,0,Love,1,0,1
+Music,1,,1,0,0
+Musical Notes,0,Music,1,0,1
+Nature,1,,1,0,0
+Autumn,0,Nature,1,0,1
+Feathers,0,Nature,1,0,1
+Flowers,0,Nature,1,0,1
+Forest,0,Nature,1,0,1
+Hipster,0,Nature,1,0,1
+Technology,1,,1,0,0
+Computer-Laptop,0,Technology,1,0,1
+Other-Devices,0,Technology,1,0,1
+Televisions,0,Technology,1,0,1

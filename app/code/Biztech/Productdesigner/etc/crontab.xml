@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Cron:etc/crontab.xsd">
+
+    <group id="default"> 
+        <job name="cron_removedesign" instance="Biztech\Productdesigner\Cron\RemoveDesign" method="execute">
+            <schedule>0 0 * * *</schedule>
+        </job>
+        <job name="generate_image" instance="Biztech\Productdesigner\Cron\GenerateImages" method="execute">
+            <schedule>*/10 * * * *</schedule>
+        </job>
+        <job name="remove_unnecessary_image" instance="Biztech\Productdesigner\Cron\RemoveUnnecessaryImages" method="execute">
+            <schedule>* 23 * * *</schedule>
+        </job>
+    </group>
+</config>

@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Cron:etc/crontab.xsd">
+    <group id="default">
+        <job instance="SamSolutions\Artwork\Cron\CheckOrderOnArtwork" method="execute" name="check_orders_artwork">
+            <schedule>0 */4 * * *</schedule>
+        </job>
+        <job instance="SamSolutions\Artwork\Cron\SendEmailArtwork" method="execute" name="send_email_artwork">
+            <schedule>0 */12 * * *</schedule>
+        </job>
+    </group>
+</config>

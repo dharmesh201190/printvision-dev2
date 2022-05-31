@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../Magento/Config/etc/system_file.xsd">
+    <system>
+        <section id="productdesigner" showInDefault="1" showInWebsite="1" showInStore="1">
+            <tab>biztech</tab>
+            <label>Product Designer Settings</label>
+             <group id="themedesigner_general" translate="label comment" showInDefault="1" showInWebsite="1" showInStore="1" sortOrder="150">
+                 <label>Theme Configuration</label>  
+                 <field id="theme_type" translate="label comment" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1" >
+                    <label>Designer Tool Theme</label>
+                    <source_model>Biztech\ThemeColors\Block\Adminhtml\Themetype</source_model>
+                    <comment>Select the theme of the designer tool</comment>
+                </field>      
+                 <field id="primary_background" translate="label comment" type="text" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Designer Tool Primary Color</label>
+                    <frontend_model>Biztech\ThemeColors\Block\Color</frontend_model>
+                    <comment>Primary Color is set for all other related colors of the tool. Do not use very light color otherwise text content will not be visible.</comment>
+                </field> 
+                <field id="save_theme_configuration" translate="label comment" type="text" sortOrder="3" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label> </label>
+                    <depends>
+                        <field id="theme_type">light</field>
+                    </depends>
+                    <frontend_model>Biztech\ThemeColors\Block\System\Config\SaveThemeConfiguration</frontend_model>
+                    <comment>Click on Save Button to Save Theme</comment>
+                </field>
+                <field id="save_dark_theme_configuration" translate="label comment" type="text" sortOrder="3" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label> </label>
+                    <depends>
+                        <field id="theme_type">dark</field>
+                    </depends>
+                    <frontend_model>Biztech\ThemeColors\Block\System\Config\SaveThemeConfiguration</frontend_model>
+                    <comment>Click on Save Button to Save Theme</comment>
+                </field>
+                <field id="logo" translate="label comment" type="image" sortOrder="4" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Dark Theme Logo</label>
+                    <depends>
+                        <field id="theme_type">dark</field>
+                    </depends>
+                   <backend_model>Biztech\ThemeColors\Model\Config\Backend\Image</backend_model>
+                   <base_url type="media" scope_info="1">productdesigner\darkthemelogo</base_url>
+                    <comment>Add logo that will be displayed for dark theme.</comment>
+                </field>                   
+            </group>                   
+        </section>        
+    </system>
+</config>

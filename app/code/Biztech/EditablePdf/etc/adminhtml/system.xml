@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../Magento/Config/etc/system_file.xsd">
+    <system>       
+        <section id="productdesigner" showInDefault="1" showInWebsite="1" showInStore="1">
+            <tab>biztech</tab>
+            <group id="manage_cmyk" showInDefault="1" showInWebsite="1" showInStore="1" sortOrder="140">
+                <label>Manage CMYK</label>
+                <field id="cmyk_enable" translate="label comment" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1" >
+                    <label>Enable CMYK</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment>Select "Yes" to display CMYK input boxes on color picker at designer tool.</comment>
+                </field>
+            </group>
+        </section>        
+    </system>
+</config>

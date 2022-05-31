@@ -1,0 +1,7 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <script src="Magento_Theme::js/custom_furniture.js"/>
+        <css src="css/custom_king_furniture.css" media="all" /> 
+        <css src="css/king_styles18.css" media="all" /> 
+    </head>
+</page>

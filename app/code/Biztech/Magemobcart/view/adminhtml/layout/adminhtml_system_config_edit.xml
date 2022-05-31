@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2017-2018 AppJetty. All rights reserved.
+ */
+-->
+
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="admin-2columns-left" xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="Biztech_Magemobcart::css/colorpicker.css"/>
+        <link src="Biztech_Magemobcart::js/colorpicker.js"/>
+    </head>
+</page>
+
+
+
+

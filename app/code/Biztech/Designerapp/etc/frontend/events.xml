@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../lib/internal/Magento/Framework/Event/etc/events.xsd">
+	<event name="productdetail_response_before">
+		<observer name="productdetail-reponse-before" instance="Biztech\Designerapp\Observer\ProductdetailResponseBefore"/>
+	</event>
+	<event name="get_wishlist_data_before">
+		<observer name="get-wishlist-data-before" instance="Biztech\Designerapp\Observer\GetWishlistDataBefore"/>
+	</event>
+	<event name="orderdetail_response_before">
+		<observer name="orderdetail-response-before" instance="Biztech\Designerapp\Observer\GetOrderDetailDataBefore"/>
+	</event>
+	<event name="customer_shoppinglist_response_before">
+		<observer name="customer-shoppinglist-response-before" instance="Biztech\Designerapp\Observer\GetCustomerShoppinglistBefore"/>
+	</event>
+	<event name="get_store_detail_before">
+		<observer name="get-store-detail-before" instance="Biztech\Designerapp\Observer\GetStoreDetailBefore"/>
+	</event>
+	<event name="get_cart_response_before">
+		<observer name="get-cart-data-before" instance="Biztech\Designerapp\Observer\GetCartDataBefore"/>
+	</event>
+</config>

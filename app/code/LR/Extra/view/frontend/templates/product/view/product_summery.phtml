@@ -1,0 +1,9 @@
+<!-- PRODUCT SUMMERY -->
+<?php $objectManager =  \Magento\Framework\App\ObjectManager::getInstance();?>
+<?php $registry = $objectManager->get('\Magento\Framework\Registry');?>
+<?php $currentProduct = $registry->registry('current_product');?>
+<?php if($currentProduct->getTypeId() == "configurable"):?>
+<div class="product-summery">
+	<div id="swatch-option-summery"></div>
+</div>
+<?php endif;?>

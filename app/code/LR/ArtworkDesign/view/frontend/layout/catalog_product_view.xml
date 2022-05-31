@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+
+<page layout="2columns-right" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+	<body>
+		<referenceContainer name="product.info.options.wrapper">
+		    <block class="Magento\Catalog\Block\Product\View" name="addto.design" template="LR_ArtworkDesign::product/view/artworkdesign.phtml" after="-"/>
+		</referenceContainer>
+		<referenceContainer name="content">
+			<block class="Magento\Catalog\Block\Product\View" name="artworkdesign.form" template="LR_ArtworkDesign::product/view/artworkdesign_form.phtml" after="product.info"/>
+			<block class="Magento\Catalog\Block\Product\View" name="callmeback.form" template="LR_ArtworkDesign::product/view/callmeback_form.phtml" after="product.info"/>
+		</referenceContainer>
+    </body>
+</page>

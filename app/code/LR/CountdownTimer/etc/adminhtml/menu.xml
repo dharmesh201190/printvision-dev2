@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Backend/etc/menu.xsd">
+    <menu>
+        <add id="logicrays::base" title="Logicrays" module="LR_CountdownTimer" sortOrder="30" resource="LR_CountdownTimer::sample"/>
+        <add id="lr_countdowntimer::test" title="Manage Holiday" module="LR_CountdownTimer" sortOrder="10" parent="logicrays::base" action="lr_countdowntimer/items/" resource="LR_CountdownTimer::items"/>
+        <add id="lr_countdowntimer::delivery" title="Manage Delivery" module="LR_CountdownTimer" sortOrder="20" parent="logicrays::base" action="lr_countdowntimer/delivery/" resource="LR_CountdownTimer::items"/>
+    </menu>
+</config>

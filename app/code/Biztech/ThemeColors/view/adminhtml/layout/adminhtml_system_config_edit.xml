@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="admin-2columns-left" xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="Biztech_ThemeColors::css/colorpicker.css"/>
+        <link src="Biztech_ThemeColors::js/colorpicker.js"/>
+    </head>
+</page>
+
+
+
+

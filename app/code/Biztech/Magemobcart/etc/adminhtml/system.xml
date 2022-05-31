@@ -1,0 +1,165 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Biztech, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../Magento/Config/etc/system_file.xsd">
+    <system>
+        <tab id="biztech" translate="label" sortOrder="0">
+            <label>Appjetty</label>
+        </tab>
+        <section id="magemobcart" sortOrder="0" showInDefault="1"  showInWebsite="1" showInStore="1">
+            <tab>biztech</tab>
+            <label>Magemob App Builder</label>
+            <resource>Biztech_Inventorysystem::config_inventory</resource>
+            <group id="activation"  showInDefault="1" sortOrder="1">
+                <label>Magemob App Builder Activation</label>
+                <field id="key" translate="label" type="text" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Activation Key</label>
+                    <validate>required-entry</validate>
+                </field>
+                <field id="websites" translate="label" type="checkbox" sortOrder="3" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Select Websites</label>
+                    <source_model>Magento\Config\Model\Config\Source\Website</source_model>
+                    <frontend_model>Biztech\Magemobcart\Block\Adminhtml\Config\Form\Renderer\Website</frontend_model>
+                </field>
+            </group>
+            <group id="magemobcart_general" showInDefault="1" sortOrder="1">
+                <label>General</label>
+                <field id="enabled" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enabled</label>
+                    <source_model>Biztech\Magemobcart\Model\Config\Source\Enabledisable</source_model>        
+                    <frontend_model>Biztech\Magemobcart\Block\Adminhtml\Enabledisable</frontend_model>
+                    <comment>Select Yes to enable this feature.</comment>
+                </field>
+                <field id="enable_barcode" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Search With Barcode</label>                    
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment>Select Yes to search with barcode.</comment>
+                </field>
+                <field id="enable_newarrivals" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Display New Arrivals</label>                    
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment>Select Yes to display new arrivals.</comment>
+                </field>
+                <field id="display_newproduct_as" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Display New Products Based On</label>                    
+                    <source_model>Biztech\Magemobcart\Model\System\Config\Displayproduct</source_model>
+                    <comment>Select on what basis you want new products to be displayed.</comment>
+                    <depends>
+                        <field id="magemobcart/magemobcart_general/enable_newarrivals">1</field>
+                    </depends>
+                </field>
+                <field id="display_category" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Select Category</label>                    
+                    <source_model>Biztech\Magemobcart\Model\System\Config\Category</source_model>
+                    <depends>
+                        <field id="magemobcart/magemobcart_general/enable_newarrivals">1</field>
+                        <field id="magemobcart/magemobcart_general/display_newproduct_as">2</field>
+                    </depends>
+                </field>
+                <field id="enable_bestsellerblock" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Display Best Seller</label>                    
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment>Select Yes to display best seller.</comment>
+                </field>
+                <field id="privacypage_url" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Privacy Policy Page Url</label>                    
+                    <source_model>Biztech\Magemobcart\Model\System\Config\Cmspages</source_model>
+                    <comment>Please select page that you want as privacy policy page.</comment>
+                </field>
+                <field id="aboutuspage_url" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>About Us Page Url</label>                    
+                    <source_model>Biztech\Magemobcart\Model\System\Config\Cmspages</source_model>
+                    <comment>Please select page that you want as about us page.</comment>
+                </field>
+                <field id="faq_url" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>FAQ Page Url</label>                    
+                    <source_model>Biztech\Magemobcart\Model\System\Config\Cmspages</source_model>
+                    <comment>Please select page that you want as FAQ page.</comment>
+                </field>
+                <field id="authorization_key" translate="label" type="text" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Authorization Key for Notification In Android</label>
+                    <validate>required-entry</validate>
+                    <frontend_model>Biztech\Magemobcart\Block\System\Config\Form\Field\Disable</frontend_model>
+                    <comment>Please enter authorization key to send notification in Android.</comment>
+                </field>
+                <field id="upload_notification_file" translate="label" type="text" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Please enter authorization key to send notification in iOS.</label>
+                    <validate>required-entry</validate>
+                    <frontend_model>Biztech\Magemobcart\Block\System\Config\Form\Field\Disable</frontend_model>
+                    <comment>Please enter Authorization Key to send notification.</comment>
+                </field>
+                <field id="full_site_secure" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Is Full Site Secure ?</label>                    
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment>Select Yes if "Full Website" is secure like https.</comment>
+                </field>
+                <field id="http_https_config" translate="label" type="multiselect" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enable Https Configuration for Module</label>                    
+                    <source_model>Biztech\Magemobcart\Model\System\Config\Httpsconfig</source_model>
+                    <depends>
+                        <field id="magemobcart/magemobcart_general/full_site_secure">0</field>
+                    </depends>
+                </field>
+            </group>
+            <group id="notification" showInDefault="1" sortOrder="1">
+               <label>Order Notification</label> 
+               <field id="order_status" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Notification for Order Status</label>                    
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment>Select Yes to send notification if there is change in order status.</comment>
+                </field>
+                <field id="status" translate="label" type="multiselect" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Order Status</label>                    
+                    <source_model>Biztech\Magemobcart\Model\System\Config\Orderstatus</source_model>
+                    <depends>
+                        <field id="magemobcart/notification/order_status">1</field>
+                    </depends>
+                </field>
+                <field id="choose_os" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Choose OS</label>                    
+                    <source_model>Biztech\Magemobcart\Model\System\Config\Chooseos</source_model>
+                    <comment>Select OS in which you want to send notification.</comment>
+                </field>
+            </group>
+            <group id="themeselection" showInDefault="1" sortOrder="1">
+                <label>Theme Selection</label>
+               <field id="primary_background" translate="label comment" type="text" sortOrder="7" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Primary Color</label>
+                    <validate>required-entry</validate>
+                    <frontend_model>Biztech\Magemobcart\Block\Color</frontend_model>
+                    <comment>Primary Color is set for all other related colors of the tool. Do not use very light color otherwise text content will not be visible.</comment>
+                </field>
+                <field id="secondary_background" translate="label comment" type="text" sortOrder="7" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Secondary Color</label>
+                    <validate>required-entry</validate>
+                    <frontend_model>Biztech\Magemobcart\Block\Color</frontend_model>
+                    <comment>Secondary Color is set for all other related colors of the tool. Do not use very light color otherwise text content will not be visible.</comment>
+                </field>
+            </group>
+            <group id="googleanalytics" showInDefault="1" sortOrder="1">
+                <label>Google Analytics</label>
+                <field id="apinumber" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Google Analytics Number</label>
+                    <comment>Enter your Google analytics Number.</comment>
+                    <tooltip>Google Analytics lets you measure your advertising ROI-Return On Investment as well as track your applications.</tooltip>
+                </field>
+            </group>
+            <group id="helpdesk" showInDefault="1" sortOrder="1">
+                <label>Help Desk</label>
+                <field id="tollfreenumber" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Toll Free Number</label>                    
+                </field>
+                <field id="helpemail" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Help Email Address</label>                    
+                </field>
+                <field id="helpaddress" translate="label" type="textarea" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Help Address</label> 
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

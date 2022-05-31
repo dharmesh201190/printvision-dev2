@@ -1,0 +1,162 @@
+<?php
+$productInquiryHelper = $this->helper(\Printvision\ProductInquiry\Helper\Data::class);
+$customerName = $productInquiryHelper->getUserName();
+$customerEmail = $productInquiryHelper->getUserEmail();
+?>
+<script>
+    require(['jquery','mage/validation'], function($){
+        var dataForm = $('#printvision-product-inquiry-popup-modal-form');
+        dataForm.mage('validation', {});
+        $('#printvision_product_inquiry_submit').click( function() {
+            var status = dataForm.validation('isValid');
+            if(status){
+                $.ajax({
+                    type: 'post',
+                    url: '<?= $block->escapeUrl($block->getUrl("product_inquiry")) ?>',
+                    data: $('#printvision-product-inquiry-popup-modal-form').serialize(),
+                    cache: false,
+                    showLoader: 'true',
+                    success: function(response) {
+                        var msg = response.split("::");
+                        if(msg[0] == '1') {
+                            $('.note').show();
+                            $('.note').css('color', 'green');
+                            document.getElementById("printvision-product-inquiry-popup-modal-form").reset();
+                            setTimeout(function(){ $(".printvision-product-inquiry-popup-modal").modal("closeModal"); }, 3000);
+                        } else {
+                            $('.note').show();
+                            $('.note').css('color', 'red');
+                        }
+
+                        $('.note').html(msg[1]);
+
+
+
+                    }
+                });
+                return false;
+            }
+        });
+    });
+    require(
+        [
+            'jquery',
+            'Magento_Ui/js/modal/modal'
+        ],
+        function($,modal) {
+            $(document).ready(function(){
+                if($('.printvision-product-inquiry-popup-modal').length > 0){
+                    var printvisionProductInquiryPopupOptions = {
+                        type: 'popup',
+                        responsive: true,
+                        innerScroll: true,
+                        title: '',
+                        buttons: []
+                    };
+
+                    var printvisionProductInquiryPopup = modal(printvisionProductInquiryPopupOptions, $('.printvision-product-inquiry-popup-modal'));
+
+                    $(".printvision_product_inquiry_link").click(function(){
+                        $('.note').hide();
+                        $(".printvision_product_inquiry_sku").val($(this).attr("data-product-inquiry-sku"));
+                        $(".display_printvision_product_inquiry_model_title").html($(this).attr("data-product-inquiry-name"));
+                        $(".printvision-product-inquiry-popup-modal").modal("openModal");
+                    });
+                }
+            });
+
+        }
+    );
+</script>
+<div class="printvision-product-inquiry-popup-modal" style="display:none;">
+<div><h2 class="display_printvision_product_inquiry_model_title"></h2></div>
+<hr>
+    <form id="printvision-product-inquiry-popup-modal-form" method="post" action="<?= $block->escapeHtmlAttr($block->getBaseUrl());?>product_inquiry" class="form" data-mage-init='{"validation":{}}'>
+        <fieldset class="fieldset printvision_product_inquiry_fieldset">
+            <div class="fields">
+                <div class="field note no-label">&nbsp;</div>
+
+                <div class="field col-l-3 name required">
+                    <label class="label" for="printvision_product_inquiry_name"><span><?= $block->escapeHtml(__('Your Name')) ?></span></label>
+                    <div class="control">
+                        <input placeholder="" name="printvision_product_inquiry_name" title="<?= $block->escapeHtmlAttr(__('Your Name')) ?>" value="<?= $block->escapeHtmlAttr($this->helper(\Magento\Contact\Helper\Data::class)->getPostValue('printvision_product_inquiry_name') ?: $customerName) ?>" class="input-text" type="text" data-validate='{"required":true}' />
+                    </div>
+                </div>
+                <div class="field col-l-3 email required">
+                    <label class="label" for="printvision_product_inquiry_email"><span><?= $block->escapeHtml(__('Your Email Address')) ?></span></label>
+                    <div class="control">
+                        <input placeholder="" name="printvision_product_inquiry_email" title="<?= $block->escapeHtmlAttr(__('Email')) ?>" value="<?= $block->escapeHtmlAttr($this->helper(\Magento\Contact\Helper\Data::class)->getPostValue('printvision_product_inquiry_email') ?: $customerEmail) ?>" class="input-text" type="text" data-validate="{required:true, 'validate-email':true}" />
+                    </div>
+                </div>
+
+                <div class="field col-l-3 last phone required">
+                    <label class="label" for="printvision_product_inquiry_phone"><span><?= $block->escapeHtml(__('Your Phone Number')) ?></span></label>
+                    <div class="control">
+                        <input placeholder="" name="printvision_product_inquiry_phone" title="<?= $block->escapeHtmlAttr(__('Your Phone Number')) ?>" value="<?= $block->escapeHtmlAttr($this->helper(\Magento\Contact\Helper\Data::class)->getPostValue('printvision_product_inquiry_phone')) ?>" class="input-text" type="text" data-validate='{"required":true}' />
+                    </div>
+                </div>
+
+
+                <div class="field col-l-3  company">
+                    <label class="label" for="printvision_product_inquiry_company"><span><?= $block->escapeHtml(__('Your Company Name')) ?></span></label>
+                    <div class="control">
+                        <input placeholder="" name="printvision_product_inquiry_company" title="<?= $block->escapeHtmlAttr(__('Your Company Name')) ?>" value="<?= $block->escapeHtmlAttr($this->helper(\Magento\Contact\Helper\Data::class)->getPostValue('printvision_product_inquiry_company')) ?>" class="input-text" type="text"  />
+                    </div>
+                </div>
+
+                <div class="field col-l-3  product_type required">
+                    <label class="label" for="printvision_product_inquiry_product_type"><span><?= $block->escapeHtml(__('Your Product Type')) ?></span></label>
+                    <div class="control">
+                        <input placeholder="" name="printvision_product_inquiry_product_type" title="<?= $block->escapeHtmlAttr(__('Your Product Type')) ?>" value="<?= $block->escapeHtmlAttr($this->helper(\Magento\Contact\Helper\Data::class)->getPostValue('printvision_product_inquiry_product_type')) ?>" class="input-text" type="text" data-validate='{"required":true}' />
+                    </div>
+                </div>
+
+
+                <div class="field col-l-3 last quantity_required required">
+                    <label class="label" for="printvision_product_inquiry_quantity_required"><span><?= $block->escapeHtml(__('Quantity Required')) ?></span></label>
+                    <div class="control">
+                        <input placeholder="" name="printvision_product_inquiry_quantity_required" title="<?= $block->escapeHtmlAttr(__('Quantity Required')) ?>" value="<?= $block->escapeHtmlAttr($this->helper(\Magento\Contact\Helper\Data::class)->getPostValue('printvision_product_inquiry_quantity_required')) ?>" class="input-text" type="text" data-validate='{"required":true}' />
+                    </div>
+                </div>
+
+
+                <div class="field col-l-2 expected_arrive_date required">
+                    <label class="label" for="printvision_product_inquiry_expected_arrive_date"><span><?= $block->escapeHtml(__('When do you require the products to arrive?')) ?></span></label>
+                    <div class="control">
+                        <input placeholder="" name="printvision_product_inquiry_expected_arrive_date" title="<?= $block->escapeHtmlAttr(__('When do you require the products to arrive?')) ?>" value="<?= $block->escapeHtmlAttr($this->helper(\Magento\Contact\Helper\Data::class)->getPostValue('printvision_product_inquiry_expected_arrive_date')) ?>" class="input-text" type="date" data-validate='{"required":true}' />
+                    </div>
+                </div>
+
+
+                <div class="field col-l-2  call_back required">
+                    <label class="label" for="printvision_product_inquiry_call_back"><span><?= $block->escapeHtml(__('Would you like a call back to discuss your enquiry')) ?></span></label>
+                    <div class="control">
+                        <input type="radio" id="yes" name="printvision_product_inquiry_call_back" value="yes" checked>
+                        <label for="yes">Yes</label>
+                        <input type="radio" id="no" name="printvision_product_inquiry_call_back" value="no">
+                        <label for="no">No</label>
+                    </div>
+                </div>
+
+
+
+                <div class="field clear description">
+                    <label class="label" for="printvision_product_inquiry_description"><span><?= $block->escapeHtml(__('Please describe your requirement in as much details as possible...')) ?></span></label>
+                    <div class="control">
+                        <textarea  name="printvision_product_inquiry_description" class="printvision_product_inquiry_description" title="<?= $block->escapeHtmlAttr(__('Description')) ?>" cols="30" rows="10"><?= $block->escapeHtmlAttr($this->helper(\Magento\Contact\Helper\Data::class)->getPostValue('printvision_product_inquiry_description')) ?></textarea>
+                    </div>
+                </div>
+
+                <input placeholder="<?= $block->escapeHtmlAttr(__('SKU')) ?>" name="printvision_product_inquiry_sku" title="<?= $block->escapeHtmlAttr(__('SKU')) ?>" value="<?= $block->escapeHtmlAttr($this->helper(\Magento\Contact\Helper\Data::class)->getPostValue('printvision_product_inquiry_sku')) ?>" class="input-text printvision_product_inquiry_sku" type="hidden" data-validate='{"required":true}' />
+
+            </div>
+        </fieldset>
+        <div class="actions-toolbar">
+            <div class="primary">
+                <button type="submit" title="<?= $block->escapeHtmlAttr(__('Send Your Enquiry')) ?>" class="action submit primary" id="printvision_product_inquiry_submit">
+                    <span><?= $block->escapeHtml(__('Send Your Enquiry')) ?></span>
+                </button>
+            </div>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,68 @@
+<?xml version="1.0" ?>
+<!--
+/**
+ * Webkul Software.
+ *
+ * @category  Webkul
+ * @package   Webkul_JobBoard
+ * @author    Webkul
+ * @copyright Copyright (c) Webkul Software Private Limited (https://webkul.com)
+ * @license   https://store.webkul.com/license.html
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Config/etc/system_file.xsd">
+    <system>
+        <tab id="webkul" translate="label" sortOrder="10">
+             <label>Webkul</label>
+        </tab>
+        <section id="jobboard" translate="label" type="text" sortOrder="320" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Job Board</label>
+            <tab>webkul</tab>
+            <resource>Webkul_JobBoard::configuration</resource>
+            <group id="general_settings" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>JobBoard General Settings</label>
+                <field id="adminname" translate="label comment" sortOrder="1" type="text" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Admin Name</label>
+                    <validate>required-entry</validate>
+                    <comment>It will be used in email templates and other places where admin name is required.</comment>
+                </field>
+                <field id="adminemail" translate="label comment" sortOrder="2" type="text" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Admin Email-id</label>
+                    <validate>required-entry validate-email</validate>
+                    <comment>It will be used in jobboard transactional emails.</comment>
+                </field>
+                <field id="jobboardlabel" translate="label comment" sortOrder="3" type="text" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Landing Page Head Title</label>
+                    <comment>e.g Work with Us</comment>
+                </field>
+                <field id="jobboardcontent" translate="label comment" sortOrder="4" type="editor" showInStore="1" showInDefault="1" >
+                    <label>Job Board Content</label>
+                    <frontend_model>Webkul\JobBoard\Block\Adminhtml\System\Config\Editor</frontend_model>
+                </field>
+                <field id="allowedresumeextensions" translate="label comment" sortOrder="5" type="text" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Allowed Extensions for Resume</label>
+                    <comment>Enter File type seperated by comma(,) like pdf,doc,txt</comment>
+                </field>
+            </group>
+            <group id="email_templates" translate="label" type="text" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>JobBoard Transactional Emails</label>
+                <field id="notifyEmailToAdmin" translate="label comment" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Notification Email to Admin Template</label>
+                    <source_model>Magento\Config\Model\Config\Source\Email\Template</source_model>
+                </field>
+                <field id="notifyEmailToApplicant" translate="label comment" type="select" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Notification Email to Applicant Template</label>
+                    <source_model>Magento\Config\Model\Config\Source\Email\Template</source_model>
+                </field>
+                <field id="notifyEmailToAdminAppliedByAdmin" translate="label comment" type="select" sortOrder="3" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Notification Email to Admin Created By Admin Template</label>
+                    <source_model>Magento\Config\Model\Config\Source\Email\Template</source_model>
+                </field>
+                <field id="notifyEmailToApplicantAppliedByAdmin" translate="label comment" type="select" sortOrder="4" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Notification Email to Applicant Created By Admin Template</label>
+                    <source_model>Magento\Config\Model\Config\Source\Email\Template</source_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

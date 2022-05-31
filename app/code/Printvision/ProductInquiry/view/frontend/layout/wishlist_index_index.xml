@@ -1,0 +1,14 @@
+<?xml version="1.0"?> 
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance dc" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd"> 
+<head> 
+     <css src="Printvision_ProductInquiry::css/modelpopup.css"/>
+</head>
+    <referenceContainer name="content">
+        <block class="Magento\Framework\View\Element\Template" name="printvision_product_inquiry" template="Printvision_ProductInquiry::catalog/product/view/form.phtml" />
+    </referenceContainer>
+    <referenceBlock name="customer.wishlist.item.cart">
+       <action method="setTemplate">
+           <argument name="template" xsi:type="string">Printvision_ProductInquiry::item/column/cart.phtml</argument>
+       </action>
+   </referenceBlock>
+</page>
