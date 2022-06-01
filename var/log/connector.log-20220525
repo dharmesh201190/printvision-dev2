@@ -1,0 +1,6 @@
+[2022-05-24 12:42:22] dotdigital.INFO: TransportPlugin send exception: An exception was raised while creating "Zend\Mail\Protocol\Smtp\Auth\Login"; no instance returned [] []
+[2022-05-24 14:15:53] dotdigital.INFO: TransportPlugin send exception: An exception was raised while creating "Zend\Mail\Protocol\Smtp\Auth\Login"; no instance returned [] []
+[2022-05-24 16:44:08] dotdigital.INFO: TransportPlugin send exception: An exception was raised while creating "Zend\Mail\Protocol\Smtp\Auth\Login"; no instance returned [] []
+[2022-05-24 16:44:53] dotdigital.INFO: TransportPlugin send exception: An exception was raised while creating "Zend\Mail\Protocol\Smtp\Auth\Login"; no instance returned [] []
+[2022-05-24 19:05:53] dotdigital.INFO: TransportPlugin send exception: The input is not a valid email address. Use the basic format local-part@hostname [] []
+[2022-05-24 21:19:58] dotdigital.INFO: TransportPlugin send exception: An exception was raised while creating "Zend\Mail\Protocol\Smtp\Auth\Login"; no instance returned [] []

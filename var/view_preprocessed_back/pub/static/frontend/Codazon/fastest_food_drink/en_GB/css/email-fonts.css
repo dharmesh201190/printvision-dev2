@@ -1,0 +1,211 @@
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+/* ============================================ *
+ * Codazon_Theme_Var
+ * ============================================ */
+@media screen {
+  @font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/opensans/light/opensans-300.woff2') format('woff2'), url('../fonts/opensans/light/opensans-300.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: auto;
+  }
+  @font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/opensans/regular/opensans-400.woff2') format('woff2'), url('../fonts/opensans/regular/opensans-400.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: auto;
+  }
+  @font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/opensans/semibold/opensans-600.woff2') format('woff2'), url('../fonts/opensans/semibold/opensans-600.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: auto;
+  }
+  @font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/opensans/bold/opensans-700.woff2') format('woff2'), url('../fonts/opensans/bold/opensans-700.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: auto;
+  }
+  .items {
+    margin: 0;
+    padding: 0;
+    list-style: none none;
+  }
+  body {
+    color: #282828;
+    font: 400 12px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
+  }
+  body input[type="text"],
+  body input[type="password"],
+  body input[type="url"],
+  body input[type="tel"],
+  body input[type="search"],
+  body input[type="number"],
+  body input[type="datetime"],
+  body input[type="email"] {
+    height: 40px;
+    color: #282828;
+    border-color: #dbdbdb;
+    background-color: #ffffff;
+    font: 400 12px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
+  }
+  body textarea {
+    color: #282828;
+    border-color: #dbdbdb;
+    background-color: #ffffff;
+    font: 400 12px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
+  }
+  body ._keyfocus *:focus,
+  body input:not([disabled]):focus,
+  body textarea:not([disabled]):focus,
+  body select:not([disabled]):focus {
+    box-shadow: 0 1px 3px #e1e1e1;
+  }
+  h1,
+  .h1 {
+    font: 500 24px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
+    color: #121212;
+    margin: 0 0 20px;
+  }
+  h2,
+  .h2 {
+    font: 500 20px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
+    margin: 0 0 20px;
+  }
+  h3,
+  .h3 {
+    font: 500 18px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
+    margin: 0 0 20px;
+  }
+  h4,
+  .h4 {
+    font: 500 16px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
+    margin: 0 0 10px;
+  }
+  h5,
+  .h5 {
+    font: 400 14px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
+    margin: 0 0 10px;
+  }
+  h6,
+  .h6 {
+    font: 400 11px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
+    margin: 0 0 10px;
+  }
+  a {
+    color: #282828;
+  }
+  a:hover {
+    color: #b0d235;
+  }
+  .text-small {
+    font-size: 90%;
+  }
+  .text-center {
+    text-align: center;
+  }
+  .text-uppercase {
+    text-transform: uppercase;
+  }
+  .header a {
+    color: #cccccc;
+  }
+  .header a:hover {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  body {
+    overflow-x: hidden;
+    background: #ffffff url('') 0 0 no-repeat fixed;
+  }
+  .page-header {
+    background: #ffffff url('') 0 0 no-repeat fixed;
+  }
+  .page-main {
+    /*background:@main_background url(@main_background_file) @main_background_image_option;*/
+  }
+  .page-footer {
+    background: #222222 url('') 0 0 no-repeat fixed;
+  }
+  .space-s {
+    margin-bottom: 10px;
+  }
+  .space-base {
+    margin-bottom: 20px;
+  }
+  .space-md {
+    margin-bottom: 40px;
+  }
+  .space-lg {
+    margin-bottom: 60px;
+  }
+  .maxwidth {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+  }
+  .no-padding {
+    padding: 0 !important;
+  }
+  .no-margin {
+    padding: 0 !important;
+  }
+  .page-title-wrapper {
+    text-transform: uppercase;
+  }
+  .cms-index-index .page-title-wrapper {
+    display: none;
+  }
+  .page-main {
+    padding-top: 20px;
+  }
+  .cms-index-index .page-main {
+    padding-top: 0;
+  }
+  .cms-index-index .columns .column.main {
+    padding-bottom: 0;
+  }
+  /*
+	.block:not(.block-static-block) .block-content{padding:20px 0 0}
+	.minicart-wrapper .action.showcart .counter.qty{font-size:12px}
+	*/
+  #ajaxloading_container {
+    position: relative;
+    padding: 20px;
+    text-align: center;
+    border: 10px solid #a1a1a1;
+    background-color: white;
+    z-index: 99999;
+    max-height: 660px;
+  }
+  #ajaxloading_container {
+    min-width: 350px;
+    max-width: 500px;
+    z-index: 9999;
+    display: none;
+    position: fixed;
+    top: 0px;
+  }
+  #bg_fade {
+    background-color: #000;
+    left: 0px;
+    margin: 0px;
+    padding: 0px;
+    position: fixed;
+    top: 0px;
+    visibility: hidden;
+    width: 100%;
+    z-index: 998;
+    height: 1000px;
+    opacity: 0.5;
+  }
+}

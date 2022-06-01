@@ -1,0 +1,151 @@
+
+In Mysql.php line 593:
+                                                                               
+  SQLSTATE[40001]: Serialization failure: 1213 Deadlock found when trying to   
+  get lock; try restarting transaction, query was: DELETE FROM `cron_schedule  
+  ` WHERE (status = 'success') AND (job_code in ('scconnector_verify_website'  
+  , 'scconnector_retrieve_gtag')) AND (created_at < '2022-05-24 02:13:03')     
+                                                                               
+
+In Mysql.php line 110:
+                                                                               
+  SQLSTATE[40001]: Serialization failure: 1213 Deadlock found when trying to   
+  get lock; try restarting transaction, query was: DELETE FROM `cron_schedule  
+  ` WHERE (status = 'success') AND (job_code in ('scconnector_verify_website'  
+  , 'scconnector_retrieve_gtag')) AND (created_at < '2022-05-24 02:13:03')     
+                                                                               
+
+In Mysql.php line 91:
+                                                                               
+  SQLSTATE[40001]: Serialization failure: 1213 Deadlock found when trying to   
+  get lock; try restarting transaction                                         
+                                                                               
+
+cron:run [--group GROUP] [--bootstrap BOOTSTRAP]
+
+
+In Mysql.php line 593:
+                                                                               
+  SQLSTATE[40001]: Serialization failure: 1213 Deadlock found when trying to   
+  get lock; try restarting transaction, query was: DELETE FROM `cron_schedule  
+  ` WHERE (status = 'pending') AND (job_code in ('indexer_reindex_all_invalid  
+  ', 'indexer_update_all_views', 'indexer_clean_all_changelogs')) AND (create  
+  d_at < '2022-05-21 07:30:03')                                                
+                                                                               
+
+In Mysql.php line 110:
+                                                                               
+  SQLSTATE[40001]: Serialization failure: 1213 Deadlock found when trying to   
+  get lock; try restarting transaction, query was: DELETE FROM `cron_schedule  
+  ` WHERE (status = 'pending') AND (job_code in ('indexer_reindex_all_invalid  
+  ', 'indexer_update_all_views', 'indexer_clean_all_changelogs')) AND (create  
+  d_at < '2022-05-21 07:30:03')                                                
+                                                                               
+
+In Mysql.php line 91:
+                                                                               
+  SQLSTATE[40001]: Serialization failure: 1213 Deadlock found when trying to   
+  get lock; try restarting transaction                                         
+                                                                               
+
+cron:run [--group GROUP] [--bootstrap BOOTSTRAP]
+
+
+In Mysql.php line 593:
+                                                                               
+  SQLSTATE[40001]: Serialization failure: 1213 Deadlock found when trying to   
+  get lock; try restarting transaction, query was: DELETE FROM `cron_schedule  
+  ` WHERE (status = 'pending') AND (job_code in ('ddg_automation_customer_sub  
+  scriber_guest_sync', 'ddg_automation_importer', 'ddg_automation_status', 'd  
+  dg_automation_abandonedcarts', 'ddg_automation_reviews_and_wishlist', 'ddg_  
+  automation_campaign', 'ddg_automation_order_sync', 'ddg_automation_cleaner'  
+  , 'ddg_automation_catalog_sync', 'ddg_automation_email_templates')) AND (cr  
+  eated_at < '2022-05-24 07:06:03')                                            
+                                                                               
+
+In Mysql.php line 110:
+                                                                               
+  SQLSTATE[40001]: Serialization failure: 1213 Deadlock found when trying to   
+  get lock; try restarting transaction, query was: DELETE FROM `cron_schedule  
+  ` WHERE (status = 'pending') AND (job_code in ('ddg_automation_customer_sub  
+  scriber_guest_sync', 'ddg_automation_importer', 'ddg_automation_status', 'd  
+  dg_automation_abandonedcarts', 'ddg_automation_reviews_and_wishlist', 'ddg_  
+  automation_campaign', 'ddg_automation_order_sync', 'ddg_automation_cleaner'  
+  , 'ddg_automation_catalog_sync', 'ddg_automation_email_templates')) AND (cr  
+  eated_at < '2022-05-24 07:06:03')                                            
+                                                                               
+
+In Mysql.php line 91:
+                                                                               
+  SQLSTATE[40001]: Serialization failure: 1213 Deadlock found when trying to   
+  get lock; try restarting transaction                                         
+                                                                               
+
+cron:run [--group GROUP] [--bootstrap BOOTSTRAP]
+
+
+In Mysql.php line 593:
+                                                                               
+  SQLSTATE[40001]: Serialization failure: 1213 Deadlock found when trying to   
+  get lock; try restarting transaction, query was: DELETE FROM `cron_schedule  
+  ` WHERE (status = 'pending') AND (job_code in ('ddg_automation_customer_sub  
+  scriber_guest_sync', 'ddg_automation_importer', 'ddg_automation_status', 'd  
+  dg_automation_abandonedcarts', 'ddg_automation_reviews_and_wishlist', 'ddg_  
+  automation_campaign', 'ddg_automation_order_sync', 'ddg_automation_cleaner'  
+  , 'ddg_automation_catalog_sync', 'ddg_automation_email_templates')) AND (cr  
+  eated_at < '2022-05-24 09:51:02')                                            
+                                                                               
+
+In Mysql.php line 110:
+                                                                               
+  SQLSTATE[40001]: Serialization failure: 1213 Deadlock found when trying to   
+  get lock; try restarting transaction, query was: DELETE FROM `cron_schedule  
+  ` WHERE (status = 'pending') AND (job_code in ('ddg_automation_customer_sub  
+  scriber_guest_sync', 'ddg_automation_importer', 'ddg_automation_status', 'd  
+  dg_automation_abandonedcarts', 'ddg_automation_reviews_and_wishlist', 'ddg_  
+  automation_campaign', 'ddg_automation_order_sync', 'ddg_automation_cleaner'  
+  , 'ddg_automation_catalog_sync', 'ddg_automation_email_templates')) AND (cr  
+  eated_at < '2022-05-24 09:51:02')                                            
+                                                                               
+
+In Mysql.php line 91:
+                                                                               
+  SQLSTATE[40001]: Serialization failure: 1213 Deadlock found when trying to   
+  get lock; try restarting transaction                                         
+                                                                               
+
+cron:run [--group GROUP] [--bootstrap BOOTSTRAP]
+
+
+In Mysql.php line 593:
+                                                                               
+  SQLSTATE[40001]: Serialization failure: 1213 Deadlock found when trying to   
+  get lock; try restarting transaction, query was: DELETE FROM `cron_schedule  
+  ` WHERE (status = 'error') AND (job_code in ('ddg_automation_customer_subsc  
+  riber_guest_sync', 'ddg_automation_importer', 'ddg_automation_status', 'ddg  
+  _automation_abandonedcarts', 'ddg_automation_reviews_and_wishlist', 'ddg_au  
+  tomation_campaign', 'ddg_automation_order_sync', 'ddg_automation_cleaner',   
+  'ddg_automation_catalog_sync', 'ddg_automation_email_templates')) AND (crea  
+  ted_at < '2022-05-24 12:45:03')                                              
+                                                                               
+
+In Mysql.php line 110:
+                                                                               
+  SQLSTATE[40001]: Serialization failure: 1213 Deadlock found when trying to   
+  get lock; try restarting transaction, query was: DELETE FROM `cron_schedule  
+  ` WHERE (status = 'error') AND (job_code in ('ddg_automation_customer_subsc  
+  riber_guest_sync', 'ddg_automation_importer', 'ddg_automation_status', 'ddg  
+  _automation_abandonedcarts', 'ddg_automation_reviews_and_wishlist', 'ddg_au  
+  tomation_campaign', 'ddg_automation_order_sync', 'ddg_automation_cleaner',   
+  'ddg_automation_catalog_sync', 'ddg_automation_email_templates')) AND (crea  
+  ted_at < '2022-05-24 12:45:03')                                              
+                                                                               
+
+In Mysql.php line 91:
+                                                                               
+  SQLSTATE[40001]: Serialization failure: 1213 Deadlock found when trying to   
+  get lock; try restarting transaction                                         
+                                                                               
+
+cron:run [--group GROUP] [--bootstrap BOOTSTRAP]
+

@@ -1,0 +1,21 @@
+sku,store_view_code,attribute_set_code,product_type,categories,product_websites,name,description,short_description,weight,product_online,tax_class_name,visibility,price,special_price,special_price_from_date,special_price_to_date,url_key,meta_title,meta_keywords,meta_description,base_image,base_image_label,small_image,small_image_label,thumbnail_image,thumbnail_image_label,swatch_image,swatch_image_label,created_at,updated_at,new_from_date,new_to_date,display_product_options_in,map_price,msrp_price,map_enabled,gift_message_available,custom_design,custom_design_from,custom_design_to,custom_layout_update,page_layout,product_options_container,msrp_display_actual_price_type,country_of_manufacture,additional_attributes,qty,out_of_stock_qty,use_config_min_qty,is_qty_decimal,allow_backorders,use_config_backorders,min_cart_qty,use_config_min_sale_qty,max_cart_qty,use_config_max_sale_qty,is_in_stock,notify_on_stock_below,use_config_notify_stock_qty,manage_stock,use_config_manage_stock,use_config_qty_increments,qty_increments,use_config_enable_qty_inc,enable_qty_increments,is_decimal_divided,website_id,related_skus,related_position,crosssell_skus,crosssell_position,upsell_skus,upsell_position,additional_images,additional_image_labels,hide_from_product_page,custom_options,bundle_price_type,bundle_sku_type,bundle_price_view,bundle_weight_type,bundle_values,bundle_shipment_type,associated_skus,configurable_variations,configurable_variation_labels,errors
+RFFG-ZOOM,,"Fibreglass Flags",configurable,"Default Category/All Products/Fabric Products,Default Category/All Products/Outdoor Products,Default Category/All Products/Printed Flags/Fibreglass Feather Flags,Default Category/Offers",base,"Fibreglass Zoom Feather Flag","<div>
+<ul>
+<li>Feather flags are a great way of promoting your business on busy main roads, high streets and also trade shows. The use of vibrant colours and snappy slogans entice customers and make them pay attention to whatever you may want to sell.Â </li>
+<li>Feather flags can come in a choice of feather or tear drop shapes and are available in a variety of sizes. After being printed, the products come in an easy to assemble kit that is simple for the customer to put together. The use of robust, strong aluminium frames means that the flags are durable and able to endure windy or inclement weather.Â </li>
+<li>Feather flag kits also come with handy carry bags so that they can be easily transported from place to place and set up as they are required. The flags also come with a variety of bases, facilitating the flags' assembly in any location.</li>
+</ul>
+</div>
+<ul>
+<li>Available in 3 shapes</li>
+<li>Choose from 7 base options</li>
+<li>Lightweight fibreglass pole</li>
+<li>Available in 4 heights: 2.8m, 3.4m, 4.5m and 5.6m</li>
+<li>Printed on 115gsm Knitted Polyester</li>
+</ul>","<ul>
+<li>Available in 3 shapes</li>
+<li>Choose from 7 base options</li>
+<li>Lightweight fibreglass pole</li>
+<li>Available in 4 heights: 2.8m, 3.4m, 4.5m and 5.6m</li>
+<li>Printed on 115gsm Knitted Polyester</li>
+</ul>",10,1,"UK VAT","Catalog, Search",,,,,curve-shape-fibreglass-feather-flag,,,,/f/e/feather_zoom_1_1.jpg,,/f/e/feather_zoom_1_1.jpg,,/f/e/feather_zoom_1_1.jpg,,,,"28/11/2018, 12:14","03/10/2019, 08:06",,,"Product Info Column",,,,No,,,,,"1 column",,"Use config","United Kingdom","manufacturer=Rhino,material=110gsm Knitted Polyester,product_usage=Outdoor Only,custom_measurement=No,show_stickysidebar=0,recommended=No,recommended_product=Yes,ves_enable_order=0,ves_enable_quote=1",0,0,1,0,0,1,1,1,10000,1,1,1,1,0,0,1,1,1,0,0,0,"RFFG-C,RTFG-SQURE,RTFG-DROP,RTFG-C","1,2,3,4",,,,,/f/e/feather_zoom_1_1.jpg,,,,,,,,,,,"sku=RFFG0450-Z-SS-YEL-RBLWA30-PQ1,printed_sides=Single Sided,flag_size=4.5m,flag_sleeve=Yellow ,flag_base=Rhino Large Water/Sand Base,print_qty=1","printed_sides=Printed Sides,flag_size=Flag Size,flag_sleeve=White ,flag_base=Flag Base,print_qty=Printed Quantity","Column configurable_variations: Invalid option value for attribute ""flag_sleeve"""

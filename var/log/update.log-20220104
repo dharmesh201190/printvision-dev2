@@ -1,0 +1,1 @@
+[2022-01-03 15:44:01] update-cron.ERROR: Cron readiness check failure! Found non-writable paths: 	/chroot/home/ae9ef7cb/b294ff40f5.nxcli.net/.htaccess [] []

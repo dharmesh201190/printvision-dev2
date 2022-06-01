@@ -1,0 +1,116 @@
+sku,store_view_code,attribute_set_code,product_type,categories,product_websites,name,description,short_description,weight,product_online,tax_class_name,visibility,price,special_price,special_price_from_date,special_price_to_date,url_key,meta_title,meta_keywords,meta_description,base_image,base_image_label,small_image,small_image_label,thumbnail_image,thumbnail_image_label,swatch_image,swatch_image_label,created_at,updated_at,new_from_date,new_to_date,display_product_options_in,map_price,msrp_price,map_enabled,gift_message_available,custom_design,custom_design_from,custom_design_to,custom_layout_update,page_layout,product_options_container,msrp_display_actual_price_type,country_of_manufacture,additional_attributes,qty,out_of_stock_qty,use_config_min_qty,is_qty_decimal,allow_backorders,use_config_backorders,min_cart_qty,use_config_min_sale_qty,max_cart_qty,use_config_max_sale_qty,is_in_stock,notify_on_stock_below,use_config_notify_stock_qty,manage_stock,use_config_manage_stock,use_config_qty_increments,qty_increments,use_config_enable_qty_inc,enable_qty_increments,is_decimal_divided,website_id,related_skus,related_position,crosssell_skus,crosssell_position,upsell_skus,upsell_position,additional_images,additional_image_labels,hide_from_product_page,custom_options,bundle_price_type,bundle_sku_type,bundle_price_view,bundle_weight_type,bundle_values,bundle_shipment_type,associated_skus,configurable_variations,configurable_variation_labels
+"Handwaving Flag",,"Handwaving Flag",configurable,"Default Category,Default Category/All Products,Default Category/All Products/Handwaving Flags",base,"Handwaving Flag","<p>Lightweight and cost-effective, our handwaving flags are perfect for sporting events, parades and parties</p>
+<ul>
+<li>Suitable for outdoor or indoor use</li>
+<li>Design shows correctly to one side and is mirror image to reverse</li>
+<li>Material Options: paper or knitted polyester</li>
+<li>Rectangular shape</li>
+<li>Single sided print with wooden stick</li>
+</ul>
+
+","<p>Lightweight and cost-effective, our handwaving flags are perfect for sporting events, parades and parties</p>
+<ul>
+<li>Suitable for outdoor or indoor use</li>
+<li>Design shows correctly to one side and is mirror image to reverse</li>
+<li>Material Options: paper or knitted polyester</li>
+<li>Rectangular shape</li>
+<li>Single sided print with wooden stick</li>
+</ul>
+
+",1.000000,1,"Taxable Goods","Catalog, Search",,,,,handwaving-flag,"Handwaving Flag","Handwaving Flag","Handwaving Flag Lightweight and cost-effective, our handwaving flags are perfect for sporting events, parades and parties
+
+Suitable for outdoor or indoor use
+Design shows correctly to one side and is mirror image to reverse
+Material Options: paper or ",,,,,,,,,"16/02/2020, 12:56","16/02/2020, 13:25",,,"Block after Info Column",,,,"Use config",,,,,,,"Use config","United Kingdom","allow_add_more=Yes,artwork_template_tab=Yes,design_for_me=Yes,design_online=Yes,enable_handles=No,enable_name_number=No,enable_product_designer=No,leadtime=4-5 Working Days,manufacturer=King of Flags,rolling_clock=Yes,show_stickysidebar=0,stripe_sub_enabled=No,stripe_sub_interval=Months,ts_packaging_type=None,upload_artwork=Yes",0.0000,0.0000,1,0,0,1,1.0000,1,10000.0000,1,1,1.0000,1,0,0,1,1.0000,1,0,0,0,,,,,,,,,,"name=Service,type=radio,required=1,price=0.000000,sku=,max_characters=0,file_extension=,image_size_x=0,image_size_y=0,price_type=fixed,option_title=Standard|name=Service,type=radio,required=1,price=11.480000,sku=,max_characters=0,file_extension=,image_size_x=0,image_size_y=0,price_type=fixed,option_title=Express|name=Service,type=radio,required=1,price=12.960000,sku=,max_characters=0,file_extension=,image_size_x=0,image_size_y=0,price_type=fixed,option_title=Super Express|name=Artwork,type=file,required=1,price=0.000000,sku=,max_characters=0,file_extension=pdf, ai, indt,image_size_x=0,image_size_y=0,price_type=fixed",,,,,,,,"sku=Handwaving Flag-A4-Knitted Polyester,flag_size=A4,material=Knitted Polyester|sku=Handwaving Flag-A4-Paper,flag_size=A4,material=Paper|sku=Handwaving Flag-A5-Knitted Polyester,flag_size=A5,material=Knitted Polyester|sku=Handwaving Flag-A5-Paper,flag_size=A5,material=Paper","flag_size=Flag Size,material=Material"
+"Handwaving Flag-A4-Paper",,"Handwaving Flag",simple,"Default Category,Default Category/All Products",base,"Handwaving Flag-A4-Paper","<p>Lightweight and cost-effective, our handwaving flags are perfect for sporting events, parades and parties</p>
+<ul>
+<li>Suitable for outdoor or indoor use</li>
+<li>Design shows correctly to one side and is mirror image to reverse</li>
+<li>Material Options: paper or knitted polyester</li>
+<li>Rectangular shape</li>
+<li>Single sided print with wooden stick</li>
+</ul>
+
+","<p>Lightweight and cost-effective, our handwaving flags are perfect for sporting events, parades and parties</p>
+<ul>
+<li>Suitable for outdoor or indoor use</li>
+<li>Design shows correctly to one side and is mirror image to reverse</li>
+<li>Material Options: paper or knitted polyester</li>
+<li>Rectangular shape</li>
+<li>Single sided print with wooden stick</li>
+</ul>
+
+",1.000000,1,"Taxable Goods","Not Visible Individually",1.980000,,,,handwaving-flag-a4-paper,"Handwaving Flag","Handwaving Flag","Handwaving Flag Lightweight and cost-effective, our handwaving flags are perfect for sporting events, parades and parties
+
+Suitable for outdoor or indoor use
+Design shows correctly to one side and is mirror image to reverse
+Material Options: paper or ",,,,,,,,,"16/02/2020, 13:21","16/02/2020, 13:25",,,"Block after Info Column",,,,No,,,,,,,"Use config","United Kingdom","artwork_template_tab=Yes,design_for_me=Yes,design_online=Yes,enable_handles=No,enable_product_designer=No,flag_size=A4,leadtime=4-5 Working Days,manufacturer=King of Flags,material=Paper,rolling_clock=Yes,show_stickysidebar=0,stripe_sub_enabled=No,stripe_sub_interval=Months,ts_packaging_type=None,upload_artwork=Yes",,0.0000,1,0,0,1,1.0000,1,10000.0000,1,1,1.0000,1,0,0,1,1.0000,1,0,0,0,,,,,,,,,,,,,,,,,,,
+"Handwaving Flag-A4-Knitted Polyester",,"Handwaving Flag",simple,"Default Category,Default Category/All Products",base,"Handwaving Flag-A4-Knitted Polyester","<p>Lightweight and cost-effective, our handwaving flags are perfect for sporting events, parades and parties</p>
+<ul>
+<li>Suitable for outdoor or indoor use</li>
+<li>Design shows correctly to one side and is mirror image to reverse</li>
+<li>Material Options: paper or knitted polyester</li>
+<li>Rectangular shape</li>
+<li>Single sided print with wooden stick</li>
+</ul>
+
+","<p>Lightweight and cost-effective, our handwaving flags are perfect for sporting events, parades and parties</p>
+<ul>
+<li>Suitable for outdoor or indoor use</li>
+<li>Design shows correctly to one side and is mirror image to reverse</li>
+<li>Material Options: paper or knitted polyester</li>
+<li>Rectangular shape</li>
+<li>Single sided print with wooden stick</li>
+</ul>
+
+",1.000000,1,"Taxable Goods","Not Visible Individually",1.980000,,,,handwaving-flag-a4-knitted-polyester,"Handwaving Flag","Handwaving Flag","Handwaving Flag Lightweight and cost-effective, our handwaving flags are perfect for sporting events, parades and parties
+
+Suitable for outdoor or indoor use
+Design shows correctly to one side and is mirror image to reverse
+Material Options: paper or ",,,,,,,,,"16/02/2020, 13:21","16/02/2020, 13:25",,,"Block after Info Column",,,,No,,,,,,,"Use config","United Kingdom","artwork_template_tab=Yes,design_for_me=Yes,design_online=Yes,enable_handles=No,enable_product_designer=No,flag_size=A4,leadtime=4-5 Working Days,manufacturer=King of Flags,material=Knitted Polyester,rolling_clock=Yes,show_stickysidebar=0,stripe_sub_enabled=No,stripe_sub_interval=Months,ts_packaging_type=None,upload_artwork=Yes",,0.0000,1,0,0,1,1.0000,1,10000.0000,1,1,1.0000,1,0,0,1,1.0000,1,0,0,0,,,,,,,,,,,,,,,,,,,
+"Handwaving Flag-A5-Paper",,"Handwaving Flag",simple,"Default Category,Default Category/All Products",base,"Handwaving Flag-A5-Paper","<p>Lightweight and cost-effective, our handwaving flags are perfect for sporting events, parades and parties</p>
+<ul>
+<li>Suitable for outdoor or indoor use</li>
+<li>Design shows correctly to one side and is mirror image to reverse</li>
+<li>Material Options: paper or knitted polyester</li>
+<li>Rectangular shape</li>
+<li>Single sided print with wooden stick</li>
+</ul>
+
+","<p>Lightweight and cost-effective, our handwaving flags are perfect for sporting events, parades and parties</p>
+<ul>
+<li>Suitable for outdoor or indoor use</li>
+<li>Design shows correctly to one side and is mirror image to reverse</li>
+<li>Material Options: paper or knitted polyester</li>
+<li>Rectangular shape</li>
+<li>Single sided print with wooden stick</li>
+</ul>
+
+",1.000000,1,"Taxable Goods","Not Visible Individually",1.650000,,,,handwaving-flag-a5-paper,"Handwaving Flag","Handwaving Flag","Handwaving Flag Lightweight and cost-effective, our handwaving flags are perfect for sporting events, parades and parties
+
+Suitable for outdoor or indoor use
+Design shows correctly to one side and is mirror image to reverse
+Material Options: paper or ",,,,,,,,,"16/02/2020, 13:21","16/02/2020, 13:25",,,"Block after Info Column",,,,No,,,,,,,"Use config","United Kingdom","artwork_template_tab=Yes,design_for_me=Yes,design_online=Yes,enable_handles=No,enable_product_designer=No,flag_size=A5,leadtime=4-5 Working Days,manufacturer=King of Flags,material=Paper,rolling_clock=Yes,show_stickysidebar=0,stripe_sub_enabled=No,stripe_sub_interval=Months,ts_packaging_type=None,upload_artwork=Yes",,0.0000,1,0,0,1,1.0000,1,10000.0000,1,1,1.0000,1,0,0,1,1.0000,1,0,0,0,,,,,,,,,,,,,,,,,,,
+"Handwaving Flag-A5-Knitted Polyester",,"Handwaving Flag",simple,"Default Category,Default Category/All Products",base,"Handwaving Flag-A5-Knitted Polyester","<p>Lightweight and cost-effective, our handwaving flags are perfect for sporting events, parades and parties</p>
+<ul>
+<li>Suitable for outdoor or indoor use</li>
+<li>Design shows correctly to one side and is mirror image to reverse</li>
+<li>Material Options: paper or knitted polyester</li>
+<li>Rectangular shape</li>
+<li>Single sided print with wooden stick</li>
+</ul>
+
+","<p>Lightweight and cost-effective, our handwaving flags are perfect for sporting events, parades and parties</p>
+<ul>
+<li>Suitable for outdoor or indoor use</li>
+<li>Design shows correctly to one side and is mirror image to reverse</li>
+<li>Material Options: paper or knitted polyester</li>
+<li>Rectangular shape</li>
+<li>Single sided print with wooden stick</li>
+</ul>
+
+",1.000000,1,"Taxable Goods","Not Visible Individually",1.650000,,,,handwaving-flag-a5-knitted-polyester,"Handwaving Flag","Handwaving Flag","Handwaving Flag Lightweight and cost-effective, our handwaving flags are perfect for sporting events, parades and parties
+
+Suitable for outdoor or indoor use
+Design shows correctly to one side and is mirror image to reverse
+Material Options: paper or ",,,,,,,,,"16/02/2020, 13:21","16/02/2020, 13:25",,,"Block after Info Column",,,,No,,,,,,,"Use config","United Kingdom","artwork_template_tab=Yes,design_for_me=Yes,design_online=Yes,enable_handles=No,enable_product_designer=No,flag_size=A5,leadtime=4-5 Working Days,manufacturer=King of Flags,material=Knitted Polyester,rolling_clock=Yes,show_stickysidebar=0,stripe_sub_enabled=No,stripe_sub_interval=Months,ts_packaging_type=None,upload_artwork=Yes",,0.0000,1,0,0,1,1.0000,1,10000.0000,1,1,1.0000,1,0,0,1,1.0000,1,0,0,0,,,,,,,,,,,,,,,,,,,

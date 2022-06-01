@@ -1,0 +1,5 @@
+sku,tier_price_website,tier_price_customer_group,tier_price_qty,tier_price,tier_price_value_type
+RTF0200-C-SS-WS-NB-PQ1,All Websites [GBP],ALL GROUPS,2,1,Discount
+RTF0200-C-SS-WS-NB-PQ1,All Websites [GBP],ALL GROUPS,5,3,Discount
+RTF0200-C-SS-WS-NB-PQ1,All Websites [GBP],ALL GROUPS,10,5,Discount
+RTF0200-C-SS-WS-NB-PQ1,All Websites [GBP],ALL GROUPS,20,10,Discount

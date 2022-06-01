@@ -1,0 +1,1 @@
+email,_website,_store,website_id,store_id,created_in,prefix,firstname,middlename,lastname,suffix,group_id,dob,password_hash,rp_token,rp_token_created_at,taxvat,confirmation,created_at,gender,disable_auto_group_change,updated_at,failures_num,first_failure,lock_expires,account_is_active,account_activation_email_sent,password
