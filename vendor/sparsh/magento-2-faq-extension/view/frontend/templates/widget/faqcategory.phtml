@@ -1,0 +1,47 @@
+<?php
+$items = $block->getFaqItems();
+?>
+
+<div class="sparsh-faq-block">
+    <?php if ($items->getSize()) : ?>
+        <?php
+        $count = 1;
+        foreach ($items as $item) : ?>
+            <div class="accordion">
+                <div class="block">
+                    <p class="question">
+                        <strong>
+                            <span><?= $block->escapeHtml($count); ?>
+                                . <?= $block->escapeHtml($item->getFaqQuestion()) ?></span>
+                        </strong>
+                    </p>
+                    <div class="answer content">
+                        <?= /* @noEscape */
+                        $item->getFaqAnswer() ?>
+                    </div>
+                </div>
+            </div>
+            <?php
+            $count++;
+        endforeach;
+        ?>
+    <?php
+    else :
+        ?>
+        <h2 class="title"><?= $block->escapeHtml(__("No FAQ Found.")) ?></h2>
+    <?php
+    endif;
+    ?>
+</div>
+<script>
+    require(['jquery'], function (jQuery) {
+        jQuery(document).ready(function () {
+            jQuery(".accordion .question").click(function () {
+                jQuery(this).closest(".accordion").siblings().find('.open').removeClass('open');
+                jQuery(this).closest(".accordion").siblings().find(".answer").stop(true, true).slideUp();
+                jQuery(this).toggleClass('open').closest(".accordion").find(".answer").stop(true, true).slideToggle();
+            });
+        });
+
+    });
+</script>

@@ -1,0 +1,75 @@
+<?php
+/*
+ * @category: Magepow
+ * @copyright: Copyright (c) 2014 Magepow (http://www.magepow.com/)
+ * @licence: http://www.magepow.com/license-agreement
+ * @author: MichaelHa
+ * @create date: 2019-11-29 17:19:50
+ * @LastEditors: MichaelHa
+ * @LastEditTime: 2019-12-04 11:07:49
+ */
+?>
+<?php
+/**
+ * Categories block
+ *
+ * @var $block \Magepow\Categories\Block\Categories
+ */
+
+$categories  = $block->getCategories();
+$heading     = $block->getHeading();
+$description = $block->isShowDescription();
+$itemAmount  = $block->getItemAmount();
+if (empty($categories)) return;
+$selector     = 'alo-content-'.uniqid(); 
+?>
+<?php $visible = (int) $this->getData('visible'); ?>
+<style type="text/css"><?php echo $this->getData('slide') ? '.' . $selector . ' .item{float:left; width:' . 100/$visible . '%} .'. $selector . ' .item:nth-child(n+' . ++$visible . '){display: none}' : ''  ?></style>
+<?php if ($heading): ?>
+    <h3 class="title"><?php echo $heading ?></h3>
+<?php endif; ?>
+<div class="magepow-categories <?php echo $selector ?>" data-mage-init='{"gridSlider": {}}'>
+    <ul class="grid-slider"
+        <?php foreach ($this->getFrontendCfg() as $opt) :?>
+            data-<?php echo $opt ?>='<?php echo $this->getData($opt) ?>'
+        <?php endforeach;?>
+    >
+        <?php foreach ($categories as $cat): ?>
+            <?php $image = $this->getImageInfo($cat); ?>
+            <li class="category-item item">
+                <div class="category-item-info">
+                    <div class="category-image-container">
+                        <a class="category-url" href="<?php echo $cat->getUrl() ?>">
+                            <img src="<?php echo $this->getImage($cat) ?>" width="<?php echo $image->getOriginalWidth() ?>" height="<?php echo $image->getOriginalHeight() ?>" alt="<?php echo $cat->getName() ?>"/>
+                        </a>
+                    </div>
+                    <div class="category-item-details">
+                        <h3 class="category-item-name">
+                            <a class="category-item-link" href="<?php echo $cat->getUrl() ?>">
+                                <span class="category-name"><?php echo $cat->getName() ?></span>
+                            </a>
+                        </h3>
+                        
+                        <?php if($description): ?>
+                            <div class="category-description">
+                                <?php echo $this->getDescription($cat) ?>
+                            </div>
+                        <?php endif; ?>
+                        <?php if($itemAmount): ?>
+                            <div class="category-item-amount">
+                                    <?php echo "(".$cat->getProductCollection()->count();
+                                        if($cat->getProductCollection()->count()>0)echo " items)";
+                                        else echo " item)"; 
+                                    ?>
+                            </div>
+                        <?php endif; ?>
+                        <div class="btn-link">
+                            <a class="magepow-categories-category" href="<?php echo $cat->getUrl() ?>">Show now</a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </li>
+        <?php endforeach; ?>
+    </ul>
+</div>
